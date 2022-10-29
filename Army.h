@@ -9,7 +9,7 @@ public:
 	Army( std::string );
 	~Army();
 private:
-	Battalion* head;
+	//Battalion* head;
 	General* leader;
 };
 #endif

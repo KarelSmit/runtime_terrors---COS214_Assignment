@@ -1,7 +1,7 @@
 #include "Army.h"
 
 Army::Army(){
-
+	leader = new General();
 }
 
 Army::Army( std::string nme ){
