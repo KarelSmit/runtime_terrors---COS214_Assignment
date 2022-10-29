@@ -1,7 +1,8 @@
 #ifndef STATE_H
 #define STATE_H
 
-public class War{
-    
+public class State{
+    private:
+    public:
 };
 #endif
