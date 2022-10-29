@@ -1,5 +1,5 @@
-#ifndef WAR_H
-#define WAR_H
+#ifndef STATE_H
+#define STATE_H
 
 public class War{
     
