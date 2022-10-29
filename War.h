@@ -6,6 +6,7 @@ class War
 {
 public:
 	War* startWar();
+	void simulate();
 protected:
 	War();
 	~War();
