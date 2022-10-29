@@ -4,7 +4,11 @@
 class War
 {
 public:
+	static War& startWar();
+protected:
 	War();
 	~War();
+private:
+	War *warInstance;
 };
 #endif
