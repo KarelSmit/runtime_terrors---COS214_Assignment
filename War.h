@@ -1,8 +1,10 @@
 #ifndef WAR_H
 #define WAR_H
 
-public class War{
-    private:
-    public:
+class War
+{
+public:
+	War();
+	~War();
 };
 #endif
