@@ -1,35 +1,56 @@
 #ifndef WAR_H
 #define WAR_H
+#include "State.h"
+#include "IntelDivision.h"
+#include "User.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 class War
 {
 private:
+    User *user;
     State *state;
-    string name;
-    int score;
 
 public:
+
+    War(string n, int s)
+    {
+        user = new User(n,s);
+        state = new State();
+    }
+
+    void setScore(int i)
+    {
+        user->setScore(i);
+    }
+
+    string toString()
+    {
+        return user->toString();
+    }
+
+    //MEMENTO
     State *getState()
     {
         return state;
     }
 
-    Directory *getRoot()
+    User *getUser()
     {
-        return root;
+        return user;
     }
 
-    Memento *makeBackup()
+    IntelDivision *makeBackup()
     {
-        Directory *backup = new Directory(*root);
-        return new Memento(backup, state);
+        User *backup = new User(*user);
+        return new IntelDivision(backup, state);
     }
 
-    void getFirst(Memento *mem)
+    void restore(IntelDivision *mem)
     {
-        root = mem->getRoot();
+        user = mem->getUser();
         state = mem->getState();
     }
 };

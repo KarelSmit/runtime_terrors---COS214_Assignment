@@ -1,22 +1,25 @@
 #ifndef INTELDIVISION_H
 #define INTELDIVISION_H
 #include <iostream>
+#include <string>
 #include "State.h"
 #include "War.h"
+#include "User.h"
 using namespace std;
 
 //Memento
-class IntelDivision{
+class IntelDivision
+{
 private:
-    War *war;
+    User *user;
     State *state;
 
 public:
-    IntelDivision(War *w, State *s) : war(w), state(s) {}
+    IntelDivision(User *u, State *s) : user(u), state(s) {}
 
-    War *getWar()
+    User *getUser()
     {
-        return war;
+        return user;
     }
 
     State *getState()

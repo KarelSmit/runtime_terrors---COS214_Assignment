@@ -7,23 +7,23 @@ using namespace std;
 class State
 {
 private:
-    bool rootChanged;   
+    bool userChanged;    
 
 public:
-    State() : rootChanged(false) {}
+    State() : userChanged(false) {}
 
-    State(const State &s) : rootChanged(s.rootChanged) {}
+    State(const State &s) : userChanged(s.userChanged) {}
 
-    void setRootChanged()
+    void setUserChanged()
     {
-        rootChanged = true;
+        userChanged = true;
     }
 
     void showState()
     {
-        if (rootChanged)
+        if (userChanged)
         {
-            cout << "***Root has changed" << endl;
+            cout << "User has changed" << endl;
         }
         else
         {

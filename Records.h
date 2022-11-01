@@ -1,5 +1,7 @@
 #ifndef RECORDS_H
 #define RECORDS_H
+#include "War.h"
+#include "IntelDivision.h"
 #include <iostream>
 using namespace std;
 
@@ -13,10 +15,10 @@ public:
 
     IntelDivision *getIntelDiv()
     {
-        return 
+        return inteldiv;
     }
 
-    void setIntelDiv(IntelDiv *i)
+    void setIntelDiv(IntelDivision *i)
     {
         inteldiv = i;
     }
