@@ -1,13 +1,28 @@
 #include "Army.h"
 
 Army::Army(){
-	leader = new General();
-}
-
-Army::Army( std::string nme ){
-	leader = new General(nme);
 }
 
 Army::~Army(){
+	//delete the linked list
+}
+
+void Army::addInfantry(){
+
+}
+
+void Army::addTank(){
+
+}
+
+void Army::addMedic(){
+
+}
+
+void Army::addSupply(){
+
+}
+
+void Army::updateStats(){
 
 }

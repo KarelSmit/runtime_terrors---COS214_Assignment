@@ -5,7 +5,6 @@
 class General
 {
 public:
-	General();
 	General( std::string );
 	~General();
 

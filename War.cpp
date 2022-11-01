@@ -1,4 +1,6 @@
 #include "War.h"
+#include <string>
+#include <iostream>
 
 War *War::startWar()
 {
@@ -27,8 +29,11 @@ War::~War()
 
 void War::simulate()
 {
-	sideA = new Country("SideA");
-	sideB = new Country("SideB","General Bad");
+	std::string uName;
+	std::cout << "Enter your name:";
+	std::cin >> uName;
+	sideA = new Country("CountryA",uName);
+	sideB = new Country("CountryB","Enemy General");
 	for (int i = 0; i < 5; i++)
 	{
 	}
