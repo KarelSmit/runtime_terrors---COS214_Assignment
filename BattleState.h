@@ -1,6 +1,7 @@
 #ifndef BATTLESTATE_H
 #define BATTLESTATE_H
 #include "Battle.h"
+#include <iostream>
 
 class BattleState
 {

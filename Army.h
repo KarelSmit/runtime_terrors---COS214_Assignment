@@ -7,15 +7,20 @@ class Army
 public:
 	Army();
 	~Army();
-	void addInfantry();
-	void addTank();
-	void addMedic();
-	void addSupply();
+	void addInfantry(int);
+	void addTank(int);
+	void addMedic(int);
+	void addSupply(int);
 	void updateStats();
+	int getDamage();
+	void takeDamage( int );
+	void heal();
+	void reset();
 private:
 	//Battalion* head;
 	int totalDmg;
 	int totalHP;
 	int extraMoves;
+	int totalHeal;
 };
 #endif

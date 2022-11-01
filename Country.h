@@ -9,7 +9,9 @@ class Country
 public:
 	Country(std::string, std::string);
 	~Country();
-
+	void setEnemy();
+	void makeMove(int , Country*);
+	Army* getArmy();
 private:
 	General *leader;
 	Army *defenseForce;

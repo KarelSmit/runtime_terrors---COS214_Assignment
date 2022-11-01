@@ -10,6 +10,8 @@ public:
 	~Battle();
 	void begin();
 	void setState(BattleState*);
+	Country* getA();
+	Country* getB();
 private:
 	Country *sideA;
 	Country *sideB;

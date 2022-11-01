@@ -12,13 +12,17 @@ Battle::~Battle(){
 
 void Battle::begin(){
 	state->handle();
-	state->changeState();
-	state->handle();
-	state->changeState();
-	state->handle();
 }
 
 void Battle::setState( BattleState* next ){
 	delete state;
 	state = next;
+}
+
+Country* Battle::getA(){
+	return sideA;
+}
+
+Country* Battle::getB(){
+	return sideB;
 }
