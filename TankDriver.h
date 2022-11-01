@@ -1,7 +1,9 @@
 #ifndef TANKDRIVER_H
 #define TANKDRIVER_H
-#include "TransportationUnit.h"
-class TankDriver : public TransportationUnit { 
-
+#include "TransportUnit.h"
+class TankDriver : public TransportUnit { 
+    public:
+    TankDriver();
+    virtual ~TankDriver();
 };
 #endif

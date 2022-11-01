@@ -1,7 +1,9 @@
 #ifndef SUPPLY_H
 #define SUPPLY_H
-#include "TransportationUnit.h"
-class Supply : public TransportationUnit { 
-
-};
+#include "TransportUnit.h"
+class Supply : public TransportUnit {
+    public: 
+    Supply(); 
+    virtual ~Supply();
+}; 
 #endif

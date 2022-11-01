@@ -1,8 +1,14 @@
 #ifndef BARRACKS_H
 #define BARRACKS_H
-class Barracks { 
-    public: 
-    void concreteProductA() = 0; 
-    void concreteProductB() = 0; 
+#include "Battalions.h"
+#include <iostream> 
+#include <iomanip> 
+#include <string> 
+class Barracks {
+    public:
+    Barracks(); 
+    virtual Battalions* createConcreteProductA() = 0; 
+    virtual Battalions* createConcreteProductB() = 0;
+    virtual ~Barracks():
 }; 
 #endif
