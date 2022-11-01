@@ -26,6 +26,11 @@ public:
         user->setScore(i);
     }
 
+    string getScore()
+    {
+        return to_string(user->getScore());
+    }
+
     string toString()
     {
         return user->toString();
