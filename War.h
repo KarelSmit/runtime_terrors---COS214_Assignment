@@ -27,7 +27,7 @@ public:
         return new Memento(backup, state);
     }
 
-    void restore(Memento *mem)
+    void getFirst(Memento *mem)
     {
         root = mem->getRoot();
         state = mem->getState();
