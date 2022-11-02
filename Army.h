@@ -17,7 +17,7 @@ public:
 	void heal();
 	void reset();
 private:
-	//Battalion* head;
+	//Battalion* atkForce,medicForce,supplyChain;
 	int totalDmg;
 	int totalHP;
 	int extraMoves;

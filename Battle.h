@@ -16,6 +16,7 @@ private:
 	Country *sideA;
 	Country *sideB;
 	BattleState* state;
+	bool winner;
 };
 
 #endif
