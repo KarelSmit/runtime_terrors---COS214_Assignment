@@ -1,11 +1,14 @@
 #ifndef DURINGBATTLE_H
 #define DURINGBATTLE_H
+#include "BattleState.h"
 
-class DuringBattle
+class DuringBattle : public BattleState
 {
 public:
-	DuringBattle();
+	DuringBattle( Battle* );
 	~DuringBattle();
+	void handle();
+	void changeState();
 };
 
 

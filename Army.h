@@ -6,10 +6,21 @@ class Army
 {
 public:
 	Army();
-	Army( std::string );
 	~Army();
+	void addInfantry(int);
+	void addTank(int);
+	void addMedic(int);
+	void addSupply(int);
+	void updateStats();
+	int getDamage();
+	void takeDamage( int );
+	void heal();
+	void reset();
 private:
 	//Battalion* head;
-	General* leader;
+	int totalDmg;
+	int totalHP;
+	int extraMoves;
+	int totalHeal;
 };
 #endif
