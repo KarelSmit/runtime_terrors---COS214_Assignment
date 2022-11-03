@@ -5,10 +5,10 @@ SupportBarracks::SupportBarracks() {
     std::cout << "Support Barracks created." << std::endl;
 }
 
-Battalions* SupportBarracks::createConcreteProductA() {
-    return new Supply(); 
+FootUnit* SupportBarracks::createFootUnit() {
+    return new Medic(5,3); // HP first then rejuvenationPower 
 }
 
-Battalions* SupportBarracks::createConcreteProductB() {
-    return new Medic(); 
+TransportUnit* SupportBarracks::createTransportUnit() {
+    return new Supply(5); // HP 
 }

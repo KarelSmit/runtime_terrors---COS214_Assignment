@@ -4,7 +4,7 @@
 class SupportBarracks : public Barracks {
     public:
     SupportBarracks(); 
-    Battalions* createConcreteProductA(); 
-    Battalions* createConcreteProductB();
+    FootUnit* createFootUnit(); 
+    TransportUnit* createTransportUnit();
 }; 
 #endif
