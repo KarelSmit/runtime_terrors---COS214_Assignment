@@ -2,15 +2,15 @@
 #include "TankDriver.h"
 #include "Infantry.h"
 CombatBarracks::CombatBarracks() {
-    std::cout << "Combat Barracks created." << std::endl;
+
 }
 
-Battalions* CombatBarracks::createConcreteProductA() {
-    return new TankDriver(); 
+FootUnit* CombatBarracks::createFootUnit() {
+    return new Infantry(5, 3); // HP first, then damage
 }
 
-Battalions* CombatBarracks::createConcreteProductB() {
-    return new Infantry(); 
+TransportUnit* CombatBarracks::createTransportUnit() {
+    return new TankDriver(5, 4); // HP first, then damage
 }
 
 CombatBarracks::~CombatBarracks() {

@@ -4,9 +4,8 @@
 class CombatBarracks : public Barracks {
     public:
     CombatBarracks();
-    Battalions* createConcreteProductA(); 
-    Battalions* createConcreteProductB();
+    FootUnit* createFootUnit(); 
+    TransportUnit* createTransportUnit();
     virtual ~CombatBarracks();
 }; 
-#endif
 #endif
