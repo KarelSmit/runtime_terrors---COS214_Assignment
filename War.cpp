@@ -34,7 +34,7 @@ void War::simulate()
 	std::cin >> uName;
 	sideA = new Country("CountryA",uName);
 	sideB = new Country("CountryB","Enemy General");
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		
 	}
