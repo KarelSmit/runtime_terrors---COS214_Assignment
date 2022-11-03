@@ -1,8 +1,14 @@
 #include "Supply.h"
-Supply::Supply() {
-    std::cout << "Supply created." << std::endl;
+#include "SupplyTruckFactory.h"
+Supply::Supply(int HP) : TransportUnit(HP) {
+    SupplyTruckFactory* newVehicle = new SupplyTruckFactory(); 
+    supplyTruck = newVehicle->createVehicles(); 
 }
 
 Supply::~Supply() { 
-    
+    supplyTruck->~Vehicle();
+}
+
+Vehicle* getSupplyTruck() {
+    return this->supplyTruck;
 }
