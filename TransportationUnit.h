@@ -1,7 +1,12 @@
-#ifndef TRANSPORTATIONUNIT_H
-#define TRANSPORTATIONUNIT_H
-#include "Barracks.h"
-class TransportationUnit : public Barracks{ 
+#ifndef TRANSPORTUNIT_H
+#define TRANSPORTUNIT_H
+class TransportUnit {
+    protected: 
+    int HP; 
+    public:
+    TransportUnit(int); 
+    virtual ~TransportUnit();
+    int getHP();
     
-}; 
+};
 #endif
