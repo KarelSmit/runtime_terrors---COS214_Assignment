@@ -3,9 +3,6 @@
 #include "Tank.h"
 #include "SupplyTruck.h"
 class VehicleFactory {
-    private: 
-    Vehicle* vehicle; 
-
     public: 
     VehicleFactory(); 
     virtual Vehicle* createVehicles() = 0; 
