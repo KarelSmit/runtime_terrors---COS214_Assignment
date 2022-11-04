@@ -7,6 +7,10 @@ FootUnit::~FootUnit() {
     
 }
 
+FootUnit::FootUnit(){
+
+}
+
 int FootUnit::getHP() {
     return this->HP;
 }

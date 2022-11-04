@@ -5,6 +5,7 @@ class FootUnit {
     protected: 
     int HP; 
     public:
+    FootUnit();
     FootUnit(int); 
     ~FootUnit();
     int getHP(); 
