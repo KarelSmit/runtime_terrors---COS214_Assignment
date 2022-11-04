@@ -1,24 +1,30 @@
-#ifndef _MEDICUNIT_H
-#define _MEDICUNIT_H
+#ifndef _TANKUNIT_H
+#define _TANKUNIT_H
 
-    #include "Node.h"
-    #include "TankIterator.h"
-    
-    template <typename T>
-    class TankUnit{
-        friend class TankIterator<T>;
-        public:
-            TankUnit();
-            void enqueue(T e);
-            T dequeue();
-            bool isEmpty();
-            TankIterator<T> begin();
-            TankIterator<T> end();
-            TankIterator<T> first();
-        private:
-            Node<T>* head;
-    };
+#include "Node.h"
+#include "TankIterator.h"
+#include "Battalion.h"
+#include "Tank.h"
 
-    #include "TankUnit.cpp"
-    
+class TankUnit : public Battalion
+{
+	friend class TankIterator;
+
+public:
+	TankUnit();
+	~TankUnit();
+	int getHP();
+	int getDmg();
+	int getRP();
+	TankIterator begin();
+	TankIterator end();
+	void setVal();
+
+	Node<Tank *> *head;
+private:
+	int totHP;
+	int totDmg;
+};
+
 #endif
+

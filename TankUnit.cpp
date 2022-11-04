@@ -1,4 +1,86 @@
-#ifndef _QUEUE_C
+#include "TankUnit.h"
+#include "Tank.cpp"
+#include "TankIterator.cpp"
+
+#include <iostream>
+
+TankUnit::TankUnit()
+{
+	totHP = 0;
+	totDmg = 0;
+	int hp = 10;
+	int rp = 15;
+	int TankCount = 5;
+	Node<Tank*> *n = new Node<Tank*>();
+	n->element = new Tank(hp, rp);
+	head = n;	
+	for (int i = 0; i < TankCount - 1; i++)
+	{
+		n = new Node<Tank*>();
+		n->element = new Tank(hp, rp);
+		n->next = head;
+		head = n;
+	}
+	setVal();
+}
+
+TankUnit::~TankUnit()
+{
+	Node<Tank*> *n = head;
+	while (n != nullptr)
+	{
+		Node<Tank*> *temp = n;
+		n = n->next;
+		delete temp->element;
+		delete temp;
+	}
+	head = nullptr;
+}
+
+void TankUnit::setVal()
+{
+	TankIterator n = begin();
+	TankIterator last = end();
+	do
+	{
+		totHP += (*n)->getHP();
+		totDmg += (*n)->getDamage();
+		++n;
+	} while (!(n == last));
+}
+
+int TankUnit::getHP()
+{
+	return totHP;
+}
+
+int TankUnit::getDmg()
+{
+	return totDmg;
+}
+
+int TankUnit::getRP()
+{
+	return 0;
+}
+
+TankIterator TankUnit::begin()
+{
+	return TankIterator(head, head);
+}
+
+TankIterator TankUnit::end()
+{
+	Node<Tank*> *n = head;
+	while (n->next != nullptr)
+	{
+		n = n->next;
+	}
+	return TankIterator(head, n);
+}
+
+
+/* #ifndef _QUEUE_C
 #define _QUEUE_C
 
     #include "Node.h"
@@ -62,4 +144,4 @@
         return begin();
     }
    
-#endif
+#endif */

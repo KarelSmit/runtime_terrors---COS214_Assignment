@@ -1,4 +1,37 @@
-#ifndef _TankIterator_C
+#include "TankIterator.h"
+
+TankIterator::TankIterator()
+{
+	head = 0;
+	current = 0;
+}
+
+Tank* TankIterator::operator*()
+{
+	return current->element;
+}
+
+TankIterator TankIterator::operator++()
+{
+	if (this != nullptr)
+	{
+		this->current = this->current->next;
+	}
+	return *this;
+}
+
+bool TankIterator::operator==(const TankIterator &rhs) const
+{
+	return current == rhs.current;
+}
+
+TankIterator::TankIterator( Node<Tank*>* h, Node<Tank*>* p ){
+	head = h;
+	current = p;
+}
+
+
+/* #ifndef _TankIterator_C
 #define _TankIterator_C
 
   #include <iostream>
@@ -46,4 +79,4 @@ TankIterator<T> TankIterator<T>::curr(){
       return current == rhs.current;
   }
   
-#endif
+#endif */
