@@ -6,17 +6,16 @@
 #include "MedicIterator.h"
 #include "Battalion.h"
 
-template <typename T>
-Battalion<T>::Battalion(){
+
+Battalion::Battalion(){
     medicHead = 0;
-    tankHead =  0;
-    supplyHead = 0;
-    infantryHead = 0;
+//    tankHead =  0;
+//    supplyHead = 0;
+//    infantryHead = 0;
 }
 
-template <typename T>
-void Battalion<T>::enqueueMedic(T e){
-    Node<T>* n = new Node<T>();
+void Battalion::enqueueMedic(MedicUnit<MedicUnit> e){
+    Node<MedicUnit>* n = new Node<MedicUnit>();
     n->element = e;
     if (isEmpty()) {
         n->next = n;
@@ -30,8 +29,8 @@ void Battalion<T>::enqueueMedic(T e){
     medicHead = n;
 }
 
-template <typename T>
-T Battalion<T>::dequeueMedic(){
+
+ Medic Battalion::dequeueMedic(){
     if (isEmpty())
         return 0;
     else if (medicHead->previous == medicHead) {
@@ -48,7 +47,7 @@ T Battalion<T>::dequeueMedic(){
 
 template <typename T>
 bool Battalion<T>::isEmpty(){
-    return medicHead == 0 && tankHead == 0 && supplyHead == 0 && infantryHead == 0;
+    return medicHead == 0;
 }
 
 template <typename T>

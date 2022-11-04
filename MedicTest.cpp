@@ -2,6 +2,7 @@
 #include "MedicUnit.h"
 #include "MedicIterator.h"
 #include "Medic.h"
+# include "Battalion.h"
 
 // Still need to include a MedicIterator
 
@@ -38,5 +39,9 @@ int main(){
     for (i=myQueueMedics->first(); !(i==myQueueMedics->end()); i=i.next())
         cout<<*i<<"\t";
     cout<<*i<<"\t";
+
+    Battalion* b = new Battalion;
+    b->enqueueMedic(*myQueueMedics);
+    b->getHP();
     return 0;
 }

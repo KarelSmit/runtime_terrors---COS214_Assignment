@@ -7,13 +7,13 @@ include_directories(.)
 
 add_executable(
         Node.h
-        Supply.cpp
-        Supply.h
-        SupplyTest.cpp
-        SupplyIterator.cpp
-        SupplyIterator.h
-        SupplyUnit.cpp
-        SupplyUnit.h
-        TransportUnit.cpp
-        TransportUnit.h
+        Medic.cpp
+        Medic.h
+        MedicTest.cpp
+        MedicIterator.cpp
+        MedicIterator.h
+        MedicUnit.cpp
+        MedicUnit.h
+        Battalion.cpp
+        Battalion.h
 )

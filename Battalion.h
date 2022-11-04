@@ -3,31 +3,33 @@
 
 #include "Node.h"
 #include "Battalion.h"
+#include "Medic.h"
+#include "MedicUnit.h"
 
-template <typename T>
+
 class Battalion{
     ////friend class MedicIterator<T>;
 public:
     Battalion();
-    void enqueueMedic(T e);
+    void enqueueMedic(MedicUnit<MedicUnit> e);
 //    void enqueueTank(T e);
 //    void enqueueSupply(T e);
 //    void enqueueInfantry(T e);
-    T dequeueMedic();
+    Medic dequeueMedic();
 //    T dequeueTank();
 //    T dequeueSupply();
 //    T dequeueInfantry();
-    int getHp();
+    int getHP();
 //    int getRP();
 //    int getDamage();
 //    void print();
 
     bool isEmpty(); // check if anything has anything
 private:
-    Node<T>* medicHead;
-    Node<T>* tankHead;
-    Node<T>* supplyHead;
-    Node<T>* infantryHead;
+    Node<MedicUnit<T>>* medicHead;
+//    Node<T>* tankHead;
+//    Node<T>* supplyHead;
+//    Node<T>* infantryHead;
 
 };
 
