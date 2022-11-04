@@ -1,6 +1,7 @@
 #include "Infantry.h"
 #include <string>
 Infantry::Infantry(int HP, int Damage): FootUnit(HP) {
+	this->name = "Infantry";
     this->Damage = Damage;
 }
 

@@ -1,4 +1,4 @@
-#include "MedicUnit.cpp"
+#include "InfantryUnit.cpp"
 #include "FootUnit.cpp"
 #include "Battalion.cpp"
 
@@ -8,9 +8,9 @@ using namespace std;
 
 int main()
 {
-	MedicUnit m = MedicUnit();
-	cout << "MedicUnit HP = " << m.getHP() << endl;
-	cout << "MedicUnit RP = " << m.getRP() << endl;
-	cout << "MedicUnit Dmg = " << m.getDmg() << endl;
+	InfantryUnit m = InfantryUnit();
+	cout << "InfantryUnit HP = " << m.getHP() << endl;
+	cout << "InfantryUnit RP = " << m.getRP() << endl;
+	cout << "InfantryUnit Dmg = " << m.getDmg() << endl;
 	return 0;
 }

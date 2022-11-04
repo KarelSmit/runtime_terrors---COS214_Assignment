@@ -3,9 +3,12 @@
 
 //#include <iostream>
 // using namespace std;
-#include "MedicIterator.h"
+
 //#include "MedicUnit.h"
 //#include "Node.h"
+
+#include "MedicIterator.h"
+
 MedicIterator::MedicIterator()
 {
 	head = 0;

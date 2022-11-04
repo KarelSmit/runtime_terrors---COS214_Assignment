@@ -5,23 +5,26 @@
 #include "Battalion.h"
 #include "Medic.h"
 #include "MedicUnit.h" */
+// template <typename T>
+////friend class MedicIterator<T>;
+class Battalion
+{
 
-//template <typename T>
-class Battalion{
-    ////friend class MedicIterator<T>;
 public:
-    Battalion();
+	Battalion();
 	~Battalion();
 	virtual int getHP() = 0;
 	virtual int getDmg() = 0;
 	virtual int getRP() = 0;
 
-	Battalion* next;
-    //void enqueue(T e);
+	Battalion *next;
+};
+#endif
+// void enqueue(T e);
 //    void enqueueTank(T e);
 //    void enqueueSupply(T e);
 //    void enqueueInfantry(T e);
-     //T dequeue();
+// T dequeue();
 //    T dequeueTank();
 //    T dequeueSupply();
 //    T dequeueInfantry();
@@ -33,14 +36,10 @@ public:
 //    BattalionIterator<T> first();
 //    BattalionIterator<T> end();
 
-    //bool isEmpty(); // check if anything has anything
-//private:
-//    Node<T>* tankHead;
-//    Node<T>* supplyHead;
-//    Node<T>* infantryHead;
-
-};
+// bool isEmpty(); // check if anything has anything
+// private:
+//     Node<T>* tankHead;
+//     Node<T>* supplyHead;
+//     Node<T>* infantryHead;
 
 //#include "MedicUnit.cpp"
-
-#endif

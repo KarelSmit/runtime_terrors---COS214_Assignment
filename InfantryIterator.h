@@ -1,5 +1,33 @@
-#ifndef _MedicIterator_H
-#define _MedicIterator_H
+#ifndef _InfantryIterator_H
+#define _InfantryIterator_H
+
+#include "InfantryUnit.h"
+#include "Infantry.h"
+
+class InfantryUnit;
+
+class InfantryIterator
+{
+	friend class InfantryUnit;
+
+public:
+	InfantryIterator();
+	Infantry *operator*();
+	InfantryIterator operator++();
+	bool operator==(const InfantryIterator &) const;
+	InfantryIterator(Node<Infantry *> *, Node<Infantry *> *);
+
+protected:
+	Node<Infantry *> *head;
+	Node<Infantry *> *current;
+};
+
+#endif
+
+
+
+/* #ifndef _InfantryIterator_H
+#define _InfantryIterator_H
 
 //  #include "Node.h"
 //  #include "InfantryUnit.h"
@@ -29,4 +57,4 @@
   
   #include "InfantryIterator.cpp"
   
- #endif
+ #endif */

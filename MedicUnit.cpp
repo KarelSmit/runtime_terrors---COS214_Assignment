@@ -1,7 +1,6 @@
 //#ifndef _MEDICUNIT_C
 //#define _MEDICUNIT_C
 
-#include "Node.h"
 #include "MedicUnit.h"
 #include "Medic.cpp"
 #include "MedicIterator.cpp"

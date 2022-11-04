@@ -1,7 +1,7 @@
 #ifndef _MEDICUNIT_H
 #define _MEDICUNIT_H
 
-/*  #include "Node.h"*/
+#include "Node.h"
 #include "MedicIterator.h"
 #include "Battalion.h"
 #include "Medic.h"
@@ -21,19 +21,9 @@ public:
 	void setVal();
 
 	Node<Medic *> *head;
-	// friend class MedicIterator<Medic>;
-	//        public:
-	//            MedicUnit();
-	// linked list of medics
-
-	//            MedicIterator<T> begin();
-	//            MedicIterator<T> first();
-	//            MedicIterator<T> end();
 private:
 	int totHP;
 	int totRP;
 };
-
-//#include "MedicUnit.cpp"
 
 #endif

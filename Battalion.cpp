@@ -3,7 +3,6 @@
 
 //#include "Node.h"
 #include "Battalion.h"
-//#include "BattalionIterator.h"
 
 Battalion::Battalion(){
 	next = nullptr;

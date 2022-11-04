@@ -1,4 +1,85 @@
-#ifndef _QUEUE_C
+
+#include "InfantryUnit.h"
+#include "Infantry.cpp"
+#include "InfantryIterator.cpp"
+
+#include <iostream>
+
+InfantryUnit::InfantryUnit()
+{
+	totHP = 0;
+	totDmg = 0;
+	int hp = 10;
+	int dmg = 20;
+	int InfantryCount = 5;
+	Node<Infantry*> *n = new Node<Infantry*>();
+	n->element = new Infantry(hp, dmg);
+	head = n;	
+	for (int i = 0; i < InfantryCount - 1; i++)
+	{
+		n = new Node<Infantry*>();
+		n->element = new Infantry(hp, dmg);
+		n->next = head;
+		head = n;
+	}
+	setVal();
+}
+
+InfantryUnit::~InfantryUnit()
+{
+	Node<Infantry*> *n = head;
+	while (n != nullptr)
+	{
+		Node<Infantry*> *temp = n;
+		n = n->next;
+		delete temp->element;
+		delete temp;
+	}
+	head = nullptr;
+}
+
+void InfantryUnit::setVal()
+{
+	InfantryIterator n = begin();
+	InfantryIterator last = end();
+	do
+	{
+		totHP += (*n)->getHP();
+		totDmg += (*n)->getDamage();
+		++n;
+	} while (!(n == last));
+}
+
+int InfantryUnit::getHP()
+{
+	return totHP;
+}
+
+int InfantryUnit::getDmg()
+{
+	return totDmg;
+}
+
+int InfantryUnit::getRP()
+{
+	return 0;
+}
+
+InfantryIterator InfantryUnit::begin()
+{
+	return InfantryIterator(head, head);
+}
+
+InfantryIterator InfantryUnit::end()
+{
+	Node<Infantry*> *n = head;
+	while (n->next != nullptr)
+	{
+		n = n->next;
+	}
+	return InfantryIterator(head, n);
+}
+/* #ifndef _QUEUE_C
 #define _QUEUE_C
 
     #include "Node.h"
@@ -62,4 +143,4 @@
       return begin();
     }
    
-#endif
+#endif */
