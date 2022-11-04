@@ -10,8 +10,9 @@ class Medic : public FootUnit{
     int RP; 
     string name;
     public: 
+    Medic();
     Medic(int, int);
-    Medic(string, int, int )
+    Medic(string, int, int );
 
     virtual ~Medic();
     int getRP();

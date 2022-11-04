@@ -12,6 +12,10 @@ Medic::~Medic(){
     
 }
 
+Medic::Medic(){
+    
+}
+
 int Medic::getRP() {
     return RP;
 }
