@@ -28,7 +28,7 @@ bool Medic::operator==(const Medic& m) {
         return false;
 }
 
-std::ostream& operator<<(std::ostream& out, const Supply& m){
+std::ostream& operator<<(std::ostream& out, const Medic& m){
     out << m.name<< "(" << m.hp << ":"<<m.rp<<")";
     return out;
 }
