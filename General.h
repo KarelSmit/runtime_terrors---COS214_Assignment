@@ -1,7 +1,6 @@
 #ifndef GENERAL_H
 #define GENERAL_H
 #include <string>
-#include "Army.h"
 #include "Attack.h"
 #include "Defend.h"
 

@@ -18,5 +18,4 @@ private:
 	BattleState* state;
 	bool winner;
 };
-
 #endif

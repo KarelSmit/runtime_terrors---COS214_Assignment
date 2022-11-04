@@ -1,6 +1,5 @@
 #ifndef ARMY_H
 #define ARMY_H
-#include "General.h"
 
 class Army
 {
@@ -13,11 +12,12 @@ public:
 	void addSupply(int);
 	void updateStats();
 	int getDamage();
-	void takeDamage( int );
+	void takeDamage(int);
 	void heal();
 	void reset();
+
 private:
-	//Battalion* atkForce,medicForce,supplyChain;
+	// Battalion* atkForce,medicForce,supplyChain;
 	int totalDmg;
 	int totalHP;
 	int extraMoves;
