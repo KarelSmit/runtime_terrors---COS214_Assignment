@@ -9,7 +9,7 @@ class Medic : public FootUnit{
     private: 
     int RP; 
     string name;
-    public: 
+    public:
     Medic();
     Medic(int, int);
     Medic(string, int, int );
