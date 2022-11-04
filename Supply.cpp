@@ -1,5 +1,6 @@
 #include "Supply.h"
 #include "SupplyTruckFactory.h"
+#include <string>
 Supply::Supply(int HP,string name) : TransportUnit(HP) {
     SupplyTruckFactory* newVehicle = new SupplyTruckFactory(); 
     supplyTruck = newVehicle->createVehicles(); 
