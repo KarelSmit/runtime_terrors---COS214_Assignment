@@ -9,6 +9,7 @@ class Medic : public FootUnit{
     Medic(int, int); 
     virtual ~Medic();
     int getRP();
+    void print();
     //  ***** need to include a =operator method *****, i%
     Medic& operator=(const Medic& m);
     bool operator==(const Medic& m);
