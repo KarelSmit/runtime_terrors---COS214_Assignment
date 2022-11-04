@@ -20,6 +20,5 @@ class Medic : public FootUnit{
     Medic& operator=(const Medic& m);
     bool operator==(const Medic& m);
     friend std::ostream& operator<<(std::ostream& out, const Medic& m);
-
 };
 #endif

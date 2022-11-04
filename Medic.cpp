@@ -4,6 +4,7 @@ Medic::Medic(int HP, int RP): FootUnit(HP) {
 }
 
 Medic::Medic(string name, int HP, int RP): FootUnit(HP) {
+    name = "M-" + name;
     this->name = name;
     this->RP = RP;
 }

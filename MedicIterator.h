@@ -14,6 +14,7 @@
     friend class MedicUnit<T>;
     public:
       MedicIterator();
+      MedicIterator<T> prev();
       MedicIterator<T> next();
       MedicIterator<T> curr();
 

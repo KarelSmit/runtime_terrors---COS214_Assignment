@@ -4,10 +4,11 @@
 #include "Vehicle.h"
 class Supply : public TransportUnit {
     private:
-    Vehicle* supplyTruck;
+        Vehicle* supplyTruck;
+        string name;
     public: 
-    Supply(int); 
-    virtual ~Supply();
-    Vehicle* getSupplyTruck();
+       Supply(int,string);
+       virtual ~Supply();
+       Vehicle* getSupplyTruck();
 }; 
 #endif

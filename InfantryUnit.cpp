@@ -2,16 +2,16 @@
 #define _QUEUE_C
 
     #include "Node.h"
-    #include "MedicUnit.h"
-    #include "MedicIterator.h"
+    #include "InfantryUnit.h"
+    #include "InfantryIterator.h"
 
     template <typename T>
-    MedicUnit<T>::MedicUnit(){
+    InfantryUnit<T>::InfantryUnit(){
         head = 0;
     }
     
     template <typename T>
-    void MedicUnit<T>::enqueue(T e){
+    void InfantryUnit<T>::enqueue(T e){
         Node<T>* n = new Node<T>();
         n->element = e;
         if (isEmpty()) {
@@ -27,7 +27,7 @@
     }
     
     template <typename T>
-    T MedicUnit<T>::dequeue(){
+    T InfantryUnit<T>::dequeue(){
         if (isEmpty())
             return 0;
         else if (head->previous == head) {
@@ -43,23 +43,23 @@
     }
     
     template <typename T>
-    bool MedicUnit<T>::isEmpty(){
+    bool InfantryUnit<T>::isEmpty(){
         return head == 0;
     }
     
     template <typename T>
-    MedicIterator<T> MedicUnit<T>::begin(){
-        return MedicIterator<T> (*this, head);
+    InfantryIterator<T> InfantryUnit<T>::begin(){
+        return InfantryIterator<T> (*this, head);
     }
 
     template <typename T>
-    MedicIterator<T> MedicUnit<T>::end(){
-        return MedicIterator<T> (*this, head->previous);
+    InfantryIterator<T> InfantryUnit<T>::end(){
+        return InfantryIterator<T> (*this, head->previous);
     }
-
 
     template<typename T>
-    MedicIterator<T> MedicUnit<T>::first(){
-       return begin();
+    InfantryIterator<T> InfantryUnit<T>::first(){
+      return begin();
     }
+   
 #endif

@@ -1,13 +1,12 @@
 #ifndef TRANSPORTUNIT_H
 #define TRANSPORTUNIT_H
-#include "Battalions.h"
-#include <string>
-class TransportUnit : public Battalion {
+class TransportUnit {
+    protected: 
+    int HP; 
     public:
-        TransportUnit();
+    TransportUnit(int); 
     virtual ~TransportUnit();
     int getHP();
-    string getName();
+    
 };
 #endif
-

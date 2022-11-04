@@ -1,17 +1,17 @@
-#ifndef _QUEUE_C
-#define _QUEUE_C
+#ifndef _SUPPLYUNIT_C
+#define _SUPPLYUNIT_C
 
     #include "Node.h"
-    #include "MedicUnit.h"
-    #include "MedicIterator.h"
+    #include "SupplyUnit.h"
+    #include "SupplyIterator.h"
 
     template <typename T>
-    MedicUnit<T>::MedicUnit(){
+    SupplyUnit<T>::SupplyUnit(){
         head = 0;
     }
     
     template <typename T>
-    void MedicUnit<T>::enqueue(T e){
+    void SupplyUnit<T>::enqueue(T e){
         Node<T>* n = new Node<T>();
         n->element = e;
         if (isEmpty()) {
@@ -27,7 +27,7 @@
     }
     
     template <typename T>
-    T MedicUnit<T>::dequeue(){
+    T SupplyUnit<T>::dequeue(){
         if (isEmpty())
             return 0;
         else if (head->previous == head) {
@@ -43,23 +43,23 @@
     }
     
     template <typename T>
-    bool MedicUnit<T>::isEmpty(){
+    bool SupplyUnit<T>::isEmpty(){
         return head == 0;
     }
     
     template <typename T>
-    MedicIterator<T> MedicUnit<T>::begin(){
-        return MedicIterator<T> (*this, head);
+    SupplyIterator<T> SupplyUnit<T>::begin(){
+        return SupplyIterator<T> (*this, head);
     }
 
     template <typename T>
-    MedicIterator<T> MedicUnit<T>::end(){
-        return MedicIterator<T> (*this, head->previous);
+    SupplyIterator<T> SupplyUnit<T>::end(){
+        return SupplyIterator<T> (*this, head->previous);
     }
-
 
     template<typename T>
-    MedicIterator<T> MedicUnit<T>::first(){
-       return begin();
+    SupplyIterator<T> SupplyUnit<T>::first(){
+      return begin();
     }
+   
 #endif
