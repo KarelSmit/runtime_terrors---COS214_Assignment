@@ -14,14 +14,12 @@
     friend class MedicUnit<T>;
     public:
       MedicIterator();
+      MedicIterator<T> next();
+      MedicIterator<T> curr();
+
       T& operator*();
       MedicIterator<T> operator++();
       bool operator==(const MedicIterator<T>&) const;
-MedicIterator<T> MedicIterator<T>::next()
-MedicIterator<T> MedicIterator<T>::first(){
-
-
-
     protected:
       MedicIterator(const MedicUnit<T>&, Node<T>*);
       Node<T>* head;
