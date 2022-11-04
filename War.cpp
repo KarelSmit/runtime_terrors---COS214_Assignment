@@ -2,6 +2,8 @@
 #include <string>
 #include <iostream>
 
+War* War::warInstance = new War();
+
 War *War::startWar()
 {
 	if (warInstance == 0)
@@ -13,7 +15,6 @@ War *War::startWar()
 
 War::War()
 {
-	warInstance = 0;
 	winner = false;
 	score = 0;
 	battleHistory = new int[5];

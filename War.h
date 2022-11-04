@@ -5,13 +5,13 @@
 class War
 {
 public:
-	War* startWar();
+	static War* startWar();
 	void simulate();
 protected:
 	War();
 	~War();
 private:
-	War *warInstance;
+	static War *warInstance;
 	bool winner;
 	int score;
 	Country* sideA;
