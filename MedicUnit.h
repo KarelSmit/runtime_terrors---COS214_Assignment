@@ -13,6 +13,7 @@
             T dequeue();
             bool isEmpty();
             MedicIterator<T> begin();
+            MedicIterator<T> first();
             MedicIterator<T> end();
         private:
             Node<T>* head;
