@@ -3,10 +3,10 @@
 #include "FootUnit.h"
 class Medic : public FootUnit{
     private: 
-    int rejuvenationPower; 
+    int RP; 
     public: 
     Medic(int, int); 
     virtual ~Medic();
-    int getrejuvenationPower();
+    int getRP();
 };
 #endif

@@ -1,12 +1,12 @@
 #include "Medic.h"
-Medic::Medic(int HP, int rejuventationPower): FootUnit(HP) {
-    this->rejuvenationPower = rejuventationPower;
+Medic::Medic(int HP, int RP): FootUnit(HP) {
+    this->RP = RP;
 }
 
 Medic::~Medic(){
     
 }
 
-int Medic::getrejuvenationPower() {
-    this-> rejuvenationPower;
+int Medic::getRP() {
+    this-> RP;
 }
