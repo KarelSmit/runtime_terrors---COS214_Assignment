@@ -7,12 +7,12 @@
 using namespace std;
 class Medic : public FootUnit{
     private: 
-    int RP; 
-    string name;
+        int RP;
+        string name;
     public:
-    Medic();
-    Medic(int, int);
-    Medic(string, int, int );
+        Medic();
+        Medic(int, int);
+        Medic(string, int, int );
 
     virtual ~Medic();
     int getRP();
@@ -22,3 +22,7 @@ class Medic : public FootUnit{
     friend std::ostream& operator<<(std::ostream& out, const Medic& m);
 };
 #endif
+
+
+
+

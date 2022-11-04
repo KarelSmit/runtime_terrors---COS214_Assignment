@@ -3,20 +3,20 @@
 
     #include "Node.h"
     #include "MedicIterator.h"
-    
-    template <typename T>
-    class MedicUnit{
-        friend class MedicIterator<T>;
-        public:
-            MedicUnit();
-            void enqueue(T e);
-            T dequeue();
-            bool isEmpty();
-            MedicIterator<T> begin();
-            MedicIterator<T> first();
-            MedicIterator<T> end();
+    #include "Battalion.h"
+    #include "Medic.h"
+
+    class MedicUnit : public Battalion{
+        friend class MedicIterator<Medic>;
+//        public:
+//            MedicUnit();
+// linked list of medics
+
+//            MedicIterator<T> begin();
+//            MedicIterator<T> first();
+//            MedicIterator<T> end();
         private:
-            Node<T>* head;
+            Node<Medic>* head;
     };
 
     #include "MedicUnit.cpp"

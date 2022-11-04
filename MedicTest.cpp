@@ -13,7 +13,7 @@ int main(){
     MedicUnit<int>* myQueue = new MedicUnit<int>();//change to type medic
 
     //Medic *m = new Medic(10,20,10);
-    MedicUnit<Medic>* myQueueMedics = new MedicUnit<Medic>();//change to type medic
+    Battalion<Medic>* myQueueMedics = new Battalion<Medic>();//change to type medic
     Medic* m = new Medic("10",20,10);
     Medic* n = new Medic("20",30,20);
     Medic* o = new Medic("30",40,30);
@@ -40,8 +40,8 @@ int main(){
         cout<<*i<<"\t";
     cout<<*i<<"\t";
 
-    Battalion* b = new Battalion;
-    b->enqueueMedic(*myQueueMedics);
-    b->getHP();
+//    Battalion* b = new Battalion;
+//    b->enqueue(*myQueueMedics);
+
     return 0;
 }
