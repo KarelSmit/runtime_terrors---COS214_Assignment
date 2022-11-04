@@ -3,6 +3,11 @@ Medic::Medic(int HP, int RP): FootUnit(HP) {
     this->RP = RP;
 }
 
+Medic::Medic(string name, int HP, int RP): FootUnit(HP) {
+    this->name = name;
+    this->RP = RP;
+}
+
 Medic::~Medic(){
     
 }
