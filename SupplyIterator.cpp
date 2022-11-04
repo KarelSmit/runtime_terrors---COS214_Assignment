@@ -1,5 +1,39 @@
-#ifndef _MedicIterator_C
-#define _MedicIterator_C
+#include "SupplyIterator.h"
+
+SupplyIterator::SupplyIterator()
+{
+	head = 0;
+	current = 0;
+}
+
+Supply* SupplyIterator::operator*()
+{
+	return current->element;
+}
+
+SupplyIterator SupplyIterator::operator++()
+{
+	if (this != nullptr)
+	{
+		this->current = this->current->next;
+	}
+	return *this;
+}
+
+bool SupplyIterator::operator==(const SupplyIterator &rhs) const
+{
+	return current == rhs.current;
+}
+
+SupplyIterator::SupplyIterator( Node<Supply*>* h, Node<Supply*>* p ){
+	head = h;
+	current = p;
+}
+
+
+
+/* #ifndef _SupplyIterator_C
+#define _SupplyIterator_C
 
   #include <iostream>
   using namespace std;
@@ -30,4 +64,4 @@
       return current == rhs.current;
   }
   
-#endif
+#endif */

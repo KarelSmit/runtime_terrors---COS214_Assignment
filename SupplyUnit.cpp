@@ -1,4 +1,87 @@
-#ifndef _SUPPLYUNIT_C
+#include "SupplyUnit.h"
+#include "Supply.cpp"
+#include "SupplyIterator.cpp"
+
+#include <iostream>
+
+SupplyUnit::SupplyUnit()
+{
+	totHP = 0;
+	totRP = 0;
+	int hp = 10;
+	int rp = 15;
+	int SupplyCount = 5;
+	Node<Supply*> *n = new Node<Supply*>();
+	n->element = new Supply(hp, rp);
+	head = n;	
+	for (int i = 0; i < SupplyCount - 1; i++)
+	{
+		n = new Node<Supply*>();
+		n->element = new Supply(hp, rp);
+		n->next = head;
+		head = n;
+	}
+	setVal();
+}
+
+SupplyUnit::~SupplyUnit()
+{
+	Node<Supply*> *n = head;
+	while (n != nullptr)
+	{
+		Node<Supply*> *temp = n;
+		n = n->next;
+		delete temp->element;
+		delete temp;
+	}
+	head = nullptr;
+}
+
+void SupplyUnit::setVal()
+{
+	SupplyIterator n = begin();
+	SupplyIterator last = end();
+	do
+	{
+		totHP += (*n)->getHP();
+		totRP += (*n)->getRP();
+		++n;
+	} while (!(n == last));
+}
+
+int SupplyUnit::getHP()
+{
+	return totHP;
+}
+
+int SupplyUnit::getDmg()
+{
+	return 0;
+}
+
+int SupplyUnit::getRP()
+{
+	return totRP;
+}
+
+SupplyIterator SupplyUnit::begin()
+{
+	return SupplyIterator(head, head);
+}
+
+SupplyIterator SupplyUnit::end()
+{
+	Node<Supply*> *n = head;
+	while (n->next != nullptr)
+	{
+		n = n->next;
+	}
+	return SupplyIterator(head, n);
+}
+
+
+
+/*# ifndef _SUPPLYUNIT_C
 #define _SUPPLYUNIT_C
 
     #include "Node.h"
@@ -63,3 +146,4 @@
     }
    
 #endif
+ */
