@@ -2,6 +2,7 @@
 #define MEDIC_H
 #include "FootUnit.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 class Medic : public FootUnit{
