@@ -7,12 +7,11 @@ Medic::Medic(string name, int HP, int RP): FootUnit(HP) {
     this->name = name;
     this->RP = RP;
 }
+Medic::Medic(){
 
-Medic::~Medic(){
-    
 }
 
-Medic::Medic(){
+Medic::~Medic(){
     
 }
 
