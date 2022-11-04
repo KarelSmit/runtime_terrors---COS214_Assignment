@@ -13,36 +13,19 @@
   template <typename T>
   MedicIterator<T>::MedicIterator(const MedicUnit<T>& source, Node<T>* p) : head(source.head), current(p){}
 
+template <typename T>
+MedicIterator<T> MedicIterator<T>::next(){
+    this->current = this->current->next;
+    return *this;
+}
+
+template<typename T>
+MedicIterator<T> MedicIterator<T>::curr(){
+      return *this;
+}
   template <typename T>
   T& MedicIterator<T>::operator*(){
       return current->element;
-  }
-   template<typename T>
-  MedicIterator<T> MedicIterator<T>::next(){
-      if (this != nullptr)
-          this->current - this->current->next;  
-          return *this->current->next;
-      else
-        return null;
-  }
-
-    template<typename T>
-    MedicIterator<T> MedicIterator<T>::first(){
-      return head;
-    }
-
-    template<typename T>
-   bool MedicIterator<T>::isDone(){
-      return this == nullptr;
-  }
-
-
-   template<typename T>
-   MedicIterator<T> MedicIterator<T>::current(){
-      if (this != nullptr)
-          return *this->current;
-      else
-        return null;
   }
 
   template<typename T>
