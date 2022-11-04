@@ -29,8 +29,6 @@ void DuringBattle::handle(){
 		context->getB()->makeMove(enemy,context->getA());
 		moves--;
 	}
-	
-
 	changeState();
 }
 
