@@ -10,7 +10,6 @@ class Medic : public FootUnit{
     virtual ~Medic();
     int getRP();
     void print();
-    //  ***** need to include a =operator method *****, i%
     Medic& operator=(const Medic& m);
     bool operator==(const Medic& m);
     friend std::ostream& operator<<(std::ostream& out, const Medic& m);
