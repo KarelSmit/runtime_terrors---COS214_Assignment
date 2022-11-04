@@ -17,6 +17,33 @@
   T& MedicIterator<T>::operator*(){
       return current->element;
   }
+   template<typename T>
+  MedicIterator<T> MedicIterator<T>::next(){
+      if (this != nullptr)
+          this->current - this->current->next;  
+          return *this->current->next;
+      else
+        return null;
+  }
+
+    template<typename T>
+    MedicIterator<T> MedicIterator<T>::first(){
+      return head;
+    }
+
+    template<typename T>
+   bool MedicIterator<T>::isDone(){
+      return this == nullptr;
+  }
+
+
+   template<typename T>
+   MedicIterator<T> MedicIterator<T>::current(){
+      if (this != nullptr)
+          return *this->current;
+      else
+        return null;
+  }
 
   template<typename T>
   MedicIterator<T> MedicIterator<T>::operator++(){
