@@ -2,11 +2,15 @@
 #define MEDIC_H
 #include "FootUnit.h"
 #include <iostream>
+
+using namespace std;
 class Medic : public FootUnit{
     private: 
     int RP; 
+    string name;
     public: 
-    Medic(int, int); 
+    Medic(int, int);
+
     virtual ~Medic();
     int getRP();
     void print();
