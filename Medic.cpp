@@ -8,7 +8,7 @@ Medic::~Medic(){
 }
 
 int Medic::getRP() {
-    return this-> RP;
+    return RP;
 }
 
 void Medic::print() {
