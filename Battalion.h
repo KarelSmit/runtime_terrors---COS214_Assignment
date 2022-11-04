@@ -1,21 +1,27 @@
 #ifndef _BATTALION_H
 #define _BATTALION_H
 
-#include "Node.h"
+/* #include "Node.h"
 #include "Battalion.h"
 #include "Medic.h"
-#include "MedicUnit.h"
+#include "MedicUnit.h" */
 
-template <typename T>
+//template <typename T>
 class Battalion{
     ////friend class MedicIterator<T>;
 public:
     Battalion();
-    void enqueue(T e);
+	~Battalion();
+	virtual int getHP() = 0;
+	virtual int getDmg() = 0;
+	virtual int getRP() = 0;
+
+	Battalion* next;
+    //void enqueue(T e);
 //    void enqueueTank(T e);
 //    void enqueueSupply(T e);
 //    void enqueueInfantry(T e);
-     T dequeue();
+     //T dequeue();
 //    T dequeueTank();
 //    T dequeueSupply();
 //    T dequeueInfantry();
@@ -27,15 +33,14 @@ public:
 //    BattalionIterator<T> first();
 //    BattalionIterator<T> end();
 
-    bool isEmpty(); // check if anything has anything
-private:
-    Node<T>* head;
+    //bool isEmpty(); // check if anything has anything
+//private:
 //    Node<T>* tankHead;
 //    Node<T>* supplyHead;
 //    Node<T>* infantryHead;
 
 };
 
-#include "MedicUnit.cpp"
+//#include "MedicUnit.cpp"
 
 #endif

@@ -1,13 +1,18 @@
-#ifndef _BETALLION_C
-#define _BETALLION_C
+//#ifndef _BETALLION_C
+//#define _BETALLION_C
 
-#include "Node.h"
+//#include "Node.h"
 #include "Battalion.h"
-#include "BattalionIterator.h"
+//#include "BattalionIterator.h"
 
+Battalion::Battalion(){
+	next = nullptr;
+}
 
+Battalion::~Battalion(){
+}
 
-Battalion<T>::Battalion(){
+/* Battalion<T>::Battalion(){
    head = 0;
 }
 
@@ -61,7 +66,7 @@ BetallionIterator<T> Betallion<T>::end(){
 template<typename T>
 BetallionIterator<T> BetallionUnit<T>::first(){
     return begin();
-}
+} */
 
 
-#endif
+//#endif

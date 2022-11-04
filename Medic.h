@@ -5,24 +5,22 @@
 #include <string>
 
 using namespace std;
-class Medic : public FootUnit{
-    private: 
-        int RP;
-        string name;
-    public:
-        Medic();
-        Medic(int, int);
-        Medic(string, int, int );
+class Medic : public FootUnit
+{
+private:
+	int RP;
+	string name;
 
-    virtual ~Medic();
-    int getRP();
-    void print();
-    Medic& operator=(const Medic& m);
-    bool operator==(const Medic& m);
-    friend std::ostream& operator<<(std::ostream& out, const Medic& m);
+public:
+	Medic();
+	Medic(int, int);
+	Medic(string, int, int);
+
+	virtual ~Medic();
+	int getRP();
+	void print();
+	Medic &operator=(const Medic &m);
+	bool operator==(const Medic &m);
+	friend std::ostream &operator<<(std::ostream &out, const Medic &m);
 };
 #endif
-
-
-
-

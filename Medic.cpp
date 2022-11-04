@@ -1,5 +1,7 @@
 #include "Medic.h"
+
 Medic::Medic(int HP, int RP): FootUnit(HP) {
+	this->name = "Medic";
     this->RP = RP;
 }
 
