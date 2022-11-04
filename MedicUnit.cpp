@@ -56,5 +56,12 @@
     MedicIterator<T> MedicUnit<T>::end(){
         return MedicIterator<T> (*this, head->previous);
     }
-   
+
+
+
+
+template<typename T>
+MedicIterator<T> MedicUnit<T>::first(){
+    return begin();
+}
 #endif
