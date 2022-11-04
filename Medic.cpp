@@ -11,17 +11,17 @@ int Medic::getRP() {
     this-> RP;
 }
 
-void Supply::print() {
+void Medic::print() {
     cout<<name<< "(" << hp << ":"<< rp<<")"<<endl;
 }
 
-Supply& Supply::operator=(const Supply& m) {
+Medic& Medic::operator=(const Medic& m) {
     this->rp = m.rp;
     this->hp = m.hp;
     this->name = m.name;
     return *this;
 }
-bool Supply::operator==(const Supply& m) {
+bool Medic::operator==(const Medic& m) {
     if  ((this->rp == m.rp) && (this->hp == m.hp) && (this->name == m.name))
         return true;
     else
