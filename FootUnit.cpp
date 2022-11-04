@@ -6,8 +6,7 @@ FootUnit::FootUnit(int HP){
 FootUnit::~FootUnit() { 
     
 }
-
-FootUnit::FootUnit(){
+FootUnit::FootUnit() {
 
 }
 
