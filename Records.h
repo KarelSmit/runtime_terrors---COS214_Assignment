@@ -41,7 +41,6 @@ public:
 
     void Backup()
     {
-        cout << "\nCaretaker: Saving Originator's state...\n";
         this->inteldivs.push_back(this->war->Save());
 
         checkTopScore();
@@ -58,7 +57,6 @@ public:
         }
         IntelDivision *memento = this->inteldivs.back();
         this->inteldivs.pop_back();
-        cout << "Caretaker: Restoring state to: " << memento->GetName() << "\n";
         try
         {
             this->war->Restore(memento);
@@ -81,12 +79,10 @@ public:
         }
         else
         {
-            cout << "Caretaker: Here's the list of mementos:\n";
             ifstream f("storage.txt");
 
             if (f.is_open())
                 cout << f.rdbuf();
-                cout << "END" << endl;
         }
 
         
