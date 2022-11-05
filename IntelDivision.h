@@ -12,36 +12,16 @@ private:
     string date_;
 
 public:
-    IntelDivision(User *u) : user(u)
-    {
-        this->user = new User(*u);
-        time_t now = time(0);
-        this->date_ = ctime(&now);
-    }
+    IntelDivision(User *u);
 
-    User *getUser()
-    {
-        return this->user;
-    }
+    User *getUser();
 
-    string GetName() const
-    {
-        return this->date_ + " / (" + this->user->getUserDetails() + ")";
-    }
+    string GetName() const;
 
-    string getDetails()
-    {
-        return user->getUserName() + ";" + to_string(user->getUserScore());
-    }
+    string getDetails();
 
-    string print()
-    {
-        return user->getUserName() + " achieved " + to_string(user->getUserScore());
-    }
+    string print();
 
-    string date() const
-    {
-        return this->date_;
-    }
+    string date() const;
 };
 #endif
