@@ -9,3 +9,7 @@ TankDriver::TankDriver(int HP, int Damage) : TransportUnit(HP) {
 TankDriver::~TankDriver(){
     tank->~Vehicle();
 }
+
+int TankDriver::getDamage() {
+    return this->Damage;
+}

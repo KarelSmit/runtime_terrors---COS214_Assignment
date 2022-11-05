@@ -8,8 +8,8 @@
 class Barracks {
     public:
     Barracks(); 
-    virtual FootUnit* createConcreteProductA() = 0; 
-    virtual TransportUnit* createConcreteProductB() = 0;
+    virtual FootUnit* createFootUnit() = 0; 
+    virtual TransportUnit* createTransportUnit() = 0;
     virtual ~Barracks();
 }; 
 #endif

@@ -12,14 +12,14 @@ class MedicIterator
 
 public:
 	MedicIterator();
-	Medic *operator*();
+	FootUnit *operator*();
 	MedicIterator operator++();
 	bool operator==(const MedicIterator &) const;
-	MedicIterator(Node<Medic *> *, Node<Medic *> *);
+	MedicIterator(Node<FootUnit *> *, Node<FootUnit *> *);
 
 protected:
-	Node<Medic *> *head;
-	Node<Medic *> *current;
+	Node<FootUnit *> *head;
+	Node<FootUnit *> *current;
 };
 
 #endif

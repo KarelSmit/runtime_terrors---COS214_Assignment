@@ -2,12 +2,15 @@
 #define TANKDRIVER_H
 #include "TransportUnit.h"
 #include "Vehicle.h"
-class TankDriver : public TransportUnit { 
-    private: 
-    int Damage; 
-    public:
-    TankDriver(int, int);
-    virtual ~TankDriver();
-    Vehicle* tank; 
+class TankDriver : public TransportUnit
+{
+private:
+	int Damage;
+
+public:
+	TankDriver(int, int);
+	virtual ~TankDriver();
+	Vehicle *tank;
+	virtual int getDamage();
 };
 #endif

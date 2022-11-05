@@ -1,23 +1,22 @@
 #include "SupplyUnit.h"
 #include "Supply.cpp"
 #include "SupplyIterator.cpp"
+#include "SupportBarracks.h"
 
 #include <iostream>
 
 SupplyUnit::SupplyUnit()
 {
 	totHP = 0;
-	totRP = 0;
-	int hp = 10;
-	int rp = 15;
+	SupportBarracks bootcamp = SupportBarracks();
 	int SupplyCount = 5;
-	Node<Supply*> *n = new Node<Supply*>();
-	n->element = new Supply(hp, rp);
+	Node<TransportUnit*> *n = new Node<TransportUnit*>();
+	n->element = bootcamp.createTransportUnit();
 	head = n;	
 	for (int i = 0; i < SupplyCount - 1; i++)
 	{
-		n = new Node<Supply*>();
-		n->element = new Supply(hp, rp);
+		n = new Node<TransportUnit*>();
+		n->element = bootcamp.createTransportUnit();
 		n->next = head;
 		head = n;
 	}
@@ -26,10 +25,10 @@ SupplyUnit::SupplyUnit()
 
 SupplyUnit::~SupplyUnit()
 {
-	Node<Supply*> *n = head;
+	Node<TransportUnit*> *n = head;
 	while (n != nullptr)
 	{
-		Node<Supply*> *temp = n;
+		Node<TransportUnit*> *temp = n;
 		n = n->next;
 		delete temp->element;
 		delete temp;
@@ -44,7 +43,6 @@ void SupplyUnit::setVal()
 	do
 	{
 		totHP += (*n)->getHP();
-		totRP += (*n)->getRP();
 		++n;
 	} while (!(n == last));
 }
@@ -61,7 +59,7 @@ int SupplyUnit::getDmg()
 
 int SupplyUnit::getRP()
 {
-	return totRP;
+	return 0;
 }
 
 SupplyIterator SupplyUnit::begin()
@@ -71,7 +69,7 @@ SupplyIterator SupplyUnit::begin()
 
 SupplyIterator SupplyUnit::end()
 {
-	Node<Supply*> *n = head;
+	Node<TransportUnit*> *n = head;
 	while (n->next != nullptr)
 	{
 		n = n->next;

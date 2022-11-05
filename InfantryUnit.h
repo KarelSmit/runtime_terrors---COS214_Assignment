@@ -20,7 +20,7 @@ public:
 	InfantryIterator end();
 	void setVal();
 
-	Node<Infantry *> *head;
+	Node<FootUnit *> *head;
 
 private:
 	int totHP;

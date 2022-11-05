@@ -1,6 +1,7 @@
 #include "CombatBarracks.h"
 #include "TankDriver.h"
 #include "Infantry.h"
+
 CombatBarracks::CombatBarracks() {
 
 }
