@@ -1,5 +1,7 @@
 #include "War.h"
 #include "Battle.cpp"
+#include "Records.h"
+#include "User.h"
 #include <string>
 #include <iostream>
 using namespace std;
@@ -50,7 +52,7 @@ void War::simulate()
 		}
 		delete bat;
 	}
-	user->setScore(score);
+	user->setUserScore(score);
 	int count = 0;
 	for (int i = 0; i < 3; i++)
 	{
