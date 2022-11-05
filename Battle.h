@@ -12,10 +12,11 @@ public:
 	void setState(BattleState*);
 	Country* getA();
 	Country* getB();
+	bool winner;
+
 private:
 	Country *sideA;
 	Country *sideB;
 	BattleState* state;
-	bool winner;
 };
 #endif

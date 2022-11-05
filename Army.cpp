@@ -94,13 +94,15 @@ void Army::updateStats(){
 		totalHP += n->getHP();
 		n = n->next;
 	}
-
+	int em = 0;
 	n = supplyChain;
 	while (n != nullptr)
 	{
+		em++;
 		totalHP += n->getHP();
 		n = n->next;
 	}
+	extraMoves = em;
 }
 
 int Army::getDamage(){
@@ -166,4 +168,8 @@ void Army::reset(){
 	totalDmg = 0;
 	totalHP - 0;
 	extraMoves = 0;
+}
+
+int Army::getMoves(){
+	return extraMoves;
 }

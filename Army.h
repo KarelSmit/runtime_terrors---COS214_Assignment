@@ -16,6 +16,7 @@ public:
 	void takeDamage(int);
 	void heal();
 	void reset();
+	int getMoves();
 
 private:
 	Battalion* atkForce;

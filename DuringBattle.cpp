@@ -29,6 +29,21 @@ void DuringBattle::handle(){
 		context->getB()->makeMove(enemy,context->getA());
 		moves--;
 	}
+	moves = context->getA()->getArmy()->getMoves();
+	while( moves > 0 )
+	{
+		std::cout << "You have an extra move!\n";
+		std::cout << "Choose your move:\n1.Attack\n2.Defend\n->";
+		int choice;
+		std::cin >> choice;
+		if ( choice == 1 || choice == 2 ){
+			context->getA()->makeMove(choice,context->getB());
+		}else{
+			std::cout << "\n\nInvalid input. Please select a valid strategy.\n\n";
+			continue;
+		}
+		moves--;
+	}
 	changeState();
 }
 

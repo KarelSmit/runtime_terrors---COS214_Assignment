@@ -25,36 +25,35 @@ void PreBattle::handle()
 		switch (choice)
 		{
 		case 1:
-			context->getA()->getArmy()->addInfantry(2);
 			context->getA()->getArmy()->addTank(2);
+			context->getA()->getArmy()->addInfantry(2);
 			context->getA()->getArmy()->addMedic(2);
-			// context->getA()->getArmy()->addSupply(1);
 			accept = true;
 			break;
 		case 2:
-			context->getA()->getArmy()->addInfantry(2);
 			context->getA()->getArmy()->addTank(2);
+			context->getA()->getArmy()->addInfantry(2);
 			context->getA()->getArmy()->addMedic(1);
 			context->getA()->getArmy()->addSupply(1);
 			accept = true;
 			break;
 		case 3:
-			context->getA()->getArmy()->addInfantry(1);
 			context->getA()->getArmy()->addTank(2);
+			context->getA()->getArmy()->addInfantry(1);
 			context->getA()->getArmy()->addMedic(2);
 			context->getA()->getArmy()->addSupply(1);
 			accept = true;
 			break;
 		case 4:
-			context->getA()->getArmy()->addInfantry(2);
 			context->getA()->getArmy()->addTank(1);
+			context->getA()->getArmy()->addInfantry(2);
 			context->getA()->getArmy()->addMedic(2);
 			context->getA()->getArmy()->addSupply(1);
 			accept = true;
 			break;
 		case 5:
-			context->getA()->getArmy()->addInfantry(1);
 			context->getA()->getArmy()->addTank(1);
+			context->getA()->getArmy()->addInfantry(1);
 			context->getA()->getArmy()->addMedic(2);
 			context->getA()->getArmy()->addSupply(2);
 			accept = true;
