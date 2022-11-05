@@ -1,3 +1,4 @@
+
 #include "Infantry.h"
 #include "SpecialSkill.h"
 #include <cstdlib>

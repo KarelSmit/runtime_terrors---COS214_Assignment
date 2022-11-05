@@ -1,3 +1,4 @@
+
 #include "Supply.h"
 #include "SupplyTruckFactory.h"
 Supply::Supply(int HP) : TransportUnit(HP) {

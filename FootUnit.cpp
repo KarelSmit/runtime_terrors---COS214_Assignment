@@ -1,3 +1,4 @@
+
 #include "FootUnit.h"
 FootUnit::FootUnit(int HP){
     this->HP = HP;    

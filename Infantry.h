@@ -1,3 +1,4 @@
+
 #ifndef INFANTRY_H
 #define INFANTRY_H
 #include "FootUnit.h"
