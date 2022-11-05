@@ -59,6 +59,8 @@ void Records::ShowHistory() const
         if (f.is_open())
             cout << f.rdbuf();
     }
+
+    cout << endl;
 }
 
 void Records::loadTopScores()
@@ -101,6 +103,7 @@ void Records::showTopThree()
         if (top3[i] != NULL)
             cout << top3[i]->print() << endl;
     }
+    cout << endl;
 }
 
 void Records::checkTopScore()

@@ -24,7 +24,7 @@
 #include "SpecialSkill.cpp"
 #include "Sniper.cpp"
 #include "Stealth.cpp"
-#include "Records.h"
+#include "Records.cpp"
 #include <iostream>
 
 using namespace std;
