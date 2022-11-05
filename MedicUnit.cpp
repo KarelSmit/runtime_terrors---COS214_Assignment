@@ -1,6 +1,3 @@
-//#ifndef _MEDICUNIT_C
-//#define _MEDICUNIT_C
-
 #include "MedicUnit.h"
 #include "Medic.cpp"
 #include "MedicIterator.cpp"
