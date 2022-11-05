@@ -5,6 +5,6 @@ class TankFactory : public VehicleFactory {
     public: 
     TankFactory(); 
     Vehicle* createVehicles(); 
-    virtual TankFactory(); 
+    virtual ~TankFactory(); 
 };
 #endif

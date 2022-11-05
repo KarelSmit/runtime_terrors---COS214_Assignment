@@ -1,16 +1,19 @@
+
 #include "Infantry.h"
-#include <string>
+#include "SpecialSkill.h"
+#include <cstdlib>
 Infantry::Infantry(int HP, int Damage): FootUnit(HP) {
-	this->name = "Infantry";
     this->Damage = Damage;
-}
-
-Infantry::Infantry(string name, int HP, int Damage): FootUnit(name, HP) {
-    this->Damage = Damage;
-}
-
-Infantry::Infantry(){
-
+    srand(1232);  
+    int random = (rand() % 10) + 1;
+    if (random == 2)
+    {
+        SpecialSkill skill(this,2);
+        skill.addSkill();  
+    } else if (random == 1) {
+        SpecialSkill skill(this,1);
+        skill.addSkill(); 
+    } 
 }
 
 Infantry::~Infantry(){
@@ -21,24 +24,10 @@ int Infantry::getDamage() {
     return this->Damage; 
 }
 
-void Infantry::print() {
-    cout <<name<<  "(" << HP << ":"<< Damage<<")"<<endl;
+void Infantry::setDamage(int damage) {
+    this->Damage = damage;
 }
 
-Infantry& Infantry::operator=(const Infantry& m) {
-    this->Damage = m.Damage;
-    this->HP = m.HP;
-    this->name = m.name;
-    return *this;
-}
-bool Infantry::operator==(const Infantry& m) {
-    if  ((this->Damage == m.Damage) && (this->HP == m.HP) && (this->name == m.name))
-        return true;
-    else
-        return false;
-}
-
-std::ostream& operator<<(std::ostream& out, const Infantry& m){
-    out << m.name<< "(" << m.HP << ":"<<m.Damage<<")";
-    return out;
+void Infantry::setHP(int HP) {
+    this->HP = HP;
 }

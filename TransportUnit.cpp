@@ -1,22 +1,13 @@
+
 #include "TransportUnit.h"
-#include <string>
-
-TransportUnit::TransportUnit(int HP)
-{
-	this->HP = HP;
+TransportUnit::TransportUnit(int HP) {
+    this->HP = HP;
 }
 
-TransportUnit::~TransportUnit()
-{
-	delete transport;
+TransportUnit::~TransportUnit() {
+    
 }
 
-int TransportUnit::getHP()
-{
-	return this->HP;
-}
-
-string TransportUnit::getName()
-{
-	return this->name;
+int TransportUnit::getHP() {
+    return this->HP; 
 }

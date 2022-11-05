@@ -10,6 +10,6 @@ class Barracks {
     Barracks(); 
     virtual FootUnit* createConcreteProductA() = 0; 
     virtual TransportUnit* createConcreteProductB() = 0;
-    virtual ~Barracks():
+    virtual ~Barracks();
 }; 
 #endif

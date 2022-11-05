@@ -12,3 +12,4 @@ FootUnit* SupportBarracks::createFootUnit() {
 TransportUnit* SupportBarracks::createTransportUnit() {
     return new Supply(5); // HP 
 }
+

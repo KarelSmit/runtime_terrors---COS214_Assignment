@@ -1,20 +1,12 @@
+
 #ifndef FOOTUNIT_H
 #define FOOTUNIT_H
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 class FootUnit {
     protected: 
-    int HP;
-    string name;
+    int HP; 
     public:
-    FootUnit();
-    FootUnit(int);
-    FootUnit(string, int);
+    FootUnit(int); 
     ~FootUnit();
-    int getHP();
-    string getName();
+    int getHP(); 
 };
 #endif
