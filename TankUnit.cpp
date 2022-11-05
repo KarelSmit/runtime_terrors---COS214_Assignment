@@ -1,6 +1,8 @@
 #include "TankUnit.h"
 #include "Tank.cpp"
 #include "TankIterator.cpp"
+#include "CombatBarracks.h"
+
 
 #include <iostream>
 
@@ -8,16 +10,15 @@ TankUnit::TankUnit()
 {
 	totHP = 0;
 	totDmg = 0;
-	int hp = 10;
-	int rp = 15;
+	CombatBarracks bootcamp = CombatBarracks();
 	int TankCount = 5;
 	Node<Tank*> *n = new Node<Tank*>();
-	n->element = new Tank(hp, rp);
+	n->element = bootcamp.createTransportUnit();
 	head = n;	
 	for (int i = 0; i < TankCount - 1; i++)
 	{
 		n = new Node<Tank*>();
-		n->element = new Tank(hp, rp);
+		n->element = bootcamp.createTransportUnit();
 		n->next = head;
 		head = n;
 	}

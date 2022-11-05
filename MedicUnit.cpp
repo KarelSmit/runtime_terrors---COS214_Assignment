@@ -4,6 +4,7 @@
 #include "MedicUnit.h"
 #include "Medic.cpp"
 #include "MedicIterator.cpp"
+#include "SupportBarracks.h"
 
 #include <iostream>
 
@@ -11,16 +12,15 @@ MedicUnit::MedicUnit()
 {
 	totHP = 0;
 	totRP = 0;
-	int hp = 10;
-	int rp = 15;
+	SupportBarracks bootcamp = SupportBarracks();
 	int medicCount = 5;
 	Node<Medic*> *n = new Node<Medic*>();
-	n->element = new Medic(hp, rp);
+	n->element = bootcamp.createFootUnit();
 	head = n;	
 	for (int i = 0; i < medicCount - 1; i++)
 	{
 		n = new Node<Medic*>();
-		n->element = new Medic(hp, rp);
+		n->element = bootcamp.createFootUnit();
 		n->next = head;
 		head = n;
 	}
@@ -47,7 +47,7 @@ void MedicUnit::setVal()
 	do
 	{
 		totHP += (*n)->getHP();
-		totRP += (*n)->getRP();
+		totRP += (*n)->getrejuvenationPower();
 		++n;
 	} while (!(n == last));
 }

@@ -1,6 +1,7 @@
 #include "SupplyUnit.h"
 #include "Supply.cpp"
 #include "SupplyIterator.cpp"
+#include "SupportBarracks.h"
 
 #include <iostream>
 
@@ -8,16 +9,15 @@ SupplyUnit::SupplyUnit()
 {
 	totHP = 0;
 	totRP = 0;
-	int hp = 10;
-	int rp = 15;
+	SupportBarracks bootcamp = SupportBarracks();
 	int SupplyCount = 5;
 	Node<Supply*> *n = new Node<Supply*>();
-	n->element = new Supply(hp, rp);
+	n->element = bootcamp.createTransportUnit();
 	head = n;	
 	for (int i = 0; i < SupplyCount - 1; i++)
 	{
 		n = new Node<Supply*>();
-		n->element = new Supply(hp, rp);
+		n->element = bootcamp.createTransportUnit();
 		n->next = head;
 		head = n;
 	}

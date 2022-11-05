@@ -2,6 +2,7 @@
 #include "InfantryUnit.h"
 #include "Infantry.cpp"
 #include "InfantryIterator.cpp"
+#include "CombatBarracks.h"
 
 #include <iostream>
 
@@ -9,16 +10,16 @@ InfantryUnit::InfantryUnit()
 {
 	totHP = 0;
 	totDmg = 0;
-	int hp = 10;
-	int dmg = 20;
+
+	CombatBarracks bootcamp = CombatBarracks();
 	int InfantryCount = 5;
-	Node<Infantry*> *n = new Node<Infantry*>();
-	n->element = new Infantry(hp, dmg);
-	head = n;	
+	Node<Infantry *> *n = new Node<Infantry *>();
+	n->element = bootcamp.createFootUnit();
+	head = n;
 	for (int i = 0; i < InfantryCount - 1; i++)
 	{
-		n = new Node<Infantry*>();
-		n->element = new Infantry(hp, dmg);
+		n = new Node<Infantry *>();
+		n->element = bootcamp.createFootUnit();
 		n->next = head;
 		head = n;
 	}
@@ -27,10 +28,10 @@ InfantryUnit::InfantryUnit()
 
 InfantryUnit::~InfantryUnit()
 {
-	Node<Infantry*> *n = head;
+	Node<Infantry *> *n = head;
 	while (n != nullptr)
 	{
-		Node<Infantry*> *temp = n;
+		Node<Infantry *> *temp = n;
 		n = n->next;
 		delete temp->element;
 		delete temp;
@@ -72,75 +73,10 @@ InfantryIterator InfantryUnit::begin()
 
 InfantryIterator InfantryUnit::end()
 {
-	Node<Infantry*> *n = head;
+	Node<Infantry *> *n = head;
 	while (n->next != nullptr)
 	{
 		n = n->next;
 	}
 	return InfantryIterator(head, n);
 }
-/* #ifndef _QUEUE_C
-#define _QUEUE_C
-
-    #include "Node.h"
-    #include "InfantryUnit.h"
-    #include "InfantryIterator.h"
-
-    template <typename T>
-    InfantryUnit<T>::InfantryUnit(){
-        head = 0;
-    }
-    
-    template <typename T>
-    void InfantryUnit<T>::enqueue(T e){
-        Node<T>* n = new Node<T>();
-        n->element = e;
-        if (isEmpty()) {
-            n->next = n;
-            n->previous = n;
-        } else {
-            n->next = head;
-            n->previous = head->previous;
-            head->previous->next = n;
-            head->previous = n;
-        }
-        head = n;
-    }
-    
-    template <typename T>
-    T InfantryUnit<T>::dequeue(){
-        if (isEmpty())
-            return 0;
-        else if (head->previous == head) {
-            Node<T> *tmp= head;
-            head = 0;
-            return tmp->element;
-        } else {
-            Node<T> *tmp = head->previous;
-            head->previous = head->previous->previous;
-            head->previous->next = head;
-            return tmp->element;
-        }
-    }
-    
-    template <typename T>
-    bool InfantryUnit<T>::isEmpty(){
-        return head == 0;
-    }
-    
-    template <typename T>
-    InfantryIterator<T> InfantryUnit<T>::begin(){
-        return InfantryIterator<T> (*this, head);
-    }
-
-    template <typename T>
-    InfantryIterator<T> InfantryUnit<T>::end(){
-        return InfantryIterator<T> (*this, head->previous);
-    }
-
-    template<typename T>
-    InfantryIterator<T> InfantryUnit<T>::first(){
-      return begin();
-    }
-   
-#endif */
