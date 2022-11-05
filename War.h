@@ -12,34 +12,22 @@ class War
 {
 private:
     User *user;
-
-public:
-static War *warInstance;
+    static War *warInstance;
 	bool winner;
 	int score;
 	Country* sideA;
 	Country* sideB;
 	bool* battleHistory;
-    War(string n, int s)
-    {
-        user = new User(n, s);
-        cout << "Originator: My initial state is: " << this->user->getUserDetails() << "\n";
-    }
 
-    void setScore(int s)
-    {
-        user->setUserScore(s);
-    }
+protected:
+    War();
+    ~War();
 
-    IntelDivision *Save()
-    {
-        return new IntelDivision(this->user);
-    }
-
-    void Restore(IntelDivision *memento)
-    {
-        this->user = memento->getUser();
-        cout << "Originator: My state has changed to: " << this->user->getUserDetails() << "\n";
-    }
+public:
+    static War* startWar();
+    void simulate();
+    void setScore(int s);
+    IntelDivision *Save();
+    void Restore(IntelDivision *memento);
 };
 #endif

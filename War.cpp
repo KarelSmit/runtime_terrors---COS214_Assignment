@@ -2,6 +2,7 @@
 #include "Battle.cpp"
 #include <string>
 #include <iostream>
+using namespace std;
 
 War* War::warInstance = new War();
 
@@ -31,9 +32,12 @@ War::~War()
 
 void War::simulate()
 {
-	std::string uName;
-	std::cout << "Enter your name:";
-	std::cin >> uName;
+	string uName;
+	cout << "Enter your name:";
+	cin >> uName;
+
+	user = new User(uName, 0);
+
 	sideA = new Country("CountryA",uName);
 	sideB = new Country("CountryB","Enemy General");
 	for (int i = 0; i < 3; i++)
@@ -46,6 +50,7 @@ void War::simulate()
 		}
 		delete bat;
 	}
+	user->setScore(score);
 	int count = 0;
 	for (int i = 0; i < 3; i++)
 	{
@@ -54,10 +59,24 @@ void War::simulate()
 		}
 	}
 	if ( count >= 2 ){
-		std::cout << "\n\nYou have won the war. Congratulations General.\n\n";
+		cout << "\n\nYou have won the war. Congratulations General.\n\n";
 		//Store in memento
 	}else{
-		std::cout << "\n\nYou have lost the war. Better luck next time General.\n\n";
+		cout << "\n\nYou have lost the war. Better luck next time General.\n\n";
 	}
-	
+}
+
+void War::setScore(int s)
+{
+	user->setUserScore(s);
+}
+
+IntelDivision *War::Save()
+{
+	return new IntelDivision(this->user);
+}
+
+void War::Restore(IntelDivision *memento)
+{
+	this->user = memento->getUser();
 }
