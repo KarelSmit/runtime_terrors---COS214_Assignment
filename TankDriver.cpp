@@ -3,13 +3,10 @@
 TankDriver::TankDriver(int HP, int Damage) : TransportUnit(HP) {
     TankFactory* newVehicle = new TankFactory(); 
     tank = newVehicle->createVehicles(); 
+    delete newVehicle;
     this->Damage = Damage;
 }
 
 TankDriver::~TankDriver(){
-    tank->~Vehicle();
-}
-
-int TankDriver::getDamage() {
-    return this->Damage;
+    delete tank; 
 }
