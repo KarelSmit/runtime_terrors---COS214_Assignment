@@ -1,4 +1,3 @@
-
 #include "Supply.h"
 #include "SupplyTruckFactory.h"
 Supply::Supply(int HP) : TransportUnit(HP) {
@@ -7,7 +6,7 @@ Supply::Supply(int HP) : TransportUnit(HP) {
 }
 
 Supply::~Supply() { 
-    supplyTruck->~Vehicle();
+    delete supplyTruck;
 }
 
 Vehicle* Supply::getSupplyTruck() {
