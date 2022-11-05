@@ -15,13 +15,9 @@ class Records
 {
 private:
     vector<IntelDivision *> inteldivs;
-
     War *war;
-
     ofstream myfile;
-
     ofstream topscore;
-
     array<IntelDivision *, 3> top3;
 
 public:
@@ -84,8 +80,6 @@ public:
             if (f.is_open())
                 cout << f.rdbuf();
         }
-
-        
     }
 
     void loadTopScores()

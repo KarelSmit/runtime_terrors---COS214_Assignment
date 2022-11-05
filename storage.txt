@@ -22,3 +22,9 @@ Sat Nov  5 15:59:11 2022
  / (Super-Duper: 60)
 Sat Nov  5 15:59:11 2022
  / (Super-Duper: 8)
+Sat Nov  5 16:05:01 2022
+ / (Adolf: 200)
+Sat Nov  5 16:05:01 2022
+ / (Adolf: 300)
+Sat Nov  5 16:05:01 2022
+ / (Adolf: 8)

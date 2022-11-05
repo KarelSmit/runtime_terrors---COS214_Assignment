@@ -5,13 +5,15 @@ using namespace std;
 
 int main()
 {
-    War *originator = new War("Super-Duper", 10);
+    War *originator = new War("Adolf", 200);
     Records *caretaker = new Records(originator);
+
     caretaker->showTopThree();
+
     caretaker->Backup();
-    originator->setScore(60);
+    originator->setScore(300);
     caretaker->Backup();
-    originator->setScore(8);
+    originator->setScore(8);+
     caretaker->Backup();
     originator->setScore(8);
     cout << "\n";
