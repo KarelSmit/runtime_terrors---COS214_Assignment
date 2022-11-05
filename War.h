@@ -2,6 +2,7 @@
 #define WAR_H
 #include "IntelDivision.h"
 #include "User.h"
+#include "Country.h"
 #include <iostream>
 using namespace std;
 
