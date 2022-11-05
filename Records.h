@@ -21,108 +21,19 @@ private:
     array<IntelDivision *, 3> top3;
 
 public:
-    Records(War *w) : war(w)
-    {
-        myfile.open("storage.txt", fstream::app);
-        loadTopScores();
-    }
+    Records(War *w);
 
-    ~Records()
-    {
-        for (auto m : inteldivs)
-            delete m;
+    ~Records();
 
-        myfile.close();
-    }
+    void Backup();
 
-    void Backup()
-    {
-        this->inteldivs.push_back(this->war->Save());
+    void Undo();
 
-        checkTopScore();
-        writeTopToFile();
+    void ShowHistory() const;
 
-        myfile << this->war->Save()->GetName() << endl;
-    }
+    void loadTopScores();
 
-    void Undo()
-    {
-        if (!this->inteldivs.size())
-        {
-            return;
-        }
-        IntelDivision *memento = this->inteldivs.back();
-        this->inteldivs.pop_back();
-        try
-        {
-            this->war->Restore(memento);
-        }
-        catch (...)
-        {
-            this->Undo();
-        }
-    }
-
-    void ShowHistory() const
-    {
-        ifstream file("storage.txt");
-        file.seekg(0,ios::end);
-        int length = file.tellg();
-
-        if (length == 0)
-        {
-            cout << "No previous records" << endl;
-        }
-        else
-        {
-            ifstream f("storage.txt");
-
-            if (f.is_open())
-                cout << f.rdbuf();
-        }
-    }
-
-    void loadTopScores()
-    {
-        ifstream dafile;
-        string line;
-        int pos;
-        string name;
-        dafile.open("topscores.txt", fstream::app);
-
-        for (int i = 0; i < 3; i++)
-        {
-            if (getline(dafile, line))
-            {
-                pos = line.find(";");
-                name = line.substr(0, pos);
-                line.erase(0, pos + 1);
-
-                stringstream x(line);
-                int number = 0;
-                x >> number;
-
-                User *u = new User(name, number);
-
-                top3[i] = new IntelDivision(u);
-            }
-        }
-        dafile.close();
-    }
-
-    void showTopThree()
-    {
-        cout << "--- TOP SCORES ---" << endl;
-        if (top3[0] == NULL && top3[1] == NULL && top3[2] == NULL)
-        {
-            cout << "You're the first player! No previous scores" << endl;
-        }
-        for (int i = 0; i < 3; i++)
-        {
-            if (top3[i] != NULL)
-                cout << top3[i]->print() << endl;
-        }
-    }
+    void showTopThree();
 
     void checkTopScore()
     {
