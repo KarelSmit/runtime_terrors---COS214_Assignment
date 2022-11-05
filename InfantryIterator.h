@@ -12,14 +12,14 @@ class InfantryIterator
 
 public:
 	InfantryIterator();
-	Infantry *operator*();
+	FootUnit *operator*();
 	InfantryIterator operator++();
 	bool operator==(const InfantryIterator &) const;
-	InfantryIterator(Node<Infantry *> *, Node<Infantry *> *);
+	InfantryIterator(Node<FootUnit *> *, Node<FootUnit *> *);
 
 protected:
-	Node<Infantry *> *head;
-	Node<Infantry *> *current;
+	Node<FootUnit *> *head;
+	Node<FootUnit *> *current;
 };
 
 #endif

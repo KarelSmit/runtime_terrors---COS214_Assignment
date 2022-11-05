@@ -14,12 +14,12 @@ MedicUnit::MedicUnit()
 	totRP = 0;
 	SupportBarracks bootcamp = SupportBarracks();
 	int medicCount = 5;
-	Node<Medic*> *n = new Node<Medic*>();
+	Node<FootUnit*> *n = new Node<FootUnit*>();
 	n->element = bootcamp.createFootUnit();
 	head = n;	
 	for (int i = 0; i < medicCount - 1; i++)
 	{
-		n = new Node<Medic*>();
+		n = new Node<FootUnit*>();
 		n->element = bootcamp.createFootUnit();
 		n->next = head;
 		head = n;
@@ -29,10 +29,10 @@ MedicUnit::MedicUnit()
 
 MedicUnit::~MedicUnit()
 {
-	Node<Medic*> *n = head;
+	Node<FootUnit*> *n = head;
 	while (n != nullptr)
 	{
-		Node<Medic*> *temp = n;
+		Node<FootUnit*> *temp = n;
 		n = n->next;
 		delete temp->element;
 		delete temp;
@@ -74,7 +74,7 @@ MedicIterator MedicUnit::begin()
 
 MedicIterator MedicUnit::end()
 {
-	Node<Medic*> *n = head;
+	Node<FootUnit*> *n = head;
 	while (n->next != nullptr)
 	{
 		n = n->next;

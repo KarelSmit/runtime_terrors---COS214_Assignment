@@ -12,14 +12,14 @@ class SupplyIterator
 
 public:
 	SupplyIterator();
-	Supply *operator*();
+	TransportUnit *operator*();
 	SupplyIterator operator++();
 	bool operator==(const SupplyIterator &) const;
-	SupplyIterator(Node<Supply *> *, Node<Supply *> *);
+	SupplyIterator(Node<TransportUnit *> *, Node<TransportUnit *> *);
 
 protected:
-	Node<Supply *> *head;
-	Node<Supply *> *current;
+	Node<TransportUnit *> *head;
+	Node<TransportUnit *> *current;
 };
 
 #endif

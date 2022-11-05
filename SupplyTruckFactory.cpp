@@ -3,11 +3,9 @@ SupplyTruckFactory::SupplyTruckFactory(){
 
 }
 
-Vehicle* SupplyTruck::createVehicles() {
-    Vehicle* newVehicle; 
-    SupplyTruck* newSTruck = new SupplyTruck();
-    newVehicle = newSTruck; 
-    return newVehicle;
+Vehicle* SupplyTruckFactory::createVehicles() { 
+    Vehicle* newSTruck = new SupplyTruck();
+    return newSTruck;
 }
 
 SupplyTruckFactory::~SupplyTruckFactory() {

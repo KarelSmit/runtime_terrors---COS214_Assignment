@@ -8,5 +8,7 @@ class FootUnit {
     FootUnit(int); 
     ~FootUnit();
     int getHP(); 
+	virtual int getDamage();
+	virtual int getrejuvenationPower();
 };
 #endif

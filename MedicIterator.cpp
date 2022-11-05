@@ -15,7 +15,7 @@ MedicIterator::MedicIterator()
 	current = 0;
 }
 
-Medic* MedicIterator::operator*()
+FootUnit* MedicIterator::operator*()
 {
 	return current->element;
 }
@@ -34,7 +34,7 @@ bool MedicIterator::operator==(const MedicIterator &rhs) const
 	return current == rhs.current;
 }
 
-MedicIterator::MedicIterator( Node<Medic*>* h, Node<Medic*>* p ){
+MedicIterator::MedicIterator( Node<FootUnit*>* h, Node<FootUnit*>* p ){
 	head = h;
 	current = p;
 }

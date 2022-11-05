@@ -11,3 +11,7 @@ TransportUnit::~TransportUnit() {
 int TransportUnit::getHP() {
     return this->HP; 
 }
+
+int TransportUnit::getDamage() {
+    return 0; 
+}

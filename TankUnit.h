@@ -20,7 +20,7 @@ public:
 	TankIterator end();
 	void setVal();
 
-	Node<Tank *> *head;
+	Node<TransportUnit *> *head;
 private:
 	int totHP;
 	int totDmg;

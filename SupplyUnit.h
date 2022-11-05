@@ -20,10 +20,9 @@ public:
 	SupplyIterator end();
 	void setVal();
 
-	Node<Supply*> *head;
+	Node<TransportUnit*> *head;
 private:
 	int totHP;
-	int totRP;
 };
 
 #endif

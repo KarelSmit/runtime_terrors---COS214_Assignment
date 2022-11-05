@@ -13,12 +13,12 @@ InfantryUnit::InfantryUnit()
 
 	CombatBarracks bootcamp = CombatBarracks();
 	int InfantryCount = 5;
-	Node<Infantry *> *n = new Node<Infantry *>();
+	Node<FootUnit *> *n = new Node<FootUnit *>();
 	n->element = bootcamp.createFootUnit();
 	head = n;
 	for (int i = 0; i < InfantryCount - 1; i++)
 	{
-		n = new Node<Infantry *>();
+		n = new Node<FootUnit *>();
 		n->element = bootcamp.createFootUnit();
 		n->next = head;
 		head = n;
@@ -28,10 +28,10 @@ InfantryUnit::InfantryUnit()
 
 InfantryUnit::~InfantryUnit()
 {
-	Node<Infantry *> *n = head;
+	Node<FootUnit *> *n = head;
 	while (n != nullptr)
 	{
-		Node<Infantry *> *temp = n;
+		Node<FootUnit *> *temp = n;
 		n = n->next;
 		delete temp->element;
 		delete temp;
@@ -73,7 +73,7 @@ InfantryIterator InfantryUnit::begin()
 
 InfantryIterator InfantryUnit::end()
 {
-	Node<Infantry *> *n = head;
+	Node<FootUnit *> *n = head;
 	while (n->next != nullptr)
 	{
 		n = n->next;

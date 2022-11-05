@@ -8,7 +8,7 @@ class Medic : public FootUnit{
     public: 
     Medic(int, int); 
     virtual ~Medic();
-    int getrejuvenationPower();
+    virtual int getrejuvenationPower();
 };
 #endif
 

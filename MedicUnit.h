@@ -20,7 +20,7 @@ public:
 	MedicIterator end();
 	void setVal();
 
-	Node<Medic *> *head;
+	Node<FootUnit *> *head;
 private:
 	int totHP;
 	int totRP;

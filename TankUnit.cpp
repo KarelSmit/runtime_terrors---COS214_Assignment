@@ -12,12 +12,12 @@ TankUnit::TankUnit()
 	totDmg = 0;
 	CombatBarracks bootcamp = CombatBarracks();
 	int TankCount = 5;
-	Node<Tank*> *n = new Node<Tank*>();
+	Node<TransportUnit*> *n = new Node<TransportUnit*>();
 	n->element = bootcamp.createTransportUnit();
 	head = n;	
 	for (int i = 0; i < TankCount - 1; i++)
 	{
-		n = new Node<Tank*>();
+		n = new Node<TransportUnit*>();
 		n->element = bootcamp.createTransportUnit();
 		n->next = head;
 		head = n;
@@ -27,10 +27,10 @@ TankUnit::TankUnit()
 
 TankUnit::~TankUnit()
 {
-	Node<Tank*> *n = head;
+	Node<TransportUnit*> *n = head;
 	while (n != nullptr)
 	{
-		Node<Tank*> *temp = n;
+		Node<TransportUnit*> *temp = n;
 		n = n->next;
 		delete temp->element;
 		delete temp;
@@ -72,7 +72,7 @@ TankIterator TankUnit::begin()
 
 TankIterator TankUnit::end()
 {
-	Node<Tank*> *n = head;
+	Node<TransportUnit*> *n = head;
 	while (n->next != nullptr)
 	{
 		n = n->next;

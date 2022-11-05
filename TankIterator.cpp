@@ -6,7 +6,7 @@ TankIterator::TankIterator()
 	current = 0;
 }
 
-Tank* TankIterator::operator*()
+TransportUnit* TankIterator::operator*()
 {
 	return current->element;
 }
@@ -25,7 +25,7 @@ bool TankIterator::operator==(const TankIterator &rhs) const
 	return current == rhs.current;
 }
 
-TankIterator::TankIterator( Node<Tank*>* h, Node<Tank*>* p ){
+TankIterator::TankIterator( Node<TransportUnit*>* h, Node<TransportUnit*>* p ){
 	head = h;
 	current = p;
 }
