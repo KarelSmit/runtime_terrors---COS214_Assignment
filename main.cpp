@@ -39,6 +39,7 @@ int main()
 		cin >> choice;
 		if ( choice == 1 ){
 			warSim->simulate();
+			//store
 		}else if (choice == 2 )
 		{
 			cout << ""; //Add description of simulation and battalions, etc.
