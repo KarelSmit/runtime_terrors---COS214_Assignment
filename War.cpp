@@ -3,9 +3,8 @@
 #include "Records.h"
 #include <string>
 #include <iostream>
-using namespace std;
 
-War* War::warInstance = new War();
+War *War::warInstance = new War();
 
 War *War::startWar()
 {
@@ -34,19 +33,20 @@ War::~War()
 void War::simulate()
 {
 	string uName;
-	cout << "Enter your name:";
-	cin >> uName;
-
+	cout << "================================================================================================\n";
+	std::cout << "\nEnter your name below\n->";
+	std::cin >> uName;
+	cout << "\n================================================================================================\n";
 	user = new User(uName, 0);
-
-	sideA = new Country("CountryA",uName);
-	sideB = new Country("CountryB","Enemy General");
+	sideA = new Country("CountryA", uName);
+	sideB = new Country("CountryB", "Enemy General");
 	for (int i = 0; i < 3; i++)
 	{
-		Battle* bat = new Battle( sideA,sideB );
+		Battle *bat = new Battle(sideA, sideB);
 		bat->begin();
 		battleHistory[i] = bat->winner;
-		if ( battleHistory[i] ){
+		if (battleHistory[i])
+		{
 			score += bat->getA()->getArmy()->getHP();
 		}
 		delete bat;
@@ -55,14 +55,18 @@ void War::simulate()
 	int count = 0;
 	for (int i = 0; i < 3; i++)
 	{
-		if ( battleHistory[i] ){
+		if (battleHistory[i])
+		{
 			count++;
 		}
 	}
-	if ( count >= 2 ){
-		cout << "\n\nYou have won the war. Congratulations General.\n\n";
-	}else{
-		cout << "\n\nYou have lost the war. Better luck next time General.\n\n";
+	if (count >= 2)
+	{
+		std::cout << "\n\nYou have won the war. Congratulations General.\n\n";
+	}
+	else
+	{
+		std::cout << "\n\nYou have lost the war. Better luck next time General.\n\n";
 	}
 }
 

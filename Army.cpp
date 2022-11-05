@@ -13,6 +13,7 @@ Army::Army()
 	atkForce = nullptr;
 	medicForce = nullptr;
 	supplyChain = nullptr;
+	enemy = false;
 }
 
 Army::~Army()
@@ -41,6 +42,10 @@ Army::~Army()
 		delete temp;
 		atkForce = n;
 	}
+}
+
+void Army::setEnemy(){
+	enemy = true;
 }
 
 void Army::addInfantry(int x)

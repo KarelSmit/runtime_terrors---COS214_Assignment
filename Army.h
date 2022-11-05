@@ -18,6 +18,7 @@ public:
 	void reset();
 	int getMoves();
 	int getHP();
+	void setEnemy();
 
 private:
 	Battalion* atkForce;
@@ -27,5 +28,6 @@ private:
 	int totalHP;
 	int extraMoves;
 	int totalHeal;
+	bool enemy;
 };
 #endif
