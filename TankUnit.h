@@ -19,6 +19,8 @@ public:
 	TankIterator begin();
 	TankIterator end();
 	void setVal();
+	bool takeDamage(int);
+	void heal(int);
 
 	Node<TransportUnit *> *head;
 private:

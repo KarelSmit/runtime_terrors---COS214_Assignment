@@ -1,5 +1,6 @@
 #ifndef ARMY_H
 #define ARMY_H
+#include "Battalion.h"
 
 class Army
 {
@@ -17,7 +18,9 @@ public:
 	void reset();
 
 private:
-	// Battalion* atkForce,medicForce,supplyChain;
+	Battalion* atkForce;
+	Battalion* medicForce;
+	Battalion* supplyChain;
 	int totalDmg;
 	int totalHP;
 	int extraMoves;
