@@ -3,6 +3,8 @@
 #include "Battle.h"
 #include <iostream>
 
+class Battle;
+
 class BattleState
 {
 public:
@@ -12,6 +14,6 @@ public:
 	virtual void changeState(){};
 
 protected:
-	Battle* context;
+	Battle *context;
 };
 #endif

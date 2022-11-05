@@ -13,7 +13,6 @@ public:
 	Country* getA();
 	Country* getB();
 	bool winner;
-
 private:
 	Country *sideA;
 	Country *sideB;

@@ -16,6 +16,6 @@ private:
 	int score;
 	Country* sideA;
 	Country* sideB;
-	int* battleHistory;
+	bool* battleHistory;
 };
 #endif

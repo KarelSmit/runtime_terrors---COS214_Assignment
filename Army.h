@@ -17,6 +17,7 @@ public:
 	void heal();
 	void reset();
 	int getMoves();
+	int getHP();
 
 private:
 	Battalion* atkForce;
