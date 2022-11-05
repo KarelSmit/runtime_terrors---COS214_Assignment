@@ -47,7 +47,7 @@ public:
         checkTopScore();
         writeTopToFile();
 
-        //myfile << this->war->Save()->GetName() << endl;
+        myfile << this->war->Save()->GetName() << endl;
     }
 
     void Undo()
@@ -71,11 +71,25 @@ public:
 
     void ShowHistory() const
     {
-        cout << "Caretaker: Here's the list of mementos:\n";
-        ifstream f("storage.txt");
+        ifstream file("storage.txt");
+        file.seekg(0,ios::end);
+        int length = file.tellg();
 
-        if (f.is_open())
-            cout << f.rdbuf();
+        if (length == 0)
+        {
+            cout << "No previous records" << endl;
+        }
+        else
+        {
+            cout << "Caretaker: Here's the list of mementos:\n";
+            ifstream f("storage.txt");
+
+            if (f.is_open())
+                cout << f.rdbuf();
+                cout << "END" << endl;
+        }
+
+        
     }
 
     void loadTopScores()

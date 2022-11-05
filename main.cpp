@@ -15,7 +15,7 @@ int main()
     caretaker->Backup();
     originator->setScore(8);
     cout << "\n";
-    //caretaker->ShowHistory();
+    caretaker->ShowHistory();
     cout << "\nClient: Now, let's rollback!\n\n";
     caretaker->Undo();
     cout << "\nClient: Once more!\n\n";
