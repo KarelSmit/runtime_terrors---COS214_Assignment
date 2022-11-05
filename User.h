@@ -1,5 +1,6 @@
 #ifndef USER_H
 #define USER_H
+
 #include <iostream>
 using namespace std;
 
@@ -10,36 +11,16 @@ private:
     int score;
 
 public:
-    User(string n, int s)
-    {
-        name = n;
-        score = s;
-    }
+    User(string n, int s);
 
-    User(User &user)
-    {
-        name = user.name;
-        score = user.score;
-    }
+    User(User &user);
 
-    string getUserName()
-    {
-        return name;
-    }
+    string getUserName();
 
-    int getUserScore()
-    {
-        return score;
-    }
+    int getUserScore();
 
-    string getUserDetails()
-    {
-        return getUserName() + ": " + to_string(getUserScore());
-    }
+    string getUserDetails();
 
-    void setUserScore(int s)
-    {
-        score = s;
-    }
+    void setUserScore(int s);
 };
 #endif

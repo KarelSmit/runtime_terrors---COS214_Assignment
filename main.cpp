@@ -25,6 +25,7 @@
 #include "Sniper.cpp"
 #include "Stealth.cpp"
 #include "Records.cpp"
+#include "User.cpp"
 #include <iostream>
 
 using namespace std;

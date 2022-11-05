@@ -1,7 +1,6 @@
 #include "War.h"
 #include "Battle.cpp"
 #include "Records.h"
-#include "User.h"
 #include <string>
 #include <iostream>
 using namespace std;
