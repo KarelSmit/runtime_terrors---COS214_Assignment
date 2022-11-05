@@ -61,7 +61,6 @@ void War::simulate()
 	}
 	if ( count >= 2 ){
 		cout << "\n\nYou have won the war. Congratulations General.\n\n";
-		//Store in memento
 	}else{
 		cout << "\n\nYou have lost the war. Better luck next time General.\n\n";
 	}
