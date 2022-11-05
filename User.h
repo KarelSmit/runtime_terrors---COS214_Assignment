@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-class User 
+class User
 {
 private:
     string name;
@@ -16,31 +16,30 @@ public:
         score = s;
     }
 
-    User(const User &u)
+    User(User &user)
     {
-        name = u.name;
-        score = u.score;
+        name = user.name;
+        score = user.score;
     }
 
-    string getName()
+    string getUserName()
     {
         return name;
     }
 
-    int getScore()
+    int getUserScore()
     {
         return score;
     }
 
-    void setScore(int i)
+    string getUserDetails()
     {
-        score = i;
+        return getUserName() + ": " + to_string(getUserScore());
     }
 
-    string toString()
+    void setUserScore(int s)
     {
-        string output = name + " -> " + to_string(score);
-        return output;
+        score = s;
     }
 };
 #endif

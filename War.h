@@ -1,62 +1,36 @@
 #ifndef WAR_H
 #define WAR_H
-#include "State.h"
 #include "IntelDivision.h"
 #include "User.h"
 #include <iostream>
-#include <string>
 using namespace std;
 
 class War
 {
 private:
     User *user;
-    State *state;
 
 public:
-
     War(string n, int s)
     {
-        user = new User(n,s);
-        state = new State();
+        user = new User(n, s);
+        cout << "Originator: My initial state is: " << this->user->getUserDetails() << "\n";
     }
 
-    void setScore(int i)
+    void setScore(int s)
     {
-        user->setScore(i);
+        user->setUserScore(s);
     }
 
-    string getScore()
+    IntelDivision *Save()
     {
-        return to_string(user->getScore());
+        return new IntelDivision(this->user);
     }
 
-    string toString()
+    void Restore(IntelDivision *memento)
     {
-        return user->toString();
-    }
-
-    //MEMENTO
-    State *getState()
-    {
-        return state;
-    }
-
-    User *getUser()
-    {
-        return user;
-    }
-
-    IntelDivision *makeBackup()
-    {
-        User *backup = new User(*user);
-        return new IntelDivision(backup, state);
-    }
-
-    void restore(IntelDivision *mem)
-    {
-        user = mem->getUser();
-        state = mem->getState();
+        this->user = memento->getUser();
+        cout << "Originator: My state has changed to: " << this->user->getUserDetails() << "\n";
     }
 };
 #endif

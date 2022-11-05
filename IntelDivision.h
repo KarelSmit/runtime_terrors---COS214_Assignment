@@ -1,30 +1,47 @@
 #ifndef INTELDIVISION_H
 #define INTELDIVISION_H
-#include <iostream>
-#include <string>
-#include "State.h"
-#include "War.h"
 #include "User.h"
+#include <string>
+#include <iostream>
 using namespace std;
 
-//Memento
 class IntelDivision
 {
 private:
     User *user;
-    State *state;
+    string date_;
 
 public:
-    IntelDivision(User *u, State *s) : user(u), state(s) {}
+    IntelDivision(User *u) : user(u)
+    {
+        this->user = new User(*u);
+        time_t now = time(0);
+        this->date_ = ctime(&now);
+    }
 
     User *getUser()
     {
-        return user;
+        return this->user;
     }
 
-    State *getState()
+    string GetName() const
     {
-        return state;
+        return this->date_ + " / (" + this->user->getUserDetails() + ")";
+    }
+
+    string getDetails()
+    {
+        return user->getUserName() + ";" + to_string(user->getUserScore());
+    }
+
+    string print()
+    {
+        return user->getUserName() + " achieved " + to_string(user->getUserScore());
+    }
+
+    string date() const
+    {
+        return this->date_;
     }
 };
 #endif

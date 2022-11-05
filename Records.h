@@ -1,5 +1,5 @@
-#ifndef CARETAKER_H
-#define CARETAKER_H
+#ifndef RECORDS_H
+#define RECORDS_H
 #include "IntelDivision.h"
 #include "War.h"
 #include <iostream>
@@ -25,13 +25,13 @@ private:
     array<IntelDivision *, 3> top3;
 
 public:
-    Caretaker(War *w) : war(w)
+    Records(War *w) : war(w)
     {
         myfile.open("storage.txt", fstream::app);
         loadTopScores();
     }
 
-    ~Caretaker()
+    ~Records()
     {
         for (auto m : inteldivs)
             delete m;
@@ -47,7 +47,7 @@ public:
         checkTopScore();
         writeTopToFile();
 
-        myfile << this->war->Save()->GetName() << endl;
+        //myfile << this->war->Save()->GetName() << endl;
     }
 
     void Undo()
@@ -168,7 +168,7 @@ public:
 
     void writeTopToFile()
     {
-        bubbleSort();
+        //bubbleSort();
         ofstream clearfile;
         clearfile.open("topscores.txt");
         topscore.open("topscores.txt", fstream::app);
