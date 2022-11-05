@@ -19,6 +19,8 @@ public:
 	SupplyIterator begin();
 	SupplyIterator end();
 	void setVal();
+	bool takeDamage(int);
+	void heal(int);
 
 	Node<TransportUnit*> *head;
 private:

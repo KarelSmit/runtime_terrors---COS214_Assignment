@@ -19,6 +19,8 @@ public:
 	MedicIterator begin();
 	MedicIterator end();
 	void setVal();
+	bool takeDamage(int);
+	void heal(int);
 
 	Node<FootUnit *> *head;
 private:
