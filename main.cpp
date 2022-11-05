@@ -21,6 +21,9 @@
 #include "Strategy.cpp"
 #include "Attack.cpp"
 #include "Defend.cpp"
+#include "SpecialSkill.cpp"
+#include "Sniper.cpp"
+#include "Stealth.cpp"
 #include <iostream>
 
 using namespace std;
