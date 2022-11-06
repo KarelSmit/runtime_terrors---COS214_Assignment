@@ -76,7 +76,7 @@ $(function() {
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef _MEDICUNIT_H</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define _MEDICUNIT_H</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;Node.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="Node_8h.html">Node.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="MedicIterator_8h.html">MedicIterator.h</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="Battalion_8h.html">Battalion.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;Medic.h&quot;</span></div>
@@ -107,6 +107,7 @@ $(function() {
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aBattalion_8h_html"><div class="ttname"><a href="Battalion_8h.html">Battalion.h</a></div><div class="ttdoc">Template class for all battalions.</div></div>
 <div class="ttc" id="aMedicIterator_8h_html"><div class="ttname"><a href="MedicIterator_8h.html">MedicIterator.h</a></div><div class="ttdoc">An iterator for the Medic linked list in the MedicUnit class.</div></div>
+<div class="ttc" id="aNode_8h_html"><div class="ttname"><a href="Node_8h.html">Node.h</a></div><div class="ttdoc">Stores a FootUnit or TransportUnit reference to enable a linked list.</div></div>
 <div class="ttc" id="aclassBattalion_html"><div class="ttname"><a href="classBattalion.html">Battalion</a></div><div class="ttdoc">Abstract parent for InfantryUnit, TankUnit, MedicUnit and SupplyUnit. Also acts as a node for the Arm...</div><div class="ttdef"><b>Definition:</b> Battalion.h:23</div></div>
 <div class="ttc" id="aclassMedicIterator_html"><div class="ttname"><a href="classMedicIterator.html">MedicIterator</a></div><div class="ttdoc">Allows sequential iteration of the Medic linked list stored within a MedicUnit object.</div><div class="ttdef"><b>Definition:</b> MedicIterator.h:28</div></div>
 <div class="ttc" id="aclassMedicUnit_html"><div class="ttname"><a href="classMedicUnit.html">MedicUnit</a></div><div class="ttdoc">Implements the Battalion interface using Medic objects.</div><div class="ttdef"><b>Definition:</b> MedicUnit.h:28</div></div>
@@ -120,7 +121,7 @@ $(function() {
 <div class="ttc" id="aclassMedicUnit_html_ac75489f6b00de2ab02a7970e09771dc1"><div class="ttname"><a href="classMedicUnit.html#ac75489f6b00de2ab02a7970e09771dc1">MedicUnit::getHP</a></div><div class="ttdeci">int getHP()</div><div class="ttdoc">Return the current total HP of the Medic Unit.</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:52</div></div>
 <div class="ttc" id="aclassMedicUnit_html_acc3f713023d3122f7f7c9d46f4652389"><div class="ttname"><a href="classMedicUnit.html#acc3f713023d3122f7f7c9d46f4652389">MedicUnit::~MedicUnit</a></div><div class="ttdeci">~MedicUnit()</div><div class="ttdoc">Destroy the Medic Unit object.</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:27</div></div>
 <div class="ttc" id="aclassMedicUnit_html_aeb9c93420dc64ccf1956b55b392e243c"><div class="ttname"><a href="classMedicUnit.html#aeb9c93420dc64ccf1956b55b392e243c">MedicUnit::takeDamage</a></div><div class="ttdeci">bool takeDamage(int d)</div><div class="ttdoc">Reduce the total HP by d.</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:82</div></div>
-<div class="ttc" id="aclassNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:6</div></div>
+<div class="ttc" id="aclassNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">Used to construct a linked list using FootUnit or TransportUnit references.</div><div class="ttdef"><b>Definition:</b> Node.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
