@@ -8,6 +8,6 @@ public:
 	asciiArt();
 	~asciiArt();
 	void printBanner();
-    void printBar(int);
+    void printBar(int, char);
 };
 #endif
