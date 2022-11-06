@@ -27,36 +27,61 @@
 #include "Records.cpp"
 #include "User.cpp"
 #include <iostream>
-// #include "colormod.h"
 #include <stdlib.h>
+#include "asciiArt.cpp"
+
+// #include 
 
 
 using namespace std;
 
 int main()
 {
-	Color::Modifier green(Color::FG_GREEN);
-	Color::Modifier yellow(Color::FG_YELLOW);
-	Color::Modifier def(Color::FG_DEFAULT);
+	asciiArt aA;
+    Color::Modifier red(Color::FG_RED);
+    Color::Modifier green(Color::FG_GREEN);
+    Color::Modifier blue(Color::FG_BLUE);
+    Color::Modifier yellow(Color::FG_YELLOW);
+    Color::Modifier magenta(Color::FG_MAGENTA);
+    Color::Modifier cyan(Color::FG_CYAN);
+    Color::Modifier def(Color::FG_DEFAULT);
 	system("clear");
 
 	War *warSim = War::startWar();
 	Records *caretaker = new Records(warSim);
 	while (true)
 	{
-		cout<< yellow;
-		cout << "=====================================================================================================================================================\n";
-		cout <<	green;	
-		cout << "	 __          __           _      _           __  __          __             _____  _                    _         _    _               		\n";
-		cout << "	 \\ \\        / /          | |    | |         / _| \\ \\        / /            / ____|(_)                  | |       | |  (_)              		\n";
-		cout << "	  \\ \\  /\\  / /___   _ __ | |  __| |   ___  | |_   \\ \\  /\\  / /__ _  _ __  | (___   _  _ __ ___   _   _ | |  __ _ | |_  _   ___   _ __  		\n";
-		cout << "	   \\ \\/  \\/ // _ \\ | '__|| | / _` |  / _ \\ |  _|   \\ \\/  \\/ // _` || '__|  \\___ \\ | || '_ ` _ \\ | | | || | / _` || __|| | / _ \\ | '_ \\ 		\n";
-		cout << "	    \\  /\\  /| (_) || |   | || (_| | | (_) || |      \\  /\\  /| (_| || |     ____) || || | | | | || |_| || || (_| || |_ | || (_) || | | |		\n";
-		cout << "	     \\/  \\/  \\___/ |_|   |_| \\__,_|  \\___/ |_|       \\/  \\/  \\__,_||_|    |_____/ |_||_| |_| |_| \\__,_||_| \\__,_| \\__||_| \\___/ |_| |_|		\n";	
-		cout<< yellow;
-		cout << "=====================================================================================================================================================\n";
-		cout<< def;
-		
+
+		// cout<< yellow;
+		// cout << "=======================================================================================================================================================\n";
+		// cout <<	green;	
+		// cout << "	 __          __           _      _           __  __          __             _____  _                    _         _    _               		\n";
+		// cout << "	 \\ \\        / /          | |    | |         / _| \\ \\        / /            / ____|(_)                  | |       | |  (_)              		\n";
+		// cout << "	  \\ \\  /\\  / /___   _ __ | |  __| |   ___  | |_   \\ \\  /\\  / /__ _  _ __  | (___   _  _ __ ___   _   _ | |  __ _ | |_  _   ___   _ __  		\n";
+		// cout << "	   \\ \\/  \\/ // _ \\ | '__|| | / _` |  / _ \\ |  _|   \\ \\/  \\/ // _` || '__|  \\___ \\ | || '_ ` _ \\ | | | || | / _` || __|| | / _ \\ | '_ \\ 		\n";
+		// cout << "	    \\  /\\  /| (_) || |   | || (_| | | (_) || |      \\  /\\  /| (_| || |     ____) || || | | | | || |_| || || (_| || |_ | || (_) || | | |		\n";
+		// cout << "	     \\/  \\/  \\___/ |_|   |_| \\__,_|  \\___/ |_|       \\/  \\/  \\__,_||_|    |_____/ |_||_| |_| |_| \\__,_||_| \\__,_| \\__||_| \\___/ |_| |_|		\n";	
+		// cout<< yellow;
+		// cout << "=======================================================================================================================================================\n";
+		// cout<< def;
+
+		aA.printBanner();
+
+		// cout << "                           .////////                                          	 	\n";
+		// cout << "                    ///////////////////                                        	\n";
+		// cout << "                    //////////////////////// .................... ///////////				" << yellow << "/////\n" << def;
+		// cout << "                    //////////////////////// //////////////////// ///////////   			" << yellow << "/////\n" << def;
+		// cout << "                    ////////////////////////                                    	\n";
+		// cout << "                    //////////////////////,       .*////                        	\n";
+		// cout << "                .*//////////////////////,      ./####### ,                      	\n";
+		// cout << "         //////  ######,    *((((((((((((((((((((.// ( # //                     	\n";
+		// cout << "      /// ## ((((( //  ((((( //,// ((( / ##. /  ,,*/  # ///                    	\n";
+		// cout << "      // ##(   ( / ####%  ( / ##### /  /%##### / (((( #,                        	\n";
+		// cout << "    .//.## *##    ###### /  / ##### / ,/ ##### *(((( ##                         	\n";
+		// cout << "        (# *   (( / %#( / ((* /, // ((((/ /// ((((((#.                          	\n";
+		// cout << "           ####(     .*/(((((/*,      /###########   								\n";
+
+		cout << endl;		
 
 		cout << "Welcome to the World of War simulation.\n\nSelect an option below:\n\n";
 		int choice;
@@ -69,19 +94,23 @@ int main()
 		cin >> choice;
 		cout << "================================================================================================\n";
 		if (choice == 1)
-		{
+		{	
+			cout << cyan << "Running simulation" << def <<endl;
 			warSim->simulate();
 		}
 		else if (choice == 2)
 		{
+			cout << cyan << "Top 3 Scores" << def <<endl;
 			caretaker->showTopThree();
 		}
 		else if (choice == 3)
 		{
+			cout << cyan << "Simulation History" << def <<endl;
 			caretaker->ShowHistory();
 		}
 		else if (choice == 4)
 		{
+			cout << cyan << "Help Information" << def <<endl<<endl;
 			cout << "\n>Welcome to the help menu for the World of War simulation.\n>To start the simulation, select option (1) in the main menu.\n";
 			cout << ">Once the simulation initiates, enter your name. (This will be used to save your score)\n";
 			cout << ">After you enter your name, you will be presented with a 5 army combinations.\n>Your army has 4 important values: HP, Damage, RejuvenationPower and ExtraMoves\n\n";
@@ -108,6 +137,10 @@ int main()
 		{
 			cout << "Invalid input. Please choose one of the provided options.\n";
 		}
+		cout<< green << "Press Enter to Continue" <<endl;
+		cin.ignore(1,'\n');
+		cin.get();
+		system("clear");
 	}
 	/* War *originator = new War("Super-Duper", 10);
 	Records *caretaker = new Records(originator);

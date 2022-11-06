@@ -4,6 +4,7 @@
 #include "SupplyUnit.h"
 #include "MedicUnit.h"
 #include <iostream>
+#include "asciiArt.h"
 
 Army::Army()
 {
@@ -291,11 +292,15 @@ int Army::getHP()
 
 void Army::printStats()
 {
+	asciiArt aA;
 	//std::cout << "\n..............................................................................\n";
 	std::cout << gName << "'s army is in the current state:\n";
-	std::cout << "HP = " << totalHP << "\n";
-	std::cout << "Damage = " << totalDmg << "\n";
-	std::cout << "RejuvenationPower = " << totalHeal << "\n";
+	std::cout << "HP = " << totalHP;
+	aA.printBar(totalHP);
+	std::cout << "Damage = " << totalDmg;
+	aA.printBar(totalDmg);
+	std::cout << "RP = " << totalHeal<< " ";
+	aA.printBar(totalHeal);
 	std::cout << "ExtraMoves = " << extraMoves << "\n";
 	std::cout << "..............................................................................\n";
 }

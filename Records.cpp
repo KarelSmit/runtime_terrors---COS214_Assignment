@@ -93,7 +93,7 @@ void Records::loadTopScores()
 
 void Records::showTopThree()
 {
-    cout << "--- TOP SCORES ---" << endl;
+    // cout << "--- TOP SCORES ---" << endl;
     if (top3[0] == NULL && top3[1] == NULL && top3[2] == NULL)
     {
         cout << "You're the first player! No previous scores" << endl;
