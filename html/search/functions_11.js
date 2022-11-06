@@ -9,8 +9,11 @@ var searchData=
   ['_7edefend_6',['~Defend',['../classDefend.html#af5b1bed98cb10288d394127e0fafcfe6',1,'Defend']]],
   ['_7eduringbattle_7',['~DuringBattle',['../classDuringBattle.html#a7254410661924262405fecf5d11839fa',1,'DuringBattle']]],
   ['_7egeneral_8',['~General',['../classGeneral.html#a4c00454af074cfa8e92d88c9622759c0',1,'General']]],
-  ['_7erecords_9',['~Records',['../classRecords.html#a8df0292a9c4202ef0ce5b91df8d50130',1,'Records']]],
-  ['_7estrategy_10',['~Strategy',['../classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775',1,'Strategy']]],
-  ['_7etankunit_11',['~TankUnit',['../classTankUnit.html#a668c3b87a1a35f41e2dcf91d48ae4285',1,'TankUnit']]],
-  ['_7ewar_12',['~War',['../classWar.html#a2ccf0a2464c787aff35246b772d6339f',1,'War']]]
+  ['_7einfantryunit_9',['~InfantryUnit',['../classInfantryUnit.html#ac1297ab97e296b414b0bf5325361ffc0',1,'InfantryUnit']]],
+  ['_7emedicunit_10',['~MedicUnit',['../classMedicUnit.html#acc3f713023d3122f7f7c9d46f4652389',1,'MedicUnit']]],
+  ['_7erecords_11',['~Records',['../classRecords.html#a8df0292a9c4202ef0ce5b91df8d50130',1,'Records']]],
+  ['_7estrategy_12',['~Strategy',['../classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775',1,'Strategy']]],
+  ['_7esupplyunit_13',['~SupplyUnit',['../classSupplyUnit.html#ad75b796696bcd34ad5a961998309ac10',1,'SupplyUnit']]],
+  ['_7etankunit_14',['~TankUnit',['../classTankUnit.html#a668c3b87a1a35f41e2dcf91d48ae4285',1,'TankUnit']]],
+  ['_7ewar_15',['~War',['../classWar.html#a2ccf0a2464c787aff35246b772d6339f',1,'War']]]
 ];

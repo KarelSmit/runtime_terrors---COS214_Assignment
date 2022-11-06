@@ -1,36 +1,38 @@
 \hypertarget{MedicUnit_8h_source}{}\doxysection{Medic\+Unit.\+h}
-
+\mbox{\hyperlink{MedicUnit_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_MEDICUNIT\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_MEDICUNIT\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}MedicIterator.h"{}}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Medic.h"{}}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classMedicUnit}{MedicUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
-\DoxyCodeLine{10 \{}
-\DoxyCodeLine{11     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classMedicIterator}{MedicIterator}};}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13 \textcolor{keyword}{public}:}
-\DoxyCodeLine{14     \mbox{\hyperlink{classMedicUnit}{MedicUnit}}();}
-\DoxyCodeLine{15     \mbox{\hyperlink{classMedicUnit}{\string~MedicUnit}}();}
-\DoxyCodeLine{16     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMedicUnit_ac75489f6b00de2ab02a7970e09771dc1}{getHP}}();}
-\DoxyCodeLine{17     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMedicUnit_a85fce58aa53a4db0f49fb81d169b121c}{getDmg}}();}
-\DoxyCodeLine{18     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMedicUnit_a8e2957ff25a3e9902245961422ab0226}{getRP}}();}
-\DoxyCodeLine{19     \mbox{\hyperlink{classMedicIterator}{MedicIterator}} begin();}
-\DoxyCodeLine{20     \mbox{\hyperlink{classMedicIterator}{MedicIterator}} end();}
-\DoxyCodeLine{21     \textcolor{keywordtype}{void} setVal();}
-\DoxyCodeLine{22     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classMedicUnit_a41102d5ad2711bc60197437ff578bb7e}{takeDamage}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMedicUnit_a34914d8d27cf4db99771ebde0076e1f1}{heal}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{24 }
-\DoxyCodeLine{25     \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *head;}
-\DoxyCodeLine{26 \textcolor{keyword}{private}:}
-\DoxyCodeLine{27     \textcolor{keywordtype}{int} totHP;}
-\DoxyCodeLine{28     \textcolor{keywordtype}{int} totRP;}
-\DoxyCodeLine{29 \};}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_MEDICUNIT\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define \_MEDICUNIT\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{MedicIterator_8h}{MedicIterator.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}Medic.h"{}}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{classMedicUnit}{MedicUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classMedicIterator}{MedicIterator}};}
 \DoxyCodeLine{30 }
-\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{classMedicUnit_a83ee166fc16a41cbdcee533ecacbe7b3}{MedicUnit}}();}
+\DoxyCodeLine{41     \mbox{\hyperlink{classMedicUnit_acc3f713023d3122f7f7c9d46f4652389}{\string~MedicUnit}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMedicUnit_ac75489f6b00de2ab02a7970e09771dc1}{getHP}}();}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMedicUnit_a85fce58aa53a4db0f49fb81d169b121c}{getDmg}}();}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} \mbox{\hyperlink{classMedicUnit_a8e2957ff25a3e9902245961422ab0226}{getRP}}();}
+\DoxyCodeLine{65     \mbox{\hyperlink{classMedicIterator}{MedicIterator}} \mbox{\hyperlink{classMedicUnit_a9e6e57a2a0c4ad3b7cc3e0f4dc3e2d6c}{begin}}();}
+\DoxyCodeLine{71     \mbox{\hyperlink{classMedicIterator}{MedicIterator}} \mbox{\hyperlink{classMedicUnit_a0350082c13a6349b4663ffc386f23141}{end}}();}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMedicUnit_ac0bc601da2d6dffcd05df65456479a01}{setVal}}();}
+\DoxyCodeLine{84     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classMedicUnit_aeb9c93420dc64ccf1956b55b392e243c}{takeDamage}}(\textcolor{keywordtype}{int} d);}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{classMedicUnit_a07b9d20977cad543e8b6f6629dc12963}{heal}}(\textcolor{keywordtype}{int} r);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *head;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{keyword}{private}:}
+\DoxyCodeLine{95     \textcolor{keywordtype}{int} totHP;}
+\DoxyCodeLine{96     \textcolor{keywordtype}{int} totRP;}
+\DoxyCodeLine{97 \};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

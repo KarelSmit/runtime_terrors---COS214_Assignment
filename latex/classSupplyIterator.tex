@@ -1,20 +1,27 @@
 \hypertarget{classSupplyIterator}{}\doxysection{Supply\+Iterator Class Reference}
 \label{classSupplyIterator}\index{SupplyIterator@{SupplyIterator}}
+
+
+Allows sequential iteration of the \mbox{\hyperlink{classSupply}{Supply}} linked list stored within a \mbox{\hyperlink{classSupplyUnit}{Supply\+Unit}} object.  
+
+
+
+
+{\ttfamily \#include $<$Supply\+Iterator.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSupplyIterator_ae9beb927e4725301ad19d8bde47bf2b9}\label{classSupplyIterator_ae9beb927e4725301ad19d8bde47bf2b9}} 
-\mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ {\bfseries operator$\ast$} ()
-\item 
-\mbox{\Hypertarget{classSupplyIterator_a12a439e326a068b8220ce693619fa4de}\label{classSupplyIterator_a12a439e326a068b8220ce693619fa4de}} 
-\mbox{\hyperlink{classSupplyIterator}{Supply\+Iterator}} {\bfseries operator++} ()
-\item 
-\mbox{\Hypertarget{classSupplyIterator_a33f1be1ee90e9023f3060186583534df}\label{classSupplyIterator_a33f1be1ee90e9023f3060186583534df}} 
-bool {\bfseries operator==} (const \mbox{\hyperlink{classSupplyIterator}{Supply\+Iterator}} \&) const
-\item 
-\mbox{\Hypertarget{classSupplyIterator_a2c0cb06c948291c3114285d6ad0df986}\label{classSupplyIterator_a2c0cb06c948291c3114285d6ad0df986}} 
-{\bfseries Supply\+Iterator} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classSupplyIterator_a5d0a8f911de2755a087596c51f6b053b}{Supply\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classSupply}{Supply}} Iterator object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ \mbox{\hyperlink{classSupplyIterator_ae9beb927e4725301ad19d8bde47bf2b9}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Dereference the current \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSupplyIterator}{Supply\+Iterator}} \mbox{\hyperlink{classSupplyIterator_a12a439e326a068b8220ce693619fa4de}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSupplyIterator_ab0a2a1e1df7e91af10aa04ee8cefbb57}{operator==}} (const \mbox{\hyperlink{classSupplyIterator}{Supply\+Iterator}} \&cmp) const
+\begin{DoxyCompactList}\small\item\em Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSupplyIterator_ac11ba863a9219c1106633812b1110000}{Supply\+Iterator}} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$head, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$curr)
+\begin{DoxyCompactList}\small\item\em Construct a new parameterised \mbox{\hyperlink{classSupply}{Supply}} Iterator object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +39,91 @@ class {\bfseries Supply\+Unit}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Allows sequential iteration of the \mbox{\hyperlink{classSupply}{Supply}} linked list stored within a \mbox{\hyperlink{classSupplyUnit}{Supply\+Unit}} object. 
+
+An iterator for a \mbox{\hyperlink{classSupply}{Supply}} linked list 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSupplyIterator_a5d0a8f911de2755a087596c51f6b053b}\label{classSupplyIterator_a5d0a8f911de2755a087596c51f6b053b}} 
+\index{SupplyIterator@{SupplyIterator}!SupplyIterator@{SupplyIterator}}
+\index{SupplyIterator@{SupplyIterator}!SupplyIterator@{SupplyIterator}}
+\doxysubsubsection{\texorpdfstring{SupplyIterator()}{SupplyIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Supply\+Iterator\+::\+Supply\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classSupply}{Supply}} Iterator object. 
+
+\mbox{\Hypertarget{classSupplyIterator_ac11ba863a9219c1106633812b1110000}\label{classSupplyIterator_ac11ba863a9219c1106633812b1110000}} 
+\index{SupplyIterator@{SupplyIterator}!SupplyIterator@{SupplyIterator}}
+\index{SupplyIterator@{SupplyIterator}!SupplyIterator@{SupplyIterator}}
+\doxysubsubsection{\texorpdfstring{SupplyIterator()}{SupplyIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Supply\+Iterator\+::\+Supply\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$}]{head,  }\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$}]{curr }\end{DoxyParamCaption})}
+
+
+
+Construct a new parameterised \mbox{\hyperlink{classSupply}{Supply}} Iterator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & \\
+\hline
+{\em curr} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSupplyIterator_ae9beb927e4725301ad19d8bde47bf2b9}\label{classSupplyIterator_ae9beb927e4725301ad19d8bde47bf2b9}} 
+\index{SupplyIterator@{SupplyIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!SupplyIterator@{SupplyIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ Supply\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dereference the current \mbox{\hyperlink{classNode}{Node}}. 
+
+\begin{DoxyReturn}{Returns}
+Transport\+Unit$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSupplyIterator_a12a439e326a068b8220ce693619fa4de}\label{classSupplyIterator_a12a439e326a068b8220ce693619fa4de}} 
+\index{SupplyIterator@{SupplyIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!SupplyIterator@{SupplyIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSupplyIterator}{Supply\+Iterator}} Supply\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classSupplyIterator}{Supply\+Iterator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSupplyIterator_ab0a2a1e1df7e91af10aa04ee8cefbb57}\label{classSupplyIterator_ab0a2a1e1df7e91af10aa04ee8cefbb57}} 
+\index{SupplyIterator@{SupplyIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!SupplyIterator@{SupplyIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Supply\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSupplyIterator}{Supply\+Iterator}} \&}]{cmp }\end{DoxyParamCaption}) const}
+
+
+
+Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Supply\+Iterator.\+h\item 
+\mbox{\hyperlink{SupplyIterator_8h}{Supply\+Iterator.\+h}}\item 
 Supply\+Iterator.\+cpp\end{DoxyCompactItemize}

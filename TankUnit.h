@@ -40,7 +40,7 @@ public:
 	 */
 	~TankUnit();
 	/**
-	 * @brief return the current total HP of the Tank Unit
+	 * @brief Return the current total HP of the Tank Unit
 	 *
 	 * @return int
 	 */
