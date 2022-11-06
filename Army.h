@@ -13,6 +13,12 @@
 #include "Battalion.h"
 #include <string>
 
+/**
+ * @class Army
+ * Used to perform the Attack or Defend strategy between the two conflicting sides in a battle.
+ * 
+ */
+
 class Army
 {
 public:
