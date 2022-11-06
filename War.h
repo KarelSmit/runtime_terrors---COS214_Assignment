@@ -19,6 +19,7 @@ private:
 	Country* sideA;
 	Country* sideB;
 	bool* battleHistory;
+    
 protected:
     War();
     ~War();
