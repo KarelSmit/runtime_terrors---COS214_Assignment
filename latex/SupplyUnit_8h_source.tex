@@ -1,0 +1,35 @@
+\hypertarget{SupplyUnit_8h_source}{}\doxysection{Supply\+Unit.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_SUPPLYUNIT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_SUPPLYUNIT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}SupplyIterator.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Battalion.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Supply.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classSupplyUnit}{SupplyUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classSupplyIterator}{SupplyIterator}};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{classSupplyUnit}{SupplyUnit}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{classSupplyUnit}{\string~SupplyUnit}}();}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} getHP();}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} getDmg();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} getRP();}
+\DoxyCodeLine{19     \mbox{\hyperlink{classSupplyIterator}{SupplyIterator}} begin();}
+\DoxyCodeLine{20     \mbox{\hyperlink{classSupplyIterator}{SupplyIterator}} end();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} setVal();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{bool} takeDamage(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} heal(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \mbox{\hyperlink{classNode}{Node<TransportUnit*>}} *head;}
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} totHP;}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

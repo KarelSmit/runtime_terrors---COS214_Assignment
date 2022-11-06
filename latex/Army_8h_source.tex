@@ -1,0 +1,42 @@
+\hypertarget{Army_8h_source}{}\doxysection{Army.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ARMY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ARMY\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Battalion.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{classArmy}{Army}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{classArmy}{Army}}();}
+\DoxyCodeLine{10     \mbox{\hyperlink{classArmy}{\string~Army}}();}
+\DoxyCodeLine{11     \textcolor{keywordtype}{void} addInfantry(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{12     \textcolor{keywordtype}{void} addTank(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{13     \textcolor{keywordtype}{void} addMedic(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} addSupply(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} updateStats();}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} getDamage();}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} takeDamage(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} heal();}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} reset();}
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} getMoves();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{int} getHP();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} setEnemy();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} setCommander( std::string );}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} printStats();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{classBattalion}{Battalion}}* atkForce;}
+\DoxyCodeLine{28     \mbox{\hyperlink{classBattalion}{Battalion}}* medicForce;}
+\DoxyCodeLine{29     \mbox{\hyperlink{classBattalion}{Battalion}}* supplyChain;}
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} totalDmg;}
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} totalHP;}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} extraMoves;}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} totalHeal;}
+\DoxyCodeLine{34     \textcolor{keywordtype}{bool} enemy;}
+\DoxyCodeLine{35     std::string gName;}
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

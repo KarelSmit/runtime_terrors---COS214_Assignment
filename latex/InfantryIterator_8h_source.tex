@@ -1,0 +1,30 @@
+\hypertarget{InfantryIterator_8h_source}{}\doxysection{Infantry\+Iterator.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_InfantryIterator\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_InfantryIterator\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}InfantryUnit.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Infantry.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryUnit}{InfantryUnit}};}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryIterator}{InfantryIterator}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryUnit}{InfantryUnit}};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{classFootUnit}{FootUnit}} *operator*();}
+\DoxyCodeLine{16     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} operator++();}
+\DoxyCodeLine{17     \textcolor{keywordtype}{bool} operator==(\textcolor{keyword}{const} \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} \&) \textcolor{keyword}{const};}
+\DoxyCodeLine{18     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}}(\mbox{\hyperlink{classNode}{Node<FootUnit *>}} *, \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *head;}
+\DoxyCodeLine{22     \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *current;}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

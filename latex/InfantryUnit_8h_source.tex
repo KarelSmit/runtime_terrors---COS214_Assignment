@@ -1,0 +1,37 @@
+\hypertarget{InfantryUnit_8h_source}{}\doxysection{Infantry\+Unit.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INFANTRYUNIT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INFANTRYUNIT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}InfantryIterator.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Battalion.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Infantry.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryUnit}{InfantryUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryIterator}{InfantryIterator}};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{classInfantryUnit}{InfantryUnit}}();}
+\DoxyCodeLine{15     \mbox{\hyperlink{classInfantryUnit}{\string~InfantryUnit}}();}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} getHP();}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} getDmg();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} getRP();}
+\DoxyCodeLine{19     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} begin();}
+\DoxyCodeLine{20     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} end();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} setVal();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{bool} takeDamage(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} heal(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *head;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{private}:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} totHP;}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} totDmg;}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

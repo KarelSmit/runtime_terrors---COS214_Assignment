@@ -1,0 +1,35 @@
+\hypertarget{War_8h_source}{}\doxysection{War.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef WAR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define WAR\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}IntelDivision.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}User.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Country.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classWar}{War}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{classUser}{User}} *user;}
+\DoxyCodeLine{16     \textcolor{keyword}{static} \mbox{\hyperlink{classWar}{War}} *warInstance;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{bool} winner;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} score;}
+\DoxyCodeLine{19     \mbox{\hyperlink{classCountry}{Country}}* sideA;}
+\DoxyCodeLine{20     \mbox{\hyperlink{classCountry}{Country}}* sideB;}
+\DoxyCodeLine{21     \textcolor{keywordtype}{bool}* battleHistory;}
+\DoxyCodeLine{22 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{classWar}{War}}();}
+\DoxyCodeLine{24     \mbox{\hyperlink{classWar}{\string~War}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \textcolor{keyword}{static} \mbox{\hyperlink{classWar}{War}}* startWar();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} simulate();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} setScore(\textcolor{keywordtype}{int} s);}
+\DoxyCodeLine{30     \mbox{\hyperlink{classIntelDivision}{IntelDivision}} *Save();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} Restore(\mbox{\hyperlink{classIntelDivision}{IntelDivision}} *memento);}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

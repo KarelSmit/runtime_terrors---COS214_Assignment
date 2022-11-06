@@ -1,0 +1,24 @@
+\hypertarget{BattleState_8h_source}{}\doxysection{Battle\+State.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef BATTLESTATE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define BATTLESTATE\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Battle.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{classBattle}{Battle}};}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classBattleState}{BattleState}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11     \mbox{\hyperlink{classBattleState}{BattleState}}( \mbox{\hyperlink{classBattle}{Battle}}* );}
+\DoxyCodeLine{12     \mbox{\hyperlink{classBattleState}{\string~BattleState}}();}
+\DoxyCodeLine{13     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} handle() = 0;}
+\DoxyCodeLine{14     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} changeState()\{\};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{classBattle}{Battle}} *context;}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

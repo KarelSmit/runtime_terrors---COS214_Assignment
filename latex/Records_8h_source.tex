@@ -1,0 +1,40 @@
+\hypertarget{Records_8h_source}{}\doxysection{Records.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef RECORDS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define RECORDS\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}IntelDivision.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}War.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <ostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classRecords}{Records}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     vector<IntelDivision *> inteldivs;}
+\DoxyCodeLine{18     \mbox{\hyperlink{classWar}{War}} *war;}
+\DoxyCodeLine{19     ofstream myfile;}
+\DoxyCodeLine{20     ofstream topscore;}
+\DoxyCodeLine{21     array<IntelDivision *, 3> top3;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{classRecords}{Records}}(\mbox{\hyperlink{classWar}{War}} *w);}
+\DoxyCodeLine{25     \mbox{\hyperlink{classRecords}{\string~Records}}();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} Backup();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} Undo();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} ShowHistory() \textcolor{keyword}{const};}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} loadTopScores();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} showTopThree();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} checkTopScore();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} writeTopToFile();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} bubbleSort();}
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
