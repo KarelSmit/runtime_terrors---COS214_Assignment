@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadtopscores_0',['loadTopScores',['../classRecords.html#a3b08ffbb3deb5b49c9787f1a74780bbb',1,'Records']]]
+  ['inteldivision_0',['IntelDivision',['../classIntelDivision.html#ac9245a2c688bdfc7a9c38ede0b7f555c',1,'IntelDivision']]]
 ];

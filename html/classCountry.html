@@ -75,25 +75,179 @@ $(function() {
   <div class="headertitle"><div class="title">Country Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Used to facilitate the <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> hierarchy.  
+ <a href="classCountry.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Country_8h_source.html">Country.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8df201a0c5642fa0a4e05472df0562d6"><td class="memItemLeft" align="right" valign="top"><a id="a8df201a0c5642fa0a4e05472df0562d6" name="a8df201a0c5642fa0a4e05472df0562d6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Country</b> (std::string)</td></tr>
-<tr class="separator:a8df201a0c5642fa0a4e05472df0562d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f6c6c54aff320e0d2f4c0e665129c8"><td class="memItemLeft" align="right" valign="top"><a id="a38f6c6c54aff320e0d2f4c0e665129c8" name="a38f6c6c54aff320e0d2f4c0e665129c8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnemy</b> ()</td></tr>
+<tr class="memitem:a26b667360fb98ad39da0d0cacf2e1772"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a26b667360fb98ad39da0d0cacf2e1772">Country</a> (std::string x)</td></tr>
+<tr class="memdesc:a26b667360fb98ad39da0d0cacf2e1772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> object with name x.  <a href="classCountry.html#a26b667360fb98ad39da0d0cacf2e1772">More...</a><br /></td></tr>
+<tr class="separator:a26b667360fb98ad39da0d0cacf2e1772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5013557e0d93fabc976bfa0d7f0564a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a5013557e0d93fabc976bfa0d7f0564a3">~Country</a> ()</td></tr>
+<tr class="memdesc:a5013557e0d93fabc976bfa0d7f0564a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> object.  <a href="classCountry.html#a5013557e0d93fabc976bfa0d7f0564a3">More...</a><br /></td></tr>
+<tr class="separator:a5013557e0d93fabc976bfa0d7f0564a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f6c6c54aff320e0d2f4c0e665129c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a38f6c6c54aff320e0d2f4c0e665129c8">setEnemy</a> ()</td></tr>
+<tr class="memdesc:a38f6c6c54aff320e0d2f4c0e665129c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> as the enemy.  <a href="classCountry.html#a38f6c6c54aff320e0d2f4c0e665129c8">More...</a><br /></td></tr>
 <tr class="separator:a38f6c6c54aff320e0d2f4c0e665129c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a256631253135fd090677e7128ee44fad"><td class="memItemLeft" align="right" valign="top"><a id="a256631253135fd090677e7128ee44fad" name="a256631253135fd090677e7128ee44fad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>makeMove</b> (int, <a class="el" href="classCountry.html">Country</a> *)</td></tr>
-<tr class="separator:a256631253135fd090677e7128ee44fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3959c7dc7ade25ff431098fffea6156a"><td class="memItemLeft" align="right" valign="top"><a id="a3959c7dc7ade25ff431098fffea6156a" name="a3959c7dc7ade25ff431098fffea6156a"></a>
-<a class="el" href="classArmy.html">Army</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getArmy</b> ()</td></tr>
+<tr class="memitem:a4ec1eba66610a1d8988a4af599139108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a4ec1eba66610a1d8988a4af599139108">makeMove</a> (int choice, <a class="el" href="classCountry.html">Country</a> *enemy)</td></tr>
+<tr class="memdesc:a4ec1eba66610a1d8988a4af599139108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> given by choice against enemy.  <a href="classCountry.html#a4ec1eba66610a1d8988a4af599139108">More...</a><br /></td></tr>
+<tr class="separator:a4ec1eba66610a1d8988a4af599139108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3959c7dc7ade25ff431098fffea6156a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArmy.html">Army</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a3959c7dc7ade25ff431098fffea6156a">getArmy</a> ()</td></tr>
+<tr class="memdesc:a3959c7dc7ade25ff431098fffea6156a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classArmy.html">Army</a> object.  <a href="classCountry.html#a3959c7dc7ade25ff431098fffea6156a">More...</a><br /></td></tr>
 <tr class="separator:a3959c7dc7ade25ff431098fffea6156a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c5751c273170d8613088a01db1cbe1"><td class="memItemLeft" align="right" valign="top"><a id="a54c5751c273170d8613088a01db1cbe1" name="a54c5751c273170d8613088a01db1cbe1"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getUsername</b> ()</td></tr>
+<tr class="memitem:a54c5751c273170d8613088a01db1cbe1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCountry.html#a54c5751c273170d8613088a01db1cbe1">getUsername</a> ()</td></tr>
+<tr class="memdesc:a54c5751c273170d8613088a01db1cbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the <a class="el" href="classGeneral.html" title="The General class is used to initiate the chosen Strategy.">General</a> for the <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> object.  <a href="classCountry.html#a54c5751c273170d8613088a01db1cbe1">More...</a><br /></td></tr>
 <tr class="separator:a54c5751c273170d8613088a01db1cbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Used to facilitate the <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> hierarchy. </p>
+<p >Wrapper class used to store <a class="el" href="classArmy.html">Army</a> and <a class="el" href="classGeneral.html" title="The General class is used to initiate the chosen Strategy.">General</a> objects during the simulation of the <a class="el" href="classWar.html" title="The War class acts as a Singleton, only allowing a single instance for the entire runtime of the proj...">War</a> class </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a26b667360fb98ad39da0d0cacf2e1772" name="a26b667360fb98ad39da0d0cacf2e1772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b667360fb98ad39da0d0cacf2e1772">&#9670;&#160;</a></span>Country()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Country::Country </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> object with name x. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5013557e0d93fabc976bfa0d7f0564a3" name="a5013557e0d93fabc976bfa0d7f0564a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5013557e0d93fabc976bfa0d7f0564a3">&#9670;&#160;</a></span>~Country()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Country::~Country </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3959c7dc7ade25ff431098fffea6156a" name="a3959c7dc7ade25ff431098fffea6156a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3959c7dc7ade25ff431098fffea6156a">&#9670;&#160;</a></span>getArmy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArmy.html">Army</a> * Country::getArmy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="classArmy.html">Army</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>Army* </dd></dl>
+
+</div>
+</div>
+<a id="a54c5751c273170d8613088a01db1cbe1" name="a54c5751c273170d8613088a01db1cbe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c5751c273170d8613088a01db1cbe1">&#9670;&#160;</a></span>getUsername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Country::getUsername </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of the <a class="el" href="classGeneral.html" title="The General class is used to initiate the chosen Strategy.">General</a> for the <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> object. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+</div>
+</div>
+<a id="a4ec1eba66610a1d8988a4af599139108" name="a4ec1eba66610a1d8988a4af599139108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec1eba66610a1d8988a4af599139108">&#9670;&#160;</a></span>makeMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Country::makeMove </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>choice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCountry.html">Country</a> *&#160;</td>
+          <td class="paramname"><em>enemy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implement the <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> given by choice against enemy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">choice</td><td></td></tr>
+    <tr><td class="paramname">enemy</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38f6c6c54aff320e0d2f4c0e665129c8" name="a38f6c6c54aff320e0d2f4c0e665129c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f6c6c54aff320e0d2f4c0e665129c8">&#9670;&#160;</a></span>setEnemy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Country::setEnemy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the <a class="el" href="classCountry.html" title="Used to facilitate the Strategy hierarchy.">Country</a> as the enemy. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Country_8h_source.html">Country.h</a></li>
 <li>Country.cpp</li>

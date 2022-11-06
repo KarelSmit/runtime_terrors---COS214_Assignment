@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['readme_0',['README',['../md_README.html',1,'']]],
-  ['records_1',['Records',['../classRecords.html',1,'Records'],['../classRecords.html#abb59d5a54821e16684297f7563650782',1,'Records::Records()']]],
-  ['records_2eh_2',['Records.h',['../Records_8h.html',1,'']]],
-  ['reset_3',['reset',['../classArmy.html#a98768f29b72b40a78b0ea4cd7ff84104',1,'Army']]],
-  ['restore_4',['Restore',['../classWar.html#ad04de56bb713adcb741476de8dca7d30',1,'War']]]
+  ['operator_2a_0',['operator*',['../classTankIterator.html#a3a39dd991a98c09db7622fa496d93dd4',1,'TankIterator']]],
+  ['operator_2b_2b_1',['operator++',['../classTankIterator.html#a8b61d1ede96cdb9259982e7c5bd2f69b',1,'TankIterator']]],
+  ['operator_3d_3d_2',['operator==',['../classTankIterator.html#abdd9d7b57621b1e2304d2ce6a4bdee01',1,'TankIterator']]]
 ];

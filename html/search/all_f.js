@@ -1,7 +1,27 @@
 var searchData=
 [
-  ['undo_0',['Undo',['../classRecords.html#ad0ae033fe22711319e0bb1fea3539fc4',1,'Records']]],
-  ['updatestats_1',['updateStats',['../classArmy.html#a96c7bc1b1c003dd4f632a5db26bcfa98',1,'Army']]],
-  ['user_2',['User',['../classUser.html',1,'User'],['../classUser.html#a903210c5d77efc2788717a12ea8febe2',1,'User::User(string n, int s)'],['../classUser.html#afe590ef3e6e04f62753317b292d41d8b',1,'User::User(User &amp;user)']]],
-  ['user_2eh_3',['User.h',['../User_8h.html',1,'']]]
+  ['save_0',['Save',['../classWar.html#a4cf710b35d949d05e8d6eab39affcb06',1,'War']]],
+  ['setattack_1',['setAttack',['../classGeneral.html#aa06cb4b1aff5de73dd6f3e7a03030ba2',1,'General']]],
+  ['setcommander_2',['setCommander',['../classArmy.html#a145f0c9f5b9dea347735f8cb0ba68d40',1,'Army']]],
+  ['setdefend_3',['setDefend',['../classGeneral.html#a41e5f717a26f3c8d597e25f1102be755',1,'General']]],
+  ['setenemy_4',['setEnemy',['../classCountry.html#a38f6c6c54aff320e0d2f4c0e665129c8',1,'Country::setEnemy()'],['../classArmy.html#a1d41dcf5543b1d99069f294877c8ac51',1,'Army::setEnemy()']]],
+  ['setscore_5',['setScore',['../classWar.html#a1a70434ea8c0b6ea02b0c7bb83b54afe',1,'War']]],
+  ['setstate_6',['setState',['../classBattle.html#aba5b61dd00d052891278d82de6ded7ab',1,'Battle']]],
+  ['setuserscore_7',['setUserScore',['../classUser.html#a649cd805a2224430ebf93bcc7cd42afc',1,'User']]],
+  ['setval_8',['setVal',['../classTankUnit.html#ad0126322fa69d3327487c2d508c07aa6',1,'TankUnit']]],
+  ['showhistory_9',['ShowHistory',['../classRecords.html#ae70a3c48c1091b9132159517cc54a328',1,'Records']]],
+  ['showtopthree_10',['showTopThree',['../classRecords.html#a3542a05721fb74bc69d6eda47f4e736d',1,'Records']]],
+  ['simulate_11',['simulate',['../classWar.html#aafee8174ba642d488dcb7030746f0c15',1,'War']]],
+  ['sniper_12',['Sniper',['../classSniper.html',1,'']]],
+  ['specialskill_13',['SpecialSkill',['../classSpecialSkill.html',1,'']]],
+  ['startwar_14',['startWar',['../classWar.html#acc462d6692791ae950a12f705b664c29',1,'War']]],
+  ['stealth_15',['Stealth',['../classStealth.html',1,'']]],
+  ['strategy_16',['Strategy',['../classStrategy.html',1,'Strategy'],['../classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235',1,'Strategy::Strategy()']]],
+  ['strategy_2eh_17',['Strategy.h',['../Strategy_8h.html',1,'']]],
+  ['supply_18',['Supply',['../classSupply.html',1,'']]],
+  ['supplyiterator_19',['SupplyIterator',['../classSupplyIterator.html',1,'']]],
+  ['supplytruck_20',['SupplyTruck',['../classSupplyTruck.html',1,'']]],
+  ['supplytruckfactory_21',['SupplyTruckFactory',['../classSupplyTruckFactory.html',1,'']]],
+  ['supplyunit_22',['SupplyUnit',['../classSupplyUnit.html',1,'']]],
+  ['supportbarracks_23',['SupportBarracks',['../classSupportBarracks.html',1,'']]]
 ];

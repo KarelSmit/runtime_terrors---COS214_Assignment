@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['takedamage_0',['takeDamage',['../classArmy.html#a8fcf5695baa82e4c21bc429085b92e05',1,'Army::takeDamage()'],['../classBattalion.html#aba0c4d73d5ce4ba5bd8718b740e0566a',1,'Battalion::takeDamage()'],['../classInfantryUnit.html#a7b862e31f225daa6653c6de61f3bc1dd',1,'InfantryUnit::takeDamage()'],['../classMedicUnit.html#a41102d5ad2711bc60197437ff578bb7e',1,'MedicUnit::takeDamage()'],['../classSupplyUnit.html#a35cbd6ffd48dc5d510a4cefd234f306b',1,'SupplyUnit::takeDamage()'],['../classTankUnit.html#a8b98b761f372b1418dff499e4016c2bc',1,'TankUnit::takeDamage()']]],
-  ['tank_1',['Tank',['../classTank.html',1,'']]],
-  ['tankdriver_2',['TankDriver',['../classTankDriver.html',1,'']]],
-  ['tankfactory_3',['TankFactory',['../classTankFactory.html',1,'']]],
-  ['tankiterator_4',['TankIterator',['../classTankIterator.html',1,'']]],
-  ['tankunit_5',['TankUnit',['../classTankUnit.html',1,'']]],
-  ['transportunit_6',['TransportUnit',['../classTransportUnit.html',1,'']]]
+  ['readme_0',['README',['../md_README.html',1,'']]],
+  ['records_1',['Records',['../classRecords.html',1,'Records'],['../classRecords.html#abb59d5a54821e16684297f7563650782',1,'Records::Records()']]],
+  ['records_2eh_2',['Records.h',['../Records_8h.html',1,'']]],
+  ['reset_3',['reset',['../classArmy.html#a98768f29b72b40a78b0ea4cd7ff84104',1,'Army']]],
+  ['restore_4',['Restore',['../classWar.html#ad04de56bb713adcb741476de8dca7d30',1,'War']]]
 ];

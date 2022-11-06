@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['strategy_2eh_0',['Strategy.h',['../Strategy_8h.html',1,'']]]
+  ['inteldivision_2eh_0',['IntelDivision.h',['../IntelDivision_8h.html',1,'']]]
 ];

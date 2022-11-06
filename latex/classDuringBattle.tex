@@ -1,5 +1,14 @@
 \hypertarget{classDuringBattle}{}\doxysection{During\+Battle Class Reference}
 \label{classDuringBattle}\index{DuringBattle@{DuringBattle}}
+
+
+Implements \mbox{\hyperlink{classBattleState}{Battle\+State}} to reflect the combat portion of a \mbox{\hyperlink{classBattle}{Battle}}.  
+
+
+
+
+{\ttfamily \#include $<$During\+Battle.\+h$>$}
+
 Inheritance diagram for During\+Battle\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,14 +18,48 @@ Inheritance diagram for During\+Battle\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classDuringBattle_a4226ae66383855c85bbf309c0e062c72}\label{classDuringBattle_a4226ae66383855c85bbf309c0e062c72}} 
-{\bfseries During\+Battle} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$)
-\item 
+\mbox{\hyperlink{classDuringBattle_affd5427f352c85b4bf53fa7d731c428b}{During\+Battle}} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classDuringBattle}{During\+Battle}} object with context c. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDuringBattle_a7254410661924262405fecf5d11839fa}{$\sim$\+During\+Battle}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the During \mbox{\hyperlink{classBattle}{Battle}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDuringBattle_a7a9c224b381c8f83acc16281fedeaf7b}{handle}} ()
-\begin{DoxyCompactList}\small\item\em Pure virtual function to handle each state. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Facilitate the choosing of a \mbox{\hyperlink{classStrategy}{Strategy}} during the combat portion of a \mbox{\hyperlink{classBattle}{Battle}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classDuringBattle_a7f05ea85effbe8ef2ea8cff307c321c4}{change\+State}} ()
-\begin{DoxyCompactList}\small\item\em Change to the next state of the battle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Change the state to \mbox{\hyperlink{classPostBattle}{Post\+Battle}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implements \mbox{\hyperlink{classBattleState}{Battle\+State}} to reflect the combat portion of a \mbox{\hyperlink{classBattle}{Battle}}. 
+
+Concrete implementation which adheres to the \mbox{\hyperlink{classBattleState}{Battle\+State}} interface 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDuringBattle_affd5427f352c85b4bf53fa7d731c428b}\label{classDuringBattle_affd5427f352c85b4bf53fa7d731c428b}} 
+\index{DuringBattle@{DuringBattle}!DuringBattle@{DuringBattle}}
+\index{DuringBattle@{DuringBattle}!DuringBattle@{DuringBattle}}
+\doxysubsubsection{\texorpdfstring{DuringBattle()}{DuringBattle()}}
+{\footnotesize\ttfamily During\+Battle\+::\+During\+Battle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBattle}{Battle}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classDuringBattle}{During\+Battle}} object with context c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDuringBattle_a7254410661924262405fecf5d11839fa}\label{classDuringBattle_a7254410661924262405fecf5d11839fa}} 
+\index{DuringBattle@{DuringBattle}!````~DuringBattle@{$\sim$DuringBattle}}
+\index{````~DuringBattle@{$\sim$DuringBattle}!DuringBattle@{DuringBattle}}
+\doxysubsubsection{\texorpdfstring{$\sim$DuringBattle()}{~DuringBattle()}}
+{\footnotesize\ttfamily During\+Battle\+::$\sim$\+During\+Battle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the During \mbox{\hyperlink{classBattle}{Battle}} object. 
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -28,7 +71,7 @@ void \mbox{\hyperlink{classDuringBattle_a7f05ea85effbe8ef2ea8cff307c321c4}{chang
 
 
 
-Change to the next state of the battle. 
+Change the state to \mbox{\hyperlink{classPostBattle}{Post\+Battle}}. 
 
 
 
@@ -42,7 +85,7 @@ Reimplemented from \mbox{\hyperlink{classBattleState_a36b87d9104f10cd216fc16f83a
 
 
 
-Pure virtual function to handle each state. 
+Facilitate the choosing of a \mbox{\hyperlink{classStrategy}{Strategy}} during the combat portion of a \mbox{\hyperlink{classBattle}{Battle}}. 
 
 
 
@@ -52,5 +95,5 @@ Implements \mbox{\hyperlink{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}{
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-During\+Battle.\+h\item 
+\mbox{\hyperlink{DuringBattle_8h}{During\+Battle.\+h}}\item 
 During\+Battle.\+cpp\end{DoxyCompactItemize}

@@ -8,11 +8,11 @@ Here are the classes, structs, unions and interfaces with brief descriptions\+:\
 \item\contentsline{section}{\mbox{\hyperlink{classBattle}{Battle}} \\*Create and initiate the \mbox{\hyperlink{classBattleState}{Battle\+State}} for each \mbox{\hyperlink{classBattle}{Battle}}, also holds the winner }{\pageref{classBattle}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classBattleState}{Battle\+State}} \\*Specifies the abstract interface for \mbox{\hyperlink{classPreBattle}{Pre\+Battle}}, \mbox{\hyperlink{classDuringBattle}{During\+Battle}} and \mbox{\hyperlink{classPostBattle}{Post\+Battle}} }{\pageref{classBattleState}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classCombatBarracks}{Combat\+Barracks}} }{\pageref{classCombatBarracks}}{}
-\item\contentsline{section}{\mbox{\hyperlink{classCountry}{Country}} }{\pageref{classCountry}}{}
+\item\contentsline{section}{\mbox{\hyperlink{classCountry}{Country}} \\*Used to facilitate the \mbox{\hyperlink{classStrategy}{Strategy}} hierarchy }{\pageref{classCountry}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classDefend}{Defend}} \\*Concrete implementation of \mbox{\hyperlink{classStrategy}{Strategy}} }{\pageref{classDefend}}{}
-\item\contentsline{section}{\mbox{\hyperlink{classDuringBattle}{During\+Battle}} }{\pageref{classDuringBattle}}{}
+\item\contentsline{section}{\mbox{\hyperlink{classDuringBattle}{During\+Battle}} \\*Implements \mbox{\hyperlink{classBattleState}{Battle\+State}} to reflect the combat portion of a \mbox{\hyperlink{classBattle}{Battle}} }{\pageref{classDuringBattle}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classFootUnit}{Foot\+Unit}} }{\pageref{classFootUnit}}{}
-\item\contentsline{section}{\mbox{\hyperlink{classGeneral}{General}} }{\pageref{classGeneral}}{}
+\item\contentsline{section}{\mbox{\hyperlink{classGeneral}{General}} \\*Used to initiate the chosen \mbox{\hyperlink{classStrategy}{Strategy}} }{\pageref{classGeneral}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classInfantry}{Infantry}} }{\pageref{classInfantry}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} }{\pageref{classInfantryIterator}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classInfantryUnit}{Infantry\+Unit}} }{\pageref{classInfantryUnit}}{}
@@ -38,11 +38,11 @@ Here are the classes, structs, unions and interfaces with brief descriptions\+:\
 \item\contentsline{section}{\mbox{\hyperlink{classTank}{Tank}} }{\pageref{classTank}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classTankDriver}{Tank\+Driver}} }{\pageref{classTankDriver}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classTankFactory}{Tank\+Factory}} }{\pageref{classTankFactory}}{}
-\item\contentsline{section}{\mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} }{\pageref{classTankIterator}}{}
-\item\contentsline{section}{\mbox{\hyperlink{classTankUnit}{Tank\+Unit}} }{\pageref{classTankUnit}}{}
+\item\contentsline{section}{\mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} \\*Allows sequential iteration of the \mbox{\hyperlink{classTankDriver}{Tank\+Driver}} linked list stored within a \mbox{\hyperlink{classTankUnit}{Tank\+Unit}} object }{\pageref{classTankIterator}}{}
+\item\contentsline{section}{\mbox{\hyperlink{classTankUnit}{Tank\+Unit}} \\*Implements the \mbox{\hyperlink{classBattalion}{Battalion}} interface using \mbox{\hyperlink{classTankDriver}{Tank\+Driver}} objects }{\pageref{classTankUnit}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} }{\pageref{classTransportUnit}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classUser}{User}} }{\pageref{classUser}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classVehicle}{Vehicle}} }{\pageref{classVehicle}}{}
 \item\contentsline{section}{\mbox{\hyperlink{classVehicleFactory}{Vehicle\+Factory}} }{\pageref{classVehicleFactory}}{}
-\item\contentsline{section}{\mbox{\hyperlink{classWar}{War}} }{\pageref{classWar}}{}
+\item\contentsline{section}{\mbox{\hyperlink{classWar}{War}} \\*Acts as a Singleton, only allowing a single instance for the entire runtime of the project }{\pageref{classWar}}{}
 \end{DoxyCompactList}

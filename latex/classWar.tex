@@ -2,14 +2,18 @@
 \label{classWar}\index{War@{War}}
 
 
+The \mbox{\hyperlink{classWar}{War}} class acts as a Singleton, only allowing a single instance for the entire runtime of the project.  
+
+
+
+
 {\ttfamily \#include $<$War.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWar_aafee8174ba642d488dcb7030746f0c15}\label{classWar_aafee8174ba642d488dcb7030746f0c15}} 
-void {\bfseries simulate} ()
-\item 
+void \mbox{\hyperlink{classWar_aafee8174ba642d488dcb7030746f0c15}{simulate}} ()
+\begin{DoxyCompactList}\small\item\em Utilize all of the included design patterns to simulate a war. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWar_a1a70434ea8c0b6ea02b0c7bb83b54afe}{set\+Score}} (int s)
 \begin{DoxyCompactList}\small\item\em Set the Score of the \mbox{\hyperlink{classUser}{User}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classIntelDivision}{Intel\+Division}} $\ast$ \mbox{\hyperlink{classWar_a4cf710b35d949d05e8d6eab39affcb06}{Save}} ()
@@ -20,7 +24,7 @@ void \mbox{\hyperlink{classWar_ad04de56bb713adcb741476de8dca7d30}{Restore}} (\mb
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{classWar}{War}} $\ast$ \mbox{\hyperlink{classWar_acc462d6692791ae950a12f705b664c29}{start\+War}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return the war\+Instance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -31,7 +35,9 @@ static \mbox{\hyperlink{classWar}{War}} $\ast$ \mbox{\hyperlink{classWar_acc462d
 
 
 \doxysubsection{Detailed Description}
-This is the class where all the design patterns act together to simulate the war. This class acts as the Originator participant in the Memento design pattern 
+The \mbox{\hyperlink{classWar}{War}} class acts as a Singleton, only allowing a single instance for the entire runtime of the project. 
+
+This is the class where all the design patterns act together to simulate the war. This class acts as the Originator participant in the Memento design pattern
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classWar_a8e837395251af1ea071b3624e85c5a67}\label{classWar_a8e837395251af1ea071b3624e85c5a67}} 
@@ -100,11 +106,25 @@ Set the Score of the \mbox{\hyperlink{classUser}{User}} object.
 {\em s} & \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classWar_aafee8174ba642d488dcb7030746f0c15}\label{classWar_aafee8174ba642d488dcb7030746f0c15}} 
+\index{War@{War}!simulate@{simulate}}
+\index{simulate@{simulate}!War@{War}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void War\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Utilize all of the included design patterns to simulate a war. 
+
 \mbox{\Hypertarget{classWar_acc462d6692791ae950a12f705b664c29}\label{classWar_acc462d6692791ae950a12f705b664c29}} 
 \index{War@{War}!startWar@{startWar}}
 \index{startWar@{startWar}!War@{War}}
 \doxysubsubsection{\texorpdfstring{startWar()}{startWar()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classWar}{War}} $\ast$ War\+::start\+War (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the war\+Instance object. 
 
 \begin{DoxyReturn}{Returns}
 War$\ast$ 

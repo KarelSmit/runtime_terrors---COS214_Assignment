@@ -1,26 +1,121 @@
 \hypertarget{classCountry}{}\doxysection{Country Class Reference}
 \label{classCountry}\index{Country@{Country}}
+
+
+Used to facilitate the \mbox{\hyperlink{classStrategy}{Strategy}} hierarchy.  
+
+
+
+
+{\ttfamily \#include $<$Country.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classCountry_a8df201a0c5642fa0a4e05472df0562d6}\label{classCountry_a8df201a0c5642fa0a4e05472df0562d6}} 
-{\bfseries Country} (std\+::string)
-\item 
-\mbox{\Hypertarget{classCountry_a38f6c6c54aff320e0d2f4c0e665129c8}\label{classCountry_a38f6c6c54aff320e0d2f4c0e665129c8}} 
-void {\bfseries set\+Enemy} ()
-\item 
-\mbox{\Hypertarget{classCountry_a256631253135fd090677e7128ee44fad}\label{classCountry_a256631253135fd090677e7128ee44fad}} 
-void {\bfseries make\+Move} (int, \mbox{\hyperlink{classCountry}{Country}} $\ast$)
-\item 
+\mbox{\hyperlink{classCountry_a26b667360fb98ad39da0d0cacf2e1772}{Country}} (std\+::string x)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCountry}{Country}} object with name x. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCountry_a5013557e0d93fabc976bfa0d7f0564a3}{$\sim$\+Country}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classCountry}{Country}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCountry_a38f6c6c54aff320e0d2f4c0e665129c8}{set\+Enemy}} ()
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classCountry}{Country}} as the enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCountry_a4ec1eba66610a1d8988a4af599139108}{make\+Move}} (int choice, \mbox{\hyperlink{classCountry}{Country}} $\ast$enemy)
+\begin{DoxyCompactList}\small\item\em Implement the \mbox{\hyperlink{classStrategy}{Strategy}} given by choice against enemy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArmy}{Army}} $\ast$ \mbox{\hyperlink{classCountry_a3959c7dc7ade25ff431098fffea6156a}{get\+Army}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classArmy}{Army}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCountry_a54c5751c273170d8613088a01db1cbe1}{get\+Username}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the \mbox{\hyperlink{classGeneral}{General}} for the \mbox{\hyperlink{classCountry}{Country}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used to facilitate the \mbox{\hyperlink{classStrategy}{Strategy}} hierarchy. 
+
+Wrapper class used to store \mbox{\hyperlink{classArmy}{Army}} and \mbox{\hyperlink{classGeneral}{General}} objects during the simulation of the \mbox{\hyperlink{classWar}{War}} class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCountry_a26b667360fb98ad39da0d0cacf2e1772}\label{classCountry_a26b667360fb98ad39da0d0cacf2e1772}} 
+\index{Country@{Country}!Country@{Country}}
+\index{Country@{Country}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{Country()}{Country()}}
+{\footnotesize\ttfamily Country\+::\+Country (\begin{DoxyParamCaption}\item[{std\+::string}]{x }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCountry}{Country}} object with name x. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCountry_a5013557e0d93fabc976bfa0d7f0564a3}\label{classCountry_a5013557e0d93fabc976bfa0d7f0564a3}} 
+\index{Country@{Country}!````~Country@{$\sim$Country}}
+\index{````~Country@{$\sim$Country}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{$\sim$Country()}{~Country()}}
+{\footnotesize\ttfamily Country\+::$\sim$\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classCountry}{Country}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classCountry_a3959c7dc7ade25ff431098fffea6156a}\label{classCountry_a3959c7dc7ade25ff431098fffea6156a}} 
-\mbox{\hyperlink{classArmy}{Army}} $\ast$ {\bfseries get\+Army} ()
-\item 
+\index{Country@{Country}!getArmy@{getArmy}}
+\index{getArmy@{getArmy}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{getArmy()}{getArmy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArmy}{Army}} $\ast$ Country\+::get\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classArmy}{Army}} object. 
+
+\begin{DoxyReturn}{Returns}
+Army$\ast$ 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classCountry_a54c5751c273170d8613088a01db1cbe1}\label{classCountry_a54c5751c273170d8613088a01db1cbe1}} 
-std\+::string {\bfseries get\+Username} ()
-\end{DoxyCompactItemize}
+\index{Country@{Country}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{getUsername()}{getUsername()}}
+{\footnotesize\ttfamily std\+::string Country\+::get\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the \mbox{\hyperlink{classGeneral}{General}} for the \mbox{\hyperlink{classCountry}{Country}} object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCountry_a4ec1eba66610a1d8988a4af599139108}\label{classCountry_a4ec1eba66610a1d8988a4af599139108}} 
+\index{Country@{Country}!makeMove@{makeMove}}
+\index{makeMove@{makeMove}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{makeMove()}{makeMove()}}
+{\footnotesize\ttfamily void Country\+::make\+Move (\begin{DoxyParamCaption}\item[{int}]{choice,  }\item[{\mbox{\hyperlink{classCountry}{Country}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+
+
+Implement the \mbox{\hyperlink{classStrategy}{Strategy}} given by choice against enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & \\
+\hline
+{\em enemy} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCountry_a38f6c6c54aff320e0d2f4c0e665129c8}\label{classCountry_a38f6c6c54aff320e0d2f4c0e665129c8}} 
+\index{Country@{Country}!setEnemy@{setEnemy}}
+\index{setEnemy@{setEnemy}!Country@{Country}}
+\doxysubsubsection{\texorpdfstring{setEnemy()}{setEnemy()}}
+{\footnotesize\ttfamily void Country\+::set\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classCountry}{Country}} as the enemy. 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Country.\+h\item 
+\mbox{\hyperlink{Country_8h}{Country.\+h}}\item 
 Country.\+cpp\end{DoxyCompactItemize}

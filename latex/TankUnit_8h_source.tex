@@ -1,37 +1,38 @@
 \hypertarget{TankUnit_8h_source}{}\doxysection{Tank\+Unit.\+h}
-
+\mbox{\hyperlink{TankUnit_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_TANKUNIT\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_TANKUNIT\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}TankIterator.h"{}}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Tank.h"{}}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classTankUnit}{TankUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
-\DoxyCodeLine{10 \{}
-\DoxyCodeLine{11     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classTankIterator}{TankIterator}};}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13 \textcolor{keyword}{public}:}
-\DoxyCodeLine{14     \mbox{\hyperlink{classTankUnit}{TankUnit}}();}
-\DoxyCodeLine{15     \mbox{\hyperlink{classTankUnit}{\string~TankUnit}}();}
-\DoxyCodeLine{16     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTankUnit_a6b7de8e073650cfca372a4e6a3489c68}{getHP}}();}
-\DoxyCodeLine{17     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTankUnit_a3f19c89b6aed4273d3f59daa91758763}{getDmg}}();}
-\DoxyCodeLine{18     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTankUnit_ac7a50774040fd08d46398eccd3c55fb8}{getRP}}();}
-\DoxyCodeLine{19     \mbox{\hyperlink{classTankIterator}{TankIterator}} begin();}
-\DoxyCodeLine{20     \mbox{\hyperlink{classTankIterator}{TankIterator}} end();}
-\DoxyCodeLine{21     \textcolor{keywordtype}{void} setVal();}
-\DoxyCodeLine{22     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classTankUnit_a8b98b761f372b1418dff499e4016c2bc}{takeDamage}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{classTankUnit_ace6d7a655c13010a9c53ca8eca07a7cc}{heal}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{24 }
-\DoxyCodeLine{25     \mbox{\hyperlink{classNode}{Node<TransportUnit *>}} *head;}
-\DoxyCodeLine{26 \textcolor{keyword}{private}:}
-\DoxyCodeLine{27     \textcolor{keywordtype}{int} totHP;}
-\DoxyCodeLine{28     \textcolor{keywordtype}{int} totDmg;}
-\DoxyCodeLine{29 \};}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_TANKUNIT\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define \_TANKUNIT\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{TankIterator_8h}{TankIterator.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}Tank.h"{}}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{classTankUnit}{TankUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classTankIterator}{TankIterator}};}
 \DoxyCodeLine{30 }
-\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{32 }
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{classTankUnit_aafbf2803d4ee150c08de108495162861}{TankUnit}}();}
+\DoxyCodeLine{41     \mbox{\hyperlink{classTankUnit_a668c3b87a1a35f41e2dcf91d48ae4285}{\string~TankUnit}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTankUnit_a6b7de8e073650cfca372a4e6a3489c68}{getHP}}();}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTankUnit_a3f19c89b6aed4273d3f59daa91758763}{getDmg}}();}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTankUnit_ac7a50774040fd08d46398eccd3c55fb8}{getRP}}();}
+\DoxyCodeLine{65     \mbox{\hyperlink{classTankIterator}{TankIterator}} \mbox{\hyperlink{classTankUnit_ab6b6e9dad6b7558610d8d9325f724afc}{begin}}();}
+\DoxyCodeLine{71     \mbox{\hyperlink{classTankIterator}{TankIterator}} \mbox{\hyperlink{classTankUnit_a753bd9c01f58018b1cbeef11b71b41e1}{end}}();}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{classTankUnit_ad0126322fa69d3327487c2d508c07aa6}{setVal}}();}
+\DoxyCodeLine{84     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classTankUnit_ae118b10f0af219dd3c0a671ed388bada}{takeDamage}}(\textcolor{keywordtype}{int} d);}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{classTankUnit_a15f5c06268d6b20fb0c8b39db5e60c3a}{heal}}(\textcolor{keywordtype}{int} restore);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \mbox{\hyperlink{classNode}{Node<TransportUnit *>}} *head;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{keyword}{private}:}
+\DoxyCodeLine{95     \textcolor{keywordtype}{int} totHP;}
+\DoxyCodeLine{96     \textcolor{keywordtype}{int} totDmg;}
+\DoxyCodeLine{97 \};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

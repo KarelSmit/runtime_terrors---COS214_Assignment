@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['medic_0',['Medic',['../classMedic.html',1,'']]],
-  ['mediciterator_1',['MedicIterator',['../classMedicIterator.html',1,'']]],
-  ['medicunit_2',['MedicUnit',['../classMedicUnit.html',1,'']]],
-  ['modifier_3',['Modifier',['../classColor_1_1Modifier.html',1,'Color']]]
+  ['loadtopscores_0',['loadTopScores',['../classRecords.html#a3b08ffbb3deb5b49c9787f1a74780bbb',1,'Records']]]
 ];
