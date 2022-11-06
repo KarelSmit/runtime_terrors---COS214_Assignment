@@ -20,6 +20,8 @@ using namespace std;
  * This is the class where all the design patterns act together to simulate the war.
  * This class acts as the Originator participant in the Memento design pattern
  *
+ * @brief The War class acts as a Singleton, only allowing a single instance for the entire runtime of the project
+ *
  */
 class War
 {
@@ -47,14 +49,14 @@ protected:
 
 public:
 	/**
-	 * @brief
+	 * @brief Return the warInstance object
 	 *
 	 * @return War*
 	 */
 	static War *startWar();
 
 	/**
-	 * @brief
+	 * @brief Utilize all of the included design patterns to simulate a war
 	 *
 	 */
 	void simulate();

@@ -30,6 +30,7 @@ War::~War()
 	delete sideA;
 	delete sideB;
 	delete battleHistory;
+	delete user;
 }
 
 void War::simulate()
@@ -51,7 +52,7 @@ void War::simulate()
 	battleHistory = new bool[3];
 	string uName;
 	std::cout << "\nEnter your name below\n->";
-	cin.ignore(1,'\n');
+	cin.ignore(1, '\n');
 	getline(cin, uName);
 	// std::cin >> uName;
 	user = new User(uName, 0);
@@ -89,7 +90,6 @@ void War::simulate()
 		std::cout << "\nYou have lost the war. Better luck next time " << sideA->getUsername() << ".\nYour final score was " << score << ".\n";
 		cout << "================================================================================================\n";
 	}
-	
 }
 
 void War::setScore(int s)
