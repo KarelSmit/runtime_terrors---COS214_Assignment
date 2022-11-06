@@ -1,5 +1,14 @@
 \hypertarget{classBattalion}{}\doxysection{Battalion Class Reference}
 \label{classBattalion}\index{Battalion@{Battalion}}
+
+
+Abstract parent for \mbox{\hyperlink{classInfantryUnit}{Infantry\+Unit}}, \mbox{\hyperlink{classTankUnit}{Tank\+Unit}}, \mbox{\hyperlink{classMedicUnit}{Medic\+Unit}} and \mbox{\hyperlink{classSupplyUnit}{Supply\+Unit}}. Also acts as a node for the \mbox{\hyperlink{classArmy}{Army}} class.  
+
+
+
+
+{\ttfamily \#include $<$Battalion.\+h$>$}
+
 Inheritance diagram for Battalion\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,21 +18,20 @@ Inheritance diagram for Battalion\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}\label{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}} 
-virtual int {\bfseries get\+HP} ()=0
-\item 
-\mbox{\Hypertarget{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}\label{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}} 
-virtual int {\bfseries get\+Dmg} ()=0
-\item 
-\mbox{\Hypertarget{classBattalion_a81c77fc8c8beb61a84991838797cd84f}\label{classBattalion_a81c77fc8c8beb61a84991838797cd84f}} 
-virtual int {\bfseries get\+RP} ()=0
-\item 
-\mbox{\Hypertarget{classBattalion_a5780e4453deb3e8b55673db5610d2024}\label{classBattalion_a5780e4453deb3e8b55673db5610d2024}} 
-virtual bool {\bfseries take\+Damage} (int)=0
-\item 
-\mbox{\Hypertarget{classBattalion_a136c35e183856fa642f93ff9a5da64de}\label{classBattalion_a136c35e183856fa642f93ff9a5da64de}} 
-virtual void {\bfseries heal} (int)=0
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classBattalion_a0df462bc8953b18b85f418715f6afa90}{Battalion}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBattalion}{Battalion}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBattalion_a9c1187b0bb2897f5a47ddc45041c4599}{$\sim$\+Battalion}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classBattalion}{Battalion}} object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}{get\+HP}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract interface to get the HP of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}{get\+Dmg}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract interface to get the Damage of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBattalion_a81c77fc8c8beb61a84991838797cd84f}{get\+RP}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract interface to get the Rejuvenation\+Power of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBattalion_aba0c4d73d5ce4ba5bd8718b740e0566a}{take\+Damage}} (int x)=0
+\begin{DoxyCompactList}\small\item\em Abstract interface to deal x damage to a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit Returns a boolean stating whether the target has sustained enough damage to be destroyed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBattalion_a9703593b6d231dca53dae43c17562a09}{heal}} (int x)=0
+\begin{DoxyCompactList}\small\item\em Abstract interface to restore x HP of a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +40,132 @@ virtual void {\bfseries heal} (int)=0
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Abstract parent for \mbox{\hyperlink{classInfantryUnit}{Infantry\+Unit}}, \mbox{\hyperlink{classTankUnit}{Tank\+Unit}}, \mbox{\hyperlink{classMedicUnit}{Medic\+Unit}} and \mbox{\hyperlink{classSupplyUnit}{Supply\+Unit}}. Also acts as a node for the \mbox{\hyperlink{classArmy}{Army}} class. 
+
+Specifies the interface for all other battalion classes
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBattalion_a0df462bc8953b18b85f418715f6afa90}\label{classBattalion_a0df462bc8953b18b85f418715f6afa90}} 
+\index{Battalion@{Battalion}!Battalion@{Battalion}}
+\index{Battalion@{Battalion}!Battalion@{Battalion}}
+\doxysubsubsection{\texorpdfstring{Battalion()}{Battalion()}}
+{\footnotesize\ttfamily Battalion\+::\+Battalion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBattalion}{Battalion}} object. 
+
+\mbox{\Hypertarget{classBattalion_a9c1187b0bb2897f5a47ddc45041c4599}\label{classBattalion_a9c1187b0bb2897f5a47ddc45041c4599}} 
+\index{Battalion@{Battalion}!````~Battalion@{$\sim$Battalion}}
+\index{````~Battalion@{$\sim$Battalion}!Battalion@{Battalion}}
+\doxysubsubsection{\texorpdfstring{$\sim$Battalion()}{~Battalion()}}
+{\footnotesize\ttfamily Battalion\+::$\sim$\+Battalion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classBattalion}{Battalion}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}\label{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}} 
+\index{Battalion@{Battalion}!getDmg@{getDmg}}
+\index{getDmg@{getDmg}!Battalion@{Battalion}}
+\doxysubsubsection{\texorpdfstring{getDmg()}{getDmg()}}
+{\footnotesize\ttfamily virtual int Battalion\+::get\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract interface to get the Damage of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classInfantryUnit_a42ecb27ba1cfca00851bc43fd96b93e8}{Infantry\+Unit}}, \mbox{\hyperlink{classMedicUnit_a85fce58aa53a4db0f49fb81d169b121c}{Medic\+Unit}}, \mbox{\hyperlink{classSupplyUnit_ac7dc2e32a58fdd22ac034cdd2ed5f847}{Supply\+Unit}}, and \mbox{\hyperlink{classTankUnit_a3f19c89b6aed4273d3f59daa91758763}{Tank\+Unit}}.
+
+\mbox{\Hypertarget{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}\label{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}} 
+\index{Battalion@{Battalion}!getHP@{getHP}}
+\index{getHP@{getHP}!Battalion@{Battalion}}
+\doxysubsubsection{\texorpdfstring{getHP()}{getHP()}}
+{\footnotesize\ttfamily virtual int Battalion\+::get\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract interface to get the HP of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classInfantryUnit_afe1b023089db9c9193491280670345ea}{Infantry\+Unit}}, \mbox{\hyperlink{classMedicUnit_ac75489f6b00de2ab02a7970e09771dc1}{Medic\+Unit}}, \mbox{\hyperlink{classSupplyUnit_ac60962e985d9d6c5a776cb0d0b3e34b4}{Supply\+Unit}}, and \mbox{\hyperlink{classTankUnit_a6b7de8e073650cfca372a4e6a3489c68}{Tank\+Unit}}.
+
+\mbox{\Hypertarget{classBattalion_a81c77fc8c8beb61a84991838797cd84f}\label{classBattalion_a81c77fc8c8beb61a84991838797cd84f}} 
+\index{Battalion@{Battalion}!getRP@{getRP}}
+\index{getRP@{getRP}!Battalion@{Battalion}}
+\doxysubsubsection{\texorpdfstring{getRP()}{getRP()}}
+{\footnotesize\ttfamily virtual int Battalion\+::get\+RP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract interface to get the Rejuvenation\+Power of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classInfantryUnit_aa216078221e01134546a9dced77fa927}{Infantry\+Unit}}, \mbox{\hyperlink{classMedicUnit_a8e2957ff25a3e9902245961422ab0226}{Medic\+Unit}}, \mbox{\hyperlink{classSupplyUnit_a930845af1e8f4506aa3f3d466e941328}{Supply\+Unit}}, and \mbox{\hyperlink{classTankUnit_ac7a50774040fd08d46398eccd3c55fb8}{Tank\+Unit}}.
+
+\mbox{\Hypertarget{classBattalion_a9703593b6d231dca53dae43c17562a09}\label{classBattalion_a9703593b6d231dca53dae43c17562a09}} 
+\index{Battalion@{Battalion}!heal@{heal}}
+\index{heal@{heal}!Battalion@{Battalion}}
+\doxysubsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily virtual void Battalion\+::heal (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract interface to restore x HP of a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}{Infantry\+Unit}}, \mbox{\hyperlink{classMedicUnit_a34914d8d27cf4db99771ebde0076e1f1}{Medic\+Unit}}, \mbox{\hyperlink{classSupplyUnit_ac700942411aa152b966fb97ee25a80b1}{Supply\+Unit}}, and \mbox{\hyperlink{classTankUnit_ace6d7a655c13010a9c53ca8eca07a7cc}{Tank\+Unit}}.
+
+\mbox{\Hypertarget{classBattalion_aba0c4d73d5ce4ba5bd8718b740e0566a}\label{classBattalion_aba0c4d73d5ce4ba5bd8718b740e0566a}} 
+\index{Battalion@{Battalion}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Battalion@{Battalion}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily virtual bool Battalion\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract interface to deal x damage to a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit Returns a boolean stating whether the target has sustained enough damage to be destroyed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}{Infantry\+Unit}}, \mbox{\hyperlink{classMedicUnit_a41102d5ad2711bc60197437ff578bb7e}{Medic\+Unit}}, \mbox{\hyperlink{classSupplyUnit_a35cbd6ffd48dc5d510a4cefd234f306b}{Supply\+Unit}}, and \mbox{\hyperlink{classTankUnit_a8b98b761f372b1418dff499e4016c2bc}{Tank\+Unit}}.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Battalion.\+h\item 
+\mbox{\hyperlink{Battalion_8h}{Battalion.\+h}}\item 
 Battalion.\+cpp\end{DoxyCompactItemize}

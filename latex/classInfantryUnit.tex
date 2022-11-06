@@ -10,11 +10,11 @@ Inheritance diagram for Infantry\+Unit\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{classInfantryUnit_afe1b023089db9c9193491280670345ea}{get\+HP}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract interface to get the HP of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classInfantryUnit_a42ecb27ba1cfca00851bc43fd96b93e8}{get\+Dmg}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract interface to get the Damage of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classInfantryUnit_aa216078221e01134546a9dced77fa927}{get\+RP}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract interface to get the Rejuvenation\+Power of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}\label{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}} 
 \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} {\bfseries begin} ()
 \item 
@@ -25,9 +25,9 @@ int \mbox{\hyperlink{classInfantryUnit_aa216078221e01134546a9dced77fa927}{get\+R
 void {\bfseries set\+Val} ()
 \item 
 bool \mbox{\hyperlink{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}{take\+Damage}} (int)
-\item 
+\begin{DoxyCompactList}\small\item\em Abstract interface to deal x damage to a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit Returns a boolean stating whether the target has sustained enough damage to be destroyed. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}{heal}} (int)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Abstract interface to restore x HP of a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,7 +51,14 @@ class {\bfseries Infantry\+Iterator}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Abstract interface to get the Damage of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}{Battalion}}.
 
 \mbox{\Hypertarget{classInfantryUnit_afe1b023089db9c9193491280670345ea}\label{classInfantryUnit_afe1b023089db9c9193491280670345ea}} 
 \index{InfantryUnit@{InfantryUnit}!getHP@{getHP}}
@@ -61,7 +68,14 @@ Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Abstract interface to get the HP of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}{Battalion}}.
 
 \mbox{\Hypertarget{classInfantryUnit_aa216078221e01134546a9dced77fa927}\label{classInfantryUnit_aa216078221e01134546a9dced77fa927}} 
 \index{InfantryUnit@{InfantryUnit}!getRP@{getRP}}
@@ -71,27 +85,57 @@ Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Abstract interface to get the Rejuvenation\+Power of Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a81c77fc8c8beb61a84991838797cd84f}{Battalion}}.
 
 \mbox{\Hypertarget{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}\label{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}} 
 \index{InfantryUnit@{InfantryUnit}!heal@{heal}}
 \index{heal@{heal}!InfantryUnit@{InfantryUnit}}
 \doxysubsubsection{\texorpdfstring{heal()}{heal()}}
-{\footnotesize\ttfamily void Infantry\+Unit\+::heal (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Infantry\+Unit\+::heal (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Abstract interface to restore x HP of a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBattalion_a9703593b6d231dca53dae43c17562a09}{Battalion}}.
 
 \mbox{\Hypertarget{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}\label{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}} 
 \index{InfantryUnit@{InfantryUnit}!takeDamage@{takeDamage}}
 \index{takeDamage@{takeDamage}!InfantryUnit@{InfantryUnit}}
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
-{\footnotesize\ttfamily bool Infantry\+Unit\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{dmg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Infantry\+Unit\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Abstract interface to deal x damage to a Infantry\+Unit/\+Tank\+Unit/\+Medic\+Unit/\+Supply\+Unit Returns a boolean stating whether the target has sustained enough damage to be destroyed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_aba0c4d73d5ce4ba5bd8718b740e0566a}{Battalion}}.
 
 
 

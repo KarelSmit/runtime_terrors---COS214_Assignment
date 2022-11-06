@@ -12,6 +12,14 @@
 #define STRATEGY_H
 #include "Army.h"
 
+/**
+ * @class Strategy
+ * Abstract class that acts as the strategy participant in the strategy design pattern.
+ *
+ * @brief Abstract parent class for Attack and Defend
+ *
+ */
+
 class Strategy
 {
 public:
@@ -26,7 +34,7 @@ public:
 	 */
 	~Strategy();
 	/**
-	 * @brief Initiate the chosen ConcreteStrategy for Army a against Army b
+	 * @brief Pure virtual fucntion, specifies the interface for initiating the chosen ConcreteStrategy for Army a against Army b
 	 *
 	 * @param a
 	 * @param b

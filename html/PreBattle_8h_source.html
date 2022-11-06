@@ -74,21 +74,24 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PREBATTLE_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PREBATTLE_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;BattleState.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="BattleState_8h.html">BattleState.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classPreBattle.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classPreBattle.html">PreBattle</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBattleState.html">BattleState</a></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_class" href="classPreBattle.html">PreBattle</a>( <a class="code hl_class" href="classBattle.html">Battle</a>* );</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classPreBattle.html">~PreBattle</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> handle();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> changeState();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPreBattle.html#af89f12765057fbb72e3e115a82bf6581">handle</a>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classPreBattle.html#a230cded0056aa41b2dbf4e7d012383e9">changeState</a>();</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBattleState_html"><div class="ttname"><a href="classBattleState.html">BattleState</a></div><div class="ttdef"><b>Definition:</b> BattleState.h:9</div></div>
-<div class="ttc" id="aclassBattle_html"><div class="ttname"><a href="classBattle.html">Battle</a></div><div class="ttdef"><b>Definition:</b> Battle.h:7</div></div>
+<div class="ttc" id="aBattleState_8h_html"><div class="ttname"><a href="BattleState_8h.html">BattleState.h</a></div><div class="ttdoc">Abstract interface class for PreBattle, DuringBattle and PostBattle.</div></div>
+<div class="ttc" id="aclassBattleState_html"><div class="ttname"><a href="classBattleState.html">BattleState</a></div><div class="ttdoc">Specifies the abstract interface for PreBattle, DuringBattle and PostBattle.</div><div class="ttdef"><b>Definition:</b> BattleState.h:27</div></div>
+<div class="ttc" id="aclassBattle_html"><div class="ttname"><a href="classBattle.html">Battle</a></div><div class="ttdoc">Create and initiate the BattleState for each Battle, also holds the winner.</div><div class="ttdef"><b>Definition:</b> Battle.h:24</div></div>
 <div class="ttc" id="aclassPreBattle_html"><div class="ttname"><a href="classPreBattle.html">PreBattle</a></div><div class="ttdef"><b>Definition:</b> PreBattle.h:6</div></div>
+<div class="ttc" id="aclassPreBattle_html_a230cded0056aa41b2dbf4e7d012383e9"><div class="ttname"><a href="classPreBattle.html#a230cded0056aa41b2dbf4e7d012383e9">PreBattle::changeState</a></div><div class="ttdeci">void changeState()</div><div class="ttdoc">Change to the next state of the battle.</div><div class="ttdef"><b>Definition:</b> PreBattle.cpp:74</div></div>
+<div class="ttc" id="aclassPreBattle_html_af89f12765057fbb72e3e115a82bf6581"><div class="ttname"><a href="classPreBattle.html#af89f12765057fbb72e3e115a82bf6581">PreBattle::handle</a></div><div class="ttdeci">void handle()</div><div class="ttdoc">Pure virtual function to handle each state.</div><div class="ttdef"><b>Definition:</b> PreBattle.cpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

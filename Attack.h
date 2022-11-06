@@ -12,6 +12,15 @@
 #define ATTACK_H
 #include "Strategy.h"
 
+/**
+ * @class Attack
+ * Acts as the ConcreteStrategy participant in the Strategy pattern.
+ * It us used to initiate an Attack between two given armies.
+ *
+ * @brief Concrete implementation of Strategy
+ *
+ */
+
 class Attack : public Strategy
 {
 public:
@@ -22,15 +31,15 @@ public:
 	Attack();
 	/**
 	 * @brief Destroy the Attack object
-	 * 
+	 *
 	 */
 	~Attack();
 	/**
 	 * @brief Initiate an Attack by Army a against Army b
-	 * 
-	 * @param a 
-	 * @param b 
+	 *
+	 * @param a
+	 * @param b
 	 */
-	void battlePlan(Army* a, Army* b);
+	void battlePlan(Army *a, Army *b);
 };
 #endif

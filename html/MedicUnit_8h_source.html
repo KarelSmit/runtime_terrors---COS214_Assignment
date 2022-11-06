@@ -77,7 +77,7 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Node.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;MedicIterator.h&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Battalion.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="Battalion_8h.html">Battalion.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Medic.h&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classMedicUnit.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="classMedicUnit.html">MedicUnit</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBattalion.html">Battalion</a></div>
@@ -87,14 +87,14 @@ $(function() {
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_class" href="classMedicUnit.html">MedicUnit</a>();</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classMedicUnit.html">~MedicUnit</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> getHP();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> getDmg();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> getRP();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classMedicUnit.html#ac75489f6b00de2ab02a7970e09771dc1">getHP</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classMedicUnit.html#a85fce58aa53a4db0f49fb81d169b121c">getDmg</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classMedicUnit.html#a8e2957ff25a3e9902245961422ab0226">getRP</a>();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="classMedicIterator.html">MedicIterator</a> begin();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="classMedicIterator.html">MedicIterator</a> end();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> setVal();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> takeDamage(<span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> heal(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classMedicUnit.html#a41102d5ad2711bc60197437ff578bb7e">takeDamage</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMedicUnit.html#a34914d8d27cf4db99771ebde0076e1f1">heal</a>(<span class="keywordtype">int</span>);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classNode.html">Node&lt;FootUnit *&gt;</a> *head;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
@@ -103,9 +103,15 @@ $(function() {
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBattalion_html"><div class="ttname"><a href="classBattalion.html">Battalion</a></div><div class="ttdef"><b>Definition:</b> Battalion.h:5</div></div>
+<div class="ttc" id="aBattalion_8h_html"><div class="ttname"><a href="Battalion_8h.html">Battalion.h</a></div><div class="ttdoc">Template class for all battalions.</div></div>
+<div class="ttc" id="aclassBattalion_html"><div class="ttname"><a href="classBattalion.html">Battalion</a></div><div class="ttdoc">Abstract parent for InfantryUnit, TankUnit, MedicUnit and SupplyUnit. Also acts as a node for the Arm...</div><div class="ttdef"><b>Definition:</b> Battalion.h:23</div></div>
 <div class="ttc" id="aclassMedicIterator_html"><div class="ttname"><a href="classMedicIterator.html">MedicIterator</a></div><div class="ttdef"><b>Definition:</b> MedicIterator.h:10</div></div>
 <div class="ttc" id="aclassMedicUnit_html"><div class="ttname"><a href="classMedicUnit.html">MedicUnit</a></div><div class="ttdef"><b>Definition:</b> MedicUnit.h:10</div></div>
+<div class="ttc" id="aclassMedicUnit_html_a34914d8d27cf4db99771ebde0076e1f1"><div class="ttname"><a href="classMedicUnit.html#a34914d8d27cf4db99771ebde0076e1f1">MedicUnit::heal</a></div><div class="ttdeci">void heal(int)</div><div class="ttdoc">Abstract interface to restore x HP of a InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:90</div></div>
+<div class="ttc" id="aclassMedicUnit_html_a41102d5ad2711bc60197437ff578bb7e"><div class="ttname"><a href="classMedicUnit.html#a41102d5ad2711bc60197437ff578bb7e">MedicUnit::takeDamage</a></div><div class="ttdeci">bool takeDamage(int)</div><div class="ttdoc">Abstract interface to deal x damage to a InfantryUnit/TankUnit/MedicUnit/SupplyUnit Returns a boolean...</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:82</div></div>
+<div class="ttc" id="aclassMedicUnit_html_a85fce58aa53a4db0f49fb81d169b121c"><div class="ttname"><a href="classMedicUnit.html#a85fce58aa53a4db0f49fb81d169b121c">MedicUnit::getDmg</a></div><div class="ttdeci">int getDmg()</div><div class="ttdoc">Abstract interface to get the Damage of InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:57</div></div>
+<div class="ttc" id="aclassMedicUnit_html_a8e2957ff25a3e9902245961422ab0226"><div class="ttname"><a href="classMedicUnit.html#a8e2957ff25a3e9902245961422ab0226">MedicUnit::getRP</a></div><div class="ttdeci">int getRP()</div><div class="ttdoc">Abstract interface to get the RejuvenationPower of InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:62</div></div>
+<div class="ttc" id="aclassMedicUnit_html_ac75489f6b00de2ab02a7970e09771dc1"><div class="ttname"><a href="classMedicUnit.html#ac75489f6b00de2ab02a7970e09771dc1">MedicUnit::getHP</a></div><div class="ttdeci">int getHP()</div><div class="ttdoc">Abstract interface to get the HP of InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div><div class="ttdef"><b>Definition:</b> MedicUnit.cpp:52</div></div>
 <div class="ttc" id="aclassNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

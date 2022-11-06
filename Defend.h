@@ -12,6 +12,15 @@
 #define DEFEND_H
 #include "Strategy.h"
 
+/**
+ * @class Defend
+ *  Acts as the ConcreteStrategy participant in the Strategy pattern.
+ * It us used to initiate the Defense of a given army.
+ *
+ * @brief Concrete implementation of Strategy
+ *
+ */
+
 class Defend : public Strategy
 {
 public:

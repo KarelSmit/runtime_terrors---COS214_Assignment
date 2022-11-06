@@ -75,23 +75,124 @@ $(function() {
   <div class="headertitle"><div class="title">Strategy Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstract parent class for <a class="el" href="classAttack.html" title="Concrete implementation of Strategy.">Attack</a> and <a class="el" href="classDefend.html" title="Concrete implementation of Strategy.">Defend</a>.  
+ <a href="classStrategy.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Strategy_8h_source.html">Strategy.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Strategy:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classStrategy.png" usemap="#Strategy_map" alt=""/>
   <map id="Strategy_map" name="Strategy_map">
-<area href="classAttack.html" alt="Attack" shape="rect" coords="0,56,59,80"/>
-<area href="classDefend.html" alt="Defend" shape="rect" coords="69,56,128,80"/>
+<area href="classAttack.html" title="Concrete implementation of Strategy." alt="Attack" shape="rect" coords="0,56,59,80"/>
+<area href="classDefend.html" title="Concrete implementation of Strategy." alt="Defend" shape="rect" coords="69,56,128,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ade4ab09e761f12a4a070a9c7766ba7a2"><td class="memItemLeft" align="right" valign="top"><a id="ade4ab09e761f12a4a070a9c7766ba7a2" name="ade4ab09e761f12a4a070a9c7766ba7a2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>battlePlan</b> (<a class="el" href="classArmy.html">Army</a> *, <a class="el" href="classArmy.html">Army</a> *)=0</td></tr>
-<tr class="separator:ade4ab09e761f12a4a070a9c7766ba7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2021a15bbc4f0d13f7b92f8933db2235"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235">Strategy</a> ()</td></tr>
+<tr class="memdesc:a2021a15bbc4f0d13f7b92f8933db2235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> object.  <a href="classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235">More...</a><br /></td></tr>
+<tr class="separator:a2021a15bbc4f0d13f7b92f8933db2235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c0bbdd64fd7dfcdd91578784a64775"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775">~Strategy</a> ()</td></tr>
+<tr class="memdesc:a37c0bbdd64fd7dfcdd91578784a64775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> object.  <a href="classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775">More...</a><br /></td></tr>
+<tr class="separator:a37c0bbdd64fd7dfcdd91578784a64775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83530ba0b893889c9b79aa2726421f16"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStrategy.html#a83530ba0b893889c9b79aa2726421f16">battlePlan</a> (<a class="el" href="classArmy.html">Army</a> *a, <a class="el" href="classArmy.html">Army</a> *b)=0</td></tr>
+<tr class="memdesc:a83530ba0b893889c9b79aa2726421f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual fucntion, specifies the interface for initiating the chosen ConcreteStrategy for <a class="el" href="classArmy.html">Army</a> a against <a class="el" href="classArmy.html">Army</a> b.  <a href="classStrategy.html#a83530ba0b893889c9b79aa2726421f16">More...</a><br /></td></tr>
+<tr class="separator:a83530ba0b893889c9b79aa2726421f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Abstract parent class for <a class="el" href="classAttack.html" title="Concrete implementation of Strategy.">Attack</a> and <a class="el" href="classDefend.html" title="Concrete implementation of Strategy.">Defend</a>. </p>
+<p >Abstract class that acts as the strategy participant in the strategy design pattern.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2021a15bbc4f0d13f7b92f8933db2235" name="a2021a15bbc4f0d13f7b92f8933db2235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2021a15bbc4f0d13f7b92f8933db2235">&#9670;&#160;</a></span>Strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Strategy::Strategy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> object. </p>
+
+</div>
+</div>
+<a id="a37c0bbdd64fd7dfcdd91578784a64775" name="a37c0bbdd64fd7dfcdd91578784a64775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c0bbdd64fd7dfcdd91578784a64775">&#9670;&#160;</a></span>~Strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Strategy::~Strategy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the <a class="el" href="classStrategy.html" title="Abstract parent class for Attack and Defend.">Strategy</a> object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a83530ba0b893889c9b79aa2726421f16" name="a83530ba0b893889c9b79aa2726421f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83530ba0b893889c9b79aa2726421f16">&#9670;&#160;</a></span>battlePlan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Strategy::battlePlan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArmy.html">Army</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classArmy.html">Army</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pure virtual fucntion, specifies the interface for initiating the chosen ConcreteStrategy for <a class="el" href="classArmy.html">Army</a> a against <a class="el" href="classArmy.html">Army</a> b. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classAttack.html#af6750daa23c5dafe89dcd5251b0a4167">Attack</a>, and <a class="el" href="classDefend.html#a239b14a7bb1f77360edcd986d6965af2">Defend</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Strategy_8h_source.html">Strategy.h</a></li>
 <li>Strategy.cpp</li>

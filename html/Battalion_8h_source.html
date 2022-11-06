@@ -72,24 +72,31 @@ $(function() {
   <div class="headertitle"><div class="title">Battalion.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef _BATTALION_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define _BATTALION_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classBattalion.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="classBattalion.html">Battalion</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_class" href="classBattalion.html">Battalion</a>();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classBattalion.html">~Battalion</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> getHP() = 0;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> getDmg() = 0;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> getRP() = 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> takeDamage(<span class="keywordtype">int</span>) = 0;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> heal(<span class="keywordtype">int</span>) = 0;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classBattalion.html">Battalion</a> *next;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBattalion_html"><div class="ttname"><a href="classBattalion.html">Battalion</a></div><div class="ttdef"><b>Definition:</b> Battalion.h:5</div></div>
+<a href="Battalion_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef _BATTALION_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define _BATTALION_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classBattalion.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classBattalion.html">Battalion</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="classBattalion.html#a0df462bc8953b18b85f418715f6afa90">Battalion</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="classBattalion.html#a9c1187b0bb2897f5a47ddc45041c4599">~Battalion</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classBattalion.html#a54c4f6e04cfc2dd7a795c4998960ed48">   40</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classBattalion.html#a54c4f6e04cfc2dd7a795c4998960ed48">getHP</a>() = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classBattalion.html#a06024b4e9b0e074f5aae3b544f13fdb6">   46</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classBattalion.html#a06024b4e9b0e074f5aae3b544f13fdb6">getDmg</a>() = 0;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classBattalion.html#a81c77fc8c8beb61a84991838797cd84f">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classBattalion.html#a81c77fc8c8beb61a84991838797cd84f">getRP</a>() = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classBattalion.html#aba0c4d73d5ce4ba5bd8718b740e0566a">   61</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classBattalion.html#aba0c4d73d5ce4ba5bd8718b740e0566a">takeDamage</a>(<span class="keywordtype">int</span> x) = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classBattalion.html#a9703593b6d231dca53dae43c17562a09">   67</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBattalion.html#a9703593b6d231dca53dae43c17562a09">heal</a>(<span class="keywordtype">int</span> x) = 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_class" href="classBattalion.html">Battalion</a> *next; <span class="comment">// The next Battalion in the Army linked list</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassBattalion_html"><div class="ttname"><a href="classBattalion.html">Battalion</a></div><div class="ttdoc">Abstract parent for InfantryUnit, TankUnit, MedicUnit and SupplyUnit. Also acts as a node for the Arm...</div><div class="ttdef"><b>Definition:</b> Battalion.h:23</div></div>
+<div class="ttc" id="aclassBattalion_html_a06024b4e9b0e074f5aae3b544f13fdb6"><div class="ttname"><a href="classBattalion.html#a06024b4e9b0e074f5aae3b544f13fdb6">Battalion::getDmg</a></div><div class="ttdeci">virtual int getDmg()=0</div><div class="ttdoc">Abstract interface to get the Damage of InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div></div>
+<div class="ttc" id="aclassBattalion_html_a0df462bc8953b18b85f418715f6afa90"><div class="ttname"><a href="classBattalion.html#a0df462bc8953b18b85f418715f6afa90">Battalion::Battalion</a></div><div class="ttdeci">Battalion()</div><div class="ttdoc">Construct a new Battalion object.</div><div class="ttdef"><b>Definition:</b> Battalion.cpp:3</div></div>
+<div class="ttc" id="aclassBattalion_html_a54c4f6e04cfc2dd7a795c4998960ed48"><div class="ttname"><a href="classBattalion.html#a54c4f6e04cfc2dd7a795c4998960ed48">Battalion::getHP</a></div><div class="ttdeci">virtual int getHP()=0</div><div class="ttdoc">Abstract interface to get the HP of InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div></div>
+<div class="ttc" id="aclassBattalion_html_a81c77fc8c8beb61a84991838797cd84f"><div class="ttname"><a href="classBattalion.html#a81c77fc8c8beb61a84991838797cd84f">Battalion::getRP</a></div><div class="ttdeci">virtual int getRP()=0</div><div class="ttdoc">Abstract interface to get the RejuvenationPower of InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div></div>
+<div class="ttc" id="aclassBattalion_html_a9703593b6d231dca53dae43c17562a09"><div class="ttname"><a href="classBattalion.html#a9703593b6d231dca53dae43c17562a09">Battalion::heal</a></div><div class="ttdeci">virtual void heal(int x)=0</div><div class="ttdoc">Abstract interface to restore x HP of a InfantryUnit/TankUnit/MedicUnit/SupplyUnit.</div></div>
+<div class="ttc" id="aclassBattalion_html_a9c1187b0bb2897f5a47ddc45041c4599"><div class="ttname"><a href="classBattalion.html#a9c1187b0bb2897f5a47ddc45041c4599">Battalion::~Battalion</a></div><div class="ttdeci">~Battalion()</div><div class="ttdoc">Destroy the Battalion object.</div><div class="ttdef"><b>Definition:</b> Battalion.cpp:7</div></div>
+<div class="ttc" id="aclassBattalion_html_aba0c4d73d5ce4ba5bd8718b740e0566a"><div class="ttname"><a href="classBattalion.html#aba0c4d73d5ce4ba5bd8718b740e0566a">Battalion::takeDamage</a></div><div class="ttdeci">virtual bool takeDamage(int x)=0</div><div class="ttdoc">Abstract interface to deal x damage to a InfantryUnit/TankUnit/MedicUnit/SupplyUnit Returns a boolean...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

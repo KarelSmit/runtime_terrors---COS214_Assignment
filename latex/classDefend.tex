@@ -1,5 +1,14 @@
 \hypertarget{classDefend}{}\doxysection{Defend Class Reference}
 \label{classDefend}\index{Defend@{Defend}}
+
+
+Concrete implementation of \mbox{\hyperlink{classStrategy}{Strategy}}.  
+
+
+
+
+{\ttfamily \#include $<$Defend.\+h$>$}
+
 Inheritance diagram for Defend\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,24 +18,67 @@ Inheritance diagram for Defend\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classDefend_a93e9fc991153aa725a362fe904a9854f}{battle\+Plan}} (\mbox{\hyperlink{classArmy}{Army}} $\ast$, \mbox{\hyperlink{classArmy}{Army}} $\ast$)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classDefend_a71dac1c44d27ecd970530d16d9c6cbc3}{Defend}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classDefend}{Defend}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDefend_af5b1bed98cb10288d394127e0fafcfe6}{$\sim$\+Defend}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classDefend}{Defend}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDefend_a239b14a7bb1f77360edcd986d6965af2}{battle\+Plan}} (\mbox{\hyperlink{classArmy}{Army}} $\ast$a, \mbox{\hyperlink{classArmy}{Army}} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Initiate a defensive move by \mbox{\hyperlink{classArmy}{Army}} a against \mbox{\hyperlink{classArmy}{Army}} b. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete implementation of \mbox{\hyperlink{classStrategy}{Strategy}}. 
+
+Acts as the Concrete\+Strategy participant in the \mbox{\hyperlink{classStrategy}{Strategy}} pattern. It us used to initiate the Defense of a given army.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDefend_a71dac1c44d27ecd970530d16d9c6cbc3}\label{classDefend_a71dac1c44d27ecd970530d16d9c6cbc3}} 
+\index{Defend@{Defend}!Defend@{Defend}}
+\index{Defend@{Defend}!Defend@{Defend}}
+\doxysubsubsection{\texorpdfstring{Defend()}{Defend()}}
+{\footnotesize\ttfamily Defend\+::\+Defend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classDefend}{Defend}} object. 
+
+\mbox{\Hypertarget{classDefend_af5b1bed98cb10288d394127e0fafcfe6}\label{classDefend_af5b1bed98cb10288d394127e0fafcfe6}} 
+\index{Defend@{Defend}!````~Defend@{$\sim$Defend}}
+\index{````~Defend@{$\sim$Defend}!Defend@{Defend}}
+\doxysubsubsection{\texorpdfstring{$\sim$Defend()}{~Defend()}}
+{\footnotesize\ttfamily Defend\+::$\sim$\+Defend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classDefend}{Defend}} object. 
+
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classDefend_a93e9fc991153aa725a362fe904a9854f}\label{classDefend_a93e9fc991153aa725a362fe904a9854f}} 
+\mbox{\Hypertarget{classDefend_a239b14a7bb1f77360edcd986d6965af2}\label{classDefend_a239b14a7bb1f77360edcd986d6965af2}} 
 \index{Defend@{Defend}!battlePlan@{battlePlan}}
 \index{battlePlan@{battlePlan}!Defend@{Defend}}
 \doxysubsubsection{\texorpdfstring{battlePlan()}{battlePlan()}}
-{\footnotesize\ttfamily void Defend\+::battle\+Plan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{defender,  }\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{attacker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Defend\+::battle\+Plan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+Initiate a defensive move by \mbox{\hyperlink{classArmy}{Army}} a against \mbox{\hyperlink{classArmy}{Army}} b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classStrategy_a83530ba0b893889c9b79aa2726421f16}{Strategy}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Defend.\+h\item 
+\mbox{\hyperlink{Defend_8h}{Defend.\+h}}\item 
 Defend.\+cpp\end{DoxyCompactItemize}

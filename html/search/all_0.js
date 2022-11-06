@@ -7,5 +7,6 @@ var searchData=
   ['army_4',['Army',['../classArmy.html',1,'Army'],['../classArmy.html#ae3a3e50665f25ecaa2336245ee625f95',1,'Army::Army()']]],
   ['army_2eh_5',['Army.h',['../Army_8h.html',1,'']]],
   ['asciiart_6',['asciiArt',['../classasciiArt.html',1,'']]],
-  ['attack_7',['Attack',['../classAttack.html',1,'']]]
+  ['attack_7',['Attack',['../classAttack.html',1,'Attack'],['../classAttack.html#aa2f391755dbfa049a6bc2991fae80017',1,'Attack::Attack()']]],
+  ['attack_2eh_8',['Attack.h',['../Attack_8h.html',1,'']]]
 ];

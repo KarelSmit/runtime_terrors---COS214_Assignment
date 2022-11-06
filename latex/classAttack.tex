@@ -1,5 +1,14 @@
 \hypertarget{classAttack}{}\doxysection{Attack Class Reference}
 \label{classAttack}\index{Attack@{Attack}}
+
+
+Concrete implementation of \mbox{\hyperlink{classStrategy}{Strategy}}.  
+
+
+
+
+{\ttfamily \#include $<$Attack.\+h$>$}
+
 Inheritance diagram for Attack\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,24 +18,67 @@ Inheritance diagram for Attack\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classAttack_a4e85850202e654cc5d4f10051ed67497}{battle\+Plan}} (\mbox{\hyperlink{classArmy}{Army}} $\ast$, \mbox{\hyperlink{classArmy}{Army}} $\ast$)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classAttack_aa2f391755dbfa049a6bc2991fae80017}{Attack}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classAttack}{Attack}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAttack_a6d3c8266507e4ac0102ab40847f478fe}{$\sim$\+Attack}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classAttack}{Attack}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAttack_af6750daa23c5dafe89dcd5251b0a4167}{battle\+Plan}} (\mbox{\hyperlink{classArmy}{Army}} $\ast$a, \mbox{\hyperlink{classArmy}{Army}} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Initiate an \mbox{\hyperlink{classAttack}{Attack}} by \mbox{\hyperlink{classArmy}{Army}} a against \mbox{\hyperlink{classArmy}{Army}} b. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete implementation of \mbox{\hyperlink{classStrategy}{Strategy}}. 
+
+Acts as the Concrete\+Strategy participant in the \mbox{\hyperlink{classStrategy}{Strategy}} pattern. It us used to initiate an \mbox{\hyperlink{classAttack}{Attack}} between two given armies.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAttack_aa2f391755dbfa049a6bc2991fae80017}\label{classAttack_aa2f391755dbfa049a6bc2991fae80017}} 
+\index{Attack@{Attack}!Attack@{Attack}}
+\index{Attack@{Attack}!Attack@{Attack}}
+\doxysubsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily Attack\+::\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classAttack}{Attack}} object. 
+
+\mbox{\Hypertarget{classAttack_a6d3c8266507e4ac0102ab40847f478fe}\label{classAttack_a6d3c8266507e4ac0102ab40847f478fe}} 
+\index{Attack@{Attack}!````~Attack@{$\sim$Attack}}
+\index{````~Attack@{$\sim$Attack}!Attack@{Attack}}
+\doxysubsubsection{\texorpdfstring{$\sim$Attack()}{~Attack()}}
+{\footnotesize\ttfamily Attack\+::$\sim$\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classAttack}{Attack}} object. 
+
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classAttack_a4e85850202e654cc5d4f10051ed67497}\label{classAttack_a4e85850202e654cc5d4f10051ed67497}} 
+\mbox{\Hypertarget{classAttack_af6750daa23c5dafe89dcd5251b0a4167}\label{classAttack_af6750daa23c5dafe89dcd5251b0a4167}} 
 \index{Attack@{Attack}!battlePlan@{battlePlan}}
 \index{battlePlan@{battlePlan}!Attack@{Attack}}
 \doxysubsubsection{\texorpdfstring{battlePlan()}{battlePlan()}}
-{\footnotesize\ttfamily void Attack\+::battle\+Plan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{attacker,  }\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{victim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Attack\+::battle\+Plan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+Initiate an \mbox{\hyperlink{classAttack}{Attack}} by \mbox{\hyperlink{classArmy}{Army}} a against \mbox{\hyperlink{classArmy}{Army}} b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classStrategy_a83530ba0b893889c9b79aa2726421f16}{Strategy}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Attack.\+h\item 
+\mbox{\hyperlink{Attack_8h}{Attack.\+h}}\item 
 Attack.\+cpp\end{DoxyCompactItemize}
