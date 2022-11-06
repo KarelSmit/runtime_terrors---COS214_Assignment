@@ -26,6 +26,7 @@
 #include "Stealth.cpp"
 #include "Records.cpp"
 #include "User.cpp"
+#include "IntelDivision.cpp"
 #include <iostream>
 // #include "colormod.h"
 #include <stdlib.h>
