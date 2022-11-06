@@ -4,8 +4,6 @@
  * @brief Memento class
  * @version 0.1
  * @date 2022-11-06
- * 
- * 
  */
  
 #ifndef INTELDIVISION_H
