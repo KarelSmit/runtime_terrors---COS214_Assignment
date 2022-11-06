@@ -1,3 +1,2 @@
-Adolf;300
-Adolf;200
-Super-Duper;60
+Natalie;344
+Karl;340

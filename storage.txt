@@ -1,30 +1,5 @@
-Sat Nov  5 15:12:56 2022
- / (Super-Duper: 10)
-Sat Nov  5 15:12:56 2022
- / (Super-Duper: 60)
-Sat Nov  5 15:12:56 2022
- / (Super-Duper: 8)
-Sat Nov  5 15:13:06 2022
- / (Super-Duper: 10)
-Sat Nov  5 15:13:06 2022
- / (Super-Duper: 60)
-Sat Nov  5 15:13:06 2022
- / (Super-Duper: 8)
-Sat Nov  5 15:58:48 2022
- / (Super-Duper: 10)
-Sat Nov  5 15:58:48 2022
- / (Super-Duper: 60)
-Sat Nov  5 15:58:48 2022
- / (Super-Duper: 8)
-Sat Nov  5 15:59:11 2022
- / (Super-Duper: 10)
-Sat Nov  5 15:59:11 2022
- / (Super-Duper: 60)
-Sat Nov  5 15:59:11 2022
- / (Super-Duper: 8)
-Sat Nov  5 16:05:01 2022
- / (Adolf: 200)
-Sat Nov  5 16:05:01 2022
- / (Adolf: 300)
-Sat Nov  5 16:05:01 2022
- / (Adolf: 8)
+
+Sun Nov  6 13:23:38 2022
+ / (Natalie: 344)
+Sun Nov  6 13:25:01 2022
+ / (Karl: 340)

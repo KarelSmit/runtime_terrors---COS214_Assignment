@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include "asciiArt.h"
 
-
 DuringBattle::DuringBattle(Battle *inC) : BattleState(inC)
 {
 }
@@ -15,14 +14,14 @@ DuringBattle::~DuringBattle()
 
 void DuringBattle::handle()
 {
-	system("clear");	
+	system("clear");
 	int moves = 5;	
 	asciiArt aaA;
 	aaA.printBanner();
-	cout<<endl;
-	cout << "================================================================================================\n";
+	std::cout << std::endl;
+	std::cout << "================================================================================================\n";
 	std::cout << "Prepare for battle!\nYou have " << moves << " oppotunities to attack or defend.\nPlan your strategy wisely. If you sustain too much damage, you might lose your battalions!\n\n";
-	cout << "================================================================================================\n";
+	std::cout << "================================================================================================\n";
 	srand((unsigned)time(NULL));
 	while (moves > 0)
 	{

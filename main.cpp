@@ -26,6 +26,7 @@
 #include "Stealth.cpp"
 #include "Records.cpp"
 #include "User.cpp"
+#include "IntelDivision.cpp"
 #include <iostream>
 #include <stdlib.h>
 #include "asciiArt.cpp"
@@ -47,8 +48,11 @@ int main()
     Color::Modifier def(Color::FG_DEFAULT);
 	system("clear");
 
+
+	//MEMENTO
 	War *warSim = War::startWar();
 	Records *caretaker = new Records(warSim);
+
 	while (true)
 	{
 
@@ -97,6 +101,7 @@ int main()
 		{	
 			cout << cyan << "Running simulation" << def <<endl;
 			warSim->simulate();
+			caretaker->Backup();
 		}
 		else if (choice == 2)
 		{
@@ -142,6 +147,7 @@ int main()
 		cin.get();
 		system("clear");
 	}
+
 	/* War *originator = new War("Super-Duper", 10);
 	Records *caretaker = new Records(originator);
 

@@ -1,3 +1,11 @@
+/**
+ * @file IntelDivision.h
+ * @author Natalie Walsh
+ * @brief Memento participant of Memento design pattern
+ * @version 0.1
+ * @date 2022-11-06
+ */
+ 
 #ifndef INTELDIVISION_H
 #define INTELDIVISION_H
 #include "User.h"
@@ -5,43 +13,57 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @class IntelDivision
+ * 
+ */
+
 class IntelDivision
 {
 private:
-    User *user;
-    string date_;
+    User *user; /*!< A snapshot of the user object */
+    string date_; /*!< Holds the date and time that the snapshot was generated */
 
 public:
-    IntelDivision(User *u) : user(u)
-    {
-        this->user = new User(*u);
-        time_t now = time(0);
-        this->date_ = ctime(&now);
-    }
+    /**
+    * @brief Constructor of the IntelDivision object
+    * 
+    */
+    IntelDivision(User *u);
 
-    User *getUser()
-    {
-        return this->user;
-    }
+    /**
+	 * @brief Return the user attribute
+	 * 
+	 * @return User
+	 */
+    User *getUser();
 
-    string GetName() const
-    {
-        return this->date_ + " / (" + this->user->getUserDetails() + ")";
-    }
+    /**
+	 * @brief Return the user details and current date
+	 * 
+	 * @return string
+	 */
+    string GetName() const;
 
-    string getDetails()
-    {
-        return user->getUserName() + ";" + to_string(user->getUserScore());
-    }
+    /**
+	 * @brief To be saved to textfile
+	 * 
+	 * @return string
+	 */
+    string getDetails();
 
-    string print()
-    {
-        return user->getUserName() + " achieved " + to_string(user->getUserScore());
-    }
+    /**
+	 * @brief Provide feedback to user 
+	 * 
+	 * @return string 
+	 */
+    string print();
 
-    string date() const
-    {
-        return this->date_;
-    }
+    /**
+	 * @brief Return the current date and time
+	 * 
+	 * @return string
+	 */
+    string date() const;
 };
 #endif

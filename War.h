@@ -1,3 +1,13 @@
+/**
+ * @file War.h
+ * @author Karel Smit and Natalie Walsh
+ * @brief 
+ * @version 0.1
+ * @date 2022-11-06
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #ifndef WAR_H
 #define WAR_H
 #include "IntelDivision.h"
@@ -12,22 +22,60 @@ using namespace std;
 class War
 {
 private:
-    User *user;
+    User *user; /*!< Holds User object which has details on the user and their current score*/
     static War *warInstance;
 	bool winner;
 	int score;
 	Country* sideA;
 	Country* sideB;
 	bool* battleHistory;
+
 protected:
+    /**
+    * @brief Construct a new War object
+    * 
+    */
     War();
+
+    /**
+     * @brief Destroy the War object
+     * 
+     */
     ~War();
 
 public:
+    /**
+    * @brief 
+    * 
+    * @return War* 
+    */
     static War* startWar();
+
+    /**
+     * @brief 
+     * 
+     */
     void simulate();
+
+    /**
+     * @brief Set the Score of the User object
+     * 
+     * @param s 
+     */
     void setScore(int s);
+
+    /**
+     * @brief Creates a Memento object to be saved in the Records.h
+     * 
+     * @return IntelDivision* 
+     */
     IntelDivision *Save();
+
+    /**
+     * @brief Retrieve the previous version of the War user object
+     * 
+     * @param memento 
+     */
     void Restore(IntelDivision *memento);
 };
 #endif
