@@ -19,7 +19,9 @@ War::War()
 {
 	winner = false;
 	score = 0;
-	battleHistory = new bool[3];
+	battleHistory = nullptr;
+	sideA = nullptr;
+	sideB = nullptr;
 }
 
 War::~War()
@@ -32,11 +34,24 @@ War::~War()
 
 void War::simulate()
 {
+	if (sideA != nullptr)
+	{
+		delete sideA;
+	}
+	if (sideB != nullptr)
+	{
+		delete sideB;
+	}
+	if (battleHistory != nullptr)
+	{
+		delete battleHistory;
+	}
+	score = 0;
+	winner = false;
+	battleHistory = new bool[3];
 	string uName;
-	cout << "================================================================================================\n";
 	std::cout << "\nEnter your name below\n->";
 	std::cin >> uName;
-	cout << "\n================================================================================================\n";
 	user = new User(uName, 0);
 	sideA = new Country("General " + uName);
 	sideB = new Country("Evil General");
@@ -63,13 +78,13 @@ void War::simulate()
 	if (count >= 2)
 	{
 		cout << "================================================================================================\n";
-		std::cout << "\nYou have won the war! Congratulations " << sideA->getUsername() <<"!\n Your final score was " << score << ".\n";
+		std::cout << "\nYou have won the war! Congratulations " << sideA->getUsername() << "!\n Your final score was " << score << ".\n";
 		cout << "================================================================================================\n";
 	}
 	else
 	{
 		cout << "================================================================================================\n";
-		std::cout << "\nYou have lost the war. Better luck next time "<< sideA->getUsername() << ".\nYour final score was " << score << ".\n";
+		std::cout << "\nYou have lost the war. Better luck next time " << sideA->getUsername() << ".\nYour final score was " << score << ".\n";
 		cout << "================================================================================================\n";
 	}
 }

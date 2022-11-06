@@ -95,7 +95,6 @@ int main()
 		{
 			cout << "Invalid input. Please choose one of the provided options.\n";
 		}
-		cout << "================================================================================================\n";
 	}
 	/* War *originator = new War("Super-Duper", 10);
 	Records *caretaker = new Records(originator);
