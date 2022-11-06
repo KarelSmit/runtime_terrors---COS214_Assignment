@@ -19,39 +19,77 @@ void DuringBattle::handle()
 	srand((unsigned)time(NULL));
 	while (moves > 0)
 	{
-		std::cout << "Choose your move:\n1.Attack\n2.Defend\n->";
+		context->getA()->getArmy()->printStats();
+		context->getB()->getArmy()->printStats();
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << "Choose your move for this round:\n1.Attack\n2.Defend\n->";
 		int choice;
 		std::cin >> choice;
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		if (choice == 1 || choice == 2)
 		{
+			switch (choice)
+			{
+			case 1:
+				std::cout << context->getA()->getUsername() << " has chosen to attack.\n";
+				break;
+			case 2:
+				std::cout << context->getA()->getUsername() << " has chosen to defend.\n";
+				break;
+			}
 			context->getA()->makeMove(choice, context->getB());
 		}
 		else
 		{
-			std::cout << "\n\nInvalid input. Please select a valid strategy.\n\n";
+			std::cout << "\nInvalid input. Please select a valid strategy.\n";
 			continue;
 		}
-		int enemy = rand() % 2 + 1;
-		context->getB()->makeMove(enemy, context->getA());
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		int eMove = rand() % 2 + 1;
+		switch (eMove)
+		{
+		case 1:
+			std::cout << context->getB()->getUsername() << " has chosen to attack.\n";
+			break;
+		case 2:
+			std::cout << context->getB()->getUsername() << " has chosen to defend.\n";
+			break;
+		}
+		context->getB()->makeMove(eMove, context->getA());
 		moves--;
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	moves = context->getA()->getArmy()->getMoves();
 	while (moves > 0)
 	{
+		context->getA()->getArmy()->printStats();
+		context->getB()->getArmy()->printStats();
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		std::cout << "You have an extra move!\n";
-		std::cout << "Choose your move:\n1.Attack\n2.Defend\n->";
+		std::cout << "Choose your move for this round:\n1.Attack\n2.Defend\n->";
 		int choice;
 		std::cin >> choice;
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		if (choice == 1 || choice == 2)
 		{
+			switch (choice)
+			{
+			case 1:
+				std::cout << context->getA()->getUsername() << " has chosen to attack.\n";
+				break;
+			case 2:
+				std::cout << context->getA()->getUsername() << " has chosen to defend.\n";
+				break;
+			}
 			context->getA()->makeMove(choice, context->getB());
 		}
 		else
 		{
-			std::cout << "\n\nInvalid input. Please select a valid strategy.\n\n";
+			std::cout << "\nInvalid input. Please select a valid strategy.\n";
 			continue;
 		}
 		moves--;
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	changeState();
 }

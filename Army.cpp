@@ -278,3 +278,13 @@ int Army::getHP()
 {
 	return totalHP;
 }
+
+void Army::printStats(){
+	std::cout << "\n..............................................................................\n";
+	std::cout << gName << "'s army is in the current state:\n";
+	std::cout << "HP = " << totalHP << "\n";
+	std::cout << "Damage = " << totalDmg << "\n";
+	std::cout << "RejuvenationPower = " << totalHeal << "\n";
+	std::cout << "ExtraMoves = " << extraMoves << "\n";
+	std::cout << "..............................................................................\n";
+}

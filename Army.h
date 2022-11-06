@@ -21,6 +21,7 @@ public:
 	int getHP();
 	void setEnemy();
 	void setCommander( std::string );
+	void printStats();
 
 private:
 	Battalion* atkForce;

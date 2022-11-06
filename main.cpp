@@ -69,8 +69,23 @@ int main()
 		}
 		else if (choice == 4)
 		{
-			cout << "\n-Welcome to the help menu for the World of War simulation.\n-To start the simulation, select option (1) in the main menu.\n";
-			cout << "-Once the simulation initiates, enter your name. (This will be used to save your score)\n";
+			cout << "\n>Welcome to the help menu for the World of War simulation.\n>To start the simulation, select option (1) in the main menu.\n";
+			cout << ">Once the simulation initiates, enter your name. (This will be used to save your score)\n";
+			cout << ">After you enter your name, you will be presented with a 5 army combinations.\n>Your army has 4 important values: HP, Damage, RejuvenationPower and ExtraMoves\n\n";
+			cout << ">HP is the total health of your army. This also counts as your score at the end of each battle, so remember to keep your HP high!\n";
+			cout << ">Damage determines the amount of HP your enemy will lose every time you attack.\n";
+			cout << ">RejuvenationPower is the amount of HP that your army recovers when your defend.\n";
+			cout << ">ExtraMoves determines how many moves you are able to make at the end of the battle, once your enemy has exhausted their total moves.\n";
+			cout << ">These values are affected by your choice of battalions.\n>The army combinations consist of 4 different battalion types:\n";
+			cout << ">Infantry - Infantry battalions grant your army with both Damage and HP.\n";
+			cout << ">Tank - Tank battalions grant your army with both Damage and HP.\n";
+			cout << ">Medic - Medic battalions grant your army with RejuvenationPower as well as HP.\n";
+			cout << ">Supply - Supply battalions increases the army HP, and also grants you 1 extra move per supply battalion.\n";
+			cout << "\n>Once you have selected your battalion combination, the battle will start.\n";
+			cout << ">During the battle, you and your opponent will take turns to either Attack or Defend.\n";
+			cout << ">Choosing to Attack deals Damage to your opponent's HP, the amount of which is determined by your army TotalDamage.\n";
+			cout << ">Choosing to Defend will allow your army to heal and recover HP. The amount of which is determined by the RejuvenationPower of your army.\n";
+			cout << "\n>During the simulation, you will fight 3 battles against your opponent.\n>Once all 3 battles are over, whoever has won the most battles of the 3 will win the war.\n";
 		}
 		else if (choice == 5)
 		{
@@ -80,6 +95,7 @@ int main()
 		{
 			cout << "Invalid input. Please choose one of the provided options.\n";
 		}
+		cout << "================================================================================================\n";
 	}
 	/* War *originator = new War("Super-Duper", 10);
 	Records *caretaker = new Records(originator);
