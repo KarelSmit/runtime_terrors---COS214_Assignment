@@ -1,20 +1,27 @@
 \hypertarget{classInfantryIterator}{}\doxysection{Infantry\+Iterator Class Reference}
 \label{classInfantryIterator}\index{InfantryIterator@{InfantryIterator}}
+
+
+Allows sequential iteration of the \mbox{\hyperlink{classInfantry}{Infantry}} linked list stored within a \mbox{\hyperlink{classInfantryUnit}{Infantry\+Unit}} object.  
+
+
+
+
+{\ttfamily \#include $<$Infantry\+Iterator.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classInfantryIterator_ac878bb3962d8d97511e8519658d0c62b}\label{classInfantryIterator_ac878bb3962d8d97511e8519658d0c62b}} 
-\mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ {\bfseries operator$\ast$} ()
-\item 
-\mbox{\Hypertarget{classInfantryIterator_a82b943f7531a3ca43b87087de631a9a1}\label{classInfantryIterator_a82b943f7531a3ca43b87087de631a9a1}} 
-\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} {\bfseries operator++} ()
-\item 
-\mbox{\Hypertarget{classInfantryIterator_a366ddfb28f7dbcc979dafb3da753c463}\label{classInfantryIterator_a366ddfb28f7dbcc979dafb3da753c463}} 
-bool {\bfseries operator==} (const \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} \&) const
-\item 
-\mbox{\Hypertarget{classInfantryIterator_ac859b22788a8619b7eb621ce18b34f65}\label{classInfantryIterator_ac859b22788a8619b7eb621ce18b34f65}} 
-{\bfseries Infantry\+Iterator} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classInfantryIterator_adb4d887e00eefbb53af14e085fc82097}{Infantry\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classInfantry}{Infantry}} Iterator object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ \mbox{\hyperlink{classInfantryIterator_ac878bb3962d8d97511e8519658d0c62b}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Dereference the current \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} \mbox{\hyperlink{classInfantryIterator_a82b943f7531a3ca43b87087de631a9a1}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInfantryIterator_a366ddfb28f7dbcc979dafb3da753c463}{operator==}} (const \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} \&) const
+\begin{DoxyCompactList}\small\item\em Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInfantryIterator_a7ce74d2ad30bbbdf25c9f5ebf30c2b73}{Infantry\+Iterator}} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$head, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$curr)
+\begin{DoxyCompactList}\small\item\em Construct a new parameterised \mbox{\hyperlink{classInfantry}{Infantry}} Iterator object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +39,91 @@ class {\bfseries Infantry\+Unit}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Allows sequential iteration of the \mbox{\hyperlink{classInfantry}{Infantry}} linked list stored within a \mbox{\hyperlink{classInfantryUnit}{Infantry\+Unit}} object. 
+
+An iterator for a \mbox{\hyperlink{classInfantry}{Infantry}} linked list 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInfantryIterator_adb4d887e00eefbb53af14e085fc82097}\label{classInfantryIterator_adb4d887e00eefbb53af14e085fc82097}} 
+\index{InfantryIterator@{InfantryIterator}!InfantryIterator@{InfantryIterator}}
+\index{InfantryIterator@{InfantryIterator}!InfantryIterator@{InfantryIterator}}
+\doxysubsubsection{\texorpdfstring{InfantryIterator()}{InfantryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Infantry\+Iterator\+::\+Infantry\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classInfantry}{Infantry}} Iterator object. 
+
+\mbox{\Hypertarget{classInfantryIterator_a7ce74d2ad30bbbdf25c9f5ebf30c2b73}\label{classInfantryIterator_a7ce74d2ad30bbbdf25c9f5ebf30c2b73}} 
+\index{InfantryIterator@{InfantryIterator}!InfantryIterator@{InfantryIterator}}
+\index{InfantryIterator@{InfantryIterator}!InfantryIterator@{InfantryIterator}}
+\doxysubsubsection{\texorpdfstring{InfantryIterator()}{InfantryIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Infantry\+Iterator\+::\+Infantry\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$}]{head,  }\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$}]{curr }\end{DoxyParamCaption})}
+
+
+
+Construct a new parameterised \mbox{\hyperlink{classInfantry}{Infantry}} Iterator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & \\
+\hline
+{\em curr} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInfantryIterator_ac878bb3962d8d97511e8519658d0c62b}\label{classInfantryIterator_ac878bb3962d8d97511e8519658d0c62b}} 
+\index{InfantryIterator@{InfantryIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!InfantryIterator@{InfantryIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ Infantry\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dereference the current \mbox{\hyperlink{classNode}{Node}}. 
+
+\begin{DoxyReturn}{Returns}
+Foot\+Unit$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInfantryIterator_a82b943f7531a3ca43b87087de631a9a1}\label{classInfantryIterator_a82b943f7531a3ca43b87087de631a9a1}} 
+\index{InfantryIterator@{InfantryIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!InfantryIterator@{InfantryIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} Infantry\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInfantryIterator_a366ddfb28f7dbcc979dafb3da753c463}\label{classInfantryIterator_a366ddfb28f7dbcc979dafb3da753c463}} 
+\index{InfantryIterator@{InfantryIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!InfantryIterator@{InfantryIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Infantry\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Infantry\+Iterator.\+h\item 
+\mbox{\hyperlink{InfantryIterator_8h}{Infantry\+Iterator.\+h}}\item 
 Infantry\+Iterator.\+cpp\end{DoxyCompactItemize}

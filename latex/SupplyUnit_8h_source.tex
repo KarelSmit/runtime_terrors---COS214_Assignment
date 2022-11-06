@@ -1,35 +1,37 @@
 \hypertarget{SupplyUnit_8h_source}{}\doxysection{Supply\+Unit.\+h}
-
+\mbox{\hyperlink{SupplyUnit_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_SUPPLYUNIT\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_SUPPLYUNIT\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}SupplyIterator.h"{}}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Supply.h"{}}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classSupplyUnit}{SupplyUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
-\DoxyCodeLine{10 \{}
-\DoxyCodeLine{11     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classSupplyIterator}{SupplyIterator}};}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13 \textcolor{keyword}{public}:}
-\DoxyCodeLine{14     \mbox{\hyperlink{classSupplyUnit}{SupplyUnit}}();}
-\DoxyCodeLine{15     \mbox{\hyperlink{classSupplyUnit}{\string~SupplyUnit}}();}
-\DoxyCodeLine{16     \textcolor{keywordtype}{int} \mbox{\hyperlink{classSupplyUnit_ac60962e985d9d6c5a776cb0d0b3e34b4}{getHP}}();}
-\DoxyCodeLine{17     \textcolor{keywordtype}{int} \mbox{\hyperlink{classSupplyUnit_ac7dc2e32a58fdd22ac034cdd2ed5f847}{getDmg}}();}
-\DoxyCodeLine{18     \textcolor{keywordtype}{int} \mbox{\hyperlink{classSupplyUnit_a930845af1e8f4506aa3f3d466e941328}{getRP}}();}
-\DoxyCodeLine{19     \mbox{\hyperlink{classSupplyIterator}{SupplyIterator}} begin();}
-\DoxyCodeLine{20     \mbox{\hyperlink{classSupplyIterator}{SupplyIterator}} end();}
-\DoxyCodeLine{21     \textcolor{keywordtype}{void} setVal();}
-\DoxyCodeLine{22     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classSupplyUnit_a35cbd6ffd48dc5d510a4cefd234f306b}{takeDamage}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupplyUnit_ac700942411aa152b966fb97ee25a80b1}{heal}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{24 }
-\DoxyCodeLine{25     \mbox{\hyperlink{classNode}{Node<TransportUnit*>}} *head;}
-\DoxyCodeLine{26 \textcolor{keyword}{private}:}
-\DoxyCodeLine{27     \textcolor{keywordtype}{int} totHP;}
-\DoxyCodeLine{28 \};}
-\DoxyCodeLine{29 }
-\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef \_SUPPLYUNIT\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define \_SUPPLYUNIT\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{SupplyIterator_8h}{SupplyIterator.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}Supply.h"{}}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{classSupplyUnit}{SupplyUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classSupplyIterator}{SupplyIterator}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{classSupplyUnit_a767e5a8f0f39d212a09e69fd3611a875}{SupplyUnit}}();}
+\DoxyCodeLine{41     \mbox{\hyperlink{classSupplyUnit_ad75b796696bcd34ad5a961998309ac10}{\string~SupplyUnit}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} \mbox{\hyperlink{classSupplyUnit_ac60962e985d9d6c5a776cb0d0b3e34b4}{getHP}}();}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} \mbox{\hyperlink{classSupplyUnit_ac7dc2e32a58fdd22ac034cdd2ed5f847}{getDmg}}();}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} \mbox{\hyperlink{classSupplyUnit_a930845af1e8f4506aa3f3d466e941328}{getRP}}();}
+\DoxyCodeLine{65     \mbox{\hyperlink{classSupplyIterator}{SupplyIterator}} \mbox{\hyperlink{classSupplyUnit_adb1f5de806fab1c298e7ccc82a4218f3}{begin}}();}
+\DoxyCodeLine{71     \mbox{\hyperlink{classSupplyIterator}{SupplyIterator}} \mbox{\hyperlink{classSupplyUnit_a6c8b91f10e26b8d93ad9a0bd30e87ce8}{end}}();}
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupplyUnit_ae2f6d40c9bafa7c58ab268aa2250d9e2}{setVal}}();}
+\DoxyCodeLine{84     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classSupplyUnit_ae02602afb425a7dad0f6f74e744a0c5b}{takeDamage}}(\textcolor{keywordtype}{int} d);}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupplyUnit_ac79d50974c4551bbd4862845e9d594f6}{heal}}(\textcolor{keywordtype}{int} r);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \mbox{\hyperlink{classNode}{Node<TransportUnit *>}} *head;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{keyword}{private}:}
+\DoxyCodeLine{95     \textcolor{keywordtype}{int} totHP;}
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,20 +1,27 @@
 \hypertarget{classMedicIterator}{}\doxysection{Medic\+Iterator Class Reference}
 \label{classMedicIterator}\index{MedicIterator@{MedicIterator}}
+
+
+Allows sequential iteration of the \mbox{\hyperlink{classMedic}{Medic}} linked list stored within a \mbox{\hyperlink{classMedicUnit}{Medic\+Unit}} object.  
+
+
+
+
+{\ttfamily \#include $<$Medic\+Iterator.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classMedicIterator_a64390a512c9ec12ecbec9df9e8837fd2}\label{classMedicIterator_a64390a512c9ec12ecbec9df9e8837fd2}} 
-\mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ {\bfseries operator$\ast$} ()
-\item 
-\mbox{\Hypertarget{classMedicIterator_a3dc21563cab913843f858a3859fabc34}\label{classMedicIterator_a3dc21563cab913843f858a3859fabc34}} 
-\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} {\bfseries operator++} ()
-\item 
-\mbox{\Hypertarget{classMedicIterator_aa7aca204c338f6b4b80154948a3ec7db}\label{classMedicIterator_aa7aca204c338f6b4b80154948a3ec7db}} 
-bool {\bfseries operator==} (const \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} \&) const
-\item 
-\mbox{\Hypertarget{classMedicIterator_a3db8dd9d1c7617bbe7b1bdf39c1d461a}\label{classMedicIterator_a3db8dd9d1c7617bbe7b1bdf39c1d461a}} 
-{\bfseries Medic\+Iterator} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classMedicIterator_a636bd84b0d4609c47446f9a4e114998a}{Medic\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMedic}{Medic}} Iterator object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ \mbox{\hyperlink{classMedicIterator_a64390a512c9ec12ecbec9df9e8837fd2}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Dereference the current \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} \mbox{\hyperlink{classMedicIterator_a3dc21563cab913843f858a3859fabc34}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMedicIterator_aa7aca204c338f6b4b80154948a3ec7db}{operator==}} (const \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} \&) const
+\begin{DoxyCompactList}\small\item\em Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMedicIterator_a63603097d7016d1f520d2418d469bba5}{Medic\+Iterator}} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$head, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$curr)
+\begin{DoxyCompactList}\small\item\em Construct a new parameterised \mbox{\hyperlink{classMedic}{Medic}} Iterator object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +39,91 @@ class {\bfseries Medic\+Unit}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Allows sequential iteration of the \mbox{\hyperlink{classMedic}{Medic}} linked list stored within a \mbox{\hyperlink{classMedicUnit}{Medic\+Unit}} object. 
+
+An iterator for a \mbox{\hyperlink{classMedic}{Medic}} linked list 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMedicIterator_a636bd84b0d4609c47446f9a4e114998a}\label{classMedicIterator_a636bd84b0d4609c47446f9a4e114998a}} 
+\index{MedicIterator@{MedicIterator}!MedicIterator@{MedicIterator}}
+\index{MedicIterator@{MedicIterator}!MedicIterator@{MedicIterator}}
+\doxysubsubsection{\texorpdfstring{MedicIterator()}{MedicIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Medic\+Iterator\+::\+Medic\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classMedic}{Medic}} Iterator object. 
+
+\mbox{\Hypertarget{classMedicIterator_a63603097d7016d1f520d2418d469bba5}\label{classMedicIterator_a63603097d7016d1f520d2418d469bba5}} 
+\index{MedicIterator@{MedicIterator}!MedicIterator@{MedicIterator}}
+\index{MedicIterator@{MedicIterator}!MedicIterator@{MedicIterator}}
+\doxysubsubsection{\texorpdfstring{MedicIterator()}{MedicIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Medic\+Iterator\+::\+Medic\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$}]{head,  }\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ $>$ $\ast$}]{curr }\end{DoxyParamCaption})}
+
+
+
+Construct a new parameterised \mbox{\hyperlink{classMedic}{Medic}} Iterator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & \\
+\hline
+{\em curr} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMedicIterator_a64390a512c9ec12ecbec9df9e8837fd2}\label{classMedicIterator_a64390a512c9ec12ecbec9df9e8837fd2}} 
+\index{MedicIterator@{MedicIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!MedicIterator@{MedicIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ Medic\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dereference the current \mbox{\hyperlink{classNode}{Node}}. 
+
+\begin{DoxyReturn}{Returns}
+Foot\+Unit$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMedicIterator_a3dc21563cab913843f858a3859fabc34}\label{classMedicIterator_a3dc21563cab913843f858a3859fabc34}} 
+\index{MedicIterator@{MedicIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!MedicIterator@{MedicIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} Medic\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMedicIterator_aa7aca204c338f6b4b80154948a3ec7db}\label{classMedicIterator_aa7aca204c338f6b4b80154948a3ec7db}} 
+\index{MedicIterator@{MedicIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!MedicIterator@{MedicIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Medic\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Medic\+Iterator.\+h\item 
+\mbox{\hyperlink{MedicIterator_8h}{Medic\+Iterator.\+h}}\item 
 Medic\+Iterator.\+cpp\end{DoxyCompactItemize}

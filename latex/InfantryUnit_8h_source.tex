@@ -1,37 +1,38 @@
 \hypertarget{InfantryUnit_8h_source}{}\doxysection{Infantry\+Unit.\+h}
-
+\mbox{\hyperlink{InfantryUnit_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INFANTRYUNIT\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INFANTRYUNIT\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Node.h"{}}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}InfantryIterator.h"{}}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Infantry.h"{}}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryUnit}{InfantryUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
-\DoxyCodeLine{10 \{}
-\DoxyCodeLine{11     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryIterator}{InfantryIterator}};}
-\DoxyCodeLine{12 }
-\DoxyCodeLine{13 \textcolor{keyword}{public}:}
-\DoxyCodeLine{14     \mbox{\hyperlink{classInfantryUnit}{InfantryUnit}}();}
-\DoxyCodeLine{15     \mbox{\hyperlink{classInfantryUnit}{\string~InfantryUnit}}();}
-\DoxyCodeLine{16     \textcolor{keywordtype}{int} \mbox{\hyperlink{classInfantryUnit_afe1b023089db9c9193491280670345ea}{getHP}}();}
-\DoxyCodeLine{17     \textcolor{keywordtype}{int} \mbox{\hyperlink{classInfantryUnit_a42ecb27ba1cfca00851bc43fd96b93e8}{getDmg}}();}
-\DoxyCodeLine{18     \textcolor{keywordtype}{int} \mbox{\hyperlink{classInfantryUnit_aa216078221e01134546a9dced77fa927}{getRP}}();}
-\DoxyCodeLine{19     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} begin();}
-\DoxyCodeLine{20     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} end();}
-\DoxyCodeLine{21     \textcolor{keywordtype}{void} setVal();}
-\DoxyCodeLine{22     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}{takeDamage}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}{heal}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{24 }
-\DoxyCodeLine{25     \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *head;}
-\DoxyCodeLine{26 }
-\DoxyCodeLine{27 \textcolor{keyword}{private}:}
-\DoxyCodeLine{28     \textcolor{keywordtype}{int} totHP;}
-\DoxyCodeLine{29     \textcolor{keywordtype}{int} totDmg;}
-\DoxyCodeLine{30 \};}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef INFANTRYUNIT\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define INFANTRYUNIT\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{InfantryIterator_8h}{InfantryIterator.h}}"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}Infantry.h"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryUnit}{InfantryUnit}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBattalion}{Battalion}}}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classInfantryIterator}{InfantryIterator}};}
 \DoxyCodeLine{31 }
-\DoxyCodeLine{32 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{37     \mbox{\hyperlink{classInfantryUnit_a218a3b83fdf0c479c4ce41faad716ae4}{InfantryUnit}}();}
+\DoxyCodeLine{42     \mbox{\hyperlink{classInfantryUnit_ac1297ab97e296b414b0bf5325361ffc0}{\string~InfantryUnit}}();}
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} \mbox{\hyperlink{classInfantryUnit_afe1b023089db9c9193491280670345ea}{getHP}}();}
+\DoxyCodeLine{54     \textcolor{keywordtype}{int} \mbox{\hyperlink{classInfantryUnit_a42ecb27ba1cfca00851bc43fd96b93e8}{getDmg}}();}
+\DoxyCodeLine{60     \textcolor{keywordtype}{int} \mbox{\hyperlink{classInfantryUnit_aa216078221e01134546a9dced77fa927}{getRP}}();}
+\DoxyCodeLine{66     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} \mbox{\hyperlink{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}{begin}}();}
+\DoxyCodeLine{72     \mbox{\hyperlink{classInfantryIterator}{InfantryIterator}} \mbox{\hyperlink{classInfantryUnit_a40f0c9cb97076ba37e7180dd7cbbcc49}{end}}();}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInfantryUnit_a997ceebf9cd856be8870c4a1582651a0}{setVal}}();}
+\DoxyCodeLine{85     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classInfantryUnit_a45b22d71236d67fccb1f6276eb9dfac8}{takeDamage}}(\textcolor{keywordtype}{int} d);}
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInfantryUnit_a756093f954a6116c9a8e78c726b1c48d}{heal}}(\textcolor{keywordtype}{int} r);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     \mbox{\hyperlink{classNode}{Node<FootUnit *>}} *head;}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 \textcolor{keyword}{private}:}
+\DoxyCodeLine{96     \textcolor{keywordtype}{int} totHP;}
+\DoxyCodeLine{97     \textcolor{keywordtype}{int} totDmg;}
+\DoxyCodeLine{98 \};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

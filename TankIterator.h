@@ -1,7 +1,7 @@
 /**
  * @file TankIterator.h
  * @author Karel Smit
- * @brief And iterator for the TankDriver linked list in the TankUnit class
+ * @brief An iterator for the TankDriver linked list in the TankUnit class
  * @version 0.1
  * @date 2022-11-06
  *
@@ -14,6 +14,8 @@
 #include "TankUnit.h"
 #include "TankDriver.h"
 
+class TankUnit;
+
 /**
  * @brief Allows sequential iteration of the TankDriver linked list stored within a TankUnit object
  *
@@ -21,8 +23,6 @@
  * An iterator for a TankDriver linked list
  *
  */
-
-class TankUnit;
 
 class TankIterator
 {
@@ -55,7 +55,7 @@ public:
 	 */
 	bool operator==(const TankIterator &cmp) const;
 	/**
-	 * @brief Construct a new parameterised Tank Iterator objects
+	 * @brief Construct a new parameterised Tank Iterator object
 	 *
 	 * @param head
 	 * @param curr

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tankiterator_2eh_0',['TankIterator.h',['../TankIterator_8h.html',1,'']]],
-  ['tankunit_2eh_1',['TankUnit.h',['../TankUnit_8h.html',1,'']]]
+  ['postbattle_2eh_0',['PostBattle.h',['../PostBattle_8h.html',1,'']]],
+  ['prebattle_2eh_1',['PreBattle.h',['../PreBattle_8h.html',1,'']]]
 ];
