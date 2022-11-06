@@ -89,6 +89,7 @@ void War::simulate()
 		std::cout << "\nYou have lost the war. Better luck next time " << sideA->getUsername() << ".\nYour final score was " << score << ".\n";
 		cout << "================================================================================================\n";
 	}
+	
 }
 
 void War::setScore(int s)
