@@ -296,11 +296,11 @@ void Army::printStats()
 	//std::cout << "\n..............................................................................\n";
 	std::cout << gName << "'s army is in the current state:\n";
 	std::cout << "HP = " << totalHP;
-	aA.printBar(totalHP);
+	aA.printBar(totalHP,'H');
 	std::cout << "Damage = " << totalDmg;
-	aA.printBar(totalDmg);
+	aA.printBar(totalDmg,'D');
 	std::cout << "RP = " << totalHeal<< " ";
-	aA.printBar(totalHeal);
+	aA.printBar(totalHeal,'R');
 	std::cout << "ExtraMoves = " << extraMoves << "\n";
 	std::cout << "..............................................................................\n";
 }

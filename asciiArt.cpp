@@ -31,12 +31,27 @@ void asciiArt::printBanner(){
     cout<< def;
 }
 
-void asciiArt::printBar(int points){
-    points = points/10;
-    // cout << points<<endl;
+
+
+void asciiArt::printBar(int points,char pType){
+    if (points <100) {
+        if (points > 9)
+            cout <<"  ";
+        else
+            cout <<" ";
+    }
+    points = points/5;
     Color::Modifier red(Color::FG_RED);
+    Color::Modifier green(Color::FG_GREEN);
+    Color::Modifier blue(Color::FG_BLUE);
     Color::Modifier def(Color::FG_DEFAULT);
-    cout<< red<< "\t";
+
+    switch (pType) {
+        case "H": cout << blue << "\t"; break;
+        case "D": cout << red << "\t"; break;
+        case "R": cout << green << "\t"; break;
+    }
+
     for (int i = 0; i<points;i++){
         cout<<"*";
     }
