@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['user_0',['User',['../classUser.html',1,'']]]
+  ['user_0',['User',['../classUser.html',1,'User'],['../classUser.html#a903210c5d77efc2788717a12ea8febe2',1,'User::User(string n, int s)'],['../classUser.html#afe590ef3e6e04f62753317b292d41d8b',1,'User::User(User &amp;user)']]],
+  ['user_2eh_1',['User.h',['../User_8h.html',1,'']]]
 ];

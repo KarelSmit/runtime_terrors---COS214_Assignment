@@ -41,8 +41,11 @@ int main()
 	Color::Modifier def(Color::FG_DEFAULT);
 	system("clear");
 
+
+	//MEMENTO
 	War *warSim = War::startWar();
 	Records *caretaker = new Records(warSim);
+
 	while (true)
 	{
 		cout<< yellow;
@@ -57,7 +60,6 @@ int main()
 		cout<< yellow;
 		cout << "=====================================================================================================================================================\n";
 		cout<< def;
-		
 
 		cout << "Welcome to the World of War simulation.\n\nSelect an option below:\n\n";
 		int choice;
@@ -72,6 +74,7 @@ int main()
 		if (choice == 1)
 		{
 			warSim->simulate();
+			caretaker->Backup();
 		}
 		else if (choice == 2)
 		{
@@ -110,6 +113,7 @@ int main()
 			cout << "Invalid input. Please choose one of the provided options.\n";
 		}
 	}
+
 	/* War *originator = new War("Super-Duper", 10);
 	Records *caretaker = new Records(originator);
 

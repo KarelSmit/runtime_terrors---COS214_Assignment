@@ -51,10 +51,10 @@ public:
     int getUserScore();
 
     /**
-	 * @brief Return the user details for storing in txt
-	 * 
-     * @return string
-	 */
+     * @brief Get the User Details for saving to txt
+     * 
+     * @return string 
+     */
     string getUserDetails();
 
     /**
