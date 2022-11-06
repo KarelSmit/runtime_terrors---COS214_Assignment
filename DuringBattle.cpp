@@ -2,7 +2,7 @@
 #include "PostBattle.h"
 #include <time.h>
 #include <stdlib.h>
-#include "colormod.h"
+#include "asciiArt.h"
 
 DuringBattle::DuringBattle(Battle *inC) : BattleState(inC)
 {
@@ -14,10 +14,10 @@ DuringBattle::~DuringBattle()
 
 void DuringBattle::handle()
 {
-	Color::Modifier yellow(Color::FG_YELLOW);
-	Color::Modifier def(Color::FG_DEFAULT);
 	system("clear");
-	int moves = 5;
+	int moves = 5;	
+	asciiArt aaA;
+	aaA.printBanner();
 	std::cout << std::endl;
 	std::cout << "================================================================================================\n";
 	std::cout << "Prepare for battle!\nYou have " << moves << " oppotunities to attack or defend.\nPlan your strategy wisely. If you sustain too much damage, you might lose your battalions!\n\n";
@@ -37,8 +37,7 @@ void DuringBattle::handle()
 			switch (choice)
 			{
 			case 1:
-				std::cout << context->getA()->getUsername() << " has chosen to " << yellow << "attack.\n"
-						  << def;
+				std::cout << context->getA()->getUsername() << " has chosen to "<< "attack.\n";
 				break;
 			case 2:
 				std::cout << context->getA()->getUsername() << " has chosen to defend.\n";

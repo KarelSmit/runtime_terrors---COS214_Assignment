@@ -19,7 +19,7 @@ void PreBattle::handle()
 	bool accept = false;
 	while (!accept)
 	{
-		std::cout << "1. 2x Infantry , 2x Tank, 2x Medic\n2. 2x Infantry, 2x Tank, 1x Medic, 1x Supply\n";
+		std::cout << "1. 2x Infantry, 2x Tank, 2x Medic\n2. 2x Infantry, 2x Tank, 1x Medic, 1x Supply\n";
 		std::cout << "3. 1x Infantry, 2x Tank, 2x Medic, 1x Supply\n4. 2x Infantry, 1x Tank, 2x Medic, 1x Supply\n";
 		std::cout << "5. 1x Infantry, 1x Tank, 2x Medic, 2x Supply\n->";
 		int choice;
