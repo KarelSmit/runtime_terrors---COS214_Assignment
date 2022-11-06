@@ -15,7 +15,7 @@ DuringBattle::~DuringBattle()
 void DuringBattle::handle()
 {
 	system("clear");
-	int moves = 5;	
+	int moves = 5;
 	asciiArt aaA;
 	aaA.printBanner();
 	std::cout << std::endl;
@@ -37,7 +37,8 @@ void DuringBattle::handle()
 			switch (choice)
 			{
 			case 1:
-				std::cout << context->getA()->getUsername() << " has chosen to "<< "attack.\n";
+				std::cout << context->getA()->getUsername() << " has chosen to "
+						  << "attack.\n";
 				break;
 			case 2:
 				std::cout << context->getA()->getUsername() << " has chosen to defend.\n";
