@@ -40,7 +40,7 @@ void asciiArt::printBar(int points,char pType){
         else
             cout <<" ";
     }
-    points = points/5;
+    points = points/2;
     Color::Modifier red(Color::FG_RED);
     Color::Modifier green(Color::FG_GREEN);
     Color::Modifier blue(Color::FG_BLUE);
