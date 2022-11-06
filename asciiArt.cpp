@@ -47,9 +47,9 @@ void asciiArt::printBar(int points,char pType){
     Color::Modifier def(Color::FG_DEFAULT);
 
     switch (pType) {
-        case "H": cout << blue << "\t"; break;
-        case "D": cout << red << "\t"; break;
-        case "R": cout << green << "\t"; break;
+        case 'H': cout << blue << "\t"; break;
+        case 'D': cout << red << "\t"; break;
+        case 'R': cout << green << "\t"; break;
     }
 
     for (int i = 0; i<points;i++){
