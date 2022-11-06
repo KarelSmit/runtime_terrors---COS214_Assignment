@@ -26,7 +26,7 @@ public:
 	 */
 	~Attack();
 	/**
-	 * @brief Initiate and Attack of Army a against Army b
+	 * @brief Initiate an Attack by Army a against Army b
 	 * 
 	 * @param a 
 	 * @param b 
