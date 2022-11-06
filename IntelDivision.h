@@ -1,7 +1,7 @@
 /**
  * @file IntelDivision.h
  * @author Natalie Walsh
- * @brief Memento class
+ * @brief Memento participant of Memento design pattern
  * @version 0.1
  * @date 2022-11-06
  */
@@ -16,14 +16,13 @@ using namespace std;
 /**
  * @class IntelDivision
  * 
- * @tparam  
  */
 
 class IntelDivision
 {
 private:
-    User *user;
-    string date_;
+    User *user; /*!< A snapshot of the user object */
+    string date_; /*!< Holds the date and time that the snapshot was generated */
 
 public:
     /**
@@ -42,7 +41,7 @@ public:
     /**
 	 * @brief Return the user details and current date
 	 * 
-	 * @return String
+	 * @return string
 	 */
     string GetName() const;
 
