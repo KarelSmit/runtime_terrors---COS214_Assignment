@@ -10,21 +10,24 @@
 \mbox{\Hypertarget{classWar_aafee8174ba642d488dcb7030746f0c15}\label{classWar_aafee8174ba642d488dcb7030746f0c15}} 
 void {\bfseries simulate} ()
 \item 
-\mbox{\Hypertarget{classWar_a1a70434ea8c0b6ea02b0c7bb83b54afe}\label{classWar_a1a70434ea8c0b6ea02b0c7bb83b54afe}} 
-void {\bfseries set\+Score} (int s)
-\item 
-\mbox{\Hypertarget{classWar_a4cf710b35d949d05e8d6eab39affcb06}\label{classWar_a4cf710b35d949d05e8d6eab39affcb06}} 
-\mbox{\hyperlink{classIntelDivision}{Intel\+Division}} $\ast$ {\bfseries Save} ()
-\item 
-\mbox{\Hypertarget{classWar_ad04de56bb713adcb741476de8dca7d30}\label{classWar_ad04de56bb713adcb741476de8dca7d30}} 
-void {\bfseries Restore} (\mbox{\hyperlink{classIntelDivision}{Intel\+Division}} $\ast$memento)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classWar_a1a70434ea8c0b6ea02b0c7bb83b54afe}{set\+Score}} (int s)
+\begin{DoxyCompactList}\small\item\em Set the Score of the \mbox{\hyperlink{classUser}{User}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIntelDivision}{Intel\+Division}} $\ast$ \mbox{\hyperlink{classWar_a4cf710b35d949d05e8d6eab39affcb06}{Save}} ()
+\begin{DoxyCompactList}\small\item\em Creates a Memento object to be saved in the \mbox{\hyperlink{Records_8h}{Records.\+h}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWar_ad04de56bb713adcb741476de8dca7d30}{Restore}} (\mbox{\hyperlink{classIntelDivision}{Intel\+Division}} $\ast$memento)
+\begin{DoxyCompactList}\small\item\em Retrieve the previous version of the \mbox{\hyperlink{classWar}{War}} user object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWar_acc462d6692791ae950a12f705b664c29}\label{classWar_acc462d6692791ae950a12f705b664c29}} 
-static \mbox{\hyperlink{classWar}{War}} $\ast$ {\bfseries start\+War} ()
+static \mbox{\hyperlink{classWar}{War}} $\ast$ \mbox{\hyperlink{classWar_acc462d6692791ae950a12f705b664c29}{start\+War}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWar_a8e837395251af1ea071b3624e85c5a67}{War}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classWar}{War}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWar_a2ccf0a2464c787aff35246b772d6339f}{$\sim$\+War}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classWar}{War}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -32,7 +35,85 @@ This is the class where all the design patterns act together to simulate the war
 
 This class acts as the Originator participant in the Memento design pattern 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWar_a8e837395251af1ea071b3624e85c5a67}\label{classWar_a8e837395251af1ea071b3624e85c5a67}} 
+\index{War@{War}!War@{War}}
+\index{War@{War}!War@{War}}
+\doxysubsubsection{\texorpdfstring{War()}{War()}}
+{\footnotesize\ttfamily War\+::\+War (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{classWar}{War}} object. 
+
+\mbox{\Hypertarget{classWar_a2ccf0a2464c787aff35246b772d6339f}\label{classWar_a2ccf0a2464c787aff35246b772d6339f}} 
+\index{War@{War}!````~War@{$\sim$War}}
+\index{````~War@{$\sim$War}!War@{War}}
+\doxysubsubsection{\texorpdfstring{$\sim$War()}{~War()}}
+{\footnotesize\ttfamily War\+::$\sim$\+War (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Destroy the \mbox{\hyperlink{classWar}{War}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWar_ad04de56bb713adcb741476de8dca7d30}\label{classWar_ad04de56bb713adcb741476de8dca7d30}} 
+\index{War@{War}!Restore@{Restore}}
+\index{Restore@{Restore}!War@{War}}
+\doxysubsubsection{\texorpdfstring{Restore()}{Restore()}}
+{\footnotesize\ttfamily void War\+::\+Restore (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIntelDivision}{Intel\+Division}} $\ast$}]{memento }\end{DoxyParamCaption})}
+
+
+
+Retrieve the previous version of the \mbox{\hyperlink{classWar}{War}} user object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em memento} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWar_a4cf710b35d949d05e8d6eab39affcb06}\label{classWar_a4cf710b35d949d05e8d6eab39affcb06}} 
+\index{War@{War}!Save@{Save}}
+\index{Save@{Save}!War@{War}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntelDivision}{Intel\+Division}} $\ast$ War\+::\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a Memento object to be saved in the \mbox{\hyperlink{Records_8h}{Records.\+h}}. 
+
+\begin{DoxyReturn}{Returns}
+Intel\+Division$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWar_a1a70434ea8c0b6ea02b0c7bb83b54afe}\label{classWar_a1a70434ea8c0b6ea02b0c7bb83b54afe}} 
+\index{War@{War}!setScore@{setScore}}
+\index{setScore@{setScore}!War@{War}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily void War\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+
+Set the Score of the \mbox{\hyperlink{classUser}{User}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWar_acc462d6692791ae950a12f705b664c29}\label{classWar_acc462d6692791ae950a12f705b664c29}} 
+\index{War@{War}!startWar@{startWar}}
+\index{startWar@{startWar}!War@{War}}
+\doxysubsubsection{\texorpdfstring{startWar()}{startWar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWar}{War}} $\ast$ War\+::start\+War (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+War$\ast$ 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-War.\+h\item 
+\mbox{\hyperlink{War_8h}{War.\+h}}\item 
 War.\+cpp\end{DoxyCompactItemize}

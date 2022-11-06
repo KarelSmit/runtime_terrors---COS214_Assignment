@@ -1,40 +1,49 @@
 \hypertarget{Records_8h_source}{}\doxysection{Records.\+h}
-
+\mbox{\hyperlink{Records_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef RECORDS\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define RECORDS\_H}}
-\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{IntelDivision_8h}{IntelDivision.h}}"{}}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}War.h"{}}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <array>}}
-\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <fstream>}}
-\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <ostream>}}
-\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <sstream>}}
-\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
-\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
-\DoxyCodeLine{13 }
-\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classRecords}{Records}}}
-\DoxyCodeLine{15 \{}
-\DoxyCodeLine{16 \textcolor{keyword}{private}:}
-\DoxyCodeLine{17     vector<IntelDivision *> inteldivs;}
-\DoxyCodeLine{18     \mbox{\hyperlink{classWar}{War}} *war;}
-\DoxyCodeLine{19     ofstream myfile;}
-\DoxyCodeLine{20     ofstream topscore;}
-\DoxyCodeLine{21     array<IntelDivision *, 3> top3;}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{23 \textcolor{keyword}{public}:}
-\DoxyCodeLine{24     \mbox{\hyperlink{classRecords}{Records}}(\mbox{\hyperlink{classWar}{War}} *w);}
-\DoxyCodeLine{25     \mbox{\hyperlink{classRecords}{\string~Records}}();}
-\DoxyCodeLine{26     \textcolor{keywordtype}{void} Backup();}
-\DoxyCodeLine{27     \textcolor{keywordtype}{void} Undo();}
-\DoxyCodeLine{28     \textcolor{keywordtype}{void} ShowHistory() \textcolor{keyword}{const};}
-\DoxyCodeLine{29     \textcolor{keywordtype}{void} loadTopScores();}
-\DoxyCodeLine{30     \textcolor{keywordtype}{void} showTopThree();}
-\DoxyCodeLine{31     \textcolor{keywordtype}{void} checkTopScore();}
-\DoxyCodeLine{32     \textcolor{keywordtype}{void} writeTopToFile();}
-\DoxyCodeLine{33     \textcolor{keywordtype}{void} bubbleSort();}
-\DoxyCodeLine{34 \};}
-\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef RECORDS\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define RECORDS\_H}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{IntelDivision_8h}{IntelDivision.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{War_8h}{War.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <ostream>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{23 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }\mbox{\hyperlink{classRecords}{Records}}}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32 \textcolor{keyword}{private}:}
+\DoxyCodeLine{33     vector<IntelDivision *> inteldivs; }
+\DoxyCodeLine{34     \mbox{\hyperlink{classWar}{War}} *war; }
+\DoxyCodeLine{35     ofstream myfile; }
+\DoxyCodeLine{36     ofstream topscore; }
+\DoxyCodeLine{37     array<IntelDivision *, 3> top3; }
+\DoxyCodeLine{39 \textcolor{keyword}{public}:}
+\DoxyCodeLine{45     \mbox{\hyperlink{classRecords}{Records}}(\mbox{\hyperlink{classWar}{War}} *w);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51     \mbox{\hyperlink{classRecords_a8df0292a9c4202ef0ce5b91df8d50130}{\string~Records}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_aba8b5e7704992f6052c326733c539ca8}{Backup}}();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_ad0ae033fe22711319e0bb1fea3539fc4}{Undo}}();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_ae70a3c48c1091b9132159517cc54a328}{ShowHistory}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_a3b08ffbb3deb5b49c9787f1a74780bbb}{loadTopScores}}();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_a3542a05721fb74bc69d6eda47f4e736d}{showTopThree}}();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_ae86a1982634f3a9a7c9ce72f632ec23b}{checkTopScore}}();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_a0a7010865b0692dca95d32369e07e82f}{writeTopToFile}}();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{classRecords_aefe3dade77146a08cd3423237da79fb0}{bubbleSort}}();}
+\DoxyCodeLine{100 \};}
+\DoxyCodeLine{101 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

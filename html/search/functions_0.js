@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['date_0',['date',['../classIntelDivision.html#a53677445ec005e831d8b096e8db9c1ca',1,'IntelDivision']]]
+  ['backup_0',['Backup',['../classRecords.html#aba8b5e7704992f6052c326733c539ca8',1,'Records']]],
+  ['bubblesort_1',['bubbleSort',['../classRecords.html#aefe3dade77146a08cd3423237da79fb0',1,'Records']]]
 ];
