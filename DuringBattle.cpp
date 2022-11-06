@@ -29,11 +29,17 @@ void DuringBattle::handle()
 		context->getB()->getArmy()->printStats();
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		std::cout << "Choose your move for this round:\n1.Attack\n2.Defend\n->";
-		int choice;
-		std::cin >> choice;
+		std::string input;
+		std::cin >> input;
 		std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
-		if (choice == 1 || choice == 2)
+		if (input != "1" && input != "2")
 		{
+			std::cout << "\nInvalid input. Please select a valid strategy.\n";
+			continue;
+		}
+		else
+		{
+			int choice = stoi(input);
 			switch (choice)
 			{
 			case 1:
@@ -45,11 +51,6 @@ void DuringBattle::handle()
 				break;
 			}
 			context->getA()->makeMove(choice, context->getB());
-		}
-		else
-		{
-			std::cout << "\nInvalid input. Please select a valid strategy.\n";
-			continue;
 		}
 		std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 		int eMove = rand() % 2 + 1;
