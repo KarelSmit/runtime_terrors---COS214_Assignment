@@ -13,15 +13,10 @@ private:
 
 public:
     IntelDivision(User *u);
-
     User *getUser();
-
     string GetName() const;
-
     string getDetails();
-
     string print();
-
     string date() const;
 };
 #endif
