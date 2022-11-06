@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['checktopscore_0',['checkTopScore',['../classRecords.html#ae86a1982634f3a9a7c9ce72f632ec23b',1,'Records']]]
+  ['backup_0',['Backup',['../classRecords.html#aba8b5e7704992f6052c326733c539ca8',1,'Records']]],
+  ['bubblesort_1',['bubbleSort',['../classRecords.html#aefe3dade77146a08cd3423237da79fb0',1,'Records']]]
 ];

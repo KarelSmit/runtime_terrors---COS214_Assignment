@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['date_0',['date',['../classIntelDivision.html#a53677445ec005e831d8b096e8db9c1ca',1,'IntelDivision']]]
+  ['checktopscore_0',['checkTopScore',['../classRecords.html#ae86a1982634f3a9a7c9ce72f632ec23b',1,'Records']]]
 ];

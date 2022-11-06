@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['war_0',['War',['../classWar.html#a8e837395251af1ea071b3624e85c5a67',1,'War']]],
-  ['writetoptofile_1',['writeTopToFile',['../classRecords.html#a0a7010865b0692dca95d32369e07e82f',1,'Records']]]
+  ['save_0',['Save',['../classWar.html#a4cf710b35d949d05e8d6eab39affcb06',1,'War']]],
+  ['setcommander_1',['setCommander',['../classArmy.html#a145f0c9f5b9dea347735f8cb0ba68d40',1,'Army']]],
+  ['setenemy_2',['setEnemy',['../classArmy.html#a1d41dcf5543b1d99069f294877c8ac51',1,'Army']]],
+  ['setscore_3',['setScore',['../classWar.html#a1a70434ea8c0b6ea02b0c7bb83b54afe',1,'War']]],
+  ['setuserscore_4',['setUserScore',['../classUser.html#a649cd805a2224430ebf93bcc7cd42afc',1,'User']]],
+  ['showhistory_5',['ShowHistory',['../classRecords.html#ae70a3c48c1091b9132159517cc54a328',1,'Records']]],
+  ['showtopthree_6',['showTopThree',['../classRecords.html#a3542a05721fb74bc69d6eda47f4e736d',1,'Records']]],
+  ['startwar_7',['startWar',['../classWar.html#acc462d6692791ae950a12f705b664c29',1,'War']]]
 ];
