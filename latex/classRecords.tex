@@ -1,38 +1,156 @@
 \hypertarget{classRecords}{}\doxysection{Records Class Reference}
 \label{classRecords}\index{Records@{Records}}
+
+
+Caretaker.  
+
+
+
+
+{\ttfamily \#include $<$Records.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classRecords_abb59d5a54821e16684297f7563650782}{Records}} (\mbox{\hyperlink{classWar}{War}} $\ast$w)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classRecords}{Records}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRecords_a8df0292a9c4202ef0ce5b91df8d50130}{$\sim$\+Records}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classRecords}{Records}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_aba8b5e7704992f6052c326733c539ca8}{Backup}} ()
+\begin{DoxyCompactList}\small\item\em Used when a save is done on the simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_ad0ae033fe22711319e0bb1fea3539fc4}{Undo}} ()
+\begin{DoxyCompactList}\small\item\em Used to go back to previous snapshot of war simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_ae70a3c48c1091b9132159517cc54a328}{Show\+History}} () const
+\begin{DoxyCompactList}\small\item\em displays all previous games played by users, their score and the date and time it was saved \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_a3b08ffbb3deb5b49c9787f1a74780bbb}{load\+Top\+Scores}} ()
+\begin{DoxyCompactList}\small\item\em Loads the top 3 scores from the topscores.\+txt file to the top3 array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_a3542a05721fb74bc69d6eda47f4e736d}{show\+Top\+Three}} ()
+\begin{DoxyCompactList}\small\item\em Displays the top 3 scores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_ae86a1982634f3a9a7c9ce72f632ec23b}{check\+Top\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Determines if a user score is high enough to beat any of the top 3 scores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_a0a7010865b0692dca95d32369e07e82f}{write\+Top\+To\+File}} ()
+\begin{DoxyCompactList}\small\item\em Saves the top 3 scores to the topscore.\+txt file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRecords_aefe3dade77146a08cd3423237da79fb0}{bubble\+Sort}} ()
+\begin{DoxyCompactList}\small\item\em Sorts the top 3 scores from highest to lowest score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Caretaker. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classRecords_abb59d5a54821e16684297f7563650782}\label{classRecords_abb59d5a54821e16684297f7563650782}} 
-{\bfseries Records} (\mbox{\hyperlink{classWar}{War}} $\ast$w)
-\item 
+\index{Records@{Records}!Records@{Records}}
+\index{Records@{Records}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{Records()}{Records()}}
+{\footnotesize\ttfamily Records\+::\+Records (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWar}{War}} $\ast$}]{w }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classRecords}{Records}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRecords_a8df0292a9c4202ef0ce5b91df8d50130}\label{classRecords_a8df0292a9c4202ef0ce5b91df8d50130}} 
+\index{Records@{Records}!````~Records@{$\sim$Records}}
+\index{````~Records@{$\sim$Records}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{$\sim$Records()}{~Records()}}
+{\footnotesize\ttfamily Records\+::$\sim$\+Records (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classRecords}{Records}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classRecords_aba8b5e7704992f6052c326733c539ca8}\label{classRecords_aba8b5e7704992f6052c326733c539ca8}} 
-void {\bfseries Backup} ()
-\item 
-\mbox{\Hypertarget{classRecords_ad0ae033fe22711319e0bb1fea3539fc4}\label{classRecords_ad0ae033fe22711319e0bb1fea3539fc4}} 
-void {\bfseries Undo} ()
-\item 
-\mbox{\Hypertarget{classRecords_ae70a3c48c1091b9132159517cc54a328}\label{classRecords_ae70a3c48c1091b9132159517cc54a328}} 
-void {\bfseries Show\+History} () const
-\item 
-\mbox{\Hypertarget{classRecords_a3b08ffbb3deb5b49c9787f1a74780bbb}\label{classRecords_a3b08ffbb3deb5b49c9787f1a74780bbb}} 
-void {\bfseries load\+Top\+Scores} ()
-\item 
-\mbox{\Hypertarget{classRecords_a3542a05721fb74bc69d6eda47f4e736d}\label{classRecords_a3542a05721fb74bc69d6eda47f4e736d}} 
-void {\bfseries show\+Top\+Three} ()
-\item 
-\mbox{\Hypertarget{classRecords_ae86a1982634f3a9a7c9ce72f632ec23b}\label{classRecords_ae86a1982634f3a9a7c9ce72f632ec23b}} 
-void {\bfseries check\+Top\+Score} ()
-\item 
-\mbox{\Hypertarget{classRecords_a0a7010865b0692dca95d32369e07e82f}\label{classRecords_a0a7010865b0692dca95d32369e07e82f}} 
-void {\bfseries write\+Top\+To\+File} ()
-\item 
+\index{Records@{Records}!Backup@{Backup}}
+\index{Backup@{Backup}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{Backup()}{Backup()}}
+{\footnotesize\ttfamily void Records\+::\+Backup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used when a save is done on the simulation. 
+
 \mbox{\Hypertarget{classRecords_aefe3dade77146a08cd3423237da79fb0}\label{classRecords_aefe3dade77146a08cd3423237da79fb0}} 
-void {\bfseries bubble\+Sort} ()
-\end{DoxyCompactItemize}
+\index{Records@{Records}!bubbleSort@{bubbleSort}}
+\index{bubbleSort@{bubbleSort}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{bubbleSort()}{bubbleSort()}}
+{\footnotesize\ttfamily void Records\+::bubble\+Sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sorts the top 3 scores from highest to lowest score. 
+
+\mbox{\Hypertarget{classRecords_ae86a1982634f3a9a7c9ce72f632ec23b}\label{classRecords_ae86a1982634f3a9a7c9ce72f632ec23b}} 
+\index{Records@{Records}!checkTopScore@{checkTopScore}}
+\index{checkTopScore@{checkTopScore}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{checkTopScore()}{checkTopScore()}}
+{\footnotesize\ttfamily void Records\+::check\+Top\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines if a user score is high enough to beat any of the top 3 scores. 
+
+\mbox{\Hypertarget{classRecords_a3b08ffbb3deb5b49c9787f1a74780bbb}\label{classRecords_a3b08ffbb3deb5b49c9787f1a74780bbb}} 
+\index{Records@{Records}!loadTopScores@{loadTopScores}}
+\index{loadTopScores@{loadTopScores}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{loadTopScores()}{loadTopScores()}}
+{\footnotesize\ttfamily void Records\+::load\+Top\+Scores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the top 3 scores from the topscores.\+txt file to the top3 array. 
+
+\mbox{\Hypertarget{classRecords_ae70a3c48c1091b9132159517cc54a328}\label{classRecords_ae70a3c48c1091b9132159517cc54a328}} 
+\index{Records@{Records}!ShowHistory@{ShowHistory}}
+\index{ShowHistory@{ShowHistory}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{ShowHistory()}{ShowHistory()}}
+{\footnotesize\ttfamily void Records\+::\+Show\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+displays all previous games played by users, their score and the date and time it was saved 
+
+\mbox{\Hypertarget{classRecords_a3542a05721fb74bc69d6eda47f4e736d}\label{classRecords_a3542a05721fb74bc69d6eda47f4e736d}} 
+\index{Records@{Records}!showTopThree@{showTopThree}}
+\index{showTopThree@{showTopThree}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{showTopThree()}{showTopThree()}}
+{\footnotesize\ttfamily void Records\+::show\+Top\+Three (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the top 3 scores. 
+
+\mbox{\Hypertarget{classRecords_ad0ae033fe22711319e0bb1fea3539fc4}\label{classRecords_ad0ae033fe22711319e0bb1fea3539fc4}} 
+\index{Records@{Records}!Undo@{Undo}}
+\index{Undo@{Undo}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{Undo()}{Undo()}}
+{\footnotesize\ttfamily void Records\+::\+Undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to go back to previous snapshot of war simulation. 
+
+\mbox{\Hypertarget{classRecords_a0a7010865b0692dca95d32369e07e82f}\label{classRecords_a0a7010865b0692dca95d32369e07e82f}} 
+\index{Records@{Records}!writeTopToFile@{writeTopToFile}}
+\index{writeTopToFile@{writeTopToFile}!Records@{Records}}
+\doxysubsubsection{\texorpdfstring{writeTopToFile()}{writeTopToFile()}}
+{\footnotesize\ttfamily void Records\+::write\+Top\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves the top 3 scores to the topscore.\+txt file. 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Records.\+h\item 
+\mbox{\hyperlink{Records_8h}{Records.\+h}}\item 
 Records.\+cpp\end{DoxyCompactItemize}

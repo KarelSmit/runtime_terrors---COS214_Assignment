@@ -93,6 +93,7 @@ void Records::loadTopScores()
 
 void Records::showTopThree()
 {
+    bubbleSort();
     cout << "--- TOP SCORES ---" << endl;
     if (top3[0] == NULL && top3[1] == NULL && top3[2] == NULL)
     {

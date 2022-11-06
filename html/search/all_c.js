@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['tank_0',['Tank',['../classTank.html',1,'']]],
-  ['tankdriver_1',['TankDriver',['../classTankDriver.html',1,'']]],
-  ['tankfactory_2',['TankFactory',['../classTankFactory.html',1,'']]],
-  ['tankiterator_3',['TankIterator',['../classTankIterator.html',1,'']]],
-  ['tankunit_4',['TankUnit',['../classTankUnit.html',1,'']]],
-  ['transportunit_5',['TransportUnit',['../classTransportUnit.html',1,'']]]
+  ['save_0',['Save',['../classWar.html#a4cf710b35d949d05e8d6eab39affcb06',1,'War']]],
+  ['setscore_1',['setScore',['../classWar.html#a1a70434ea8c0b6ea02b0c7bb83b54afe',1,'War']]],
+  ['setuserscore_2',['setUserScore',['../classUser.html#a649cd805a2224430ebf93bcc7cd42afc',1,'User']]],
+  ['showhistory_3',['ShowHistory',['../classRecords.html#ae70a3c48c1091b9132159517cc54a328',1,'Records']]],
+  ['showtopthree_4',['showTopThree',['../classRecords.html#a3542a05721fb74bc69d6eda47f4e736d',1,'Records']]],
+  ['sniper_5',['Sniper',['../classSniper.html',1,'']]],
+  ['specialskill_6',['SpecialSkill',['../classSpecialSkill.html',1,'']]],
+  ['startwar_7',['startWar',['../classWar.html#acc462d6692791ae950a12f705b664c29',1,'War']]],
+  ['stealth_8',['Stealth',['../classStealth.html',1,'']]],
+  ['strategy_9',['Strategy',['../classStrategy.html',1,'']]],
+  ['supply_10',['Supply',['../classSupply.html',1,'']]],
+  ['supplyiterator_11',['SupplyIterator',['../classSupplyIterator.html',1,'']]],
+  ['supplytruck_12',['SupplyTruck',['../classSupplyTruck.html',1,'']]],
+  ['supplytruckfactory_13',['SupplyTruckFactory',['../classSupplyTruckFactory.html',1,'']]],
+  ['supplyunit_14',['SupplyUnit',['../classSupplyUnit.html',1,'']]],
+  ['supportbarracks_15',['SupportBarracks',['../classSupportBarracks.html',1,'']]]
 ];
