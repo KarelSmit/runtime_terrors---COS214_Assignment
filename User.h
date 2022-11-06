@@ -20,8 +20,8 @@ using namespace std;
 class User 
 {
 private:
-    string name;
-    int score;
+    string name; /*!< Holds the name of given user input */
+    int score; /*!< Holds the score the user achieves as the game plays */
 
 public:
     /**
