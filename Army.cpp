@@ -10,6 +10,7 @@ Army::Army()
 	totalDmg = 0;
 	totalHP = 0;
 	extraMoves = 0;
+	totalHeal = 0;
 	atkForce = nullptr;
 	medicForce = nullptr;
 	supplyChain = nullptr;
@@ -103,6 +104,7 @@ void Army::updateStats()
 	totalDmg = 0;
 	totalHP = 0;
 	extraMoves = 0;
+	totalHeal = 0;
 	Battalion *n = atkForce;
 	while (n != nullptr)
 	{
@@ -246,6 +248,7 @@ void Army::reset()
 {
 	totalDmg = 0;
 	totalHP - 0;
+
 	extraMoves = 0;
 	Battalion *n = atkForce;
 	while (n != nullptr)
