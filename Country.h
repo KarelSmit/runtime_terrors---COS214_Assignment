@@ -7,14 +7,14 @@
 class Country
 {
 public:
-	Country(std::string, std::string);
+	Country(std::string);
 	~Country();
 	void setEnemy();
 	void makeMove(int , Country*);
 	Army* getArmy();
+	std::string getUsername();
 private:
 	General *leader;
 	Army *defenseForce;
-	std::string cName;
 };
 #endif

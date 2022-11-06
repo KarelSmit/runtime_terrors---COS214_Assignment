@@ -13,12 +13,14 @@ void PreBattle::handle()
 {
 	context->getB()->setEnemy();
 	int totalBattalion = 6;
-	std::cout << "Your army will consist of " << totalBattalion << " battalions.\n";
-	std::cout << "You have have a choice between Infantry, Tank, Medic and Supply battalions to create your army.\n";
+	cout << "================================================================================================\n";
+	std::cout << "Your army will consist of " << totalBattalion << " battalions.\n\n";
+	std::cout << "Choose one of the combinations below:\n\n";
 	bool accept = false;
 	while (!accept)
 	{
-		std::cout << "1. 2x Infantry , 2x Tank, 2x Medic\n2. 2x Infantry, 2x Tank, 1x Medic, 1x Supply\n3. 1x Infantry, 2x Tank, 2x Medic, 1x Supply\n4. 2x Infantry, 1x Tank, 2x Medic, 1x Supply\n";
+		std::cout << "1. 2x Infantry , 2x Tank, 2x Medic\n2. 2x Infantry, 2x Tank, 1x Medic, 1x Supply\n";
+		std::cout << "3. 1x Infantry, 2x Tank, 2x Medic, 1x Supply\n4. 2x Infantry, 1x Tank, 2x Medic, 1x Supply\n";
 		std::cout << "5. 1x Infantry, 1x Tank, 2x Medic, 2x Supply\n->";
 		int choice;
 		std::cin >> choice;
@@ -59,7 +61,9 @@ void PreBattle::handle()
 			accept = true;
 			break;
 		default:
-			std::cout << "\n\nInvalid input. Please select one of the given battalion types.\n\n";
+			cout << "================================================================================================\n";
+			std::cout << "\nInvalid input. Please select one of the given battalion types.\n\n";
+			cout << "================================================================================================\n";
 			accept = false;
 			break;
 		}

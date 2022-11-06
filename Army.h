@@ -1,6 +1,7 @@
 #ifndef ARMY_H
 #define ARMY_H
 #include "Battalion.h"
+#include <string>
 
 class Army
 {
@@ -19,6 +20,7 @@ public:
 	int getMoves();
 	int getHP();
 	void setEnemy();
+	void setCommander( std::string );
 
 private:
 	Battalion* atkForce;
@@ -29,5 +31,6 @@ private:
 	int extraMoves;
 	int totalHeal;
 	bool enemy;
+	std::string gName;
 };
 #endif

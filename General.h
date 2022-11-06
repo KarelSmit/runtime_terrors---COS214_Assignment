@@ -12,6 +12,7 @@ public:
 	void setAttack();
 	void setDefend();
 	void battlePlan(Army*);
+	std::string getName();
 private:
 	std::string name;
 	Army* myArmy;

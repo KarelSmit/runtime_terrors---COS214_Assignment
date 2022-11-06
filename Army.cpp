@@ -44,8 +44,14 @@ Army::~Army()
 	}
 }
 
-void Army::setEnemy(){
+void Army::setEnemy()
+{
 	enemy = true;
+}
+
+void Army::setCommander(std::string nme)
+{
+	gName = nme;
 }
 
 void Army::addInfantry(int x)
@@ -133,8 +139,16 @@ void Army::takeDamage(int x)
 			n = n->next;
 			delete temp;
 			atkForce = n;
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has lost an attack battalion.";
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
-		std::cout << "Attack battalion has been killed.\n";
+		else
+		{
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has taken " << x << " damage to an attack battalion.";
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		}
 	}
 	else if (medicForce != nullptr)
 	{
@@ -145,8 +159,16 @@ void Army::takeDamage(int x)
 			n = n->next;
 			delete temp;
 			medicForce = n;
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has lost a medic battalion.";
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
-		std::cout << "Medic battalion has been killed.\n";
+		else
+		{
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has taken " << x << " damage to a medic battalion.";
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		}
 	}
 	else if (supplyChain != nullptr)
 	{
@@ -157,12 +179,22 @@ void Army::takeDamage(int x)
 			n = n->next;
 			delete temp;
 			supplyChain = n;
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has lost a supply battalion.";
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
-		std::cout << "Supply battalion has been killed.\n";
+		else
+		{
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has taken " << x << " damage to a supply battalion.";
+			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		}
 	}
 	else
 	{
-		std::cout << "Your army has been defeated.\n";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << "'s army is already defeated.";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	updateStats();
 }
@@ -174,23 +206,31 @@ void Army::heal()
 	{
 		n = atkForce;
 		n->heal(totalHeal);
-		std::cout << "Attack battalion has been healed.\n";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << " has healed an attack battalion for " << totalHeal << "HP.";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else if (medicForce != nullptr)
 	{
 		n = atkForce;
 		n->heal(totalHeal);
-		std::cout << "Medic battalion has been healed.\n";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << " has healed a medic battalion for " << totalHeal << "HP.";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else if (supplyChain != nullptr)
 	{
 		n = atkForce;
 		n->heal(totalHeal);
-		std::cout << "Supply battalion has been healed.\n";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << " has healed a supply battalion for " << totalHeal << "HP.";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else
 	{
-		std::cout << "Your army has already been defeated.\n";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << "'s army is already defeated.";
+		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	updateStats();
 }

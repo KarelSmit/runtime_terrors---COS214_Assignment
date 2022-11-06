@@ -1,9 +1,9 @@
 #include "Country.h"
 
-Country::Country( std::string cnme , std::string gName ){
+Country::Country(std::string gName ){
 	defenseForce = new Army();
+	defenseForce->setCommander( gName );
 	leader = new General(gName , defenseForce);
-	cName = cnme;
 }
 
 Country::~Country(){
@@ -28,4 +28,8 @@ void Country::makeMove(int x ,Country* enemy){
 		leader->setDefend();
 	}
 	leader->battlePlan( enemy->getArmy() );
+}
+
+std::string Country::getUsername(){
+	return leader->getName();
 }

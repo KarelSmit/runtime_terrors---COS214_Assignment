@@ -38,8 +38,8 @@ void War::simulate()
 	std::cin >> uName;
 	cout << "\n================================================================================================\n";
 	user = new User(uName, 0);
-	sideA = new Country("CountryA", uName);
-	sideB = new Country("CountryB", "Enemy General");
+	sideA = new Country("General " + uName);
+	sideB = new Country("Evil General");
 	for (int i = 0; i < 3; i++)
 	{
 		Battle *bat = new Battle(sideA, sideB);
@@ -62,11 +62,15 @@ void War::simulate()
 	}
 	if (count >= 2)
 	{
-		std::cout << "\n\nYou have won the war. Congratulations General.\n\n";
+		cout << "================================================================================================\n";
+		std::cout << "\nYou have won the war! Congratulations " << sideA->getUsername() <<"!\n Your final score was " << score << ".\n";
+		cout << "================================================================================================\n";
 	}
 	else
 	{
-		std::cout << "\n\nYou have lost the war. Better luck next time General.\n\n";
+		cout << "================================================================================================\n";
+		std::cout << "\nYou have lost the war. Better luck next time "<< sideA->getUsername() << ".\nYour final score was " << score << ".\n";
+		cout << "================================================================================================\n";
 	}
 }
 

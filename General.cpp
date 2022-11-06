@@ -21,3 +21,7 @@ void General::setDefend(){
 	delete plan;
 	plan = new Defend();
 }
+
+std::string General::getName(){
+	return name;
+}
