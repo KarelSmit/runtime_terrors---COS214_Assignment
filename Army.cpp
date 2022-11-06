@@ -300,6 +300,7 @@ void Army::printStats()
 	aA.printBar(totalDmg,'D');
 	std::cout << "RP = " << totalHeal<< " ";
 	aA.printBar(totalHeal,'R');
-	std::cout << "ExtraMoves = " << extraMoves << "\n";
+	std::cout << "ExtraMoves = " << extraMoves;
+	aA.printBar(extraMoves,'S');
 	std::cout << "..............................................................................\n";
 }

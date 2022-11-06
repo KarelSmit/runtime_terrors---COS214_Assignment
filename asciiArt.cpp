@@ -40,16 +40,19 @@ void asciiArt::printBar(int points,char pType){
         else
             cout <<" ";
     }
-    points = points/2;
+    if (pType != 'S')
+        points = points/2;
     Color::Modifier red(Color::FG_RED);
     Color::Modifier green(Color::FG_GREEN);
     Color::Modifier blue(Color::FG_BLUE);
+    Color::Modifier yellow(Color::FG_YELLOW);
     Color::Modifier def(Color::FG_DEFAULT);
 
     switch (pType) {
         case 'H': cout << blue << "\t"; break;
         case 'D': cout << red << "\t"; break;
         case 'R': cout << green << "\t"; break;
+        case 'S': cout << yellow << "\t"; break;
     }
 
     for (int i = 0; i<points;i++){
