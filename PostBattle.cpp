@@ -1,4 +1,5 @@
 #include "PostBattle.h"
+#include <iostream>
 
 PostBattle::PostBattle(Battle* inC) : BattleState(inC){
 
@@ -8,8 +9,8 @@ PostBattle::~PostBattle(){
 }
 
 void PostBattle::handle(){
-	cout << "================================================================================================\n";
-	cout << "This is the Post Battle state of both sides:\n";
+	std::cout << "================================================================================================\n";
+	std::cout << "This is the Post Battle state of both sides:\n";
 	context->getA()->getArmy()->printStats();
 	context->getB()->getArmy()->printStats();
 	int myHP = context->getA()->getArmy()->getHP();
