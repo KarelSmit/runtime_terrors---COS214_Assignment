@@ -51,7 +51,9 @@ void War::simulate()
 	battleHistory = new bool[3];
 	string uName;
 	std::cout << "\nEnter your name below\n->";
-	std::cin >> uName;
+	cin.ignore(1,'\n');
+	getline(cin, uName);
+	// std::cin >> uName;
 	user = new User(uName, 0);
 	sideA = new Country("General " + uName);
 	sideB = new Country("Evil General");

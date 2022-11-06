@@ -27,15 +27,23 @@
 #include "Records.cpp"
 #include "User.cpp"
 #include <iostream>
+// #include "colormod.h"
+#include <stdlib.h>
+
 
 using namespace std;
 
 int main()
 {
+	Color::Modifier green(Color::FG_GREEN);
+	Color::Modifier def(Color::FG_DEFAULT);
+	system("clear");
+
 	War *warSim = War::startWar();
 	Records *caretaker = new Records(warSim);
 	while (true)
 	{
+		cout<< green <<endl;
 		cout << "================================================================================================\n";
 		cout << " _     _  _______  ______    ___      ______     _______  _______    _     _  _______  ______  \n";
 		cout << "| | _ | ||       ||    _ |  |   |    |      |   |       ||       |  | | _ | ||   _   ||    _ | \n";
@@ -45,6 +53,9 @@ int main()
 		cout << "|   _   ||       ||   |  | ||       ||       |  |       ||   |      |   _   ||   _   ||   |  | |\n";
 		cout << "|__| |__||_______||___|  |_||_______||______|   |_______||___|      |__| |__||__| |__||___|  |_|\n";
 		cout << "================================================================================================\n";
+		cout<< def;
+		
+
 		cout << "Welcome to the World of War simulation.\n\nSelect an option below:\n\n";
 		int choice;
 		cout << "1. Start simulation" << endl;
