@@ -5,6 +5,7 @@
 #include "MedicUnit.h"
 #include <iostream>
 #include "asciiArt.h"
+// #include "colormod.h"
 
 Army::Army()
 {
@@ -210,13 +211,19 @@ void Army::takeDamage(int x)
 
 void Army::heal()
 {
+
+	// Color::Modifier green(Color::FG_GREEN);
+	// Color::Modifier red(Color::FG_RED);
+    // Color::Modifier def(Color::FG_DEFAULT);
+
 	Battalion *n;
+	std::cout << "\t\t";
 	if (atkForce != nullptr)
 	{
 		n = atkForce;
 		n->heal(totalHeal);
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << " has healed an attack battalion for " << totalHeal << "HP.";
+		std::cout << gName << " has "  << "healed an attack battalion for " << totalHeal << "HP.";
 		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else if (medicForce != nullptr)
@@ -224,7 +231,7 @@ void Army::heal()
 		n = medicForce;
 		n->heal(totalHeal);
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << " has healed a medic battalion for " << totalHeal << "HP.";
+		std::cout << gName << " has "  << "healed a medic battalion for " << totalHeal << "HP." ;
 		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else if (supplyChain != nullptr)
@@ -232,13 +239,13 @@ void Army::heal()
 		n = supplyChain;
 		n->heal(totalHeal);
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << " has healed a supply battalion for " << totalHeal << "HP.";
+		std::cout << gName << " has"  << "healed a supply battalion for " << totalHeal << "HP.";
 		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else
 	{
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << "'s army is already defeated.";
+		std::cout << gName << "'s army is already "<<"defeated.";
 		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	updateStats();
