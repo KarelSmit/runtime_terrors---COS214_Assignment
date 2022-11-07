@@ -1,5 +1,5 @@
 /**
- * @file Tank.h
+ * @file Sniper.h
  * @author Emilee da Cruz
  * @brief Header file for Sniper class
  * @date 2022-11-06
