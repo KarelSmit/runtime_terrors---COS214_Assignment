@@ -8,17 +8,18 @@
 #define TANK_H
 #include "Vehicle.h"
 /**
-*@class Tank
-*/
-class Tank : public Vehicle {
-    public: 
-    /**
-    *@brief constructor 
-    */
-    Tank();
-    /**
-    *@brief destructor for destroying Tanks
-    */
-    virtual ~Tank(); 
+ *@class Tank
+ */
+class Tank : public Vehicle
+{
+public:
+	/**
+	 *@brief constructor
+	 */
+	Tank();
+	/**
+	 *@brief destructor for destroying Tanks
+	 */
+	virtual ~Tank();
 };
 #endif

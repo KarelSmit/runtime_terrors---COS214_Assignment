@@ -9,22 +9,23 @@
 #include "Tank.h"
 #include "SupplyTruck.h"
 /**
-*@class VehicleFactory
-*/
-class VehicleFactory {
-    public: 
-    /**
-    *@brief Vehicle factory default constructor
-    */
-    VehicleFactory();
-    /**
-    *@brief virtual function for creating vehicles
-    *@return Vehicle*
-    */ 
-    virtual Vehicle* createVehicles() = 0; 
-    /**
-    *@brief Vehicle factory default destructor
-    */
-    virtual ~VehicleFactory(); 
+ *@class VehicleFactory
+ */
+class VehicleFactory
+{
+public:
+	/**
+	 *@brief Vehicle factory default constructor
+	 */
+	VehicleFactory();
+	/**
+	 *@brief virtual function for creating vehicles
+	 *@return Vehicle*
+	 */
+	virtual Vehicle *createVehicles() = 0;
+	/**
+	 *@brief Vehicle factory default destructor
+	 */
+	virtual ~VehicleFactory();
 };
 #endif

@@ -8,22 +8,23 @@
 #define SUPPLYTRUCKFACTORY_H
 #include "VehicleFactory.h"
 /**
-*@class SupplyTruckFactory
-*/
-class SupplyTruckFactory : public VehicleFactory {
-    public: 
-    /**
-    *@brief Constructor for SupplyTruckFactory object
-    */
-    SupplyTruckFactory(); 
-    /**
-    *@brief Inherited function for creating supply trucks
-    *@return Vehicle*
-    */
-    Vehicle* createVehicles(); 
-    /**
-    *@brief Destructor
-    */
-    virtual ~SupplyTruckFactory();
+ *@class SupplyTruckFactory
+ */
+class SupplyTruckFactory : public VehicleFactory
+{
+public:
+	/**
+	 *@brief Constructor for SupplyTruckFactory object
+	 */
+	SupplyTruckFactory();
+	/**
+	 *@brief Inherited function for creating supply trucks
+	 *@return Vehicle*
+	 */
+	Vehicle *createVehicles();
+	/**
+	 *@brief Destructor
+	 */
+	virtual ~SupplyTruckFactory();
 };
 #endif

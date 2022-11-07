@@ -20,7 +20,7 @@ void DuringBattle::handle()
 	asciiArt aaA;
 
 	Color::Modifier yellow(Color::FG_YELLOW);
-    Color::Modifier def(Color::FG_DEFAULT);	
+	Color::Modifier def(Color::FG_DEFAULT);
 
 	aaA.printBanner();
 	std::cout << std::endl;
@@ -36,9 +36,9 @@ void DuringBattle::handle()
 		std::cout << "Choose your move for this round:\n1.Attack\n2.Defend\n->";
 		std::string input;
 		std::cin >> input;
-		//std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+		// std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 		std::cout << "\n\n================================================================================================\n";
-	
+
 		if (input != "1" && input != "2")
 		{
 			std::cout << "\nInvalid input. Please select a valid strategy.\n";
@@ -50,7 +50,7 @@ void DuringBattle::handle()
 			switch (choice)
 			{
 			case 1:
-				std::cout << yellow << context->getA()->getUsername() << def<< " has chosen to "
+				std::cout << yellow << context->getA()->getUsername() << def << " has chosen to "
 						  << "attack.\n";
 				break;
 			case 2:
@@ -64,7 +64,7 @@ void DuringBattle::handle()
 		switch (eMove)
 		{
 		case 1:
-			std::cout << yellow << context->getB()->getUsername() << def<< " has chosen to attack.\n";
+			std::cout << yellow << context->getB()->getUsername() << def << " has chosen to attack.\n";
 			break;
 		case 2:
 			std::cout << yellow << context->getB()->getUsername() << def << " has chosen to defend.\n";
@@ -74,7 +74,6 @@ void DuringBattle::handle()
 		moves--;
 		//		std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 		std::cout << "\n================================================================================================\n";
-
 	}
 	moves = context->getA()->getArmy()->getMoves();
 	while (moves > 0)
@@ -86,7 +85,7 @@ void DuringBattle::handle()
 		std::cout << "Choose your move for this round:\n1.Attack\n2.Defend\n->";
 		int choice;
 		std::cin >> choice;
-		//std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+		// std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 		std::cout << "\n================================================================================================\n";
 
 		if (choice == 1 || choice == 2)
@@ -97,7 +96,7 @@ void DuringBattle::handle()
 				std::cout << yellow << context->getA()->getUsername() << def << " has chosen to attack.\n";
 				break;
 			case 2:
-				std::cout << yellow <<context->getA()->getUsername() << def << " has chosen to defend.\n";
+				std::cout << yellow << context->getA()->getUsername() << def << " has chosen to defend.\n";
 				break;
 			}
 			context->getA()->makeMove(choice, context->getB());
@@ -109,7 +108,7 @@ void DuringBattle::handle()
 		}
 		moves--;
 		std::cout << "\n================================================================================================\n";
-//		std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+		//		std::cout << "\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 	}
 	changeState();
 }

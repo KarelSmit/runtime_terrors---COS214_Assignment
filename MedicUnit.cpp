@@ -11,12 +11,12 @@ MedicUnit::MedicUnit()
 	totRP = 0;
 	SupportBarracks bootcamp = SupportBarracks();
 	int medicCount = 5;
-	Node<FootUnit*> *n = new Node<FootUnit*>();
+	Node<FootUnit *> *n = new Node<FootUnit *>();
 	n->element = bootcamp.createFootUnit();
-	head = n;	
+	head = n;
 	for (int i = 0; i < medicCount - 1; i++)
 	{
-		n = new Node<FootUnit*>();
+		n = new Node<FootUnit *>();
 		n->element = bootcamp.createFootUnit();
 		n->next = head;
 		head = n;
@@ -26,10 +26,10 @@ MedicUnit::MedicUnit()
 
 MedicUnit::~MedicUnit()
 {
-	Node<FootUnit*> *n = head;
+	Node<FootUnit *> *n = head;
 	while (n != nullptr)
 	{
-		Node<FootUnit*> *temp = n;
+		Node<FootUnit *> *temp = n;
 		n = n->next;
 		delete temp->element;
 		delete temp;
@@ -71,7 +71,7 @@ MedicIterator MedicUnit::begin()
 
 MedicIterator MedicUnit::end()
 {
-	Node<FootUnit*> *n = head;
+	Node<FootUnit *> *n = head;
 	while (n->next != nullptr)
 	{
 		n = n->next;
@@ -79,14 +79,17 @@ MedicIterator MedicUnit::end()
 	return MedicIterator(head, n);
 }
 
-bool MedicUnit::takeDamage( int dmg ){
+bool MedicUnit::takeDamage(int dmg)
+{
 	totHP -= dmg;
-	if ( totHP <= 0 ){
+	if (totHP <= 0)
+	{
 		return true;
 	}
 	return false;
 }
 
-void MedicUnit::heal( int hp ){
+void MedicUnit::heal(int hp)
+{
 	totHP += hp;
 }

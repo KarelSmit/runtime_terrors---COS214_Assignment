@@ -9,15 +9,56 @@ Inheritance diagram for Barracks\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classBarracks_a3a46faa94ab87e28b376f37ef186c795}\label{classBarracks_a3a46faa94ab87e28b376f37ef186c795}} 
+{\bfseries Barracks} ()
+\begin{DoxyCompactList}\small\item\em constructs a barracks object \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ \mbox{\hyperlink{classBarracks_a9658fea8b17a4bb011ada7a9cdef92ce}{create\+Foot\+Unit}} ()=0
+\begin{DoxyCompactList}\small\item\em virtual function for creating a foot unit \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ \mbox{\hyperlink{classBarracks_a781349d7a872ceab43760460739adfef}{create\+Transport\+Unit}} ()=0
+\begin{DoxyCompactList}\small\item\em virtual function for creating a \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBarracks_aa44034c35573fc826e66a301463a17c5}\label{classBarracks_aa44034c35573fc826e66a301463a17c5}} 
+virtual {\bfseries $\sim$\+Barracks} ()
+\begin{DoxyCompactList}\small\item\em destroys barracks object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classBarracks_a9658fea8b17a4bb011ada7a9cdef92ce}\label{classBarracks_a9658fea8b17a4bb011ada7a9cdef92ce}} 
-virtual \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ {\bfseries create\+Foot\+Unit} ()=0
-\item 
+\index{Barracks@{Barracks}!createFootUnit@{createFootUnit}}
+\index{createFootUnit@{createFootUnit}!Barracks@{Barracks}}
+\doxysubsubsection{\texorpdfstring{createFootUnit()}{createFootUnit()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classFootUnit}{Foot\+Unit}} $\ast$ Barracks\+::create\+Foot\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual function for creating a foot unit 
+
+\begin{DoxyReturn}{Returns}
+foot\+Unit$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCombatBarracks_ad78086f891f5940c9a8b1c418381cf80}{Combat\+Barracks}}, and \mbox{\hyperlink{classSupportBarracks_a95b9f713990a3119a35f6414321053b7}{Support\+Barracks}}.
+
 \mbox{\Hypertarget{classBarracks_a781349d7a872ceab43760460739adfef}\label{classBarracks_a781349d7a872ceab43760460739adfef}} 
-virtual \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ {\bfseries create\+Transport\+Unit} ()=0
-\end{DoxyCompactItemize}
+\index{Barracks@{Barracks}!createTransportUnit@{createTransportUnit}}
+\index{createTransportUnit@{createTransportUnit}!Barracks@{Barracks}}
+\doxysubsubsection{\texorpdfstring{createTransportUnit()}{createTransportUnit()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ Barracks\+::create\+Transport\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual function for creating a \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} 
+
+\begin{DoxyReturn}{Returns}
+Transport\+Unit$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCombatBarracks_a3f116b877182d843c043cd9f85d17df7}{Combat\+Barracks}}, and \mbox{\hyperlink{classSupportBarracks_a42329b894183e414d290340e1630f051}{Support\+Barracks}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Barracks.\+h\item 
+\mbox{\hyperlink{Barracks_8h}{Barracks.\+h}}\item 
 Barracks.\+cpp\end{DoxyCompactItemize}

@@ -1,21 +1,22 @@
 \hypertarget{TankDriver_8h_source}{}\doxysection{Tank\+Driver.\+h}
-
+\mbox{\hyperlink{TankDriver_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TANKDRIVER\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TANKDRIVER\_H}}
-\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}TransportUnit.h"{}}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Vehicle.h"{}}}
-\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{classTankDriver}{TankDriver}} : \textcolor{keyword}{public} \mbox{\hyperlink{classTransportUnit}{TransportUnit}}}
-\DoxyCodeLine{6 \{}
-\DoxyCodeLine{7 \textcolor{keyword}{private}:}
-\DoxyCodeLine{8     \textcolor{keywordtype}{int} Damage;}
-\DoxyCodeLine{9 }
-\DoxyCodeLine{10 \textcolor{keyword}{public}:}
-\DoxyCodeLine{11     \mbox{\hyperlink{classTankDriver}{TankDriver}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
-\DoxyCodeLine{12     \textcolor{keyword}{virtual} \mbox{\hyperlink{classTankDriver}{\string~TankDriver}}();}
-\DoxyCodeLine{13     \mbox{\hyperlink{classVehicle}{Vehicle}} *tank;}
-\DoxyCodeLine{14     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getDamage();}
-\DoxyCodeLine{15 \};}
-\DoxyCodeLine{16 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef TANKDRIVER\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define TANKDRIVER\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{TransportUnit_8h}{TransportUnit.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Vehicle_8h}{Vehicle.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classTankDriver}{TankDriver}} : \textcolor{keyword}{public} \mbox{\hyperlink{classTransportUnit}{TransportUnit}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} Damage; \textcolor{comment}{// damage inflicted by a TankDriver}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{classTankDriver}{TankDriver}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \mbox{\hyperlink{classTankDriver_aaa4da9b1ba8847e218ed31a055f071f0}{\string~TankDriver}}();}
+\DoxyCodeLine{28     \mbox{\hyperlink{classVehicle}{Vehicle}} *tank; \textcolor{comment}{// stores the tank that the driver drives}}
+\DoxyCodeLine{33 \textcolor{comment}{}    \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{classTankDriver_a14c4178282cb0361e1e9fa706aa5cbe2}{getDamage}}();}
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

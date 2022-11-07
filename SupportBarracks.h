@@ -8,23 +8,24 @@
 #define SUPPORTBARRACKS_H
 #include "Barracks.h"
 /**
-*@class SupportBarracks
-*/
-class SupportBarracks : public Barracks {
-    public:
-/**
-*@brief default constructor
-*/
-    SupportBarracks(); 
-/**
-*@brief function for creating foot unit soldiers
-*@return FootUnit*
-*/    
-    FootUnit* createFootUnit();
-/**
-*@brief class for creating transport unit soldiers
-*@return TransportUnit*
-*/     
-    TransportUnit* createTransportUnit();
-}; 
+ *@class SupportBarracks
+ */
+class SupportBarracks : public Barracks
+{
+public:
+	/**
+	 *@brief default constructor
+	 */
+	SupportBarracks();
+	/**
+	 *@brief function for creating foot unit soldiers
+	 *@return FootUnit*
+	 */
+	FootUnit *createFootUnit();
+	/**
+	 *@brief class for creating transport unit soldiers
+	 *@return TransportUnit*
+	 */
+	TransportUnit *createTransportUnit();
+};
 #endif

@@ -140,19 +140,19 @@ int Army::getDamage()
 void Army::takeDamage(int x)
 {
 	Battalion *n;
-	
- 	Color::Modifier red(Color::FG_RED);
-    Color::Modifier green(Color::FG_GREEN);
-    Color::Modifier blue(Color::FG_BLUE);
-    Color::Modifier yellow(Color::FG_YELLOW);
-    Color::Modifier def(Color::FG_DEFAULT);	
+
+	Color::Modifier red(Color::FG_RED);
+	Color::Modifier green(Color::FG_GREEN);
+	Color::Modifier blue(Color::FG_BLUE);
+	Color::Modifier yellow(Color::FG_YELLOW);
+	Color::Modifier def(Color::FG_DEFAULT);
 	Color::Modifier inverse_on(Color::FG_INVERSE_ON);
 	Color::Modifier inverse_off(Color::FG_INVERSE_OFF);
 
 	if (atkForce != nullptr)
 	{
 		n = atkForce;
-		std::cout<<"\t\t";
+		std::cout << "\t\t";
 		if (n->takeDamage(x))
 		{
 			Battalion *temp = n;
@@ -160,14 +160,14 @@ void Army::takeDamage(int x)
 			delete temp;
 			atkForce = n;
 			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-			std::cout << gName << " has "<< red << "lost an "<< inverse_on <<"attack"<<inverse_off<<" battalion." << def;
-			//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has " << red << "lost an " << inverse_on << "attack" << inverse_off << " battalion." << def;
+			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
 		else
 		{
 			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-			std::cout << gName << " has "<<red << "taken " << x << " damage to an "<<inverse_on<<"attack"<<inverse_off<< " battalion." << def;
-			//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has " << red << "taken " << x << " damage to an " << inverse_on << "attack" << inverse_off << " battalion." << def;
+			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
 	}
 	else if (medicForce != nullptr)
@@ -180,14 +180,14 @@ void Army::takeDamage(int x)
 			delete temp;
 			medicForce = n;
 			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-			std::cout << gName << " has "<<red<<"lost a "<<inverse_on<<"medic"<<inverse_off<<" battalion."<<def;
-			//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has " << red << "lost a " << inverse_on << "medic" << inverse_off << " battalion." << def;
+			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
 		else
 		{
 			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-			std::cout << gName << " has "<<red<<"taken " << x << " damage to a "<<inverse_on<<"medic"<<inverse_off<<" battalion." << def;
-			//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+			std::cout << gName << " has " << red << "taken " << x << " damage to a " << inverse_on << "medic" << inverse_off << " battalion." << def;
+			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
 	}
 	else if (supplyChain != nullptr)
@@ -200,20 +200,20 @@ void Army::takeDamage(int x)
 			delete temp;
 			supplyChain = n;
 			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-			std::cout << gName << " has "<<red<<"lost a "<<inverse_on<<"supply"<<inverse_off<<" battalion." << def;
+			std::cout << gName << " has " << red << "lost a " << inverse_on << "supply" << inverse_off << " battalion." << def;
 			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
 		else
 		{
 			// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-			std::cout << gName << " has "<<red<<"taken " << x << " damage to a " << inverse_on << "supply" << inverse_off<<" battalion." << def;
+			std::cout << gName << " has " << red << "taken " << x << " damage to a " << inverse_on << "supply" << inverse_off << " battalion." << def;
 			std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 		}
 	}
 	else
 	{
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << "'s army is already "<<red<<"defeated."<<def;
+		std::cout << gName << "'s army is already " << red << "defeated." << def;
 		std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	updateStats();
@@ -223,12 +223,11 @@ void Army::heal()
 {
 	Battalion *n;
 
-
 	Color::Modifier red(Color::FG_RED);
-    Color::Modifier green(Color::FG_GREEN);
-    Color::Modifier blue(Color::FG_BLUE);
-    Color::Modifier yellow(Color::FG_YELLOW);
-    Color::Modifier def(Color::FG_DEFAULT);	
+	Color::Modifier green(Color::FG_GREEN);
+	Color::Modifier blue(Color::FG_BLUE);
+	Color::Modifier yellow(Color::FG_YELLOW);
+	Color::Modifier def(Color::FG_DEFAULT);
 	Color::Modifier inverse_on(Color::FG_INVERSE_ON);
 	Color::Modifier inverse_off(Color::FG_INVERSE_OFF);
 	std::cout << "\t\t";
@@ -237,30 +236,30 @@ void Army::heal()
 		n = atkForce;
 		n->heal(totalHeal);
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << " has " << green << "healed an "<< inverse_on << "attack" << inverse_off << " battalion for " << totalHeal << "HP." << def;
-		//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << " has " << green << "healed an " << inverse_on << "attack" << inverse_off << " battalion for " << totalHeal << "HP." << def;
+		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else if (medicForce != nullptr)
 	{
 		n = medicForce;
 		n->heal(totalHeal);
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << " has " << green  << "healed a "<< inverse_on <<"medic"<< inverse_off << " battalion for " << totalHeal << "HP." << def ;
-		//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << " has " << green << "healed a " << inverse_on << "medic" << inverse_off << " battalion for " << totalHeal << "HP." << def;
+		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else if (supplyChain != nullptr)
 	{
 		n = supplyChain;
 		n->heal(totalHeal);
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << " has"  << green << "healed a "<< inverse_on <<"supply"<< inverse_off << " battalion for " << totalHeal << "HP." << def;
-		//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << " has" << green << "healed a " << inverse_on << "supply" << inverse_off << " battalion for " << totalHeal << "HP." << def;
+		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	else
 	{
 		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
-		std::cout << gName << "'s army is already "<< red <<"defeated." << def;
-		//std::cout << "\n--------------------------------------------------------------------------------------------------\n";
+		std::cout << gName << "'s army is already " << red << "defeated." << def;
+		// std::cout << "\n--------------------------------------------------------------------------------------------------\n";
 	}
 	updateStats();
 }
@@ -314,20 +313,24 @@ void Army::printStats()
 {
 	asciiArt aA;
 	Color::Modifier yellow(Color::FG_YELLOW);
-    Color::Modifier def(Color::FG_DEFAULT);	
+	Color::Modifier def(Color::FG_DEFAULT);
 	// std::cout << "\n..............................................................................\n";
-	//std::cout << "\n\n================================================================================================\n";
-	
-	std::cout <<yellow << gName << "'s "<<def <<"army is in the current state:\n";
-	std::cout << "\t\t"<< "HP = " << totalHP;
-	aA.printBar(totalHP,'H');
-	std::cout << "\t\t"<< "Damage = " << totalDmg;
-	aA.printBar(totalDmg,'D');
-	std::cout << "\t\t"<< "RP = " << totalHeal<< " ";
-	aA.printBar(totalHeal,'R');
-	std::cout << "\t\t"<< "ExtraMoves = " << extraMoves;
-	aA.printBar(extraMoves,'S');
-	//std::cout << "..............................................................................\n";
-	//std::cout << "\n================================================================================================\n";
+	// std::cout << "\n\n================================================================================================\n";
+
+	std::cout << yellow << gName << "'s " << def << "army is in the current state:\n";
+	std::cout << "\t\t"
+			  << "HP = " << totalHP;
+	aA.printBar(totalHP, 'H');
+	std::cout << "\t\t"
+			  << "Damage = " << totalDmg;
+	aA.printBar(totalDmg, 'D');
+	std::cout << "\t\t"
+			  << "RP = " << totalHeal << " ";
+	aA.printBar(totalHeal, 'R');
+	std::cout << "\t\t"
+			  << "ExtraMoves = " << extraMoves;
+	aA.printBar(extraMoves, 'S');
+	// std::cout << "..............................................................................\n";
+	// std::cout << "\n================================================================================================\n";
 	std::cout << "\n------------------------------------------------------------------------------------------------\n";
 }

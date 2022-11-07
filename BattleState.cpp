@@ -1,9 +1,10 @@
 #include "BattleState.h"
 
-BattleState::BattleState( Battle* cont ) {
+BattleState::BattleState(Battle *cont)
+{
 	context = cont;
 }
 
-BattleState::~BattleState() {
-	
+BattleState::~BattleState()
+{
 }

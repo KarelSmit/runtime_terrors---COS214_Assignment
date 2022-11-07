@@ -9,12 +9,37 @@ Inheritance diagram for Vehicle\+Factory\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classVehicleFactory_ad20e739afc40f61315fb842773df8498}\label{classVehicleFactory_ad20e739afc40f61315fb842773df8498}} 
+{\bfseries Vehicle\+Factory} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classVehicle}{Vehicle}} factory default constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVehicle}{Vehicle}} $\ast$ \mbox{\hyperlink{classVehicleFactory_aa0c25a1b71ab271e175a9f8e124f1b36}{create\+Vehicles}} ()=0
+\begin{DoxyCompactList}\small\item\em virtual function for creating vehicles \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVehicleFactory_ae6a79dfbe6487caa40a03321da59f5f2}\label{classVehicleFactory_ae6a79dfbe6487caa40a03321da59f5f2}} 
+virtual {\bfseries $\sim$\+Vehicle\+Factory} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classVehicle}{Vehicle}} factory default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classVehicleFactory_aa0c25a1b71ab271e175a9f8e124f1b36}\label{classVehicleFactory_aa0c25a1b71ab271e175a9f8e124f1b36}} 
-virtual \mbox{\hyperlink{classVehicle}{Vehicle}} $\ast$ {\bfseries create\+Vehicles} ()=0
-\end{DoxyCompactItemize}
+\index{VehicleFactory@{VehicleFactory}!createVehicles@{createVehicles}}
+\index{createVehicles@{createVehicles}!VehicleFactory@{VehicleFactory}}
+\doxysubsubsection{\texorpdfstring{createVehicles()}{createVehicles()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVehicle}{Vehicle}} $\ast$ Vehicle\+Factory\+::create\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual function for creating vehicles 
+
+\begin{DoxyReturn}{Returns}
+Vehicle$\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSupplyTruckFactory_acab218ae1172ba0a08f0e28f0229cf69}{Supply\+Truck\+Factory}}, and \mbox{\hyperlink{classTankFactory_a660774446833d141db53806057752441}{Tank\+Factory}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Vehicle\+Factory.\+h\item 
+\mbox{\hyperlink{VehicleFactory_8h}{Vehicle\+Factory.\+h}}\item 
 Vehicle\+Factory.\+cpp\end{DoxyCompactItemize}

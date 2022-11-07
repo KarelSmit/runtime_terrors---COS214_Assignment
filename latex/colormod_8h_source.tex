@@ -1,26 +1,31 @@
 \hypertarget{colormod_8h_source}{}\doxysection{colormod.\+h}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <ostream>}}
-\DoxyCodeLine{2 \textcolor{keyword}{namespace }Color \{}
-\DoxyCodeLine{3     \textcolor{keyword}{enum} Code \{}
-\DoxyCodeLine{4         FG\_RED      = 31,}
-\DoxyCodeLine{5         FG\_GREEN    = 32,}
-\DoxyCodeLine{6         FG\_YELLOW   = 33,}
-\DoxyCodeLine{7         FG\_BLUE     = 34,}
-\DoxyCodeLine{8         FG\_MAGENTA  = 35,}
-\DoxyCodeLine{9         FG\_CYAN     = 36,}
-\DoxyCodeLine{10         FG\_DEFAULT  = 39,}
-\DoxyCodeLine{11     \};}
-\DoxyCodeLine{12     \textcolor{keyword}{class }\mbox{\hyperlink{classColor_1_1Modifier}{Modifier}} \{}
-\DoxyCodeLine{13         Code code;}
-\DoxyCodeLine{14     \textcolor{keyword}{public}:}
-\DoxyCodeLine{15         \mbox{\hyperlink{classColor_1_1Modifier}{Modifier}}(Code pCode) : code(pCode) \{\}}
-\DoxyCodeLine{16         \textcolor{keyword}{friend} std::ostream\&}
-\DoxyCodeLine{17         operator<<(std::ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{classColor_1_1Modifier}{Modifier}}\& mod) \{}
-\DoxyCodeLine{18             \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033["{}} << mod.code << \textcolor{stringliteral}{"{}m"{}};}
-\DoxyCodeLine{19         \}}
-\DoxyCodeLine{20     \};}
-\DoxyCodeLine{21 \}}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COLORMOD\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COLORMOD\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <ostream>}}
+\DoxyCodeLine{4 \textcolor{keyword}{namespace }Color \{}
+\DoxyCodeLine{5     \textcolor{keyword}{enum} Code \{}
+\DoxyCodeLine{6         FG\_INVERSE\_ON  = 7,}
+\DoxyCodeLine{7         FG\_INVERSE\_OFF = 27,}
+\DoxyCodeLine{8         FG\_RED      = 31,}
+\DoxyCodeLine{9         FG\_GREEN    = 32,}
+\DoxyCodeLine{10         FG\_YELLOW   = 33,}
+\DoxyCodeLine{11         FG\_BLUE     = 34,}
+\DoxyCodeLine{12         FG\_MAGENTA  = 35,}
+\DoxyCodeLine{13         FG\_CYAN     = 36,}
+\DoxyCodeLine{14         FG\_DEFAULT  = 39,}
+\DoxyCodeLine{15       \};}
+\DoxyCodeLine{16     \textcolor{keyword}{class }\mbox{\hyperlink{classColor_1_1Modifier}{Modifier}} \{}
+\DoxyCodeLine{17         Code code;}
+\DoxyCodeLine{18     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19         \mbox{\hyperlink{classColor_1_1Modifier}{Modifier}}(Code pCode) : code(pCode) \{\}}
+\DoxyCodeLine{20         \textcolor{keyword}{friend} std::ostream\&}
+\DoxyCodeLine{21         operator<<(std::ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{classColor_1_1Modifier}{Modifier}}\& mod) \{}
+\DoxyCodeLine{22             \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033["{}} << mod.code << \textcolor{stringliteral}{"{}m"{}};}
+\DoxyCodeLine{23         \}}
+\DoxyCodeLine{24     \};}
+\DoxyCodeLine{25 \}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

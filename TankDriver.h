@@ -9,27 +9,27 @@
 #include "TransportUnit.h"
 #include "Vehicle.h"
 /**
-*@class TankDriver
-*/
+ *@class TankDriver
+ */
 class TankDriver : public TransportUnit
 {
 private:
 	int Damage; // damage inflicted by a TankDriver
 
 public:
-/**
-*@brief constructor for tank driver. takes in two integers - one for HP and one for Damage
-*/
+	/**
+	 *@brief constructor for tank driver. takes in two integers - one for HP and one for Damage
+	 */
 	TankDriver(int, int);
-/**
-*@brief destructor 
-*/	
+	/**
+	 *@brief destructor
+	 */
 	virtual ~TankDriver();
 	Vehicle *tank; // stores the tank that the driver drives
-/**
-*@brief virtual getter function to return the damage member variable
-*@return int
-*/	
+				   /**
+					*@brief virtual getter function to return the damage member variable
+					*@return int
+					*/
 	virtual int getDamage();
 };
 #endif

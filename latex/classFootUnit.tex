@@ -9,18 +9,17 @@ Inheritance diagram for Foot\+Unit\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFootUnit_a4a8adcc48fa43fb0191f0ab0cd7319e3}\label{classFootUnit_a4a8adcc48fa43fb0191f0ab0cd7319e3}} 
-{\bfseries Foot\+Unit} (int)
-\item 
-\mbox{\Hypertarget{classFootUnit_a406360ffcf210b259b963c67154a9820}\label{classFootUnit_a406360ffcf210b259b963c67154a9820}} 
-int {\bfseries get\+HP} ()
-\item 
-\mbox{\Hypertarget{classFootUnit_a235adaac864b418636b932a7db0e01c8}\label{classFootUnit_a235adaac864b418636b932a7db0e01c8}} 
-virtual int {\bfseries get\+Damage} ()
-\item 
-\mbox{\Hypertarget{classFootUnit_a04946dc6c7f8d3dd873732b13168ccda}\label{classFootUnit_a04946dc6c7f8d3dd873732b13168ccda}} 
-virtual int {\bfseries getrejuvenation\+Power} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classFootUnit_a4a8adcc48fa43fb0191f0ab0cd7319e3}{Foot\+Unit}} (int)
+\begin{DoxyCompactList}\small\item\em constructs a foot unit object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFootUnit_ab313dfda9df227874780da27bea9895a}\label{classFootUnit_ab313dfda9df227874780da27bea9895a}} 
+{\bfseries $\sim$\+Foot\+Unit} ()
+\begin{DoxyCompactList}\small\item\em destroys a footunit object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFootUnit_a406360ffcf210b259b963c67154a9820}{get\+HP}} ()
+\begin{DoxyCompactList}\small\item\em getter for the HP member variable \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classFootUnit_a235adaac864b418636b932a7db0e01c8}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em getter for the damage member variable \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classFootUnit_a04946dc6c7f8d3dd873732b13168ccda}{getrejuvenation\+Power}} ()
+\begin{DoxyCompactList}\small\item\em getter for rejuvenation power member variable \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,7 +28,75 @@ int {\bfseries HP}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFootUnit_a4a8adcc48fa43fb0191f0ab0cd7319e3}\label{classFootUnit_a4a8adcc48fa43fb0191f0ab0cd7319e3}} 
+\index{FootUnit@{FootUnit}!FootUnit@{FootUnit}}
+\index{FootUnit@{FootUnit}!FootUnit@{FootUnit}}
+\doxysubsubsection{\texorpdfstring{FootUnit()}{FootUnit()}}
+{\footnotesize\ttfamily Foot\+Unit\+::\+Foot\+Unit (\begin{DoxyParamCaption}\item[{int}]{HP }\end{DoxyParamCaption})}
+
+
+
+constructs a foot unit object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFootUnit_a235adaac864b418636b932a7db0e01c8}\label{classFootUnit_a235adaac864b418636b932a7db0e01c8}} 
+\index{FootUnit@{FootUnit}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!FootUnit@{FootUnit}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Foot\+Unit\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for the damage member variable 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classInfantry_a7c04654eda063d2b9e9620fd9c185e50}{Infantry}}.
+
+\mbox{\Hypertarget{classFootUnit_a406360ffcf210b259b963c67154a9820}\label{classFootUnit_a406360ffcf210b259b963c67154a9820}} 
+\index{FootUnit@{FootUnit}!getHP@{getHP}}
+\index{getHP@{getHP}!FootUnit@{FootUnit}}
+\doxysubsubsection{\texorpdfstring{getHP()}{getHP()}}
+{\footnotesize\ttfamily int Foot\+Unit\+::get\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for the HP member variable 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFootUnit_a04946dc6c7f8d3dd873732b13168ccda}\label{classFootUnit_a04946dc6c7f8d3dd873732b13168ccda}} 
+\index{FootUnit@{FootUnit}!getrejuvenationPower@{getrejuvenationPower}}
+\index{getrejuvenationPower@{getrejuvenationPower}!FootUnit@{FootUnit}}
+\doxysubsubsection{\texorpdfstring{getrejuvenationPower()}{getrejuvenationPower()}}
+{\footnotesize\ttfamily int Foot\+Unit\+::getrejuvenation\+Power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for rejuvenation power member variable 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classMedic_aee57308d256ea1922d3e12a574ada35f}{Medic}}.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Foot\+Unit.\+h\item 
+\mbox{\hyperlink{FootUnit_8h}{Foot\+Unit.\+h}}\item 
 Foot\+Unit.\+cpp\end{DoxyCompactItemize}

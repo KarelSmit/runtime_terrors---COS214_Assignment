@@ -81,14 +81,17 @@ InfantryIterator InfantryUnit::end()
 	return InfantryIterator(head, n);
 }
 
-bool InfantryUnit::takeDamage( int dmg ){
+bool InfantryUnit::takeDamage(int dmg)
+{
 	totHP -= dmg;
-	if ( totHP <= 0 ){
+	if (totHP <= 0)
+	{
 		return true;
 	}
 	return false;
 }
 
-void InfantryUnit::heal( int hp ){
+void InfantryUnit::heal(int hp)
+{
 	totHP += hp;
 }

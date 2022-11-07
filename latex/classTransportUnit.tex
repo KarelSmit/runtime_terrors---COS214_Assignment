@@ -11,13 +11,14 @@ Inheritance diagram for Transport\+Unit\+:\begin{figure}[H]
 \item 
 \mbox{\Hypertarget{classTransportUnit_a521ae8a9b38f0fbcf6ffef67dc56374c}\label{classTransportUnit_a521ae8a9b38f0fbcf6ffef67dc56374c}} 
 {\bfseries Transport\+Unit} (int)
-\item 
-\mbox{\Hypertarget{classTransportUnit_a3bd68b5b73c6239cfc016ea6530e3beb}\label{classTransportUnit_a3bd68b5b73c6239cfc016ea6530e3beb}} 
-int {\bfseries get\+HP} ()
-\item 
-\mbox{\Hypertarget{classTransportUnit_ae27d3af8ec51cd0c48893bb4f7ebd630}\label{classTransportUnit_ae27d3af8ec51cd0c48893bb4f7ebd630}} 
-virtual int {\bfseries get\+Damage} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em constructor for transport unit \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTransportUnit_a1211f9da8defc0fa52c4fa2f11714a5a}\label{classTransportUnit_a1211f9da8defc0fa52c4fa2f11714a5a}} 
+virtual {\bfseries $\sim$\+Transport\+Unit} ()
+\begin{DoxyCompactList}\small\item\em destructor for transport unit \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTransportUnit_a3bd68b5b73c6239cfc016ea6530e3beb}{get\+HP}} ()
+\begin{DoxyCompactList}\small\item\em getter function to return the HP member variable \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classTransportUnit_ae27d3af8ec51cd0c48893bb4f7ebd630}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em virtual function for returning the damage member variable of a class \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,7 +27,40 @@ int {\bfseries HP}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransportUnit_ae27d3af8ec51cd0c48893bb4f7ebd630}\label{classTransportUnit_ae27d3af8ec51cd0c48893bb4f7ebd630}} 
+\index{TransportUnit@{TransportUnit}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!TransportUnit@{TransportUnit}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Transport\+Unit\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual function for returning the damage member variable of a class 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classTankDriver_a14c4178282cb0361e1e9fa706aa5cbe2}{Tank\+Driver}}.
+
+\mbox{\Hypertarget{classTransportUnit_a3bd68b5b73c6239cfc016ea6530e3beb}\label{classTransportUnit_a3bd68b5b73c6239cfc016ea6530e3beb}} 
+\index{TransportUnit@{TransportUnit}!getHP@{getHP}}
+\index{getHP@{getHP}!TransportUnit@{TransportUnit}}
+\doxysubsubsection{\texorpdfstring{getHP()}{getHP()}}
+{\footnotesize\ttfamily int Transport\+Unit\+::get\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter function to return the HP member variable 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Transport\+Unit.\+h\item 
+\mbox{\hyperlink{TransportUnit_8h}{Transport\+Unit.\+h}}\item 
 Transport\+Unit.\+cpp\end{DoxyCompactItemize}

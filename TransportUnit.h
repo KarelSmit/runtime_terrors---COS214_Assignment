@@ -7,31 +7,31 @@
 #ifndef TRANSPORTUNIT_H
 #define TRANSPORTUNIT_H
 /**
-*@class TransportUnit
-*/
+ *@class TransportUnit
+ */
 class TransportUnit
 {
 protected:
 	int HP;
 
 public:
-/**
-*@brief constructor for transport unit
-*/
+	/**
+	 *@brief constructor for transport unit
+	 */
 	TransportUnit(int);
-/**
-*@brief destructor for transport unit
-*/	
+	/**
+	 *@brief destructor for transport unit
+	 */
 	virtual ~TransportUnit();
-/**
-*@brief getter function to return the HP member variable
-*@return int
-*/	
+	/**
+	 *@brief getter function to return the HP member variable
+	 *@return int
+	 */
 	int getHP();
-/**
-*@brief virtual function for returning the damage member variable of a class
-*@return int
-*/	
+	/**
+	 *@brief virtual function for returning the damage member variable of a class
+	 *@return int
+	 */
 	virtual int getDamage();
 };
 #endif

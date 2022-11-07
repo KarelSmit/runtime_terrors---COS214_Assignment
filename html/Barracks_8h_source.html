@@ -72,24 +72,32 @@ $(function() {
   <div class="headertitle"><div class="title">Barracks.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef BARRACKS_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define BARRACKS_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;FootUnit.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;TransportUnit.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;iostream&gt;</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;iomanip&gt;</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classBarracks.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classBarracks.html">Barracks</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_class" href="classBarracks.html">Barracks</a>(); </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classFootUnit.html">FootUnit</a>* createFootUnit() = 0; </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classTransportUnit.html">TransportUnit</a>* createTransportUnit() = 0;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classBarracks.html">~Barracks</a>();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}; </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBarracks_html"><div class="ttname"><a href="classBarracks.html">Barracks</a></div><div class="ttdef"><b>Definition:</b> Barracks.h:8</div></div>
-<div class="ttc" id="aclassFootUnit_html"><div class="ttname"><a href="classFootUnit.html">FootUnit</a></div><div class="ttdef"><b>Definition:</b> FootUnit.h:4</div></div>
-<div class="ttc" id="aclassTransportUnit_html"><div class="ttname"><a href="classTransportUnit.html">TransportUnit</a></div><div class="ttdef"><b>Definition:</b> TransportUnit.h:5</div></div>
+<a href="Barracks_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef BARRACKS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define BARRACKS_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="FootUnit_8h.html">FootUnit.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="TransportUnit_8h.html">TransportUnit.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classBarracks.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classBarracks.html">Barracks</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="classBarracks.html#a3a46faa94ab87e28b376f37ef186c795">Barracks</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classBarracks.html#a9658fea8b17a4bb011ada7a9cdef92ce">   28</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classFootUnit.html">FootUnit</a> *<a class="code hl_function" href="classBarracks.html#a9658fea8b17a4bb011ada7a9cdef92ce">createFootUnit</a>() = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classBarracks.html#a781349d7a872ceab43760460739adfef">   33</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classTransportUnit.html">TransportUnit</a> *<a class="code hl_function" href="classBarracks.html#a781349d7a872ceab43760460739adfef">createTransportUnit</a>() = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classBarracks.html#aa44034c35573fc826e66a301463a17c5">~Barracks</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aFootUnit_8h_html"><div class="ttname"><a href="FootUnit_8h.html">FootUnit.h</a></div><div class="ttdoc">Header file for FootUnit class.</div></div>
+<div class="ttc" id="aTransportUnit_8h_html"><div class="ttname"><a href="TransportUnit_8h.html">TransportUnit.h</a></div><div class="ttdoc">Transport unit class header file.</div></div>
+<div class="ttc" id="aclassBarracks_html"><div class="ttname"><a href="classBarracks.html">Barracks</a></div><div class="ttdef"><b>Definition:</b> Barracks.h:18</div></div>
+<div class="ttc" id="aclassBarracks_html_a3a46faa94ab87e28b376f37ef186c795"><div class="ttname"><a href="classBarracks.html#a3a46faa94ab87e28b376f37ef186c795">Barracks::Barracks</a></div><div class="ttdeci">Barracks()</div><div class="ttdoc">constructs a barracks object</div><div class="ttdef"><b>Definition:</b> Barracks.cpp:2</div></div>
+<div class="ttc" id="aclassBarracks_html_a781349d7a872ceab43760460739adfef"><div class="ttname"><a href="classBarracks.html#a781349d7a872ceab43760460739adfef">Barracks::createTransportUnit</a></div><div class="ttdeci">virtual TransportUnit * createTransportUnit()=0</div><div class="ttdoc">virtual function for creating a TransportUnit</div></div>
+<div class="ttc" id="aclassBarracks_html_a9658fea8b17a4bb011ada7a9cdef92ce"><div class="ttname"><a href="classBarracks.html#a9658fea8b17a4bb011ada7a9cdef92ce">Barracks::createFootUnit</a></div><div class="ttdeci">virtual FootUnit * createFootUnit()=0</div><div class="ttdoc">virtual function for creating a foot unit</div></div>
+<div class="ttc" id="aclassBarracks_html_aa44034c35573fc826e66a301463a17c5"><div class="ttname"><a href="classBarracks.html#aa44034c35573fc826e66a301463a17c5">Barracks::~Barracks</a></div><div class="ttdeci">virtual ~Barracks()</div><div class="ttdoc">destroys barracks object</div><div class="ttdef"><b>Definition:</b> Barracks.cpp:6</div></div>
+<div class="ttc" id="aclassFootUnit_html"><div class="ttname"><a href="classFootUnit.html">FootUnit</a></div><div class="ttdef"><b>Definition:</b> FootUnit.h:10</div></div>
+<div class="ttc" id="aclassTransportUnit_html"><div class="ttname"><a href="classTransportUnit.html">TransportUnit</a></div><div class="ttdef"><b>Definition:</b> TransportUnit.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

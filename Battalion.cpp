@@ -1,8 +1,10 @@
 #include "Battalion.h"
 
-Battalion::Battalion(){
+Battalion::Battalion()
+{
 	next = nullptr;
 }
 
-Battalion::~Battalion(){
+Battalion::~Battalion()
+{
 }

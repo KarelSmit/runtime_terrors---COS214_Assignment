@@ -8,18 +8,19 @@
 #define STEALTH_H
 #include "Infantry.h"
 /**
-*@class Stealth
-*/
-class Stealth { 
-    public: 
-    /**
-    *@brief constructor for Stealth object
-    *@param Infantry*
-    */
-    Stealth(Infantry*); 
-    /**
-    *@brief destroys stealth object
-    */
-    ~Stealth();
+ *@class Stealth
+ */
+class Stealth
+{
+public:
+	/**
+	 *@brief constructor for Stealth object
+	 *@param Infantry*
+	 */
+	Stealth(Infantry *);
+	/**
+	 *@brief destroys stealth object
+	 */
+	~Stealth();
 };
 #endif

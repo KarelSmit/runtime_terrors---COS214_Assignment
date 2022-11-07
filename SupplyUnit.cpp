@@ -10,12 +10,12 @@ SupplyUnit::SupplyUnit()
 	totHP = 0;
 	SupportBarracks bootcamp = SupportBarracks();
 	int SupplyCount = 5;
-	Node<TransportUnit*> *n = new Node<TransportUnit*>();
+	Node<TransportUnit *> *n = new Node<TransportUnit *>();
 	n->element = bootcamp.createTransportUnit();
-	head = n;	
+	head = n;
 	for (int i = 0; i < SupplyCount - 1; i++)
 	{
-		n = new Node<TransportUnit*>();
+		n = new Node<TransportUnit *>();
 		n->element = bootcamp.createTransportUnit();
 		n->next = head;
 		head = n;
@@ -25,10 +25,10 @@ SupplyUnit::SupplyUnit()
 
 SupplyUnit::~SupplyUnit()
 {
-	Node<TransportUnit*> *n = head;
+	Node<TransportUnit *> *n = head;
 	while (n != nullptr)
 	{
-		Node<TransportUnit*> *temp = n;
+		Node<TransportUnit *> *temp = n;
 		n = n->next;
 		delete temp->element;
 		delete temp;
@@ -69,7 +69,7 @@ SupplyIterator SupplyUnit::begin()
 
 SupplyIterator SupplyUnit::end()
 {
-	Node<TransportUnit*> *n = head;
+	Node<TransportUnit *> *n = head;
 	while (n->next != nullptr)
 	{
 		n = n->next;
@@ -77,14 +77,17 @@ SupplyIterator SupplyUnit::end()
 	return SupplyIterator(head, n);
 }
 
-bool SupplyUnit::takeDamage( int dmg ){
+bool SupplyUnit::takeDamage(int dmg)
+{
 	totHP -= dmg;
-	if ( totHP <= 0 ){
+	if (totHP <= 0)
+	{
 		return true;
 	}
 	return false;
 }
 
-void SupplyUnit::heal( int hp ){
+void SupplyUnit::heal(int hp)
+{
 	totHP += hp;
 }

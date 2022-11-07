@@ -8,17 +8,18 @@
 #define SUPPLYTRUCK_H
 #include "Vehicle.h"
 /**
-*@class SupplyTruck
-*/
-class SupplyTruck : public Vehicle{
-    public: 
-    /**
-    *@brief SupplyTruck object constructor
-    */
-    SupplyTruck();
-    /**
-    *@brief destructor destroys supply truck object
-    */
-    virtual ~SupplyTruck();
+ *@class SupplyTruck
+ */
+class SupplyTruck : public Vehicle
+{
+public:
+	/**
+	 *@brief SupplyTruck object constructor
+	 */
+	SupplyTruck();
+	/**
+	 *@brief destructor destroys supply truck object
+	 */
+	virtual ~SupplyTruck();
 };
 #endif

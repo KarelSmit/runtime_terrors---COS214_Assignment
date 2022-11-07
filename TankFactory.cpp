@@ -1,15 +1,16 @@
 #include "TankFactory.h"
-TankFactory::TankFactory(){
-
+TankFactory::TankFactory()
+{
 }
 
-Vehicle* TankFactory::createVehicles() {
-    Vehicle* newVehicle; 
-    Tank* newTank = new Tank();
-    newVehicle = newTank; 
-    return newVehicle;
+Vehicle *TankFactory::createVehicles()
+{
+	Vehicle *newVehicle;
+	Tank *newTank = new Tank();
+	newVehicle = newTank;
+	return newVehicle;
 }
 
-TankFactory::~TankFactory(){
-    
+TankFactory::~TankFactory()
+{
 }

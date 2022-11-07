@@ -1,35 +1,44 @@
 #include "Country.h"
 
-Country::Country(std::string gName ){
+Country::Country(std::string gName)
+{
 	defenseForce = new Army();
-	defenseForce->setCommander( gName );
-	leader = new General(gName , defenseForce);
+	defenseForce->setCommander(gName);
+	leader = new General(gName, defenseForce);
 }
 
-Country::~Country(){
+Country::~Country()
+{
 	delete defenseForce;
 	delete leader;
 }
 
-void Country::setEnemy(){
+void Country::setEnemy()
+{
 	defenseForce->addInfantry(2);
 	defenseForce->addTank(2);
 	defenseForce->addMedic(2);
 }
 
-Army* Country::getArmy(){
+Army *Country::getArmy()
+{
 	return defenseForce;
 }
 
-void Country::makeMove(int x ,Country* enemy){
-	if ( x == 1 ){
+void Country::makeMove(int x, Country *enemy)
+{
+	if (x == 1)
+	{
 		leader->setAttack();
-	}else{
+	}
+	else
+	{
 		leader->setDefend();
 	}
-	leader->battlePlan( enemy->getArmy() );
+	leader->battlePlan(enemy->getArmy());
 }
 
-std::string Country::getUsername(){
+std::string Country::getUsername()
+{
 	return leader->getName();
 }

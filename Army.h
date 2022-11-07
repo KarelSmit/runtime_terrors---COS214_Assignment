@@ -16,7 +16,7 @@
 /**
  * @class Army
  * Used to perform the Attack or Defend strategy between the two conflicting sides in a battle.
- * 
+ *
  */
 
 class Army
@@ -113,14 +113,14 @@ public:
 	void printStats();
 
 private:
-	Battalion *atkForce; //Linked list of Infantry and Tank battalions
-	Battalion *medicForce; //Linked list of Medic battalions
-	Battalion *supplyChain; //Linked list of Supply battalions
-	int totalDmg; //Total damage the army can currently deal
-	int totalHP; //Total HP the army currently has
-	int extraMoves;//Total ExtraMoves the army currently has
-	int totalHeal;//Total amount of HP that the army can currently restore by defending
-	bool enemy;//Indicates if the army is an enemy
-	std::string gName; //Name of the General for the army
+	Battalion *atkForce;	// Linked list of Infantry and Tank battalions
+	Battalion *medicForce;	// Linked list of Medic battalions
+	Battalion *supplyChain; // Linked list of Supply battalions
+	int totalDmg;			// Total damage the army can currently deal
+	int totalHP;			// Total HP the army currently has
+	int extraMoves;			// Total ExtraMoves the army currently has
+	int totalHeal;			// Total amount of HP that the army can currently restore by defending
+	bool enemy;				// Indicates if the army is an enemy
+	std::string gName;		// Name of the General for the army
 };
 #endif

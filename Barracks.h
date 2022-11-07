@@ -8,31 +8,32 @@
 #define BARRACKS_H
 #include "FootUnit.h"
 #include "TransportUnit.h"
-#include <iostream> 
-#include <iomanip> 
-#include <string> 
+#include <iostream>
+#include <iomanip>
+#include <string>
 /**
-*@class Barracks
-*/
-class Barracks {
-    public:
-    /**
-    *@brief constructs a barracks object
-    */
-    Barracks(); 
-    /**
-    *@brief virtual function for creating a foot unit
-    *@return footUnit*
-    */
-    virtual FootUnit* createFootUnit() = 0; 
-    /**
-    *@brief virtual function for creating a TransportUnit
-    *@return TransportUnit*
-    */
-    virtual TransportUnit* createTransportUnit() = 0;
-    /**
-    *@brief destroys barracks object
-    */
-    virtual ~Barracks();
-}; 
+ *@class Barracks
+ */
+class Barracks
+{
+public:
+	/**
+	 *@brief constructs a barracks object
+	 */
+	Barracks();
+	/**
+	 *@brief virtual function for creating a foot unit
+	 *@return footUnit*
+	 */
+	virtual FootUnit *createFootUnit() = 0;
+	/**
+	 *@brief virtual function for creating a TransportUnit
+	 *@return TransportUnit*
+	 */
+	virtual TransportUnit *createTransportUnit() = 0;
+	/**
+	 *@brief destroys barracks object
+	 */
+	virtual ~Barracks();
+};
 #endif

@@ -1,6 +1,28 @@
 var searchData=
 [
-  ['takedamage_0',['takeDamage',['../classArmy.html#a8fcf5695baa82e4c21bc429085b92e05',1,'Army::takeDamage()'],['../classBattalion.html#aba0c4d73d5ce4ba5bd8718b740e0566a',1,'Battalion::takeDamage()'],['../classInfantryUnit.html#a45b22d71236d67fccb1f6276eb9dfac8',1,'InfantryUnit::takeDamage()'],['../classMedicUnit.html#aeb9c93420dc64ccf1956b55b392e243c',1,'MedicUnit::takeDamage()'],['../classSupplyUnit.html#ae02602afb425a7dad0f6f74e744a0c5b',1,'SupplyUnit::takeDamage()'],['../classTankUnit.html#ae118b10f0af219dd3c0a671ed388bada',1,'TankUnit::takeDamage()']]],
-  ['tankiterator_1',['TankIterator',['../classTankIterator.html#ae69835f42e95df5a5a1f133dcf7b65dd',1,'TankIterator::TankIterator()'],['../classTankIterator.html#a208147653250806204e1ad9aed62ddb0',1,'TankIterator::TankIterator(Node&lt; TransportUnit * &gt; *head, Node&lt; TransportUnit * &gt; *curr)']]],
-  ['tankunit_2',['TankUnit',['../classTankUnit.html#aafbf2803d4ee150c08de108495162861',1,'TankUnit']]]
+  ['save_0',['Save',['../classWar.html#a4cf710b35d949d05e8d6eab39affcb06',1,'War']]],
+  ['setattack_1',['setAttack',['../classGeneral.html#aa06cb4b1aff5de73dd6f3e7a03030ba2',1,'General']]],
+  ['setcommander_2',['setCommander',['../classArmy.html#a145f0c9f5b9dea347735f8cb0ba68d40',1,'Army']]],
+  ['setdamage_3',['setDamage',['../classInfantry.html#aef64df7c97f3877f8685892df0b13324',1,'Infantry']]],
+  ['setdefend_4',['setDefend',['../classGeneral.html#a41e5f717a26f3c8d597e25f1102be755',1,'General']]],
+  ['setenemy_5',['setEnemy',['../classArmy.html#a1d41dcf5543b1d99069f294877c8ac51',1,'Army::setEnemy()'],['../classCountry.html#a38f6c6c54aff320e0d2f4c0e665129c8',1,'Country::setEnemy()']]],
+  ['sethp_6',['setHP',['../classInfantry.html#aea76c46ea4c1667ae97fc99b4c6d77da',1,'Infantry']]],
+  ['setscore_7',['setScore',['../classWar.html#a1a70434ea8c0b6ea02b0c7bb83b54afe',1,'War']]],
+  ['setstate_8',['setState',['../classBattle.html#aba5b61dd00d052891278d82de6ded7ab',1,'Battle']]],
+  ['setuserscore_9',['setUserScore',['../classUser.html#a649cd805a2224430ebf93bcc7cd42afc',1,'User']]],
+  ['setval_10',['setVal',['../classInfantryUnit.html#a997ceebf9cd856be8870c4a1582651a0',1,'InfantryUnit::setVal()'],['../classMedicUnit.html#ac0bc601da2d6dffcd05df65456479a01',1,'MedicUnit::setVal()'],['../classSupplyUnit.html#ae2f6d40c9bafa7c58ab268aa2250d9e2',1,'SupplyUnit::setVal()'],['../classTankUnit.html#ad0126322fa69d3327487c2d508c07aa6',1,'TankUnit::setVal()']]],
+  ['showhistory_11',['ShowHistory',['../classRecords.html#ae70a3c48c1091b9132159517cc54a328',1,'Records']]],
+  ['showtopthree_12',['showTopThree',['../classRecords.html#a3542a05721fb74bc69d6eda47f4e736d',1,'Records']]],
+  ['simulate_13',['simulate',['../classWar.html#aafee8174ba642d488dcb7030746f0c15',1,'War']]],
+  ['sniper_14',['Sniper',['../classSniper.html#a651cac0094ae8c5e4306cd0d8a573248',1,'Sniper']]],
+  ['specialskill_15',['SpecialSkill',['../classSpecialSkill.html#afdcc9afcf1f06c7f8f623d4c9b62a640',1,'SpecialSkill']]],
+  ['startwar_16',['startWar',['../classWar.html#acc462d6692791ae950a12f705b664c29',1,'War']]],
+  ['stealth_17',['Stealth',['../classStealth.html#a9667b11647e48660706fb8e5008ecc6f',1,'Stealth']]],
+  ['strategy_18',['Strategy',['../classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235',1,'Strategy']]],
+  ['supply_19',['Supply',['../classSupply.html#a71491342d8613ca533e79d31eac30767',1,'Supply']]],
+  ['supplyiterator_20',['SupplyIterator',['../classSupplyIterator.html#a5d0a8f911de2755a087596c51f6b053b',1,'SupplyIterator::SupplyIterator()'],['../classSupplyIterator.html#ac11ba863a9219c1106633812b1110000',1,'SupplyIterator::SupplyIterator(Node&lt; TransportUnit * &gt; *head, Node&lt; TransportUnit * &gt; *curr)']]],
+  ['supplytruck_21',['SupplyTruck',['../classSupplyTruck.html#a0e0ad2826708eb097f39bfb5d05593cb',1,'SupplyTruck']]],
+  ['supplytruckfactory_22',['SupplyTruckFactory',['../classSupplyTruckFactory.html#a836b90f9da538b86c7f04ef04db50d1b',1,'SupplyTruckFactory']]],
+  ['supplyunit_23',['SupplyUnit',['../classSupplyUnit.html#a767e5a8f0f39d212a09e69fd3611a875',1,'SupplyUnit']]],
+  ['supportbarracks_24',['SupportBarracks',['../classSupportBarracks.html#af8e7433e9320ebb6e1c72765b4f8c90b',1,'SupportBarracks']]]
 ];

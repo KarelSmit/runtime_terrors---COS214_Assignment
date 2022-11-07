@@ -2,18 +2,20 @@
 #include "TankDriver.h"
 #include "Infantry.h"
 
-CombatBarracks::CombatBarracks() {
-
+CombatBarracks::CombatBarracks()
+{
 }
 
-FootUnit* CombatBarracks::createFootUnit() {
-    return new Infantry(5, 3); // HP first, then damage
+FootUnit *CombatBarracks::createFootUnit()
+{
+	return new Infantry(5, 3); // HP first, then damage
 }
 
-TransportUnit* CombatBarracks::createTransportUnit() {
-    return new TankDriver(5, 4); // HP first, then damage
+TransportUnit *CombatBarracks::createTransportUnit()
+{
+	return new TankDriver(5, 4); // HP first, then damage
 }
 
-CombatBarracks::~CombatBarracks() {
-    
+CombatBarracks::~CombatBarracks()
+{
 }

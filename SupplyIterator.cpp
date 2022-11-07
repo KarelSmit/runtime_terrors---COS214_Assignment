@@ -6,7 +6,7 @@ SupplyIterator::SupplyIterator()
 	current = 0;
 }
 
-TransportUnit* SupplyIterator::operator*()
+TransportUnit *SupplyIterator::operator*()
 {
 	return current->element;
 }
@@ -25,7 +25,8 @@ bool SupplyIterator::operator==(const SupplyIterator &rhs) const
 	return current == rhs.current;
 }
 
-SupplyIterator::SupplyIterator( Node<TransportUnit*>* h, Node<TransportUnit*>* p ){
+SupplyIterator::SupplyIterator(Node<TransportUnit *> *h, Node<TransportUnit *> *p)
+{
 	head = h;
 	current = p;
 }

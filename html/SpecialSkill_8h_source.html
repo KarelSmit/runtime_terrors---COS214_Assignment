@@ -72,21 +72,26 @@ $(function() {
   <div class="headertitle"><div class="title">SpecialSkill.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SPECIALSKILL_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SPECIALSKILL_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Infantry.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classSpecialSkill.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="classSpecialSkill.html">SpecialSkill</a> {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">private</span>: </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_class" href="classInfantry.html">Infantry</a>* soldier;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">int</span> choice;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">public</span>: </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span> addSkill(); </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_class" href="classSpecialSkill.html">SpecialSkill</a>(<a class="code hl_class" href="classInfantry.html">Infantry</a>*, <span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_class" href="classSpecialSkill.html">~SpecialSkill</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}; </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif </span></div>
-<div class="ttc" id="aclassInfantry_html"><div class="ttname"><a href="classInfantry.html">Infantry</a></div><div class="ttdef"><b>Definition:</b> Infantry.h:5</div></div>
-<div class="ttc" id="aclassSpecialSkill_html"><div class="ttname"><a href="classSpecialSkill.html">SpecialSkill</a></div><div class="ttdef"><b>Definition:</b> SpecialSkill.h:4</div></div>
+<a href="SpecialSkill_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef SPECIALSKILL_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define SPECIALSKILL_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Infantry_8h.html">Infantry.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classSpecialSkill.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classSpecialSkill.html">SpecialSkill</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="classInfantry.html">Infantry</a> *soldier; <span class="comment">// member variable to hold an infantry object</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">int</span> choice;        <span class="comment">// member variable for deciding whether to call stealth or sniper class</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSpecialSkill.html#a155ea71924156b448bba44f0fb6c0bda">addSkill</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="classSpecialSkill.html">SpecialSkill</a>(<a class="code hl_class" href="classInfantry.html">Infantry</a> *, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classSpecialSkill.html#afb72898d8bbe570db6eb5a218d86e228">~SpecialSkill</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aInfantry_8h_html"><div class="ttname"><a href="Infantry_8h.html">Infantry.h</a></div><div class="ttdoc">Header file for Infantry class which inherits from FootUnit class.</div></div>
+<div class="ttc" id="aclassInfantry_html"><div class="ttname"><a href="classInfantry.html">Infantry</a></div><div class="ttdef"><b>Definition:</b> Infantry.h:14</div></div>
+<div class="ttc" id="aclassSpecialSkill_html"><div class="ttname"><a href="classSpecialSkill.html">SpecialSkill</a></div><div class="ttdef"><b>Definition:</b> SpecialSkill.h:14</div></div>
+<div class="ttc" id="aclassSpecialSkill_html_a155ea71924156b448bba44f0fb6c0bda"><div class="ttname"><a href="classSpecialSkill.html#a155ea71924156b448bba44f0fb6c0bda">SpecialSkill::addSkill</a></div><div class="ttdeci">void addSkill()</div><div class="ttdoc">function to add a special skill to an infantry object</div><div class="ttdef"><b>Definition:</b> SpecialSkill.cpp:10</div></div>
+<div class="ttc" id="aclassSpecialSkill_html_afb72898d8bbe570db6eb5a218d86e228"><div class="ttname"><a href="classSpecialSkill.html#afb72898d8bbe570db6eb5a218d86e228">SpecialSkill::~SpecialSkill</a></div><div class="ttdeci">~SpecialSkill()</div><div class="ttdoc">destroys special skill object</div><div class="ttdef"><b>Definition:</b> SpecialSkill.cpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

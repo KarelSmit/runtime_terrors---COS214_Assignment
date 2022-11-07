@@ -8,28 +8,28 @@
 #define COMBATBARRACKS_H
 #include "Barracks.h"
 /**
-*@class CombatBarracks
-*/
+ *@class CombatBarracks
+ */
 class CombatBarracks : public Barracks
 {
 public:
-/**
-*@brief constructs a combatbarracks object
-*/
+	/**
+	 *@brief constructs a combatbarracks object
+	 */
 	CombatBarracks();
 	/**
-	*@brief creates a foot unit object 
-	*@return footUnit*
-	*/
+	 *@brief creates a foot unit object
+	 *@return footUnit*
+	 */
 	FootUnit *createFootUnit();
 	/**
-	*@brief creates a transportUnit object
-	*@return TransportUnit*
-	*/
+	 *@brief creates a transportUnit object
+	 *@return TransportUnit*
+	 */
 	TransportUnit *createTransportUnit();
 	/**
-	*@brief destroys combatBarracks object
-	*/
+	 *@brief destroys combatBarracks object
+	 */
 	virtual ~CombatBarracks();
 };
 #endif

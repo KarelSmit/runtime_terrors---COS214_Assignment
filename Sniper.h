@@ -8,17 +8,18 @@
 #define SNIPER_H
 #include "Infantry.h"
 /**
-*@class Sniper
-*/
-class Sniper { 
-    public: 
-    /**
-    *@brief constructor for sniper class
-    */
-    Sniper(Infantry*); 
-    /**
-    *@brief destroys sniper object
-    */
-    ~Sniper(); 
-}; 
-#endif 
+ *@class Sniper
+ */
+class Sniper
+{
+public:
+	/**
+	 *@brief constructor for sniper class
+	 */
+	Sniper(Infantry *);
+	/**
+	 *@brief destroys sniper object
+	 */
+	~Sniper();
+};
+#endif

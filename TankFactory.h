@@ -8,22 +8,23 @@
 #define TANKFACTORY_H
 #include "VehicleFactory.h"
 /**
-*@class TankFactory
-*/
-class TankFactory : public VehicleFactory {
-    public: 
-    /**
-    *@brief constructor
-    */
-    TankFactory(); 
-    /**
-    *@brief function for creating tank objects
-    *@return Vehicle*
-    */
-    Vehicle* createVehicles();
-    /**
-    *@brief virtual destructor
-    */ 
-    virtual ~TankFactory(); 
+ *@class TankFactory
+ */
+class TankFactory : public VehicleFactory
+{
+public:
+	/**
+	 *@brief constructor
+	 */
+	TankFactory();
+	/**
+	 *@brief function for creating tank objects
+	 *@return Vehicle*
+	 */
+	Vehicle *createVehicles();
+	/**
+	 *@brief virtual destructor
+	 */
+	virtual ~TankFactory();
 };
 #endif

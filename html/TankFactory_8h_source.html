@@ -72,19 +72,25 @@ $(function() {
   <div class="headertitle"><div class="title">TankFactory.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TANKFACTORY_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TANKFACTORY_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;VehicleFactory.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classTankFactory.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="classTankFactory.html">TankFactory</a> : <span class="keyword">public</span> <a class="code hl_class" href="classVehicleFactory.html">VehicleFactory</a> {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">public</span>: </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_class" href="classTankFactory.html">TankFactory</a>(); </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_class" href="classVehicle.html">Vehicle</a>* createVehicles(); </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classTankFactory.html">~TankFactory</a>(); </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassTankFactory_html"><div class="ttname"><a href="classTankFactory.html">TankFactory</a></div><div class="ttdef"><b>Definition:</b> TankFactory.h:4</div></div>
-<div class="ttc" id="aclassVehicleFactory_html"><div class="ttname"><a href="classVehicleFactory.html">VehicleFactory</a></div><div class="ttdef"><b>Definition:</b> VehicleFactory.h:5</div></div>
-<div class="ttc" id="aclassVehicle_html"><div class="ttname"><a href="classVehicle.html">Vehicle</a></div><div class="ttdef"><b>Definition:</b> Vehicle.h:4</div></div>
+<a href="TankFactory_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef TANKFACTORY_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define TANKFACTORY_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="VehicleFactory_8h.html">VehicleFactory.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classTankFactory.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classTankFactory.html">TankFactory</a> : <span class="keyword">public</span> <a class="code hl_class" href="classVehicleFactory.html">VehicleFactory</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="classTankFactory.html#ac42b425b5a76582d1a63e406dd9d0259">TankFactory</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="classVehicle.html">Vehicle</a> *<a class="code hl_function" href="classTankFactory.html#a660774446833d141db53806057752441">createVehicles</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classTankFactory.html#a6894ea3a2e16f4dc9ec70562f7ffc10d">~TankFactory</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aVehicleFactory_8h_html"><div class="ttname"><a href="VehicleFactory_8h.html">VehicleFactory.h</a></div><div class="ttdoc">Abstract vehicle factory class.</div></div>
+<div class="ttc" id="aclassTankFactory_html"><div class="ttname"><a href="classTankFactory.html">TankFactory</a></div><div class="ttdef"><b>Definition:</b> TankFactory.h:14</div></div>
+<div class="ttc" id="aclassTankFactory_html_a660774446833d141db53806057752441"><div class="ttname"><a href="classTankFactory.html#a660774446833d141db53806057752441">TankFactory::createVehicles</a></div><div class="ttdeci">Vehicle * createVehicles()</div><div class="ttdoc">function for creating tank objects</div><div class="ttdef"><b>Definition:</b> TankFactory.cpp:6</div></div>
+<div class="ttc" id="aclassTankFactory_html_a6894ea3a2e16f4dc9ec70562f7ffc10d"><div class="ttname"><a href="classTankFactory.html#a6894ea3a2e16f4dc9ec70562f7ffc10d">TankFactory::~TankFactory</a></div><div class="ttdeci">virtual ~TankFactory()</div><div class="ttdoc">virtual destructor</div><div class="ttdef"><b>Definition:</b> TankFactory.cpp:14</div></div>
+<div class="ttc" id="aclassTankFactory_html_ac42b425b5a76582d1a63e406dd9d0259"><div class="ttname"><a href="classTankFactory.html#ac42b425b5a76582d1a63e406dd9d0259">TankFactory::TankFactory</a></div><div class="ttdeci">TankFactory()</div><div class="ttdoc">constructor</div><div class="ttdef"><b>Definition:</b> TankFactory.cpp:2</div></div>
+<div class="ttc" id="aclassVehicleFactory_html"><div class="ttname"><a href="classVehicleFactory.html">VehicleFactory</a></div><div class="ttdef"><b>Definition:</b> VehicleFactory.h:15</div></div>
+<div class="ttc" id="aclassVehicle_html"><div class="ttname"><a href="classVehicle.html">Vehicle</a></div><div class="ttdef"><b>Definition:</b> Vehicle.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

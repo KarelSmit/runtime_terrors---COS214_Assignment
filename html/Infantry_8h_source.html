@@ -72,23 +72,29 @@ $(function() {
   <div class="headertitle"><div class="title">Infantry.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef INFANTRY_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define INFANTRY_H</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;FootUnit.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classInfantry.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classInfantry.html">Infantry</a> : <span class="keyword">public</span> <a class="code hl_class" href="classFootUnit.html">FootUnit</a>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">private</span>: </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">int</span> Damage; </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">public</span>: </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classInfantry.html">Infantry</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>); </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classInfantry.html">~Infantry</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">int</span> getDamage(); </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> setDamage(<span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> setHP(<span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassFootUnit_html"><div class="ttname"><a href="classFootUnit.html">FootUnit</a></div><div class="ttdef"><b>Definition:</b> FootUnit.h:4</div></div>
-<div class="ttc" id="aclassInfantry_html"><div class="ttname"><a href="classInfantry.html">Infantry</a></div><div class="ttdef"><b>Definition:</b> Infantry.h:5</div></div>
+<a href="Infantry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef INFANTRY_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define INFANTRY_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="FootUnit_8h.html">FootUnit.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classInfantry.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classInfantry.html">Infantry</a> : <span class="keyword">public</span> <a class="code hl_class" href="classFootUnit.html">FootUnit</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">int</span> Damage; <span class="comment">// damage inflicted by infantry soldier</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="classInfantry.html">Infantry</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classInfantry.html#a884f02ab569060a3abc1775fe1347012">~Infantry</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classInfantry.html#a7c04654eda063d2b9e9620fd9c185e50">getDamage</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInfantry.html#aef64df7c97f3877f8685892df0b13324">setDamage</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInfantry.html#aea76c46ea4c1667ae97fc99b4c6d77da">setHP</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aFootUnit_8h_html"><div class="ttname"><a href="FootUnit_8h.html">FootUnit.h</a></div><div class="ttdoc">Header file for FootUnit class.</div></div>
+<div class="ttc" id="aclassFootUnit_html"><div class="ttname"><a href="classFootUnit.html">FootUnit</a></div><div class="ttdef"><b>Definition:</b> FootUnit.h:10</div></div>
+<div class="ttc" id="aclassInfantry_html"><div class="ttname"><a href="classInfantry.html">Infantry</a></div><div class="ttdef"><b>Definition:</b> Infantry.h:14</div></div>
+<div class="ttc" id="aclassInfantry_html_a7c04654eda063d2b9e9620fd9c185e50"><div class="ttname"><a href="classInfantry.html#a7c04654eda063d2b9e9620fd9c185e50">Infantry::getDamage</a></div><div class="ttdeci">int getDamage()</div><div class="ttdoc">getter for the damage member variable</div><div class="ttdef"><b>Definition:</b> Infantry.cpp:28</div></div>
+<div class="ttc" id="aclassInfantry_html_a884f02ab569060a3abc1775fe1347012"><div class="ttname"><a href="classInfantry.html#a884f02ab569060a3abc1775fe1347012">Infantry::~Infantry</a></div><div class="ttdeci">virtual ~Infantry()</div><div class="ttdoc">destroys infantry object</div><div class="ttdef"><b>Definition:</b> Infantry.cpp:24</div></div>
+<div class="ttc" id="aclassInfantry_html_aea76c46ea4c1667ae97fc99b4c6d77da"><div class="ttname"><a href="classInfantry.html#aea76c46ea4c1667ae97fc99b4c6d77da">Infantry::setHP</a></div><div class="ttdeci">void setHP(int)</div><div class="ttdoc">setter for HP member variable</div><div class="ttdef"><b>Definition:</b> Infantry.cpp:38</div></div>
+<div class="ttc" id="aclassInfantry_html_aef64df7c97f3877f8685892df0b13324"><div class="ttname"><a href="classInfantry.html#aef64df7c97f3877f8685892df0b13324">Infantry::setDamage</a></div><div class="ttdeci">void setDamage(int)</div><div class="ttdoc">setter for damage member variable</div><div class="ttdef"><b>Definition:</b> Infantry.cpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
