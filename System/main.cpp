@@ -1,3 +1,4 @@
+#define CATCH_CONFIG_MAIN
 #include "TankUnit.cpp"
 #include "InfantryUnit.cpp"
 #include "SupplyUnit.cpp"
@@ -30,145 +31,318 @@
 #include <iostream>
 #include <stdlib.h>
 #include "asciiArt.cpp"
+#include "catch.hpp"
 
 // #include
 
-using namespace std;
+TEST_CASE("Testing Medic Iterator"){
+    MedicIterator mI1;
+    MedicIterator mI2;
 
-int main()
-{
-	asciiArt aA;
-	Color::Modifier red(Color::FG_RED);
-	Color::Modifier green(Color::FG_GREEN);
-	Color::Modifier blue(Color::FG_BLUE);
-	Color::Modifier yellow(Color::FG_YELLOW);
-	Color::Modifier magenta(Color::FG_MAGENTA);
-	Color::Modifier cyan(Color::FG_CYAN);
-	Color::Modifier def(Color::FG_DEFAULT);
-	system("clear");
+    REQUIRE((mI1==mI2) == 1);
+    REQUIRE((mI1==mI1) == 1);
+    REQUIRE((mI2==mI2) == 1);
 
-	// MEMENTO
-	War *warSim = War::startWar();
-	Records *caretaker = new Records(warSim);
-
-	while (true)
-	{
-
-		// cout<< yellow;
-		// cout << "=======================================================================================================================================================\n";
-		// cout <<	green;
-		// cout << "	 __          __           _      _           __  __          __             _____  _                    _         _    _               		\n";
-		// cout << "	 \\ \\        / /          | |    | |         / _| \\ \\        / /            / ____|(_)                  | |       | |  (_)              		\n";
-		// cout << "	  \\ \\  /\\  / /___   _ __ | |  __| |   ___  | |_   \\ \\  /\\  / /__ _  _ __  | (___   _  _ __ ___   _   _ | |  __ _ | |_  _   ___   _ __  		\n";
-		// cout << "	   \\ \\/  \\/ // _ \\ | '__|| | / _` |  / _ \\ |  _|   \\ \\/  \\/ // _` || '__|  \\___ \\ | || '_ ` _ \\ | | | || | / _` || __|| | / _ \\ | '_ \\ 		\n";
-		// cout << "	    \\  /\\  /| (_) || |   | || (_| | | (_) || |      \\  /\\  /| (_| || |     ____) || || | | | | || |_| || || (_| || |_ | || (_) || | | |		\n";
-		// cout << "	     \\/  \\/  \\___/ |_|   |_| \\__,_|  \\___/ |_|       \\/  \\/  \\__,_||_|    |_____/ |_||_| |_| |_| \\__,_||_| \\__,_| \\__||_| \\___/ |_| |_|		\n";
-		// cout<< yellow;
-		// cout << "=======================================================================================================================================================\n";
-		// cout<< def;
-
-		aA.printBanner();
-
-		// cout << "                           .////////                                          	 	\n";
-		// cout << "                    ///////////////////                                        	\n";
-		// cout << "                    //////////////////////// .................... ///////////				" << yellow << "/////\n" << def;
-		// cout << "                    //////////////////////// //////////////////// ///////////   			" << yellow << "/////\n" << def;
-		// cout << "                    ////////////////////////                                    	\n";
-		// cout << "                    //////////////////////,       .*////                        	\n";
-		// cout << "                .*//////////////////////,      ./####### ,                      	\n";
-		// cout << "         //////  ######,    *((((((((((((((((((((.// ( # //                     	\n";
-		// cout << "      /// ## ((((( //  ((((( //,// ((( / ##. /  ,,*/  # ///                    	\n";
-		// cout << "      // ##(   ( / ####%  ( / ##### /  /%##### / (((( #,                        	\n";
-		// cout << "    .//.## *##    ###### /  / ##### / ,/ ##### *(((( ##                         	\n";
-		// cout << "        (# *   (( / %#( / ((* /, // ((((/ /// ((((((#.                          	\n";
-		// cout << "           ####(     .*/(((((/*,      /###########   								\n";
-
-		cout << endl;
-
-		cout << "Welcome to the World of War simulation.\n\nSelect an option below:\n\n";
-		string input;
-		cout << "1. Start simulation" << endl;
-		cout << "2. Show top 3 highscores" << endl;
-		cout << "3. Show all previous scores" << endl;
-		cout << "4. Help" << endl;
-		cout << "5. Exit" << endl;
-		cout << "->";
-		cin >> input;
-		cout << "================================================================================================\n";
-		if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5")
-		{
-			int choice = stoi(input);
-			if (choice == 1)
-			{
-				cout << cyan << "Running simulation" << def << endl;
-				warSim->simulate();
-				caretaker->Backup();
-			}
-			else if (choice == 2)
-			{
-				cout << cyan << "Top 3 Scores" << def << endl;
-				caretaker->showTopThree();
-			}
-			else if (choice == 3)
-			{
-				cout << cyan << "Simulation History" << def << endl;
-				caretaker->ShowHistory();
-			}
-			else if (choice == 4)
-			{
-				cout << cyan << "Help Information" << def << endl
-					 << endl;
-				cout << "\n>Welcome to the help menu for the World of War simulation.\n>To start the simulation, select option (1) in the main menu.\n";
-				cout << ">Once the simulation initiates, enter your name. (This will be used to save your score)\n";
-				cout << ">After you enter your name, you will be presented with a 5 army combinations.\n>Your army has 4 important values: HP, Damage, RejuvenationPower and ExtraMoves\n\n";
-				cout << ">HP is the total health of your army. This also counts as your score at the end of each battle, so remember to keep your HP high!\n";
-				cout << ">Damage determines the amount of HP your enemy will lose every time you attack.\n";
-				cout << ">RejuvenationPower is the amount of HP that your army recovers when your defend.\n";
-				cout << ">ExtraMoves determines how many moves you are able to make at the end of the battle, once your enemy has exhausted their total moves.\n";
-				cout << ">These values are affected by your choice of battalions.\n>The army combinations consist of 4 different battalion types:\n";
-				cout << ">Infantry - Infantry battalions grant your army with both Damage and HP.\n";
-				cout << ">Tank - Tank battalions grant your army with both Damage and HP.\n";
-				cout << ">Medic - Medic battalions grant your army with RejuvenationPower as well as HP.\n";
-				cout << ">Supply - Supply battalions increases the army HP, and also grants you 1 extra move per supply battalion.\n";
-				cout << "\n>Once you have selected your battalion combination, the battle will start.\n";
-				cout << ">During the battle, you and your opponent will take turns to either Attack or Defend.\n";
-				cout << ">Choosing to Attack deals Damage to your opponent's HP, the amount of which is determined by your army TotalDamage.\n";
-				cout << ">Choosing to Defend will allow your army to heal and recover HP. The amount of which is determined by the RejuvenationPower of your army.\n";
-				cout << "\n>During the simulation, you will fight 3 battles against your opponent.\n>Once all 3 battles are over, whoever has won the most battles of the 3 will win the war.\n";
-			}
-			else if (choice == 5)
-			{
-				break;
-			}
-		}
-		else
-		{
-			cout << "Invalid input. Please choose one of the provided options.\n";
-		}
-		cout << green << "Press Enter to Continue" << endl;
-		cin.ignore(1, '\n');
-		cin.get();
-		system("clear");
-	}
-
-	/* War *originator = new War("Super-Duper", 10);
-	Records *caretaker = new Records(originator);
-
-	caretaker->showTopThree();
-
-	caretaker->Backup();
-	originator->setScore(300);
-	caretaker->Backup();
-	originator->setScore(8);+
-	caretaker->Backup();
-	originator->setScore(8);
-	cout << "\n";
-	caretaker->ShowHistory();
-	cout << "\nClient: Now, let"s rollback!\n\n";
-	caretaker->Undo();
-	cout << "\nClient: Once more!\n\n";
-	caretaker->Undo();
-	cout << endl;
-	caretaker->showTopThree();*/
-	return 0;
 }
+
+TEST_CASE("Testing Supply Iterator"){
+    MedicIterator sI1;
+    MedicIterator sI2;
+
+    REQUIRE((sI1==sI2) == 1);
+    REQUIRE((sI1==sI1) == 1);
+    REQUIRE((sI2==sI2) == 1);
+}
+
+TEST_CASE("Testing Tank Iterator"){
+    MedicIterator tI1;
+    MedicIterator tI2;
+
+    REQUIRE((tI1==tI2) == 1);
+    REQUIRE((tI1==tI1) == 1);
+    REQUIRE((tI2==tI2) == 1);
+}
+
+TEST_CASE("Testing Infantry Iterator"){
+    MedicIterator iI1;
+    MedicIterator iI2;
+
+    REQUIRE((iI1==iI2) == 1);
+    REQUIRE((iI1==iI1) == 1);
+    REQUIRE((iI2==iI2) == 1);
+}
+
+TEST_CASE("Testing Infantry Unit"){
+    InfantryUnit iU;
+    iU.setVal();
+    REQUIRE(iU.getHP() == 40);
+    REQUIRE(iU.getRP() == 0);
+    REQUIRE(iU.getDmg() == 24);
+}
+
+TEST_CASE("Testing Medic Unit"){
+    MedicUnit mU;
+    mU.setVal();
+    REQUIRE(mU.getHP() == 40);
+    REQUIRE(mU.getRP() == 24);
+    REQUIRE(mU.getDmg() == 0);
+}
+
+TEST_CASE("Testing Supply Unit"){
+    SupplyUnit sU;
+    sU.setVal();
+    REQUIRE(sU.getHP() == 40);
+    REQUIRE(sU.getRP() == 0);
+    REQUIRE(sU.getDmg() == 0);
+}
+
+TEST_CASE("Testing Tank Unit"){
+    TankUnit tU;
+    tU.setVal();
+    REQUIRE(tU.getHP() == 40);
+    REQUIRE(tU.getRP() == 0);
+    REQUIRE(tU.getDmg() == 32);
+}
+
+TEST_CASE("Testing Foot Unit"){
+    FootUnit *fU = new FootUnit(12);
+    REQUIRE(fU->getHP() == 12);
+    REQUIRE(fU->getDamage() == 0);
+    REQUIRE(fU->getrejuvenationPower() == 0);
+}
+
+TEST_CASE("Testing Transport Unit"){
+    TransportUnit *tU = new TransportUnit(2);
+    REQUIRE(tU->getHP() == 2);
+    REQUIRE(tU->getDamage() == 0);
+}
+
+TEST_CASE("Testing Medic"){
+    Medic *m = new Medic(24,13);
+    REQUIRE(m->getrejuvenationPower() == 13);
+}
+
+TEST_CASE("Testing Infantry"){
+	Infantry *i = new Infantry(32,6);
+	REQUIRE(i->getDamage()== 6);
+	i->setDamage(50);
+	REQUIRE(i->getDamage() == 50);
+	REQUIRE(i->getHP() == 32);
+	i->setHP(64);
+	REQUIRE(i->getHP() == 64);
+}
+
+TEST_CASE("Testing Tank Driver"){
+	TankDriver *tD = new TankDriver(15,12);
+	REQUIRE(tD->getDamage() == 12);
+}
+
+TEST_CASE("Testing Army with InfantryUnits")
+{
+	Army testArmy;
+	testArmy.addInfantry(1);
+	int hp1 = testArmy.getHP();
+	int dmg1 = testArmy.getDamage();
+	int em = testArmy.getMoves();
+	REQUIRE(hp1 > 0);
+	REQUIRE(dmg1 > 0);
+	REQUIRE(em == 0);
+	testArmy.addInfantry(1);
+	int hp2 = testArmy.getHP();
+	int dmg2 = testArmy.getDamage();
+	REQUIRE(hp2 > hp1);
+	REQUIRE(dmg2 > dmg1);
+	testArmy.takeDamage(10);
+	int hp3 = testArmy.getHP();
+	REQUIRE(hp3 < hp2);
+	testArmy.heal();
+	int hp4 = testArmy.getHP();
+	REQUIRE(hp4 == hp3);
+}
+
+TEST_CASE("Testing Army with MedicUnits")
+{
+	Army testArmy;
+	testArmy.addMedic(1);
+	int hp1 = testArmy.getHP();
+	int dmg1 = testArmy.getDamage();
+	int em = testArmy.getMoves();
+	REQUIRE(hp1 > 0);
+	REQUIRE(dmg1 == 0);
+	REQUIRE(em == 0);
+	testArmy.addMedic(1);
+	int hp2 = testArmy.getHP();
+	int dmg2 = testArmy.getDamage();
+	REQUIRE(hp2 > hp1);
+	testArmy.takeDamage(10);
+	int hp3 = testArmy.getHP();
+	REQUIRE(hp3 < hp2);
+	testArmy.heal();
+	int hp4 = testArmy.getHP();
+	REQUIRE(hp4 > hp3);
+}
+
+TEST_CASE("Testing Army with TankUnits")
+{
+	Army testArmy;
+	testArmy.addTank(1);
+	int hp1 = testArmy.getHP();
+	int dmg1 = testArmy.getDamage();
+	int em = testArmy.getMoves();
+	REQUIRE(hp1 > 0);
+	REQUIRE(dmg1 > 0);
+	REQUIRE(em == 0);
+	testArmy.addTank(1);
+	int hp2 = testArmy.getHP();
+	int dmg2 = testArmy.getDamage();
+	REQUIRE(hp2 > hp1);
+	REQUIRE(dmg2 > dmg1);
+	testArmy.takeDamage(10);
+	int hp3 = testArmy.getHP();
+	REQUIRE(hp3 < hp2);
+	testArmy.heal();
+	int hp4 = testArmy.getHP();
+	REQUIRE(hp4 == hp3);
+}
+
+TEST_CASE("Testing Army with SupplyUnits")
+{
+	Army testArmy;
+	testArmy.addSupply(1);
+	int hp1 = testArmy.getHP();
+	int dmg1 = testArmy.getDamage();
+	int em1 = testArmy.getMoves();
+	REQUIRE(hp1 > 0);
+	REQUIRE(dmg1 == 0);
+	REQUIRE(em1 > 0);
+	testArmy.addSupply(1);
+	int hp2 = testArmy.getHP();
+	int em2 = testArmy.getMoves();
+	REQUIRE(hp2 > hp1);
+	REQUIRE(em2 > em1);
+	testArmy.takeDamage(10);
+	int hp3 = testArmy.getHP();
+	REQUIRE(hp3 < hp2);
+	testArmy.heal();
+	int hp4 = testArmy.getHP();
+	REQUIRE(hp4 == hp3);
+}
+
+TEST_CASE("Testing Army with InfantryUnits and MedicUnits")
+{
+	Army testArmy;
+	testArmy.addInfantry(1);
+	int hp1 = testArmy.getHP();
+	int dmg1 = testArmy.getDamage();
+	int em1 = testArmy.getMoves();
+	REQUIRE(hp1 > 0);
+	REQUIRE(dmg1 > 0);
+	REQUIRE(em1 == 0);
+	testArmy.addMedic(1);
+	int hp2 = testArmy.getHP();
+	REQUIRE(hp2 > hp1);
+	testArmy.takeDamage(10);
+	int hp3 = testArmy.getHP();
+	REQUIRE(hp3 < hp2);
+	testArmy.heal();
+	int hp4 = testArmy.getHP();
+	REQUIRE(hp4 > hp3);
+}
+
+TEST_CASE("Testing Army with InfantryUnit and TankUnit")
+{
+	Army testArmy;
+	testArmy.addInfantry(1);
+	int hp1 = testArmy.getHP();
+	int dmg1 = testArmy.getDamage();
+	int em1 = testArmy.getMoves();
+	REQUIRE(hp1 > 0);
+	REQUIRE(dmg1 > 0);
+	REQUIRE(em1 == 0);
+	testArmy.addTank(1);
+	int hp2 = testArmy.getHP();
+	int dmg2 = testArmy.getDamage();
+	REQUIRE(hp2 > hp1);
+	REQUIRE(dmg2 > dmg1);
+	testArmy.takeDamage(10);
+	int hp3 = testArmy.getHP();
+	REQUIRE(hp3 < hp2);
+	testArmy.heal();
+	int hp4 = testArmy.getHP();
+	REQUIRE(hp4 == hp3);
+}
+
+TEST_CASE("Testing Army with InfantryUnit and SupplyUnit")
+{
+	Army testArmy;
+	testArmy.addInfantry(1);
+	int hp1 = testArmy.getHP();
+	int dmg1 = testArmy.getDamage();
+	int em1 = testArmy.getMoves();
+	REQUIRE(hp1 > 0);
+	REQUIRE(dmg1 > 0);
+	REQUIRE(em1 == 0);
+	testArmy.addSupply(1);
+	int hp2 = testArmy.getHP();
+	int em2 = testArmy.getMoves();
+	REQUIRE(hp2 > hp1);
+	REQUIRE(em2 > em1);
+	testArmy.takeDamage(10);
+	int hp3 = testArmy.getHP();
+	REQUIRE(hp3 < hp2);
+	testArmy.heal();
+	int hp4 = testArmy.getHP();
+	REQUIRE(hp4 == hp3);
+}
+
+
+TEST_CASE("Memento test User")
+{
+	User* test1 = new User("testUser", 0);
+	REQUIRE( test1->getUserDetails() == "testUser: 0" );
+	REQUIRE( test1->getUserName() == "testUser" );
+	REQUIRE( test1->getUserScore() == 0 );
+	test1->setUserScore(100);
+	REQUIRE( test1->getUserScore() == 100 );
+	delete test1;
+}
+
+TEST_CASE("Memento test User and IntelDivision")
+{
+	User* testUser = new User("testUser2", 23);
+
+	REQUIRE( testUser->getUserDetails() == "testUser2: 23" );
+	REQUIRE( testUser->getUserName() == "testUser2" );
+	REQUIRE( testUser->getUserScore() == 23 );
+
+	testUser->setUserScore(77);
+
+	REQUIRE( testUser->getUserScore() == 77 );
+
+	IntelDivision* testID = new IntelDivision(testUser);
+
+	REQUIRE( testID->getUser()->getUserName() == testUser->getUserName() );
+	REQUIRE( testID->getUser()->getUserScore() == testUser->getUserScore() );
+	REQUIRE( testID->getUser()->getUserDetails() == testUser->getUserDetails() );
+	REQUIRE( testID->getDetails() == "testUser2;77" );
+	REQUIRE( testID->print() == "testUser2 achieved 77" );
+	REQUIRE( testID->GetName() == testID->date() + " / (" + testID->getUser()->getUserDetails() + ")" );
+
+	delete testUser;
+	delete testID;
+}
+
+
+
+
+
+//using namespace std;
+
+//int main () {
+//    SupplyIterator sI1;
+//    SupplyIterator sI2;
+//
+//    cout<< (sI1 == sI2)<< ":"<<(sI1 == sI1)<< ":"<<(sI2 == sI2)<<endl;
+////    cout<<sU.getHP()<<":"<<sU.getDmg()<<":"<<sU.getRP()<<endl;
+//    return 0;
+//}
