@@ -22,50 +22,55 @@ void PreBattle::handle()
 		std::cout << "1. 2x Infantry, 2x Tank, 2x Medic\n2. 2x Infantry, 2x Tank, 1x Medic, 1x Supply\n";
 		std::cout << "3. 1x Infantry, 2x Tank, 2x Medic, 1x Supply\n4. 2x Infantry, 1x Tank, 2x Medic, 1x Supply\n";
 		std::cout << "5. 1x Infantry, 1x Tank, 2x Medic, 2x Supply\n->";
-		int choice;
-		std::cin >> choice;
-		switch (choice)
+		string input;
+		std::cin >> input;
+		if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5")
 		{
-		case 1:
-			context->getA()->getArmy()->addTank(2);
-			context->getA()->getArmy()->addInfantry(2);
-			context->getA()->getArmy()->addMedic(2);
-			accept = true;
-			break;
-		case 2:
-			context->getA()->getArmy()->addTank(2);
-			context->getA()->getArmy()->addInfantry(2);
-			context->getA()->getArmy()->addMedic(1);
-			context->getA()->getArmy()->addSupply(1);
-			accept = true;
-			break;
-		case 3:
-			context->getA()->getArmy()->addTank(2);
-			context->getA()->getArmy()->addInfantry(1);
-			context->getA()->getArmy()->addMedic(2);
-			context->getA()->getArmy()->addSupply(1);
-			accept = true;
-			break;
-		case 4:
-			context->getA()->getArmy()->addTank(1);
-			context->getA()->getArmy()->addInfantry(2);
-			context->getA()->getArmy()->addMedic(2);
-			context->getA()->getArmy()->addSupply(1);
-			accept = true;
-			break;
-		case 5:
-			context->getA()->getArmy()->addTank(1);
-			context->getA()->getArmy()->addInfantry(1);
-			context->getA()->getArmy()->addMedic(2);
-			context->getA()->getArmy()->addSupply(2);
-			accept = true;
-			break;
-		default:
+			int choice = std::stoi(input);
+			switch (choice)
+			{
+			case 1:
+				context->getA()->getArmy()->addTank(2);
+				context->getA()->getArmy()->addInfantry(2);
+				context->getA()->getArmy()->addMedic(2);
+				accept = true;
+				break;
+			case 2:
+				context->getA()->getArmy()->addTank(2);
+				context->getA()->getArmy()->addInfantry(2);
+				context->getA()->getArmy()->addMedic(1);
+				context->getA()->getArmy()->addSupply(1);
+				accept = true;
+				break;
+			case 3:
+				context->getA()->getArmy()->addTank(2);
+				context->getA()->getArmy()->addInfantry(1);
+				context->getA()->getArmy()->addMedic(2);
+				context->getA()->getArmy()->addSupply(1);
+				accept = true;
+				break;
+			case 4:
+				context->getA()->getArmy()->addTank(1);
+				context->getA()->getArmy()->addInfantry(2);
+				context->getA()->getArmy()->addMedic(2);
+				context->getA()->getArmy()->addSupply(1);
+				accept = true;
+				break;
+			case 5:
+				context->getA()->getArmy()->addTank(1);
+				context->getA()->getArmy()->addInfantry(1);
+				context->getA()->getArmy()->addMedic(2);
+				context->getA()->getArmy()->addSupply(2);
+				accept = true;
+				break;
+			}
+		}
+		else
+		{
 			cout << "================================================================================================\n";
 			std::cout << "\nInvalid input. Please select one of the given battalion types.\n\n";
 			cout << "================================================================================================\n";
 			accept = false;
-			break;
 		}
 	}
 	changeState();
