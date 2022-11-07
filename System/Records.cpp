@@ -75,17 +75,20 @@ void Records::loadTopScores()
 	{
 		if (getline(dafile, line))
 		{
-			pos = line.find(";");
-			name = line.substr(0, pos);
-			line.erase(0, pos + 1);
+			if (line == "")
+			{
+				pos = line.find(";");
+				name = line.substr(0, pos);
+				line.erase(0, pos + 1);
 
-			stringstream x(line);
-			int number = 0;
-			x >> number;
+				stringstream x(line);
+				int number = 0;
+				x >> number;
 
-			User *u = new User(name, number);
+				User *u = new User(name, number);
 
-			top3[i] = new IntelDivision(u);
+				top3[i] = new IntelDivision(u);
+			}
 		}
 	}
 	dafile.close();
@@ -104,6 +107,7 @@ void Records::showTopThree()
 		if (top3[i] != NULL)
 			cout << top3[i]->print() << endl;
 	}
+	
 	cout << endl;
 }
 
@@ -171,6 +175,19 @@ void Records::writeTopToFile()
 void Records::bubbleSort()
 {
 	int n = 3;
+	if (top3[0] == NULL)
+	{
+		n = 0;
+	}
+	else if (top3[1] == NULL)
+	{
+		n = 1;
+	}
+	else if (top3[2] == NULL)
+	{
+		n = 2;
+	}
+	
 	for (int i = 0; i < n - 1; i++)
 		for (int j = 0; j < n - i - 1; j++)
 			if (top3[j]->getUser()->getUserScore() < top3[j + 1]->getUser()->getUserScore())
