@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['undo_0',['Undo',['../classRecords.html#ad0ae033fe22711319e0bb1fea3539fc4',1,'Records']]],
-  ['user_1',['User',['../classUser.html',1,'User'],['../classUser.html#a903210c5d77efc2788717a12ea8febe2',1,'User::User(string n, int s)'],['../classUser.html#afe590ef3e6e04f62753317b292d41d8b',1,'User::User(User &amp;user)']]],
-  ['user_2eh_2',['User.h',['../User_8h.html',1,'']]]
+  ['readme_0',['README',['../md_README.html',1,'']]],
+  ['records_1',['Records',['../classRecords.html',1,'Records'],['../classRecords.html#abb59d5a54821e16684297f7563650782',1,'Records::Records()']]],
+  ['records_2eh_2',['Records.h',['../Records_8h.html',1,'']]],
+  ['reset_3',['reset',['../classArmy.html#a98768f29b72b40a78b0ea4cd7ff84104',1,'Army']]],
+  ['restore_4',['Restore',['../classWar.html#ad04de56bb713adcb741476de8dca7d30',1,'War']]]
 ];

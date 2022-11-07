@@ -1,53 +1,255 @@
 \hypertarget{classArmy}{}\doxysection{Army Class Reference}
 \label{classArmy}\index{Army@{Army}}
+
+
+{\ttfamily \#include $<$Army.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classArmy_a6a384a8073b6e61b2c8b0afcd37dec16}\label{classArmy_a6a384a8073b6e61b2c8b0afcd37dec16}} 
-void {\bfseries add\+Infantry} (int)
-\item 
-\mbox{\Hypertarget{classArmy_ace88b3266b657720853a627adca2a2f8}\label{classArmy_ace88b3266b657720853a627adca2a2f8}} 
-void {\bfseries add\+Tank} (int)
-\item 
-\mbox{\Hypertarget{classArmy_a1fd5155f635db81ca637806258123e0d}\label{classArmy_a1fd5155f635db81ca637806258123e0d}} 
-void {\bfseries add\+Medic} (int)
-\item 
-\mbox{\Hypertarget{classArmy_aae2e988efb9acef9f1cb710dd332f5e3}\label{classArmy_aae2e988efb9acef9f1cb710dd332f5e3}} 
-void {\bfseries add\+Supply} (int)
-\item 
-\mbox{\Hypertarget{classArmy_a96c7bc1b1c003dd4f632a5db26bcfa98}\label{classArmy_a96c7bc1b1c003dd4f632a5db26bcfa98}} 
-void {\bfseries update\+Stats} ()
-\item 
+\mbox{\hyperlink{classArmy_ae3a3e50665f25ecaa2336245ee625f95}{Army}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classArmy}{Army}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classArmy_a01db7886e46e79ece1726d46f918848d}{$\sim$\+Army}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classArmy}{Army}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_abc5957d766063923c5ea8fa554e15742}{add\+Infantry}} (int x)
+\begin{DoxyCompactList}\small\item\em Add x \mbox{\hyperlink{classInfantry}{Infantry}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_aaa7993782e0430310a215fcb9e9859e8}{add\+Tank}} (int x)
+\begin{DoxyCompactList}\small\item\em Add x \mbox{\hyperlink{classTank}{Tank}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_abd29a44cfcbed692e9b56dc0b6812dec}{add\+Medic}} (int x)
+\begin{DoxyCompactList}\small\item\em Add x \mbox{\hyperlink{classMedic}{Medic}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_afa43bc03315d5cfda9c73b051c3f2b00}{add\+Supply}} (int x)
+\begin{DoxyCompactList}\small\item\em Add x \mbox{\hyperlink{classSupply}{Supply}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_a96c7bc1b1c003dd4f632a5db26bcfa98}{update\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em Update the HP, Damage, RP and Extra\+Moves of the army to reflect the current state of it\textquotesingle{}s battalions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArmy_ae260d11e056ec1db6289a7d2b918b775}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Return the total value of the army\textquotesingle{}s Damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_a8fcf5695baa82e4c21bc429085b92e05}{take\+Damage}} (int x)
+\begin{DoxyCompactList}\small\item\em Deal x amount of damage to the leading battalion in the army. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_ab9a48d3d6bee61d03b091c3d9fefcb6d}{heal}} ()
+\begin{DoxyCompactList}\small\item\em Use the Rejuvenation\+Power of the army to restore that amount of HP to the lead battalion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_a98768f29b72b40a78b0ea4cd7ff84104}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the values and Battalions of the army to prepare for the next battle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArmy_a2c2ab6f193839d30653fe579fbed932d}{get\+Moves}} ()
+\begin{DoxyCompactList}\small\item\em Return the number of Extra\+Moves that the \mbox{\hyperlink{classArmy}{Army}} currently is allowed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArmy_ad6bc4399d4b763e3e645bb023b11e83a}{get\+HP}} ()
+\begin{DoxyCompactList}\small\item\em Return the current total HP of the army. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_a1d41dcf5543b1d99069f294877c8ac51}{set\+Enemy}} ()
+\begin{DoxyCompactList}\small\item\em Set the army as the Enemy in the simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_a145f0c9f5b9dea347735f8cb0ba68d40}{set\+Commander}} (std\+::string y)
+\begin{DoxyCompactList}\small\item\em Set the name of the \mbox{\hyperlink{classArmy}{Army}} general. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmy_a48a1f05b4bd9044a1416187805d8a52f}{print\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em Print the current state of the army. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used to perform the \mbox{\hyperlink{classAttack}{Attack}} or \mbox{\hyperlink{classDefend}{Defend}} strategy between the two conflicting sides in a battle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArmy_ae3a3e50665f25ecaa2336245ee625f95}\label{classArmy_ae3a3e50665f25ecaa2336245ee625f95}} 
+\index{Army@{Army}!Army@{Army}}
+\index{Army@{Army}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{Army()}{Army()}}
+{\footnotesize\ttfamily Army\+::\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classArmy}{Army}} object. 
+
+\mbox{\Hypertarget{classArmy_a01db7886e46e79ece1726d46f918848d}\label{classArmy_a01db7886e46e79ece1726d46f918848d}} 
+\index{Army@{Army}!````~Army@{$\sim$Army}}
+\index{````~Army@{$\sim$Army}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{$\sim$Army()}{~Army()}}
+{\footnotesize\ttfamily Army\+::$\sim$\+Army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classArmy}{Army}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArmy_abc5957d766063923c5ea8fa554e15742}\label{classArmy_abc5957d766063923c5ea8fa554e15742}} 
+\index{Army@{Army}!addInfantry@{addInfantry}}
+\index{addInfantry@{addInfantry}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{addInfantry()}{addInfantry()}}
+{\footnotesize\ttfamily void Army\+::add\+Infantry (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Add x \mbox{\hyperlink{classInfantry}{Infantry}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArmy_abd29a44cfcbed692e9b56dc0b6812dec}\label{classArmy_abd29a44cfcbed692e9b56dc0b6812dec}} 
+\index{Army@{Army}!addMedic@{addMedic}}
+\index{addMedic@{addMedic}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{addMedic()}{addMedic()}}
+{\footnotesize\ttfamily void Army\+::add\+Medic (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Add x \mbox{\hyperlink{classMedic}{Medic}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArmy_afa43bc03315d5cfda9c73b051c3f2b00}\label{classArmy_afa43bc03315d5cfda9c73b051c3f2b00}} 
+\index{Army@{Army}!addSupply@{addSupply}}
+\index{addSupply@{addSupply}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{addSupply()}{addSupply()}}
+{\footnotesize\ttfamily void Army\+::add\+Supply (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Add x \mbox{\hyperlink{classSupply}{Supply}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArmy_aaa7993782e0430310a215fcb9e9859e8}\label{classArmy_aaa7993782e0430310a215fcb9e9859e8}} 
+\index{Army@{Army}!addTank@{addTank}}
+\index{addTank@{addTank}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{addTank()}{addTank()}}
+{\footnotesize\ttfamily void Army\+::add\+Tank (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Add x \mbox{\hyperlink{classTank}{Tank}} battalions to the \mbox{\hyperlink{classArmy}{Army}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classArmy_ae260d11e056ec1db6289a7d2b918b775}\label{classArmy_ae260d11e056ec1db6289a7d2b918b775}} 
-int {\bfseries get\+Damage} ()
-\item 
-\mbox{\Hypertarget{classArmy_a66b66a381c56dd5668741e07e5085f21}\label{classArmy_a66b66a381c56dd5668741e07e5085f21}} 
-void {\bfseries take\+Damage} (int)
-\item 
-\mbox{\Hypertarget{classArmy_ab9a48d3d6bee61d03b091c3d9fefcb6d}\label{classArmy_ab9a48d3d6bee61d03b091c3d9fefcb6d}} 
-void {\bfseries heal} ()
-\item 
-\mbox{\Hypertarget{classArmy_a98768f29b72b40a78b0ea4cd7ff84104}\label{classArmy_a98768f29b72b40a78b0ea4cd7ff84104}} 
-void {\bfseries reset} ()
-\item 
-\mbox{\Hypertarget{classArmy_a2c2ab6f193839d30653fe579fbed932d}\label{classArmy_a2c2ab6f193839d30653fe579fbed932d}} 
-int {\bfseries get\+Moves} ()
-\item 
+\index{Army@{Army}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Army\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the total value of the army\textquotesingle{}s Damage. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classArmy_ad6bc4399d4b763e3e645bb023b11e83a}\label{classArmy_ad6bc4399d4b763e3e645bb023b11e83a}} 
-int {\bfseries get\+HP} ()
-\item 
-\mbox{\Hypertarget{classArmy_a1d41dcf5543b1d99069f294877c8ac51}\label{classArmy_a1d41dcf5543b1d99069f294877c8ac51}} 
-void {\bfseries set\+Enemy} ()
-\item 
-\mbox{\Hypertarget{classArmy_ab79d69827a1b696bfc13108e0c1c4a2c}\label{classArmy_ab79d69827a1b696bfc13108e0c1c4a2c}} 
-void {\bfseries set\+Commander} (std\+::string)
-\item 
+\index{Army@{Army}!getHP@{getHP}}
+\index{getHP@{getHP}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{getHP()}{getHP()}}
+{\footnotesize\ttfamily int Army\+::get\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the current total HP of the army. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArmy_a2c2ab6f193839d30653fe579fbed932d}\label{classArmy_a2c2ab6f193839d30653fe579fbed932d}} 
+\index{Army@{Army}!getMoves@{getMoves}}
+\index{getMoves@{getMoves}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{getMoves()}{getMoves()}}
+{\footnotesize\ttfamily int Army\+::get\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the number of Extra\+Moves that the \mbox{\hyperlink{classArmy}{Army}} currently is allowed. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArmy_ab9a48d3d6bee61d03b091c3d9fefcb6d}\label{classArmy_ab9a48d3d6bee61d03b091c3d9fefcb6d}} 
+\index{Army@{Army}!heal@{heal}}
+\index{heal@{heal}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily void Army\+::heal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Use the Rejuvenation\+Power of the army to restore that amount of HP to the lead battalion. 
+
 \mbox{\Hypertarget{classArmy_a48a1f05b4bd9044a1416187805d8a52f}\label{classArmy_a48a1f05b4bd9044a1416187805d8a52f}} 
-void {\bfseries print\+Stats} ()
-\end{DoxyCompactItemize}
+\index{Army@{Army}!printStats@{printStats}}
+\index{printStats@{printStats}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{printStats()}{printStats()}}
+{\footnotesize\ttfamily void Army\+::print\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the current state of the army. 
+
+\mbox{\Hypertarget{classArmy_a98768f29b72b40a78b0ea4cd7ff84104}\label{classArmy_a98768f29b72b40a78b0ea4cd7ff84104}} 
+\index{Army@{Army}!reset@{reset}}
+\index{reset@{reset}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Army\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the values and Battalions of the army to prepare for the next battle. 
+
+\mbox{\Hypertarget{classArmy_a145f0c9f5b9dea347735f8cb0ba68d40}\label{classArmy_a145f0c9f5b9dea347735f8cb0ba68d40}} 
+\index{Army@{Army}!setCommander@{setCommander}}
+\index{setCommander@{setCommander}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{setCommander()}{setCommander()}}
+{\footnotesize\ttfamily void Army\+::set\+Commander (\begin{DoxyParamCaption}\item[{std\+::string}]{y }\end{DoxyParamCaption})}
+
+
+
+Set the name of the \mbox{\hyperlink{classArmy}{Army}} general. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArmy_a1d41dcf5543b1d99069f294877c8ac51}\label{classArmy_a1d41dcf5543b1d99069f294877c8ac51}} 
+\index{Army@{Army}!setEnemy@{setEnemy}}
+\index{setEnemy@{setEnemy}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{setEnemy()}{setEnemy()}}
+{\footnotesize\ttfamily void Army\+::set\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the army as the Enemy in the simulation. 
+
+\mbox{\Hypertarget{classArmy_a8fcf5695baa82e4c21bc429085b92e05}\label{classArmy_a8fcf5695baa82e4c21bc429085b92e05}} 
+\index{Army@{Army}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Army\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Deal x amount of damage to the leading battalion in the army. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classArmy_a96c7bc1b1c003dd4f632a5db26bcfa98}\label{classArmy_a96c7bc1b1c003dd4f632a5db26bcfa98}} 
+\index{Army@{Army}!updateStats@{updateStats}}
+\index{updateStats@{updateStats}!Army@{Army}}
+\doxysubsubsection{\texorpdfstring{updateStats()}{updateStats()}}
+{\footnotesize\ttfamily void Army\+::update\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the HP, Damage, RP and Extra\+Moves of the army to reflect the current state of it\textquotesingle{}s battalions. 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Army.\+h\item 
+\mbox{\hyperlink{Army_8h}{Army.\+h}}\item 
 Army.\+cpp\end{DoxyCompactItemize}

@@ -1,25 +1,27 @@
 \hypertarget{Country_8h_source}{}\doxysection{Country.\+h}
-
+\mbox{\hyperlink{Country_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COUNTRY\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COUNTRY\_H}}
-\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Army.h"{}}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}General.h"{}}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
-\DoxyCodeLine{6 }
-\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classCountry}{Country}}}
-\DoxyCodeLine{8 \{}
-\DoxyCodeLine{9 \textcolor{keyword}{public}:}
-\DoxyCodeLine{10     \mbox{\hyperlink{classCountry}{Country}}(std::string);}
-\DoxyCodeLine{11     \mbox{\hyperlink{classCountry}{\string~Country}}();}
-\DoxyCodeLine{12     \textcolor{keywordtype}{void} setEnemy();}
-\DoxyCodeLine{13     \textcolor{keywordtype}{void} makeMove(\textcolor{keywordtype}{int} , \mbox{\hyperlink{classCountry}{Country}}*);}
-\DoxyCodeLine{14     \mbox{\hyperlink{classArmy}{Army}}* getArmy();}
-\DoxyCodeLine{15     std::string getUsername();}
-\DoxyCodeLine{16 \textcolor{keyword}{private}:}
-\DoxyCodeLine{17     \mbox{\hyperlink{classGeneral}{General}} *leader;}
-\DoxyCodeLine{18     \mbox{\hyperlink{classArmy}{Army}} *defenseForce;}
-\DoxyCodeLine{19 \};}
-\DoxyCodeLine{20 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef COUNTRY\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define COUNTRY\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Army_8h}{Army.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{General_8h}{General.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{classCountry}{Country}}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \mbox{\hyperlink{classCountry}{Country}}(std::string x);}
+\DoxyCodeLine{38     \mbox{\hyperlink{classCountry_a5013557e0d93fabc976bfa0d7f0564a3}{\string~Country}}();}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCountry_a38f6c6c54aff320e0d2f4c0e665129c8}{setEnemy}}();}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCountry_a4ec1eba66610a1d8988a4af599139108}{makeMove}}(\textcolor{keywordtype}{int} choice, \mbox{\hyperlink{classCountry}{Country}} *enemy);}
+\DoxyCodeLine{56     \mbox{\hyperlink{classArmy}{Army}} *\mbox{\hyperlink{classCountry_a3959c7dc7ade25ff431098fffea6156a}{getArmy}}();}
+\DoxyCodeLine{62     std::string \mbox{\hyperlink{classCountry_a54c5751c273170d8613088a01db1cbe1}{getUsername}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{private}:}
+\DoxyCodeLine{65     \mbox{\hyperlink{classGeneral}{General}} *leader;}
+\DoxyCodeLine{66     \mbox{\hyperlink{classArmy}{Army}} *defenseForce;}
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

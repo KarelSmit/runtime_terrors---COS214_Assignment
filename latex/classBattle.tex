@@ -1,23 +1,29 @@
 \hypertarget{classBattle}{}\doxysection{Battle Class Reference}
 \label{classBattle}\index{Battle@{Battle}}
+
+
+Create and initiate the \mbox{\hyperlink{classBattleState}{Battle\+State}} for each \mbox{\hyperlink{classBattle}{Battle}}, also holds the winner.  
+
+
+
+
+{\ttfamily \#include $<$Battle.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBattle_ab1907b7df8406ce41be673f5184ed5e2}\label{classBattle_ab1907b7df8406ce41be673f5184ed5e2}} 
-{\bfseries Battle} (\mbox{\hyperlink{classCountry}{Country}} $\ast$, \mbox{\hyperlink{classCountry}{Country}} $\ast$)
-\item 
-\mbox{\Hypertarget{classBattle_aafc478ace1c49f4fe8a59d1f6038c7df}\label{classBattle_aafc478ace1c49f4fe8a59d1f6038c7df}} 
-void {\bfseries begin} ()
-\item 
-\mbox{\Hypertarget{classBattle_a23b4d3633bcf35f5af11bcfa35ee504a}\label{classBattle_a23b4d3633bcf35f5af11bcfa35ee504a}} 
-void {\bfseries set\+State} (\mbox{\hyperlink{classBattleState}{Battle\+State}} $\ast$)
-\item 
-\mbox{\Hypertarget{classBattle_a7f565e19a239177d9bc002eb97b3c114}\label{classBattle_a7f565e19a239177d9bc002eb97b3c114}} 
-\mbox{\hyperlink{classCountry}{Country}} $\ast$ {\bfseries getA} ()
-\item 
-\mbox{\Hypertarget{classBattle_aab6bb7d65bd60eda1c2f6755da4a03b1}\label{classBattle_aab6bb7d65bd60eda1c2f6755da4a03b1}} 
-\mbox{\hyperlink{classCountry}{Country}} $\ast$ {\bfseries getB} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classBattle_ae4f0e6e490aaf5ad4b35ab9f236be5ca}{Battle}} (\mbox{\hyperlink{classCountry}{Country}} $\ast$x, \mbox{\hyperlink{classCountry}{Country}} $\ast$y)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBattle}{Battle}} object betweeen \mbox{\hyperlink{classCountry}{Country}} a and \mbox{\hyperlink{classCountry}{Country}} b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBattle_ae44141e587836ba84243cad46b17c228}{$\sim$\+Battle}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classBattle}{Battle}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBattle_aafc478ace1c49f4fe8a59d1f6038c7df}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Initiate the \mbox{\hyperlink{classBattleState}{Battle\+State}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBattle_aba5b61dd00d052891278d82de6ded7ab}{set\+State}} (\mbox{\hyperlink{classBattleState}{Battle\+State}} $\ast$x)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classBattleState}{Battle\+State}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCountry}{Country}} $\ast$ \mbox{\hyperlink{classBattle_a7f565e19a239177d9bc002eb97b3c114}{getA}} ()
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{classCountry}{Country}} object for SideA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCountry}{Country}} $\ast$ \mbox{\hyperlink{classBattle_aab6bb7d65bd60eda1c2f6755da4a03b1}{getB}} ()
+\begin{DoxyCompactList}\small\item\em Return the \mbox{\hyperlink{classCountry}{Country}} object for SideB. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,7 +32,96 @@ bool {\bfseries winner}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Create and initiate the \mbox{\hyperlink{classBattleState}{Battle\+State}} for each \mbox{\hyperlink{classBattle}{Battle}}, also holds the winner. 
+
+Creates and initiates the Batte\+State for each \mbox{\hyperlink{classBattle}{Battle}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBattle_ae4f0e6e490aaf5ad4b35ab9f236be5ca}\label{classBattle_ae4f0e6e490aaf5ad4b35ab9f236be5ca}} 
+\index{Battle@{Battle}!Battle@{Battle}}
+\index{Battle@{Battle}!Battle@{Battle}}
+\doxysubsubsection{\texorpdfstring{Battle()}{Battle()}}
+{\footnotesize\ttfamily Battle\+::\+Battle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCountry}{Country}} $\ast$}]{x,  }\item[{\mbox{\hyperlink{classCountry}{Country}} $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBattle}{Battle}} object betweeen \mbox{\hyperlink{classCountry}{Country}} a and \mbox{\hyperlink{classCountry}{Country}} b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBattle_ae44141e587836ba84243cad46b17c228}\label{classBattle_ae44141e587836ba84243cad46b17c228}} 
+\index{Battle@{Battle}!````~Battle@{$\sim$Battle}}
+\index{````~Battle@{$\sim$Battle}!Battle@{Battle}}
+\doxysubsubsection{\texorpdfstring{$\sim$Battle()}{~Battle()}}
+{\footnotesize\ttfamily Battle\+::$\sim$\+Battle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classBattle}{Battle}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBattle_aafc478ace1c49f4fe8a59d1f6038c7df}\label{classBattle_aafc478ace1c49f4fe8a59d1f6038c7df}} 
+\index{Battle@{Battle}!begin@{begin}}
+\index{begin@{begin}!Battle@{Battle}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Battle\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initiate the \mbox{\hyperlink{classBattleState}{Battle\+State}} object. 
+
+\mbox{\Hypertarget{classBattle_a7f565e19a239177d9bc002eb97b3c114}\label{classBattle_a7f565e19a239177d9bc002eb97b3c114}} 
+\index{Battle@{Battle}!getA@{getA}}
+\index{getA@{getA}!Battle@{Battle}}
+\doxysubsubsection{\texorpdfstring{getA()}{getA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCountry}{Country}} $\ast$ Battle\+::getA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the \mbox{\hyperlink{classCountry}{Country}} object for SideA. 
+
+\begin{DoxyReturn}{Returns}
+Country$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattle_aab6bb7d65bd60eda1c2f6755da4a03b1}\label{classBattle_aab6bb7d65bd60eda1c2f6755da4a03b1}} 
+\index{Battle@{Battle}!getB@{getB}}
+\index{getB@{getB}!Battle@{Battle}}
+\doxysubsubsection{\texorpdfstring{getB()}{getB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCountry}{Country}} $\ast$ Battle\+::getB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the \mbox{\hyperlink{classCountry}{Country}} object for SideB. 
+
+\begin{DoxyReturn}{Returns}
+Country$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBattle_aba5b61dd00d052891278d82de6ded7ab}\label{classBattle_aba5b61dd00d052891278d82de6ded7ab}} 
+\index{Battle@{Battle}!setState@{setState}}
+\index{setState@{setState}!Battle@{Battle}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Battle\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBattleState}{Battle\+State}} $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classBattleState}{Battle\+State}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Battle.\+h\item 
+\mbox{\hyperlink{Battle_8h}{Battle.\+h}}\item 
 Battle.\+cpp\end{DoxyCompactItemize}

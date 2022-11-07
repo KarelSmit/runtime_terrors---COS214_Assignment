@@ -1,5 +1,14 @@
 \hypertarget{classPreBattle}{}\doxysection{Pre\+Battle Class Reference}
 \label{classPreBattle}\index{PreBattle@{PreBattle}}
+
+
+Implements \mbox{\hyperlink{classBattleState}{Battle\+State}} to reflect the planning portion of a \mbox{\hyperlink{classBattle}{Battle}}.  
+
+
+
+
+{\ttfamily \#include $<$Pre\+Battle.\+h$>$}
+
 Inheritance diagram for Pre\+Battle\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,14 +18,48 @@ Inheritance diagram for Pre\+Battle\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classPreBattle_aae761fc7cb94c3ccf8814467139c93a9}\label{classPreBattle_aae761fc7cb94c3ccf8814467139c93a9}} 
-{\bfseries Pre\+Battle} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$)
-\item 
+\mbox{\hyperlink{classPreBattle_a357a18fcae67f79140ef0934a621a01d}{Pre\+Battle}} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPreBattle}{Pre\+Battle}} object with context c. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPreBattle_a92dc44f09fd09b4c6e96a810c0f3efe1}{$\sim$\+Pre\+Battle}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classPreBattle}{Pre\+Battle}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPreBattle_af89f12765057fbb72e3e115a82bf6581}{handle}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Facilitate the choice of a \mbox{\hyperlink{classBattalion}{Battalion}} combination during the planning portion of a \mbox{\hyperlink{classBattle}{Battle}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPreBattle_a230cded0056aa41b2dbf4e7d012383e9}{change\+State}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Change the state to \mbox{\hyperlink{classDuringBattle}{During\+Battle}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implements \mbox{\hyperlink{classBattleState}{Battle\+State}} to reflect the planning portion of a \mbox{\hyperlink{classBattle}{Battle}}. 
+
+Concrete implementation which adheres to the \mbox{\hyperlink{classBattleState}{Battle\+State}} interface 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPreBattle_a357a18fcae67f79140ef0934a621a01d}\label{classPreBattle_a357a18fcae67f79140ef0934a621a01d}} 
+\index{PreBattle@{PreBattle}!PreBattle@{PreBattle}}
+\index{PreBattle@{PreBattle}!PreBattle@{PreBattle}}
+\doxysubsubsection{\texorpdfstring{PreBattle()}{PreBattle()}}
+{\footnotesize\ttfamily Pre\+Battle\+::\+Pre\+Battle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBattle}{Battle}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPreBattle}{Pre\+Battle}} object with context c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPreBattle_a92dc44f09fd09b4c6e96a810c0f3efe1}\label{classPreBattle_a92dc44f09fd09b4c6e96a810c0f3efe1}} 
+\index{PreBattle@{PreBattle}!````~PreBattle@{$\sim$PreBattle}}
+\index{````~PreBattle@{$\sim$PreBattle}!PreBattle@{PreBattle}}
+\doxysubsubsection{\texorpdfstring{$\sim$PreBattle()}{~PreBattle()}}
+{\footnotesize\ttfamily Pre\+Battle\+::$\sim$\+Pre\+Battle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classPreBattle}{Pre\+Battle}} object. 
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -28,7 +71,11 @@ void \mbox{\hyperlink{classPreBattle_a230cded0056aa41b2dbf4e7d012383e9}{change\+
 
 
 
-Reimplemented from \mbox{\hyperlink{classBattleState}{Battle\+State}}.
+Change the state to \mbox{\hyperlink{classDuringBattle}{During\+Battle}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classBattleState_a36b87d9104f10cd216fc16f83ae7089b}{Battle\+State}}.
 
 \mbox{\Hypertarget{classPreBattle_af89f12765057fbb72e3e115a82bf6581}\label{classPreBattle_af89f12765057fbb72e3e115a82bf6581}} 
 \index{PreBattle@{PreBattle}!handle@{handle}}
@@ -38,11 +85,15 @@ Reimplemented from \mbox{\hyperlink{classBattleState}{Battle\+State}}.
 
 
 
-Implements \mbox{\hyperlink{classBattleState}{Battle\+State}}.
+Facilitate the choice of a \mbox{\hyperlink{classBattalion}{Battalion}} combination during the planning portion of a \mbox{\hyperlink{classBattle}{Battle}}. 
+
+
+
+Implements \mbox{\hyperlink{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}{Battle\+State}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Pre\+Battle.\+h\item 
+\mbox{\hyperlink{PreBattle_8h}{Pre\+Battle.\+h}}\item 
 Pre\+Battle.\+cpp\end{DoxyCompactItemize}

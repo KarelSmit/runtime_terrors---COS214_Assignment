@@ -1,5 +1,14 @@
 \hypertarget{classMedicUnit}{}\doxysection{Medic\+Unit Class Reference}
 \label{classMedicUnit}\index{MedicUnit@{MedicUnit}}
+
+
+Implements the \mbox{\hyperlink{classBattalion}{Battalion}} interface using \mbox{\hyperlink{classMedic}{Medic}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Medic\+Unit.\+h$>$}
+
 Inheritance diagram for Medic\+Unit\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,25 +18,26 @@ Inheritance diagram for Medic\+Unit\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classMedicUnit_a83ee166fc16a41cbdcee533ecacbe7b3}{Medic\+Unit}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMedic}{Medic}} Unit object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMedicUnit_acc3f713023d3122f7f7c9d46f4652389}{$\sim$\+Medic\+Unit}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classMedic}{Medic}} Unit object. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMedicUnit_ac75489f6b00de2ab02a7970e09771dc1}{get\+HP}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Return the current total HP of the \mbox{\hyperlink{classMedic}{Medic}} Unit. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMedicUnit_a85fce58aa53a4db0f49fb81d169b121c}{get\+Dmg}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the current total Damage of the \mbox{\hyperlink{classMedic}{Medic}} Unit. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMedicUnit_a8e2957ff25a3e9902245961422ab0226}{get\+RP}} ()
-\item 
-\mbox{\Hypertarget{classMedicUnit_a9e6e57a2a0c4ad3b7cc3e0f4dc3e2d6c}\label{classMedicUnit_a9e6e57a2a0c4ad3b7cc3e0f4dc3e2d6c}} 
-\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} {\bfseries begin} ()
-\item 
-\mbox{\Hypertarget{classMedicUnit_a0350082c13a6349b4663ffc386f23141}\label{classMedicUnit_a0350082c13a6349b4663ffc386f23141}} 
-\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} {\bfseries end} ()
-\item 
-\mbox{\Hypertarget{classMedicUnit_ac0bc601da2d6dffcd05df65456479a01}\label{classMedicUnit_ac0bc601da2d6dffcd05df65456479a01}} 
-void {\bfseries set\+Val} ()
-\item 
-bool \mbox{\hyperlink{classMedicUnit_a41102d5ad2711bc60197437ff578bb7e}{take\+Damage}} (int)
-\item 
-void \mbox{\hyperlink{classMedicUnit_a34914d8d27cf4db99771ebde0076e1f1}{heal}} (int)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the current total Rejuvenation\+Power of the \mbox{\hyperlink{classMedic}{Medic}} Unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} \mbox{\hyperlink{classMedicUnit_a9e6e57a2a0c4ad3b7cc3e0f4dc3e2d6c}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Return a \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} that is currently at the beginning of the \mbox{\hyperlink{classMedic}{Medic}} linked list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} \mbox{\hyperlink{classMedicUnit_a0350082c13a6349b4663ffc386f23141}{end}} ()
+\begin{DoxyCompactList}\small\item\em Return a \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} that is currently at the end of the \mbox{\hyperlink{classMedic}{Medic}} linked list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMedicUnit_ac0bc601da2d6dffcd05df65456479a01}{set\+Val}} ()
+\begin{DoxyCompactList}\small\item\em Set the total values based on the \mbox{\hyperlink{classMedic}{Medic}} linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMedicUnit_aeb9c93420dc64ccf1956b55b392e243c}{take\+Damage}} (int d)
+\begin{DoxyCompactList}\small\item\em Reduce the total HP by d. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMedicUnit_a07b9d20977cad543e8b6f6629dc12963}{heal}} (int r)
+\begin{DoxyCompactList}\small\item\em Increase the total HP by r. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,7 +52,61 @@ class {\bfseries Medic\+Iterator}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classBattalion}{Battalion}} interface using \mbox{\hyperlink{classMedic}{Medic}} objects. 
+
+Concrete implementation of \mbox{\hyperlink{classBattalion}{Battalion}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMedicUnit_a83ee166fc16a41cbdcee533ecacbe7b3}\label{classMedicUnit_a83ee166fc16a41cbdcee533ecacbe7b3}} 
+\index{MedicUnit@{MedicUnit}!MedicUnit@{MedicUnit}}
+\index{MedicUnit@{MedicUnit}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{MedicUnit()}{MedicUnit()}}
+{\footnotesize\ttfamily Medic\+Unit\+::\+Medic\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classMedic}{Medic}} Unit object. 
+
+\mbox{\Hypertarget{classMedicUnit_acc3f713023d3122f7f7c9d46f4652389}\label{classMedicUnit_acc3f713023d3122f7f7c9d46f4652389}} 
+\index{MedicUnit@{MedicUnit}!````~MedicUnit@{$\sim$MedicUnit}}
+\index{````~MedicUnit@{$\sim$MedicUnit}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{$\sim$MedicUnit()}{~MedicUnit()}}
+{\footnotesize\ttfamily Medic\+Unit\+::$\sim$\+Medic\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classMedic}{Medic}} Unit object. 
+
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMedicUnit_a9e6e57a2a0c4ad3b7cc3e0f4dc3e2d6c}\label{classMedicUnit_a9e6e57a2a0c4ad3b7cc3e0f4dc3e2d6c}} 
+\index{MedicUnit@{MedicUnit}!begin@{begin}}
+\index{begin@{begin}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} Medic\+Unit\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} that is currently at the beginning of the \mbox{\hyperlink{classMedic}{Medic}} linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMedicUnit_a0350082c13a6349b4663ffc386f23141}\label{classMedicUnit_a0350082c13a6349b4663ffc386f23141}} 
+\index{MedicUnit@{MedicUnit}!end@{end}}
+\index{end@{end}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} Medic\+Unit\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a \mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} that is currently at the end of the \mbox{\hyperlink{classMedic}{Medic}} linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMedicIterator}{Medic\+Iterator}} 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classMedicUnit_a85fce58aa53a4db0f49fb81d169b121c}\label{classMedicUnit_a85fce58aa53a4db0f49fb81d169b121c}} 
 \index{MedicUnit@{MedicUnit}!getDmg@{getDmg}}
 \index{getDmg@{getDmg}!MedicUnit@{MedicUnit}}
@@ -51,7 +115,14 @@ class {\bfseries Medic\+Iterator}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Get the current total Damage of the \mbox{\hyperlink{classMedic}{Medic}} Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}{Battalion}}.
 
 \mbox{\Hypertarget{classMedicUnit_ac75489f6b00de2ab02a7970e09771dc1}\label{classMedicUnit_ac75489f6b00de2ab02a7970e09771dc1}} 
 \index{MedicUnit@{MedicUnit}!getHP@{getHP}}
@@ -61,7 +132,14 @@ Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Return the current total HP of the \mbox{\hyperlink{classMedic}{Medic}} Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}{Battalion}}.
 
 \mbox{\Hypertarget{classMedicUnit_a8e2957ff25a3e9902245961422ab0226}\label{classMedicUnit_a8e2957ff25a3e9902245961422ab0226}} 
 \index{MedicUnit@{MedicUnit}!getRP@{getRP}}
@@ -71,31 +149,71 @@ Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Get the current total Rejuvenation\+Power of the \mbox{\hyperlink{classMedic}{Medic}} Unit. 
 
-\mbox{\Hypertarget{classMedicUnit_a34914d8d27cf4db99771ebde0076e1f1}\label{classMedicUnit_a34914d8d27cf4db99771ebde0076e1f1}} 
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a81c77fc8c8beb61a84991838797cd84f}{Battalion}}.
+
+\mbox{\Hypertarget{classMedicUnit_a07b9d20977cad543e8b6f6629dc12963}\label{classMedicUnit_a07b9d20977cad543e8b6f6629dc12963}} 
 \index{MedicUnit@{MedicUnit}!heal@{heal}}
 \index{heal@{heal}!MedicUnit@{MedicUnit}}
 \doxysubsubsection{\texorpdfstring{heal()}{heal()}}
-{\footnotesize\ttfamily void Medic\+Unit\+::heal (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Medic\+Unit\+::heal (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Increase the total HP by r. 
 
-\mbox{\Hypertarget{classMedicUnit_a41102d5ad2711bc60197437ff578bb7e}\label{classMedicUnit_a41102d5ad2711bc60197437ff578bb7e}} 
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBattalion_a9703593b6d231dca53dae43c17562a09}{Battalion}}.
+
+\mbox{\Hypertarget{classMedicUnit_ac0bc601da2d6dffcd05df65456479a01}\label{classMedicUnit_ac0bc601da2d6dffcd05df65456479a01}} 
+\index{MedicUnit@{MedicUnit}!setVal@{setVal}}
+\index{setVal@{setVal}!MedicUnit@{MedicUnit}}
+\doxysubsubsection{\texorpdfstring{setVal()}{setVal()}}
+{\footnotesize\ttfamily void Medic\+Unit\+::set\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the total values based on the \mbox{\hyperlink{classMedic}{Medic}} linked list. 
+
+\mbox{\Hypertarget{classMedicUnit_aeb9c93420dc64ccf1956b55b392e243c}\label{classMedicUnit_aeb9c93420dc64ccf1956b55b392e243c}} 
 \index{MedicUnit@{MedicUnit}!takeDamage@{takeDamage}}
 \index{takeDamage@{takeDamage}!MedicUnit@{MedicUnit}}
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
-{\footnotesize\ttfamily bool Medic\+Unit\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{dmg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Medic\+Unit\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Reduce the total HP by d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_aba0c4d73d5ce4ba5bd8718b740e0566a}{Battalion}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Medic\+Unit.\+h\item 
+\mbox{\hyperlink{MedicUnit_8h}{Medic\+Unit.\+h}}\item 
 Medic\+Unit.\+cpp\end{DoxyCompactItemize}

@@ -1,5 +1,14 @@
 \hypertarget{classBattleState}{}\doxysection{Battle\+State Class Reference}
 \label{classBattleState}\index{BattleState@{BattleState}}
+
+
+Specifies the abstract interface for \mbox{\hyperlink{classPreBattle}{Pre\+Battle}}, \mbox{\hyperlink{classDuringBattle}{During\+Battle}} and \mbox{\hyperlink{classPostBattle}{Post\+Battle}}.  
+
+
+
+
+{\ttfamily \#include $<$Battle\+State.\+h$>$}
+
 Inheritance diagram for Battle\+State\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,15 +18,14 @@ Inheritance diagram for Battle\+State\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBattleState_a9481c06e766cc8be726d938567d8d859}\label{classBattleState_a9481c06e766cc8be726d938567d8d859}} 
-{\bfseries Battle\+State} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$)
-\item 
-\mbox{\Hypertarget{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}\label{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}} 
-virtual void {\bfseries handle} ()=0
-\item 
-\mbox{\Hypertarget{classBattleState_a36b87d9104f10cd216fc16f83ae7089b}\label{classBattleState_a36b87d9104f10cd216fc16f83ae7089b}} 
-virtual void {\bfseries change\+State} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classBattleState_ae2643b122ab00f6ccc3e3eef50029163}{Battle\+State}} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$x)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBattle}{Battle}} State object with context x. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBattleState_aefa456879780fd7114fd7691917adc0a}{$\sim$\+Battle\+State}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classBattle}{Battle}} State object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}{handle}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to handle each state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBattleState_a36b87d9104f10cd216fc16f83ae7089b}{change\+State}} ()
+\begin{DoxyCompactList}\small\item\em Change to the next state of the battle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,7 +34,71 @@ virtual void {\bfseries change\+State} ()
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Specifies the abstract interface for \mbox{\hyperlink{classPreBattle}{Pre\+Battle}}, \mbox{\hyperlink{classDuringBattle}{During\+Battle}} and \mbox{\hyperlink{classPostBattle}{Post\+Battle}}. 
+
+Interface class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBattleState_ae2643b122ab00f6ccc3e3eef50029163}\label{classBattleState_ae2643b122ab00f6ccc3e3eef50029163}} 
+\index{BattleState@{BattleState}!BattleState@{BattleState}}
+\index{BattleState@{BattleState}!BattleState@{BattleState}}
+\doxysubsubsection{\texorpdfstring{BattleState()}{BattleState()}}
+{\footnotesize\ttfamily Battle\+State\+::\+Battle\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBattle}{Battle}} $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBattle}{Battle}} State object with context x. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBattleState_aefa456879780fd7114fd7691917adc0a}\label{classBattleState_aefa456879780fd7114fd7691917adc0a}} 
+\index{BattleState@{BattleState}!````~BattleState@{$\sim$BattleState}}
+\index{````~BattleState@{$\sim$BattleState}!BattleState@{BattleState}}
+\doxysubsubsection{\texorpdfstring{$\sim$BattleState()}{~BattleState()}}
+{\footnotesize\ttfamily Battle\+State\+::$\sim$\+Battle\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classBattle}{Battle}} State object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBattleState_a36b87d9104f10cd216fc16f83ae7089b}\label{classBattleState_a36b87d9104f10cd216fc16f83ae7089b}} 
+\index{BattleState@{BattleState}!changeState@{changeState}}
+\index{changeState@{changeState}!BattleState@{BattleState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily virtual void Battle\+State\+::change\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Change to the next state of the battle. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classDuringBattle_a7f05ea85effbe8ef2ea8cff307c321c4}{During\+Battle}}, and \mbox{\hyperlink{classPreBattle_a230cded0056aa41b2dbf4e7d012383e9}{Pre\+Battle}}.
+
+\mbox{\Hypertarget{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}\label{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}} 
+\index{BattleState@{BattleState}!handle@{handle}}
+\index{handle@{handle}!BattleState@{BattleState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual void Battle\+State\+::handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to handle each state. 
+
+
+
+Implemented in \mbox{\hyperlink{classDuringBattle_a7a9c224b381c8f83acc16281fedeaf7b}{During\+Battle}}, \mbox{\hyperlink{classPostBattle_a654c5cc4d81b8cd0057837d7eab7b839}{Post\+Battle}}, and \mbox{\hyperlink{classPreBattle_af89f12765057fbb72e3e115a82bf6581}{Pre\+Battle}}.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Battle\+State.\+h\item 
+\mbox{\hyperlink{BattleState_8h}{Battle\+State.\+h}}\item 
 Battle\+State.\+cpp\end{DoxyCompactItemize}

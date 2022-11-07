@@ -72,22 +72,27 @@ $(function() {
   <div class="headertitle"><div class="title">Defend.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DEFEND_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DEFEND_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Strategy.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classDefend.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classDefend.html">Defend</a> : <span class="keyword">public</span> <a class="code hl_class" href="classStrategy.html">Strategy</a></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_class" href="classDefend.html">Defend</a>();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classDefend.html">~Defend</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> battlePlan(<a class="code hl_class" href="classArmy.html">Army</a>*, <a class="code hl_class" href="classArmy.html">Army</a>*);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>};</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassArmy_html"><div class="ttname"><a href="classArmy.html">Army</a></div><div class="ttdef"><b>Definition:</b> Army.h:7</div></div>
-<div class="ttc" id="aclassDefend_html"><div class="ttname"><a href="classDefend.html">Defend</a></div><div class="ttdef"><b>Definition:</b> Defend.h:6</div></div>
-<div class="ttc" id="aclassStrategy_html"><div class="ttname"><a href="classStrategy.html">Strategy</a></div><div class="ttdef"><b>Definition:</b> Strategy.h:6</div></div>
+<a href="Defend_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef DEFEND_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define DEFEND_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="Strategy_8h.html">Strategy.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classDefend.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classDefend.html">Defend</a> : <span class="keyword">public</span> <a class="code hl_class" href="classStrategy.html">Strategy</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="classDefend.html#a71dac1c44d27ecd970530d16d9c6cbc3">Defend</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="classDefend.html#af5b1bed98cb10288d394127e0fafcfe6">~Defend</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDefend.html#a239b14a7bb1f77360edcd986d6965af2">battlePlan</a>(<a class="code hl_class" href="classArmy.html">Army</a> *a, <a class="code hl_class" href="classArmy.html">Army</a> *b);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aStrategy_8h_html"><div class="ttname"><a href="Strategy_8h.html">Strategy.h</a></div><div class="ttdoc">Abstract class for the Strategy pattern.</div></div>
+<div class="ttc" id="aclassArmy_html"><div class="ttname"><a href="classArmy.html">Army</a></div><div class="ttdef"><b>Definition:</b> Army.h:23</div></div>
+<div class="ttc" id="aclassDefend_html"><div class="ttname"><a href="classDefend.html">Defend</a></div><div class="ttdoc">Concrete implementation of Strategy.</div><div class="ttdef"><b>Definition:</b> Defend.h:25</div></div>
+<div class="ttc" id="aclassDefend_html_a239b14a7bb1f77360edcd986d6965af2"><div class="ttname"><a href="classDefend.html#a239b14a7bb1f77360edcd986d6965af2">Defend::battlePlan</a></div><div class="ttdeci">void battlePlan(Army *a, Army *b)</div><div class="ttdoc">Initiate a defensive move by Army a against Army b.</div><div class="ttdef"><b>Definition:</b> Defend.cpp:7</div></div>
+<div class="ttc" id="aclassDefend_html_a71dac1c44d27ecd970530d16d9c6cbc3"><div class="ttname"><a href="classDefend.html#a71dac1c44d27ecd970530d16d9c6cbc3">Defend::Defend</a></div><div class="ttdeci">Defend()</div><div class="ttdoc">Construct a new Defend object.</div><div class="ttdef"><b>Definition:</b> Defend.cpp:3</div></div>
+<div class="ttc" id="aclassDefend_html_af5b1bed98cb10288d394127e0fafcfe6"><div class="ttname"><a href="classDefend.html#af5b1bed98cb10288d394127e0fafcfe6">Defend::~Defend</a></div><div class="ttdeci">~Defend()</div><div class="ttdoc">Destroy the Defend object.</div><div class="ttdef"><b>Definition:</b> Defend.cpp:5</div></div>
+<div class="ttc" id="aclassStrategy_html"><div class="ttname"><a href="classStrategy.html">Strategy</a></div><div class="ttdoc">Abstract parent class for Attack and Defend.</div><div class="ttdef"><b>Definition:</b> Strategy.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,14 @@
 \hypertarget{classInfantryUnit}{}\doxysection{Infantry\+Unit Class Reference}
 \label{classInfantryUnit}\index{InfantryUnit@{InfantryUnit}}
+
+
+Implements the \mbox{\hyperlink{classBattalion}{Battalion}} interface using \mbox{\hyperlink{classInfantry}{Infantry}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Infantry\+Unit.\+h$>$}
+
 Inheritance diagram for Infantry\+Unit\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,25 +18,26 @@ Inheritance diagram for Infantry\+Unit\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classInfantryUnit_a218a3b83fdf0c479c4ce41faad716ae4}{Infantry\+Unit}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classInfantry}{Infantry}} Unit object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInfantryUnit_ac1297ab97e296b414b0bf5325361ffc0}{$\sim$\+Infantry\+Unit}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classInfantry}{Infantry}} Unit object. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classInfantryUnit_afe1b023089db9c9193491280670345ea}{get\+HP}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Return the current total HP of the Infatry Unit. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classInfantryUnit_a42ecb27ba1cfca00851bc43fd96b93e8}{get\+Dmg}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the current total Damage of the \mbox{\hyperlink{classInfantry}{Infantry}} Unit. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classInfantryUnit_aa216078221e01134546a9dced77fa927}{get\+RP}} ()
-\item 
-\mbox{\Hypertarget{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}\label{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}} 
-\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} {\bfseries begin} ()
-\item 
-\mbox{\Hypertarget{classInfantryUnit_a40f0c9cb97076ba37e7180dd7cbbcc49}\label{classInfantryUnit_a40f0c9cb97076ba37e7180dd7cbbcc49}} 
-\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} {\bfseries end} ()
-\item 
-\mbox{\Hypertarget{classInfantryUnit_a997ceebf9cd856be8870c4a1582651a0}\label{classInfantryUnit_a997ceebf9cd856be8870c4a1582651a0}} 
-void {\bfseries set\+Val} ()
-\item 
-bool \mbox{\hyperlink{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}{take\+Damage}} (int)
-\item 
-void \mbox{\hyperlink{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}{heal}} (int)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the current total Rejuvenation\+Power of the \mbox{\hyperlink{classInfantry}{Infantry}} Unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} \mbox{\hyperlink{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Return a \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} that is currently at the beginning of the \mbox{\hyperlink{classInfantry}{Infantry}} linked list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} \mbox{\hyperlink{classInfantryUnit_a40f0c9cb97076ba37e7180dd7cbbcc49}{end}} ()
+\begin{DoxyCompactList}\small\item\em Return a \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} that is currently at the end of the \mbox{\hyperlink{classInfantry}{Infantry}} linked list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInfantryUnit_a997ceebf9cd856be8870c4a1582651a0}{set\+Val}} ()
+\begin{DoxyCompactList}\small\item\em Set the total values based on the \mbox{\hyperlink{classInfantry}{Infantry}} linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInfantryUnit_a45b22d71236d67fccb1f6276eb9dfac8}{take\+Damage}} (int d)
+\begin{DoxyCompactList}\small\item\em Reduce the total HP by d. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInfantryUnit_a756093f954a6116c9a8e78c726b1c48d}{heal}} (int r)
+\begin{DoxyCompactList}\small\item\em Increase the total HP by r. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,7 +52,61 @@ class {\bfseries Infantry\+Iterator}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classBattalion}{Battalion}} interface using \mbox{\hyperlink{classInfantry}{Infantry}} objects. 
+
+Concrete implementation of \mbox{\hyperlink{classBattalion}{Battalion}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInfantryUnit_a218a3b83fdf0c479c4ce41faad716ae4}\label{classInfantryUnit_a218a3b83fdf0c479c4ce41faad716ae4}} 
+\index{InfantryUnit@{InfantryUnit}!InfantryUnit@{InfantryUnit}}
+\index{InfantryUnit@{InfantryUnit}!InfantryUnit@{InfantryUnit}}
+\doxysubsubsection{\texorpdfstring{InfantryUnit()}{InfantryUnit()}}
+{\footnotesize\ttfamily Infantry\+Unit\+::\+Infantry\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classInfantry}{Infantry}} Unit object. 
+
+\mbox{\Hypertarget{classInfantryUnit_ac1297ab97e296b414b0bf5325361ffc0}\label{classInfantryUnit_ac1297ab97e296b414b0bf5325361ffc0}} 
+\index{InfantryUnit@{InfantryUnit}!````~InfantryUnit@{$\sim$InfantryUnit}}
+\index{````~InfantryUnit@{$\sim$InfantryUnit}!InfantryUnit@{InfantryUnit}}
+\doxysubsubsection{\texorpdfstring{$\sim$InfantryUnit()}{~InfantryUnit()}}
+{\footnotesize\ttfamily Infantry\+Unit\+::$\sim$\+Infantry\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classInfantry}{Infantry}} Unit object. 
+
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}\label{classInfantryUnit_a99aa2cb263542095c2dd25de2412371c}} 
+\index{InfantryUnit@{InfantryUnit}!begin@{begin}}
+\index{begin@{begin}!InfantryUnit@{InfantryUnit}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} Infantry\+Unit\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} that is currently at the beginning of the \mbox{\hyperlink{classInfantry}{Infantry}} linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInfantryUnit_a40f0c9cb97076ba37e7180dd7cbbcc49}\label{classInfantryUnit_a40f0c9cb97076ba37e7180dd7cbbcc49}} 
+\index{InfantryUnit@{InfantryUnit}!end@{end}}
+\index{end@{end}!InfantryUnit@{InfantryUnit}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} Infantry\+Unit\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a \mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} that is currently at the end of the \mbox{\hyperlink{classInfantry}{Infantry}} linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classInfantryIterator}{Infantry\+Iterator}} 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classInfantryUnit_a42ecb27ba1cfca00851bc43fd96b93e8}\label{classInfantryUnit_a42ecb27ba1cfca00851bc43fd96b93e8}} 
 \index{InfantryUnit@{InfantryUnit}!getDmg@{getDmg}}
 \index{getDmg@{getDmg}!InfantryUnit@{InfantryUnit}}
@@ -51,7 +115,14 @@ class {\bfseries Infantry\+Iterator}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Get the current total Damage of the \mbox{\hyperlink{classInfantry}{Infantry}} Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a06024b4e9b0e074f5aae3b544f13fdb6}{Battalion}}.
 
 \mbox{\Hypertarget{classInfantryUnit_afe1b023089db9c9193491280670345ea}\label{classInfantryUnit_afe1b023089db9c9193491280670345ea}} 
 \index{InfantryUnit@{InfantryUnit}!getHP@{getHP}}
@@ -61,7 +132,14 @@ Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Return the current total HP of the Infatry Unit. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a54c4f6e04cfc2dd7a795c4998960ed48}{Battalion}}.
 
 \mbox{\Hypertarget{classInfantryUnit_aa216078221e01134546a9dced77fa927}\label{classInfantryUnit_aa216078221e01134546a9dced77fa927}} 
 \index{InfantryUnit@{InfantryUnit}!getRP@{getRP}}
@@ -71,31 +149,71 @@ Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Get the current total Rejuvenation\+Power of the \mbox{\hyperlink{classInfantry}{Infantry}} Unit. 
 
-\mbox{\Hypertarget{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}\label{classInfantryUnit_a369a11fc18fc73ed14802a5a9f090bbd}} 
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_a81c77fc8c8beb61a84991838797cd84f}{Battalion}}.
+
+\mbox{\Hypertarget{classInfantryUnit_a756093f954a6116c9a8e78c726b1c48d}\label{classInfantryUnit_a756093f954a6116c9a8e78c726b1c48d}} 
 \index{InfantryUnit@{InfantryUnit}!heal@{heal}}
 \index{heal@{heal}!InfantryUnit@{InfantryUnit}}
 \doxysubsubsection{\texorpdfstring{heal()}{heal()}}
-{\footnotesize\ttfamily void Infantry\+Unit\+::heal (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Infantry\+Unit\+::heal (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Increase the total HP by r. 
 
-\mbox{\Hypertarget{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}\label{classInfantryUnit_a7b862e31f225daa6653c6de61f3bc1dd}} 
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBattalion_a9703593b6d231dca53dae43c17562a09}{Battalion}}.
+
+\mbox{\Hypertarget{classInfantryUnit_a997ceebf9cd856be8870c4a1582651a0}\label{classInfantryUnit_a997ceebf9cd856be8870c4a1582651a0}} 
+\index{InfantryUnit@{InfantryUnit}!setVal@{setVal}}
+\index{setVal@{setVal}!InfantryUnit@{InfantryUnit}}
+\doxysubsubsection{\texorpdfstring{setVal()}{setVal()}}
+{\footnotesize\ttfamily void Infantry\+Unit\+::set\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the total values based on the \mbox{\hyperlink{classInfantry}{Infantry}} linked list. 
+
+\mbox{\Hypertarget{classInfantryUnit_a45b22d71236d67fccb1f6276eb9dfac8}\label{classInfantryUnit_a45b22d71236d67fccb1f6276eb9dfac8}} 
 \index{InfantryUnit@{InfantryUnit}!takeDamage@{takeDamage}}
 \index{takeDamage@{takeDamage}!InfantryUnit@{InfantryUnit}}
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
-{\footnotesize\ttfamily bool Infantry\+Unit\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{dmg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Infantry\+Unit\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classBattalion}{Battalion}}.
+Reduce the total HP by d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBattalion_aba0c4d73d5ce4ba5bd8718b740e0566a}{Battalion}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Infantry\+Unit.\+h\item 
+\mbox{\hyperlink{InfantryUnit_8h}{Infantry\+Unit.\+h}}\item 
 Infantry\+Unit.\+cpp\end{DoxyCompactItemize}

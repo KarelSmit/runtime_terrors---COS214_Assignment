@@ -1,5 +1,14 @@
 \hypertarget{classPostBattle}{}\doxysection{Post\+Battle Class Reference}
 \label{classPostBattle}\index{PostBattle@{PostBattle}}
+
+
+Implements \mbox{\hyperlink{classBattleState}{Battle\+State}} to reflect the scoring portion of a \mbox{\hyperlink{classBattle}{Battle}}.  
+
+
+
+
+{\ttfamily \#include $<$Post\+Battle.\+h$>$}
+
 Inheritance diagram for Post\+Battle\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,12 +18,46 @@ Inheritance diagram for Post\+Battle\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classPostBattle_a6fda2d98968a1d72c27150ba4798e3f0}\label{classPostBattle_a6fda2d98968a1d72c27150ba4798e3f0}} 
-{\bfseries Post\+Battle} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$)
-\item 
+\mbox{\hyperlink{classPostBattle_a6fda2d98968a1d72c27150ba4798e3f0}{Post\+Battle}} (\mbox{\hyperlink{classBattle}{Battle}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPostBattle}{Post\+Battle}} object with context c. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPostBattle_aae7a41d266abcfff9193a3dccea5ed30}{$\sim$\+Post\+Battle}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classPostBattle}{Post\+Battle}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPostBattle_a654c5cc4d81b8cd0057837d7eab7b839}{handle}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Determine the winner of a \mbox{\hyperlink{classBattle}{Battle}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implements \mbox{\hyperlink{classBattleState}{Battle\+State}} to reflect the scoring portion of a \mbox{\hyperlink{classBattle}{Battle}}. 
+
+Concrete implementation which adheres to the \mbox{\hyperlink{classBattleState}{Battle\+State}} interface 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPostBattle_a6fda2d98968a1d72c27150ba4798e3f0}\label{classPostBattle_a6fda2d98968a1d72c27150ba4798e3f0}} 
+\index{PostBattle@{PostBattle}!PostBattle@{PostBattle}}
+\index{PostBattle@{PostBattle}!PostBattle@{PostBattle}}
+\doxysubsubsection{\texorpdfstring{PostBattle()}{PostBattle()}}
+{\footnotesize\ttfamily Post\+Battle\+::\+Post\+Battle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBattle}{Battle}} $\ast$}]{inC }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPostBattle}{Post\+Battle}} object with context c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPostBattle_aae7a41d266abcfff9193a3dccea5ed30}\label{classPostBattle_aae7a41d266abcfff9193a3dccea5ed30}} 
+\index{PostBattle@{PostBattle}!````~PostBattle@{$\sim$PostBattle}}
+\index{````~PostBattle@{$\sim$PostBattle}!PostBattle@{PostBattle}}
+\doxysubsubsection{\texorpdfstring{$\sim$PostBattle()}{~PostBattle()}}
+{\footnotesize\ttfamily Post\+Battle\+::$\sim$\+Post\+Battle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classPostBattle}{Post\+Battle}} object. 
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -26,11 +69,15 @@ void \mbox{\hyperlink{classPostBattle_a654c5cc4d81b8cd0057837d7eab7b839}{handle}
 
 
 
-Implements \mbox{\hyperlink{classBattleState}{Battle\+State}}.
+Determine the winner of a \mbox{\hyperlink{classBattle}{Battle}}. 
+
+
+
+Implements \mbox{\hyperlink{classBattleState_ae6fa12ee65abc37de5a885031d0f4347}{Battle\+State}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Post\+Battle.\+h\item 
+\mbox{\hyperlink{PostBattle_8h}{Post\+Battle.\+h}}\item 
 Post\+Battle.\+cpp\end{DoxyCompactItemize}

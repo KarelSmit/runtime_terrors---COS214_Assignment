@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['undo_0',['Undo',['../classRecords.html#ad0ae033fe22711319e0bb1fea3539fc4',1,'Records']]],
-  ['user_1',['User',['../classUser.html#a903210c5d77efc2788717a12ea8febe2',1,'User::User(string n, int s)'],['../classUser.html#afe590ef3e6e04f62753317b292d41d8b',1,'User::User(User &amp;user)']]]
+  ['makemove_0',['makeMove',['../classCountry.html#a4ec1eba66610a1d8988a4af599139108',1,'Country']]],
+  ['mediciterator_1',['MedicIterator',['../classMedicIterator.html#a636bd84b0d4609c47446f9a4e114998a',1,'MedicIterator::MedicIterator()'],['../classMedicIterator.html#a63603097d7016d1f520d2418d469bba5',1,'MedicIterator::MedicIterator(Node&lt; FootUnit * &gt; *head, Node&lt; FootUnit * &gt; *curr)']]],
+  ['medicunit_2',['MedicUnit',['../classMedicUnit.html#a83ee166fc16a41cbdcee533ecacbe7b3',1,'MedicUnit']]]
 ];

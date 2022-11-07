@@ -1,19 +1,6 @@
 var searchData=
 [
-  ['save_0',['Save',['../classWar.html#a4cf710b35d949d05e8d6eab39affcb06',1,'War']]],
-  ['setscore_1',['setScore',['../classWar.html#a1a70434ea8c0b6ea02b0c7bb83b54afe',1,'War']]],
-  ['setuserscore_2',['setUserScore',['../classUser.html#a649cd805a2224430ebf93bcc7cd42afc',1,'User']]],
-  ['showhistory_3',['ShowHistory',['../classRecords.html#ae70a3c48c1091b9132159517cc54a328',1,'Records']]],
-  ['showtopthree_4',['showTopThree',['../classRecords.html#a3542a05721fb74bc69d6eda47f4e736d',1,'Records']]],
-  ['sniper_5',['Sniper',['../classSniper.html',1,'']]],
-  ['specialskill_6',['SpecialSkill',['../classSpecialSkill.html',1,'']]],
-  ['startwar_7',['startWar',['../classWar.html#acc462d6692791ae950a12f705b664c29',1,'War']]],
-  ['stealth_8',['Stealth',['../classStealth.html',1,'']]],
-  ['strategy_9',['Strategy',['../classStrategy.html',1,'']]],
-  ['supply_10',['Supply',['../classSupply.html',1,'']]],
-  ['supplyiterator_11',['SupplyIterator',['../classSupplyIterator.html',1,'']]],
-  ['supplytruck_12',['SupplyTruck',['../classSupplyTruck.html',1,'']]],
-  ['supplytruckfactory_13',['SupplyTruckFactory',['../classSupplyTruckFactory.html',1,'']]],
-  ['supplyunit_14',['SupplyUnit',['../classSupplyUnit.html',1,'']]],
-  ['supportbarracks_15',['SupportBarracks',['../classSupportBarracks.html',1,'']]]
+  ['operator_2a_0',['operator*',['../classInfantryIterator.html#ac878bb3962d8d97511e8519658d0c62b',1,'InfantryIterator::operator*()'],['../classMedicIterator.html#a64390a512c9ec12ecbec9df9e8837fd2',1,'MedicIterator::operator*()'],['../classSupplyIterator.html#ae9beb927e4725301ad19d8bde47bf2b9',1,'SupplyIterator::operator*()'],['../classTankIterator.html#a3a39dd991a98c09db7622fa496d93dd4',1,'TankIterator::operator*()']]],
+  ['operator_2b_2b_1',['operator++',['../classInfantryIterator.html#a82b943f7531a3ca43b87087de631a9a1',1,'InfantryIterator::operator++()'],['../classMedicIterator.html#a3dc21563cab913843f858a3859fabc34',1,'MedicIterator::operator++()'],['../classSupplyIterator.html#a12a439e326a068b8220ce693619fa4de',1,'SupplyIterator::operator++()'],['../classTankIterator.html#a8b61d1ede96cdb9259982e7c5bd2f69b',1,'TankIterator::operator++()']]],
+  ['operator_3d_3d_2',['operator==',['../classInfantryIterator.html#a366ddfb28f7dbcc979dafb3da753c463',1,'InfantryIterator::operator==()'],['../classMedicIterator.html#aa7aca204c338f6b4b80154948a3ec7db',1,'MedicIterator::operator==()'],['../classSupplyIterator.html#ab0a2a1e1df7e91af10aa04ee8cefbb57',1,'SupplyIterator::operator==()'],['../classTankIterator.html#abdd9d7b57621b1e2304d2ce6a4bdee01',1,'TankIterator::operator==()']]]
 ];

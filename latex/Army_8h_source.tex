@@ -1,42 +1,43 @@
 \hypertarget{Army_8h_source}{}\doxysection{Army.\+h}
-
+\mbox{\hyperlink{Army_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ARMY\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ARMY\_H}}
-\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Battalion.h"{}}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
-\DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{classArmy}{Army}}}
-\DoxyCodeLine{7 \{}
-\DoxyCodeLine{8 \textcolor{keyword}{public}:}
-\DoxyCodeLine{9     \mbox{\hyperlink{classArmy}{Army}}();}
-\DoxyCodeLine{10     \mbox{\hyperlink{classArmy}{\string~Army}}();}
-\DoxyCodeLine{11     \textcolor{keywordtype}{void} addInfantry(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{12     \textcolor{keywordtype}{void} addTank(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{13     \textcolor{keywordtype}{void} addMedic(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{14     \textcolor{keywordtype}{void} addSupply(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{15     \textcolor{keywordtype}{void} updateStats();}
-\DoxyCodeLine{16     \textcolor{keywordtype}{int} getDamage();}
-\DoxyCodeLine{17     \textcolor{keywordtype}{void} takeDamage(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{18     \textcolor{keywordtype}{void} heal();}
-\DoxyCodeLine{19     \textcolor{keywordtype}{void} reset();}
-\DoxyCodeLine{20     \textcolor{keywordtype}{int} getMoves();}
-\DoxyCodeLine{21     \textcolor{keywordtype}{int} getHP();}
-\DoxyCodeLine{22     \textcolor{keywordtype}{void} setEnemy();}
-\DoxyCodeLine{23     \textcolor{keywordtype}{void} setCommander( std::string );}
-\DoxyCodeLine{24     \textcolor{keywordtype}{void} printStats();}
-\DoxyCodeLine{25 }
-\DoxyCodeLine{26 \textcolor{keyword}{private}:}
-\DoxyCodeLine{27     \mbox{\hyperlink{classBattalion}{Battalion}}* atkForce;}
-\DoxyCodeLine{28     \mbox{\hyperlink{classBattalion}{Battalion}}* medicForce;}
-\DoxyCodeLine{29     \mbox{\hyperlink{classBattalion}{Battalion}}* supplyChain;}
-\DoxyCodeLine{30     \textcolor{keywordtype}{int} totalDmg;}
-\DoxyCodeLine{31     \textcolor{keywordtype}{int} totalHP;}
-\DoxyCodeLine{32     \textcolor{keywordtype}{int} extraMoves;}
-\DoxyCodeLine{33     \textcolor{keywordtype}{int} totalHeal;}
-\DoxyCodeLine{34     \textcolor{keywordtype}{bool} enemy;}
-\DoxyCodeLine{35     std::string gName;}
-\DoxyCodeLine{36 \};}
-\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef ARMY\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define ARMY\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Battalion_8h}{Battalion.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classArmy}{Army}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{classArmy_ae3a3e50665f25ecaa2336245ee625f95}{Army}}();}
+\DoxyCodeLine{34     \mbox{\hyperlink{classArmy_a01db7886e46e79ece1726d46f918848d}{\string~Army}}();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_abc5957d766063923c5ea8fa554e15742}{addInfantry}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_aaa7993782e0430310a215fcb9e9859e8}{addTank}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_abd29a44cfcbed692e9b56dc0b6812dec}{addMedic}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_afa43bc03315d5cfda9c73b051c3f2b00}{addSupply}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_a96c7bc1b1c003dd4f632a5db26bcfa98}{updateStats}}();}
+\DoxyCodeLine{69     \textcolor{keywordtype}{int} \mbox{\hyperlink{classArmy_ae260d11e056ec1db6289a7d2b918b775}{getDamage}}();}
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_a8fcf5695baa82e4c21bc429085b92e05}{takeDamage}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_ab9a48d3d6bee61d03b091c3d9fefcb6d}{heal}}();}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_a98768f29b72b40a78b0ea4cd7ff84104}{reset}}();}
+\DoxyCodeLine{91     \textcolor{keywordtype}{int} \mbox{\hyperlink{classArmy_a2c2ab6f193839d30653fe579fbed932d}{getMoves}}();}
+\DoxyCodeLine{97     \textcolor{keywordtype}{int} \mbox{\hyperlink{classArmy_ad6bc4399d4b763e3e645bb023b11e83a}{getHP}}();}
+\DoxyCodeLine{102     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_a1d41dcf5543b1d99069f294877c8ac51}{setEnemy}}();}
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_a145f0c9f5b9dea347735f8cb0ba68d40}{setCommander}}(std::string y);}
+\DoxyCodeLine{113     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArmy_a48a1f05b4bd9044a1416187805d8a52f}{printStats}}();}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 \textcolor{keyword}{private}:}
+\DoxyCodeLine{116     \mbox{\hyperlink{classBattalion}{Battalion}} *atkForce; \textcolor{comment}{//Linked list of Infantry and Tank battalions}}
+\DoxyCodeLine{117     \mbox{\hyperlink{classBattalion}{Battalion}} *medicForce; \textcolor{comment}{//Linked list of Medic battalions}}
+\DoxyCodeLine{118     \mbox{\hyperlink{classBattalion}{Battalion}} *supplyChain; \textcolor{comment}{//Linked list of Supply battalions}}
+\DoxyCodeLine{119     \textcolor{keywordtype}{int} totalDmg; \textcolor{comment}{//Total damage the army can currently deal}}
+\DoxyCodeLine{120     \textcolor{keywordtype}{int} totalHP; \textcolor{comment}{//Total HP the army currently has}}
+\DoxyCodeLine{121     \textcolor{keywordtype}{int} extraMoves;\textcolor{comment}{//Total ExtraMoves the army currently has}}
+\DoxyCodeLine{122     \textcolor{keywordtype}{int} totalHeal;\textcolor{comment}{//Total amount of HP that the army can currently restore by defending}}
+\DoxyCodeLine{123     \textcolor{keywordtype}{bool} enemy;\textcolor{comment}{//Indicates if the army is an enemy}}
+\DoxyCodeLine{124     std::string gName; \textcolor{comment}{//Name of the General for the army}}
+\DoxyCodeLine{125 \};}
+\DoxyCodeLine{126 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

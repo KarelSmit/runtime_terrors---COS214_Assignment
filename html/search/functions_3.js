@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['getdetails_0',['getDetails',['../classIntelDivision.html#a28aa0dde2990d0327e408d8d4564554a',1,'IntelDivision']]],
-  ['getname_1',['GetName',['../classIntelDivision.html#a4de1b5f36bdb7a4329f11d1842015a2c',1,'IntelDivision']]],
-  ['getuser_2',['getUser',['../classIntelDivision.html#a22cf9886f905e2f67a5a4a0659929a56',1,'IntelDivision']]],
-  ['getuserdetails_3',['getUserDetails',['../classUser.html#a63510c9dc210a9608c5b192c70f480ba',1,'User']]],
-  ['getusername_4',['getUserName',['../classUser.html#a3fcf5814ba0a2415862c892746585a46',1,'User']]],
-  ['getuserscore_5',['getUserScore',['../classUser.html#a6fb0ab5ec6f86aa7458c92042df81bce',1,'User']]]
+  ['date_0',['date',['../classIntelDivision.html#a53677445ec005e831d8b096e8db9c1ca',1,'IntelDivision']]],
+  ['defend_1',['Defend',['../classDefend.html#a71dac1c44d27ecd970530d16d9c6cbc3',1,'Defend']]],
+  ['duringbattle_2',['DuringBattle',['../classDuringBattle.html#affd5427f352c85b4bf53fa7d731c428b',1,'DuringBattle']]]
 ];

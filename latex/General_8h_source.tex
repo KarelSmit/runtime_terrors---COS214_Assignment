@@ -1,27 +1,29 @@
 \hypertarget{General_8h_source}{}\doxysection{General.\+h}
-
+\mbox{\hyperlink{General_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GENERAL\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GENERAL\_H}}
-\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Attack.h"{}}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Defend.h"{}}}
-\DoxyCodeLine{6 }
-\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classGeneral}{General}}}
-\DoxyCodeLine{8 \{}
-\DoxyCodeLine{9 \textcolor{keyword}{public}:}
-\DoxyCodeLine{10     \mbox{\hyperlink{classGeneral}{General}}( std::string , \mbox{\hyperlink{classArmy}{Army}}*);}
-\DoxyCodeLine{11     \mbox{\hyperlink{classGeneral}{\string~General}}();}
-\DoxyCodeLine{12     \textcolor{keywordtype}{void} setAttack();}
-\DoxyCodeLine{13     \textcolor{keywordtype}{void} setDefend();}
-\DoxyCodeLine{14     \textcolor{keywordtype}{void} battlePlan(\mbox{\hyperlink{classArmy}{Army}}*);}
-\DoxyCodeLine{15     std::string getName();}
-\DoxyCodeLine{16 \textcolor{keyword}{private}:}
-\DoxyCodeLine{17     std::string name;}
-\DoxyCodeLine{18     \mbox{\hyperlink{classArmy}{Army}}* myArmy;}
-\DoxyCodeLine{19     \mbox{\hyperlink{classStrategy}{Strategy}}* plan;}
-\DoxyCodeLine{20 \};}
-\DoxyCodeLine{21 }
-\DoxyCodeLine{22 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef GENERAL\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define GENERAL\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Attack_8h}{Attack.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Defend_8h}{Defend.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{classGeneral}{General}}}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \mbox{\hyperlink{classGeneral}{General}}(std::string x, \mbox{\hyperlink{classArmy}{Army}} *f);}
+\DoxyCodeLine{39     \mbox{\hyperlink{classGeneral_a4c00454af074cfa8e92d88c9622759c0}{\string~General}}();}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGeneral_aa06cb4b1aff5de73dd6f3e7a03030ba2}{setAttack}}();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGeneral_a41e5f717a26f3c8d597e25f1102be755}{setDefend}}();}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGeneral_a6426cfd0acb618105d1fc8fc3fcf57c9}{battlePlan}}(\mbox{\hyperlink{classArmy}{Army}} *e);}
+\DoxyCodeLine{61     std::string \mbox{\hyperlink{classGeneral_a08b0a035f696d40dc8216e8927872588}{getName}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{keyword}{private}:}
+\DoxyCodeLine{64     std::string name;}
+\DoxyCodeLine{65     \mbox{\hyperlink{classArmy}{Army}} *myArmy;}
+\DoxyCodeLine{66     \mbox{\hyperlink{classStrategy}{Strategy}} *plan;}
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

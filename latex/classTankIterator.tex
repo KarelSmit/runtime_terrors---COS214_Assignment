@@ -1,20 +1,27 @@
 \hypertarget{classTankIterator}{}\doxysection{Tank\+Iterator Class Reference}
 \label{classTankIterator}\index{TankIterator@{TankIterator}}
+
+
+Allows sequential iteration of the \mbox{\hyperlink{classTankDriver}{Tank\+Driver}} linked list stored within a \mbox{\hyperlink{classTankUnit}{Tank\+Unit}} object.  
+
+
+
+
+{\ttfamily \#include $<$Tank\+Iterator.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classTankIterator_a3a39dd991a98c09db7622fa496d93dd4}\label{classTankIterator_a3a39dd991a98c09db7622fa496d93dd4}} 
-\mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ {\bfseries operator$\ast$} ()
-\item 
-\mbox{\Hypertarget{classTankIterator_a8b61d1ede96cdb9259982e7c5bd2f69b}\label{classTankIterator_a8b61d1ede96cdb9259982e7c5bd2f69b}} 
-\mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} {\bfseries operator++} ()
-\item 
-\mbox{\Hypertarget{classTankIterator_acc7a612ec86de58cc7aae49d07b2254e}\label{classTankIterator_acc7a612ec86de58cc7aae49d07b2254e}} 
-bool {\bfseries operator==} (const \mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} \&) const
-\item 
-\mbox{\Hypertarget{classTankIterator_a46bf5712c0bf61dd00e3485a872d4f14}\label{classTankIterator_a46bf5712c0bf61dd00e3485a872d4f14}} 
-{\bfseries Tank\+Iterator} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classTankIterator_ae69835f42e95df5a5a1f133dcf7b65dd}{Tank\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classTank}{Tank}} Iterator object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ \mbox{\hyperlink{classTankIterator_a3a39dd991a98c09db7622fa496d93dd4}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Dereference the current \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} \mbox{\hyperlink{classTankIterator_a8b61d1ede96cdb9259982e7c5bd2f69b}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTankIterator_abdd9d7b57621b1e2304d2ce6a4bdee01}{operator==}} (const \mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} \&cmp) const
+\begin{DoxyCompactList}\small\item\em Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTankIterator_a208147653250806204e1ad9aed62ddb0}{Tank\+Iterator}} (\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$head, \mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$curr)
+\begin{DoxyCompactList}\small\item\em Construct a new parameterised \mbox{\hyperlink{classTank}{Tank}} Iterator object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +39,91 @@ class {\bfseries Tank\+Unit}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Allows sequential iteration of the \mbox{\hyperlink{classTankDriver}{Tank\+Driver}} linked list stored within a \mbox{\hyperlink{classTankUnit}{Tank\+Unit}} object. 
+
+An iterator for a \mbox{\hyperlink{classTankDriver}{Tank\+Driver}} linked list 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTankIterator_ae69835f42e95df5a5a1f133dcf7b65dd}\label{classTankIterator_ae69835f42e95df5a5a1f133dcf7b65dd}} 
+\index{TankIterator@{TankIterator}!TankIterator@{TankIterator}}
+\index{TankIterator@{TankIterator}!TankIterator@{TankIterator}}
+\doxysubsubsection{\texorpdfstring{TankIterator()}{TankIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tank\+Iterator\+::\+Tank\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classTank}{Tank}} Iterator object. 
+
+\mbox{\Hypertarget{classTankIterator_a208147653250806204e1ad9aed62ddb0}\label{classTankIterator_a208147653250806204e1ad9aed62ddb0}} 
+\index{TankIterator@{TankIterator}!TankIterator@{TankIterator}}
+\index{TankIterator@{TankIterator}!TankIterator@{TankIterator}}
+\doxysubsubsection{\texorpdfstring{TankIterator()}{TankIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tank\+Iterator\+::\+Tank\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$}]{head,  }\item[{\mbox{\hyperlink{classNode}{Node}}$<$ \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ $>$ $\ast$}]{curr }\end{DoxyParamCaption})}
+
+
+
+Construct a new parameterised \mbox{\hyperlink{classTank}{Tank}} Iterator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em head} & \\
+\hline
+{\em curr} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTankIterator_a3a39dd991a98c09db7622fa496d93dd4}\label{classTankIterator_a3a39dd991a98c09db7622fa496d93dd4}} 
+\index{TankIterator@{TankIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!TankIterator@{TankIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTransportUnit}{Transport\+Unit}} $\ast$ Tank\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dereference the current \mbox{\hyperlink{classNode}{Node}}. 
+
+\begin{DoxyReturn}{Returns}
+Transport\+Unit$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTankIterator_a8b61d1ede96cdb9259982e7c5bd2f69b}\label{classTankIterator_a8b61d1ede96cdb9259982e7c5bd2f69b}} 
+\index{TankIterator@{TankIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!TankIterator@{TankIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} Tank\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterate to the next \mbox{\hyperlink{classNode}{Node}} in the linked list. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTankIterator_abdd9d7b57621b1e2304d2ce6a4bdee01}\label{classTankIterator_abdd9d7b57621b1e2304d2ce6a4bdee01}} 
+\index{TankIterator@{TankIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!TankIterator@{TankIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Tank\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTankIterator}{Tank\+Iterator}} \&}]{cmp }\end{DoxyParamCaption}) const}
+
+
+
+Compare the current \mbox{\hyperlink{classNode}{Node}} to another \mbox{\hyperlink{classNode}{Node}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Tank\+Iterator.\+h\item 
+\mbox{\hyperlink{TankIterator_8h}{Tank\+Iterator.\+h}}\item 
 Tank\+Iterator.\+cpp\end{DoxyCompactItemize}

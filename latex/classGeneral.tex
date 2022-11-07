@@ -1,26 +1,118 @@
 \hypertarget{classGeneral}{}\doxysection{General Class Reference}
 \label{classGeneral}\index{General@{General}}
+
+
+The \mbox{\hyperlink{classGeneral}{General}} class is used to initiate the chosen \mbox{\hyperlink{classStrategy}{Strategy}}.  
+
+
+
+
+{\ttfamily \#include $<$General.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGeneral_a65a106a237cfaadf7a5fcfe77c847dc4}\label{classGeneral_a65a106a237cfaadf7a5fcfe77c847dc4}} 
-{\bfseries General} (std\+::string, \mbox{\hyperlink{classArmy}{Army}} $\ast$)
-\item 
-\mbox{\Hypertarget{classGeneral_aa06cb4b1aff5de73dd6f3e7a03030ba2}\label{classGeneral_aa06cb4b1aff5de73dd6f3e7a03030ba2}} 
-void {\bfseries set\+Attack} ()
-\item 
-\mbox{\Hypertarget{classGeneral_a41e5f717a26f3c8d597e25f1102be755}\label{classGeneral_a41e5f717a26f3c8d597e25f1102be755}} 
-void {\bfseries set\+Defend} ()
-\item 
-\mbox{\Hypertarget{classGeneral_a5c064d1362bc60fae08296e2a9b3bc51}\label{classGeneral_a5c064d1362bc60fae08296e2a9b3bc51}} 
-void {\bfseries battle\+Plan} (\mbox{\hyperlink{classArmy}{Army}} $\ast$)
-\item 
+\mbox{\hyperlink{classGeneral_a501b94bc0e8debf3069bde96db56fb91}{General}} (std\+::string x, \mbox{\hyperlink{classArmy}{Army}} $\ast$f)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGeneral}{General}} object with name x and \mbox{\hyperlink{classArmy}{Army}} f. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGeneral_a4c00454af074cfa8e92d88c9622759c0}{$\sim$\+General}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classGeneral}{General}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGeneral_aa06cb4b1aff5de73dd6f3e7a03030ba2}{set\+Attack}} ()
+\begin{DoxyCompactList}\small\item\em Set the current \mbox{\hyperlink{classStrategy}{Strategy}} as \mbox{\hyperlink{classAttack}{Attack}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGeneral_a41e5f717a26f3c8d597e25f1102be755}{set\+Defend}} ()
+\begin{DoxyCompactList}\small\item\em Set the current \mbox{\hyperlink{classStrategy}{Strategy}} as \mbox{\hyperlink{classDefend}{Defend}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGeneral_a6426cfd0acb618105d1fc8fc3fcf57c9}{battle\+Plan}} (\mbox{\hyperlink{classArmy}{Army}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Initiate the chosen \mbox{\hyperlink{classStrategy}{Strategy}} against \mbox{\hyperlink{classArmy}{Army}} e. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGeneral_a08b0a035f696d40dc8216e8927872588}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the \mbox{\hyperlink{classGeneral}{General}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classGeneral}{General}} class is used to initiate the chosen \mbox{\hyperlink{classStrategy}{Strategy}}. 
+
+Initiates the chosen \mbox{\hyperlink{classStrategy}{Strategy}}, and also allows switching between strategies 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGeneral_a501b94bc0e8debf3069bde96db56fb91}\label{classGeneral_a501b94bc0e8debf3069bde96db56fb91}} 
+\index{General@{General}!General@{General}}
+\index{General@{General}!General@{General}}
+\doxysubsubsection{\texorpdfstring{General()}{General()}}
+{\footnotesize\ttfamily General\+::\+General (\begin{DoxyParamCaption}\item[{std\+::string}]{x,  }\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classGeneral}{General}} object with name x and \mbox{\hyperlink{classArmy}{Army}} f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGeneral_a4c00454af074cfa8e92d88c9622759c0}\label{classGeneral_a4c00454af074cfa8e92d88c9622759c0}} 
+\index{General@{General}!````~General@{$\sim$General}}
+\index{````~General@{$\sim$General}!General@{General}}
+\doxysubsubsection{\texorpdfstring{$\sim$General()}{~General()}}
+{\footnotesize\ttfamily General\+::$\sim$\+General (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classGeneral}{General}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGeneral_a6426cfd0acb618105d1fc8fc3fcf57c9}\label{classGeneral_a6426cfd0acb618105d1fc8fc3fcf57c9}} 
+\index{General@{General}!battlePlan@{battlePlan}}
+\index{battlePlan@{battlePlan}!General@{General}}
+\doxysubsubsection{\texorpdfstring{battlePlan()}{battlePlan()}}
+{\footnotesize\ttfamily void General\+::battle\+Plan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArmy}{Army}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Initiate the chosen \mbox{\hyperlink{classStrategy}{Strategy}} against \mbox{\hyperlink{classArmy}{Army}} e. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classGeneral_a08b0a035f696d40dc8216e8927872588}\label{classGeneral_a08b0a035f696d40dc8216e8927872588}} 
-std\+::string {\bfseries get\+Name} ()
-\end{DoxyCompactItemize}
+\index{General@{General}!getName@{getName}}
+\index{getName@{getName}!General@{General}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string General\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the \mbox{\hyperlink{classGeneral}{General}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGeneral_aa06cb4b1aff5de73dd6f3e7a03030ba2}\label{classGeneral_aa06cb4b1aff5de73dd6f3e7a03030ba2}} 
+\index{General@{General}!setAttack@{setAttack}}
+\index{setAttack@{setAttack}!General@{General}}
+\doxysubsubsection{\texorpdfstring{setAttack()}{setAttack()}}
+{\footnotesize\ttfamily void General\+::set\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the current \mbox{\hyperlink{classStrategy}{Strategy}} as \mbox{\hyperlink{classAttack}{Attack}}. 
+
+\mbox{\Hypertarget{classGeneral_a41e5f717a26f3c8d597e25f1102be755}\label{classGeneral_a41e5f717a26f3c8d597e25f1102be755}} 
+\index{General@{General}!setDefend@{setDefend}}
+\index{setDefend@{setDefend}!General@{General}}
+\doxysubsubsection{\texorpdfstring{setDefend()}{setDefend()}}
+{\footnotesize\ttfamily void General\+::set\+Defend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the current \mbox{\hyperlink{classStrategy}{Strategy}} as \mbox{\hyperlink{classDefend}{Defend}}. 
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-General.\+h\item 
+\mbox{\hyperlink{General_8h}{General.\+h}}\item 
 General.\+cpp\end{DoxyCompactItemize}

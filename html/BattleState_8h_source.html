@@ -72,27 +72,32 @@ $(function() {
   <div class="headertitle"><div class="title">BattleState.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef BATTLESTATE_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define BATTLESTATE_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Battle.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="classBattle.html">Battle</a>;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classBattleState.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classBattleState.html">BattleState</a></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_class" href="classBattleState.html">BattleState</a>( <a class="code hl_class" href="classBattle.html">Battle</a>* );</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_class" href="classBattleState.html">~BattleState</a>();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> handle() = 0;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> changeState(){};</div>
+<a href="BattleState_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef BATTLESTATE_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define BATTLESTATE_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="Battle_8h.html">Battle.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classBattle.html">Battle</a> *context;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBattleState_html"><div class="ttname"><a href="classBattleState.html">BattleState</a></div><div class="ttdef"><b>Definition:</b> BattleState.h:9</div></div>
-<div class="ttc" id="aclassBattle_html"><div class="ttname"><a href="classBattle.html">Battle</a></div><div class="ttdef"><b>Definition:</b> Battle.h:7</div></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">class </span><a class="code hl_class" href="classBattle.html">Battle</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classBattleState.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classBattleState.html">BattleState</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="classBattleState.html">BattleState</a>(<a class="code hl_class" href="classBattle.html">Battle</a> *x);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="classBattleState.html#aefa456879780fd7114fd7691917adc0a">~BattleState</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classBattleState.html#ae6fa12ee65abc37de5a885031d0f4347">   44</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBattleState.html#ae6fa12ee65abc37de5a885031d0f4347">handle</a>() = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classBattleState.html#a36b87d9104f10cd216fc16f83ae7089b">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classBattleState.html#a36b87d9104f10cd216fc16f83ae7089b">changeState</a>(){};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_class" href="classBattle.html">Battle</a> *context;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aBattle_8h_html"><div class="ttname"><a href="Battle_8h.html">Battle.h</a></div><div class="ttdoc">Handles the BattleState of each Battle, and holds the winner.</div></div>
+<div class="ttc" id="aclassBattleState_html"><div class="ttname"><a href="classBattleState.html">BattleState</a></div><div class="ttdoc">Specifies the abstract interface for PreBattle, DuringBattle and PostBattle.</div><div class="ttdef"><b>Definition:</b> BattleState.h:27</div></div>
+<div class="ttc" id="aclassBattleState_html_a36b87d9104f10cd216fc16f83ae7089b"><div class="ttname"><a href="classBattleState.html#a36b87d9104f10cd216fc16f83ae7089b">BattleState::changeState</a></div><div class="ttdeci">virtual void changeState()</div><div class="ttdoc">Change to the next state of the battle.</div><div class="ttdef"><b>Definition:</b> BattleState.h:49</div></div>
+<div class="ttc" id="aclassBattleState_html_ae6fa12ee65abc37de5a885031d0f4347"><div class="ttname"><a href="classBattleState.html#ae6fa12ee65abc37de5a885031d0f4347">BattleState::handle</a></div><div class="ttdeci">virtual void handle()=0</div><div class="ttdoc">Pure virtual function to handle each state.</div></div>
+<div class="ttc" id="aclassBattleState_html_aefa456879780fd7114fd7691917adc0a"><div class="ttname"><a href="classBattleState.html#aefa456879780fd7114fd7691917adc0a">BattleState::~BattleState</a></div><div class="ttdeci">~BattleState()</div><div class="ttdoc">Destroy the Battle State object.</div><div class="ttdef"><b>Definition:</b> BattleState.cpp:7</div></div>
+<div class="ttc" id="aclassBattle_html"><div class="ttname"><a href="classBattle.html">Battle</a></div><div class="ttdoc">Create and initiate the BattleState for each Battle, also holds the winner.</div><div class="ttdef"><b>Definition:</b> Battle.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
