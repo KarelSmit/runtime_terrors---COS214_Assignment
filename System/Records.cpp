@@ -109,6 +109,7 @@ void Records::showTopThree()
 
 void Records::checkTopScore()
 {
+	bubbleSort();
 	if (top3[0] == NULL || top3[1] == NULL || top3[2] == NULL)
 	{
 		for (int i = 0; i < 3; i++)
