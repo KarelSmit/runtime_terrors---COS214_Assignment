@@ -11,5 +11,6 @@ var searchData=
   ['battlestate_8',['BattleState',['../classBattleState.html',1,'BattleState'],['../classBattleState.html#ae2643b122ab00f6ccc3e3eef50029163',1,'BattleState::BattleState()']]],
   ['battlestate_2eh_9',['BattleState.h',['../BattleState_8h.html',1,'']]],
   ['begin_10',['begin',['../classBattle.html#aafc478ace1c49f4fe8a59d1f6038c7df',1,'Battle::begin()'],['../classInfantryUnit.html#a99aa2cb263542095c2dd25de2412371c',1,'InfantryUnit::begin()'],['../classMedicUnit.html#a9e6e57a2a0c4ad3b7cc3e0f4dc3e2d6c',1,'MedicUnit::begin()'],['../classSupplyUnit.html#adb1f5de806fab1c298e7ccc82a4218f3',1,'SupplyUnit::begin()'],['../classTankUnit.html#ab6b6e9dad6b7558610d8d9325f724afc',1,'TankUnit::begin()']]],
-  ['bubblesort_11',['bubbleSort',['../classRecords.html#aefe3dade77146a08cd3423237da79fb0',1,'Records']]]
+  ['binaryexpr_11',['BinaryExpr',['../classCatch_1_1BinaryExpr.html',1,'Catch']]],
+  ['bubblesort_12',['bubbleSort',['../classRecords.html#aefe3dade77146a08cd3423237da79fb0',1,'Records']]]
 ];
