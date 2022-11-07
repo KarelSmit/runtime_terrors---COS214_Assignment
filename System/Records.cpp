@@ -2,7 +2,7 @@
 
 Records::Records(War *w) : war(w)
 {
-	myfile.open("storage.txt", fstream::app);
+	myfile.open("../Data/storage.txt", fstream::app);
 	loadTopScores();
 }
 
@@ -44,7 +44,7 @@ void Records::Undo()
 
 void Records::ShowHistory() const
 {
-	ifstream file("storage.txt");
+	ifstream file("../Data/storage.txt");
 	file.seekg(0, ios::end);
 	int length = file.tellg();
 
@@ -54,7 +54,7 @@ void Records::ShowHistory() const
 	}
 	else
 	{
-		ifstream f("storage.txt");
+		ifstream f("../Data/storage.txt");
 
 		if (f.is_open())
 			cout << f.rdbuf();
@@ -69,7 +69,7 @@ void Records::loadTopScores()
 	string line;
 	int pos;
 	string name;
-	dafile.open("topscores.txt", fstream::app);
+	dafile.open("../Data/topscores.txt", fstream::app);
 
 	for (int i = 0; i < 3; i++)
 	{
@@ -157,8 +157,8 @@ void Records::writeTopToFile()
 {
 	// bubbleSort();
 	ofstream clearfile;
-	clearfile.open("topscores.txt");
-	topscore.open("topscores.txt", fstream::app);
+	clearfile.open("../Data/topscores.txt");
+	topscore.open("../Data/topscores.txt", fstream::app);
 	for (int i = 0; i < 3; i++)
 	{
 		if (top3[i] != NULL)
